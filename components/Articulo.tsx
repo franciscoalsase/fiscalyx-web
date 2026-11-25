@@ -1,0 +1,92 @@
+import Link from "next/link";
+import { Cabecera } from "@/components/Cabecera";
+import { Pie } from "@/components/Pie";
+import { site, whatsappLink } from "@/lib/site";
+
+type Fuente = { nombre: string; url: string };
+
+export function Articulo({
+  titulo,
+  entradilla,
+  tema,
+  fecha,
+  fuentes,
+  cta,
+  children,
+}: {
+  titulo: string;
+  entradilla: string;
+  tema: string;
+  fecha: string;
+  fuentes: Fuente[];
+  cta: { titulo: string; texto: string; href: string; boton: string };
+  children: React.ReactNode;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: titulo,
+    description: entradilla,
+    inLanguage: "es-ES",
+    dateModified: "2026-11-25",
+    author: { "@type": "Person", name: site.owner, jobTitle: "Economista colegiado" },
+    publisher: { "@type": "Organization", name: "Fiscalyx", url: site.url },
+    citation: fuentes.map((f) => f.url),
+  };
+
+  return (
+    <>
+      <Cabecera actual="/guias/" />
+      <main id="contenido">
+        <article className="articulo">
+          <div className="contenedor">
+            <header className="articulo-cabeza">
+              <p className="miga">
+                <Link href="/guias/">Guías</Link> <span aria-hidden="true">/</span> {tema}
+              </p>
+              <h1>{titulo}</h1>
+              <p className="entradilla">{entradilla}</p>
+              <p className="firma">
+                Revisado por {site.owner}, economista colegiado. Actualizado en {fecha}.
+              </p>
+            </header>
+
+            <div className="articulo-cuerpo">{children}</div>
+
+            <aside className="articulo-cta" aria-label="Contacto">
+              <h2>{cta.titulo}</h2>
+              <p>{cta.texto}</p>
+              <div className="acciones">
+                <Link className="boton boton-principal" href={cta.href}>
+                  {cta.boton}
+                </Link>
+                <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+                  Escríbenos por WhatsApp
+                </a>
+              </div>
+            </aside>
+
+            <section className="fuentes" aria-labelledby="fuentes-titulo">
+              <h2 id="fuentes-titulo">Fuentes</h2>
+              <ul>
+                {fuentes.map((f) => (
+                  <li key={f.url}>
+                    <a href={f.url} target="_blank" rel="noopener noreferrer">
+                      {f.nombre}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p>
+                Esta guía es información general y no sustituye al análisis de tu caso. La normativa cambia: revisamos
+                las guías cada vez que hay novedades.
+              </p>
+            </section>
+          </div>
+        </article>
+      </main>
+      <Pie />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    </>
+  );
+}

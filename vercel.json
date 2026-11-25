@@ -1,0 +1,93 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/guias/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/modelo-721-criptomonedas-guia",
+      "destination": "/guias/modelo-721/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug*",
+      "destination": "/guias/",
+      "permanent": true
+    },
+    {
+      "source": "/servicios/cripto",
+      "destination": "/criptomonedas/",
+      "permanent": true
+    },
+    {
+      "source": "/servicios",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contratar",
+      "destination": "/precios/",
+      "permanent": true
+    },
+    {
+      "source": "/cockpit",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/autonomos",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cripto",
+      "destination": "/criptomonedas/",
+      "permanent": true
+    },
+    {
+      "source": "/legal/aviso-legal",
+      "destination": "/aviso-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/legal/privacidad",
+      "destination": "/privacidad/",
+      "permanent": true
+    },
+    {
+      "source": "/legal/politica-privacidad",
+      "destination": "/privacidad/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}

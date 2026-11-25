@@ -1,0 +1,34 @@
+# Fiscalyx
+
+> Gestoría online para autónomos y sociedades de toda España y asesoría fiscal sobre criptomonedas, dirigida por Francisco Seva Soriano, economista colegiado. Sede en Alicante.
+
+## Servicios
+
+- [Gestoría para autónomos](https://fiscalyx.com/): cuota fija mensual con modelos trimestrales (303, 130, 111, 115), resúmenes anuales (390, 190, 180, 347) y declaración de la Renta. Asesor asignado, WhatsApp y una llamada antes de cada trimestre. Sin permanencia.
+- [Gestoría para sociedades](https://fiscalyx.com/sociedades/): contabilidad, impuestos trimestrales, Impuesto sobre Sociedades y cuentas anuales incluidos en la cuota. Precio cerrado según volumen.
+- [Criptomonedas](https://fiscalyx.com/criptomonedas/): informe de trazabilidad, Renta con criptomonedas, Modelo 721 y regularización de ejercicios anteriores, con precio cerrado.
+
+## Más
+
+- [Precios](https://fiscalyx.com/precios/)
+- [Constituir una sociedad limitada](https://fiscalyx.com/constituir-sociedad/)
+
+## Herramientas
+
+- [Calculadora trimestral para autónomos](https://fiscalyx.com/calculadora-autonomos/): estimación del Modelo 303 (IVA) y del Modelo 130 (IRPF) de un trimestre.
+
+## Guías
+
+- [Gastos deducibles de autónomos en 2026](https://fiscalyx.com/guias/gastos-deducibles-autonomos/)
+- [¿Autónomo o sociedad limitada?](https://fiscalyx.com/guias/autonomo-o-sociedad/)
+- [Permutas de criptomonedas y método FIFO](https://fiscalyx.com/guias/permutas-criptomonedas-fifo/)
+- [Pérdidas con criptomonedas: cómo compensarlas](https://fiscalyx.com/guias/compensar-perdidas-criptomonedas/)
+
+- [Calendario fiscal del autónomo en 2027](https://fiscalyx.com/guias/calendario-fiscal-autonomos-2027/)
+- [DAC8: qué sabrá Hacienda de tus criptomonedas y desde cuándo](https://fiscalyx.com/guias/dac8-criptomonedas/)
+- [Modelo 721: quién tiene que presentarlo y cuándo](https://fiscalyx.com/guias/modelo-721/)
+
+## Contacto
+
+- [Quiénes somos](https://fiscalyx.com/quienes-somos/)
+- Correo: hola@fiscalyx.com

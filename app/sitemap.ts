@@ -1,0 +1,30 @@
+import type { MetadataRoute } from "next";
+import { site } from "@/lib/site";
+
+export const dynamic = "force-static";
+
+import { guias } from "@/lib/guias";
+
+const rutas = [
+  "/",
+  "/sociedades/",
+  "/criptomonedas/",
+  "/calculadora-autonomos/",
+  "/precios/",
+  "/constituir-sociedad/",
+  "/guias/",
+  ...guias.map((g) => `/guias/${g.slug}/`),
+  "/quienes-somos/",
+  "/aviso-legal/",
+  "/privacidad/",
+  "/cookies/",
+];
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return rutas.map((ruta) => ({
+    url: `${site.url}${ruta}`,
+    lastModified: new Date(),
+    changeFrequency: ruta === "/" || ruta === "/criptomonedas/" ? "monthly" : "yearly",
+    priority: ruta === "/" ? 1 : ruta === "/criptomonedas/" ? 0.9 : ruta.startsWith("/guias/") ? 0.7 : 0.3,
+  }));
+}
