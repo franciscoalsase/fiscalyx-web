@@ -7,7 +7,7 @@ export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
     <>
     <nav className="barra-movil" aria-label="Contacto rápido">
       <a className="boton boton-principal" href={contacto}>
-        Pedir presupuesto
+        {contacto.startsWith("/empezar") ? "Empezar ahora" : "Pedir presupuesto"}
       </a>
       <a className="boton boton-secundario" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
         WhatsApp

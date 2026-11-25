@@ -3081,3 +3081,18 @@ td.comparar-nos {
   .dos-columnas-doc { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); gap: 4rem; }
 }
 .grupo + .grupo, .grupo + .grupo-guias { margin-top: 3.5rem; }
+
+/* Menú móvil: sombra que separa del contenido y "Empezar" como botón */
+@media (max-width: 760px) {
+  .menu-movil nav { box-shadow: 0 24px 32px -20px rgba(27, 42, 65, 0.35); }
+  .menu-movil nav a:last-child {
+    border-bottom: none;
+    margin-top: 1rem;
+    background: var(--verde);
+    color: #fff;
+    text-align: center;
+    border-radius: var(--radio);
+    font-weight: 600;
+  }
+  .menu-movil[open] summary { background: var(--tinta); color: #fff; border-color: var(--tinta); }
+}
