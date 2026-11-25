@@ -113,6 +113,8 @@ export default function Calendario2027() {
         </table>
       </div>
       <p>
+        Las fechas de las cuentas anuales, con lo que pasa si no se depositan, están en la{" "}
+        <Link href="/guias/cuentas-anuales-sociedad/">guía de cuentas anuales</Link>.{" "}
         Para una pyme, el modelo 202 solo se presenta cuando sale cantidad a pagar, y eso ocurre si el último Impuesto
         sobre Sociedades salió a pagar. Una sociedad recién creada no lo paga en su primer año.
       </p>

@@ -133,4 +133,11 @@ export const guias: Guia[] = [
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "cuentas-anuales-sociedad",
+    titulo: "Cuentas anuales de una sociedad limitada: plazos y depósito",
+    resumen: "Formular, legalizar libros, aprobar en junta y depositar: las fechas de 2027 y qué pasa si no depositas.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];
