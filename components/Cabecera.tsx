@@ -23,8 +23,8 @@ export function Cabecera({ actual }: { actual?: string }) {
               {e.label}
             </Link>
           ))}
-          <Link href="/#contacto" className="boton boton-principal boton-pequeno">
-            Pedir presupuesto
+          <Link href="/empezar/" className="boton boton-principal boton-pequeno">
+            Empezar
           </Link>
         </nav>
 
@@ -36,7 +36,7 @@ export function Cabecera({ actual }: { actual?: string }) {
                 {e.label}
               </Link>
             ))}
-            <Link href="/#contacto">Pedir presupuesto</Link>
+            <Link href="/empezar/">Empezar</Link>
           </nav>
         </details>
       </div>

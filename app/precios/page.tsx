@@ -72,7 +72,7 @@ export default function Precios() {
                   <li><Check /> Alta en Hacienda y Seguridad Social</li>
                   <li><Check /> Asesor asignado, WhatsApp y llamada trimestral</li>
                 </ul>
-                <Link className="boton boton-principal" href="/#contacto">Pedir presupuesto</Link>
+                <Link className="boton boton-principal" href="/empezar/?plan=autonomo">Empezar con este plan</Link>
               </div>
               <div className="tarjeta-blanca plan">
                 <h3>Sociedad limitada</h3>
@@ -87,7 +87,7 @@ export default function Precios() {
                   <li><Check /> Cuentas anuales, acta y depósito</li>
                   <li><Check /> Asesor asignado, WhatsApp y llamada trimestral</li>
                 </ul>
-                <Link className="boton boton-principal" href="/sociedades/#contacto">Pedir presupuesto</Link>
+                <Link className="boton boton-principal" href="/empezar/?plan=sociedad">Empezar con este plan</Link>
               </div>
               <div className="tarjeta-blanca plan">
                 <h3>Criptomonedas</h3>
@@ -109,7 +109,7 @@ export default function Precios() {
                     <Check /> Regularización: diagnóstico de {prices.cripto[2].tiers[0].price}, descontable
                   </li>
                 </ul>
-                <Link className="boton boton-principal" href="/criptomonedas/#contacto">Pedir presupuesto</Link>
+                <Link className="boton boton-principal" href="/empezar/?plan=cripto">Empezar con este plan</Link>
               </div>
             </div>
             <p className="planes-nota">

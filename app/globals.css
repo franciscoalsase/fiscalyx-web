@@ -2691,3 +2691,67 @@ td.comparar-nos {
 .grupo-guias:first-child {
   margin-top: 0;
 }
+
+/* ---------- Alta online ---------- */
+
+.opcion-plan {
+  align-items: flex-start;
+  padding: 0.9rem 1rem;
+}
+
+.opcion-plan input {
+  margin-top: 0.2rem;
+}
+
+.opcion-precio {
+  color: var(--verde-oscuro);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.opcion-detalle {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--grafito);
+}
+
+.alta-plan {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-top: 0.25rem;
+}
+
+.alta-precio {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--verde-oscuro);
+  margin-top: 0.35rem;
+}
+
+.alta-subtitulo {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.alta-pasos {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.98rem;
+}
+
+.alta-pasos li + li {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 861px) {
+  .alta .calc-resultado {
+    position: sticky;
+    top: 6.5rem;
+    align-self: start;
+  }
+}
+
+[hidden] { display: none !important; }
