@@ -10,7 +10,7 @@ export const site = {
   colegio: "Colegio de Economistas de Alicante",
   address: "Centro ULab, Plaza San Cristóbal 14, 03002 Alicante",
   city: "Alicante",
-  email: "hola@fiscalyx.com",
+  email: "info@fiscalyx.com",
   phoneDisplay: "637 46 08 35",
   phoneIntl: "34637460835",
   calendly: "https://calendly.com/francisco-alsase/30min",
