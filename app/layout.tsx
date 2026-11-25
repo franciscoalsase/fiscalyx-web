@@ -92,11 +92,15 @@ addEventListener("DOMContentLoaded",function(){
   els.forEach(function(e){io.observe(e)});
 });`;
 
+// Vercel Web Analytics: sin cookies y sin datos personales. Carga el script de forma diferida.
+const analitica = `window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};if(/fiscalyx\\.com$/.test(location.hostname)){var s=document.createElement("script");s.defer=true;s.src="/_vercel/insights/script.js";document.head.appendChild(s)}`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={`${sans.variable} ${serif.variable}`} suppressHydrationWarning>
       <head>
         <script id="efectos" dangerouslySetInnerHTML={{ __html: efectos }} />
+        <script id="analitica" dangerouslySetInnerHTML={{ __html: analitica }} />
       </head>
       <body>
         <a className="saltar" href="#contenido">

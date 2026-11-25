@@ -46,7 +46,8 @@ export default function Privacidad() {
       <p>
         Con la Agencia Tributaria y otras administraciones cuando presentamos algo en tu nombre. El formulario de
         contacto lo gestiona Formspree, Inc., un proveedor con sede en Estados Unidos que actúa como encargado del
-        tratamiento. Si nos escribes por WhatsApp, se aplica también la política de privacidad de WhatsApp.
+        tratamiento. La web se aloja en Vercel Inc., que también nos da estadísticas de visitas agregadas y sin cookies. Si
+        nos escribes por WhatsApp, se aplica también la política de privacidad de WhatsApp.
       </p>
 
       <h2>Tus derechos</h2>

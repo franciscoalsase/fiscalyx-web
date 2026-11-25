@@ -75,6 +75,10 @@ export default function CuotaAutonomos2027() {
         Por ejemplo, si facturas 40.000 € al año y tienes 8.000 € de gastos, tu rendimiento es de 32.000 €. Tras el
         7 %, quedan 29.760 €, es decir, 2.480 € al mes. Estarías en el tramo 7 de la tabla general.
       </p>
+      <p>
+        Haz tu cuenta en un minuto con nuestra{" "}
+        <Link href="/calculadora-cuota-autonomos/">calculadora de la cuota de autónomos</Link>.
+      </p>
 
       <h2>La tabla de 2026, tramo a tramo</h2>
       <p>

@@ -79,6 +79,9 @@ export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
               <Link href="/calculadora-autonomo-o-sociedad/">¿Autónomo o sociedad?</Link>
             </li>
             <li>
+              <Link href="/calculadora-cuota-autonomos/">Calculadora de cuota de autónomos</Link>
+            </li>
+            <li>
               <Link href="/guias/">Guías</Link>
             </li>
             <li>

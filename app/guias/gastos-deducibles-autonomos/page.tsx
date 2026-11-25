@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
@@ -103,6 +104,110 @@ export default function GastosDeducibles() {
         Si tributas en estimación directa simplificada, que es lo habitual, puedes restar un 5 % de tu rendimiento
         neto como gastos de difícil justificación, con un máximo de 2.000 € al año. No necesitas ningún justificante:
         se aplica al calcular la declaración. En 2023 el porcentaje fue del 7 %; desde 2024 vuelve a ser del 5 %.
+      </p>
+
+      <h2>Ordenadores, muebles y otros bienes que duran años</h2>
+      <p>
+        Lo que compras para usar varios años no se deduce de golpe: se amortiza, es decir, se reparte el gasto entre los
+        años de vida útil. En estimación directa simplificada se usa una tabla con coeficientes máximos fijos:
+      </p>
+      <div className="tabla-scroll">
+        <table className="tabla tabla-guia">
+          <thead>
+            <tr>
+              <th scope="col">Bien</th>
+              <th scope="col">Porcentaje máximo al año</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Ordenadores, equipos informáticos y programas</th>
+              <td>26 %</td>
+            </tr>
+            <tr>
+              <th scope="row">Útiles y herramientas</th>
+              <td>30 %</td>
+            </tr>
+            <tr>
+              <th scope="row">Vehículos</th>
+              <td>16 %</td>
+            </tr>
+            <tr>
+              <th scope="row">Maquinaria</th>
+              <td>12 %</td>
+            </tr>
+            <tr>
+              <th scope="row">Mobiliario e instalaciones</th>
+              <td>10 %</td>
+            </tr>
+            <tr>
+              <th scope="row">Edificios y locales</th>
+              <td>3 %</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Por ejemplo, un ordenador de 1.500 € se puede deducir a razón de 390 € al año, hasta completar su precio. Los bienes
+        nuevos de poco valor, de hasta 300 € cada uno, se pueden deducir enteros el año de compra, con un límite de 25.000 €
+        al año.
+      </p>
+
+      <h2>El coche: lo más discutido</h2>
+      <p>
+        En el IRPF, el vehículo solo es deducible si lo usas exclusivamente para la actividad. Si también lo usas para ir al
+        supermercado o el fin de semana, Hacienda no admite ni el coche ni sus gastos (gasolina, seguro, reparaciones). Es
+        una de las cosas que más se revisan en las comprobaciones.
+      </p>
+      <p>
+        En el IVA la regla es más flexible: se presume que el vehículo se usa al 50 % para la actividad, así que puedes
+        deducir la mitad del IVA de la compra y de los gastos. Hay profesiones con presunción del 100 %, como el transporte
+        de mercancías o de viajeros, las autoescuelas, los agentes comerciales y los servicios de vigilancia.
+      </p>
+
+      <h2>Otros gastos que se olvidan</h2>
+      <ul>
+        <li>
+          <strong>Seguros de la actividad:</strong> el de responsabilidad civil profesional, el del local o el de los
+          equipos.
+        </li>
+        <li>
+          <strong>Publicidad y presencia en internet:</strong> la web, el dominio, el alojamiento, los anuncios y el
+          diseño.
+        </li>
+        <li>
+          <strong>Gastos financieros:</strong> los intereses de un préstamo para el negocio y las comisiones de la cuenta
+          que usas para la actividad.
+        </li>
+        <li>
+          <strong>Colegios y asociaciones profesionales:</strong> las cuotas, sobre todo cuando colegiarse es obligatorio
+          para ejercer.
+        </li>
+        <li>
+          <strong>Viajes de trabajo:</strong> transporte y alojamiento, siempre con factura y con relación clara con la
+          actividad.
+        </li>
+      </ul>
+
+      <h2>Lo que nunca es deducible</h2>
+      <ul>
+        <li>Las multas y sanciones, y los recargos por presentar o pagar fuera de plazo.</li>
+        <li>El propio IRPF que pagas, también los pagos fraccionados del modelo 130.</li>
+        <li>Los gastos personales o familiares, aunque los pagues con la tarjeta del negocio.</li>
+        <li>Los donativos: no son gasto, aunque dan derecho a una deducción en la Renta.</li>
+      </ul>
+
+      <h2>Un trimestre de ejemplo</h2>
+      <p>
+        Una diseñadora que trabaja desde casa factura 9.000 € en el trimestre. Tiene estos gastos: 900 € de cuota de
+        autónomos, 240 € de programas y suscripciones, 97,50 € de amortización de su ordenador (el 26 % anual de 1.500 €,
+        entre cuatro), 45 € de su parte de suministros y 150 € de gestoría. En total, 1.432,50 € de gastos y 7.567,50 € de
+        rendimiento neto, sobre el que calcula el pago fraccionado del modelo 130.
+      </p>
+      <p>
+        Sin anotar esos gastos, el pago del trimestre sería unos 286 € más alto. Por eso, en la llamada antes de cada
+        trimestre, revisamos los gastos contigo. Puedes probar tus números en nuestra{" "}
+        <Link href="/calculadora-autonomos/">calculadora de IVA e IRPF trimestral</Link>.
       </p>
 
       <h2>Errores que vemos a menudo</h2>

@@ -11,6 +11,7 @@ const rutas = [
   "/criptomonedas/",
   "/calculadora-autonomos/",
   "/calculadora-autonomo-o-sociedad/",
+  "/calculadora-cuota-autonomos/",
   "/gestoria-alicante/",
   "/gestoria-vega-baja/",
   "/gestoria-murcia/",
