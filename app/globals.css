@@ -3073,3 +3073,6 @@ td.comparar-nos {
 .fifo-fila input:focus,
 .fifo-fila select:focus,
 .fifo-anio select:focus { outline: 2px solid var(--verde); outline-offset: 0; border-color: var(--verde); }
+.tabla-guia thead th:last-child,
+.tabla-guia td:last-child { min-width: 7.5rem; }
+.tabla-guia tbody th[scope="row"] { white-space: normal; min-width: 10.5rem; }

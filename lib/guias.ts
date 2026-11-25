@@ -105,4 +105,11 @@ export const guias: Guia[] = [
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "facturar-clientes-extranjeros",
+    titulo: "Cómo facturar a clientes extranjeros siendo autónomo",
+    resumen: "Cuándo la factura lleva IVA y cuándo no, el ROI, el modelo 349 y por qué puede tocarte el 130.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];
