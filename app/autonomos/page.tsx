@@ -33,7 +33,7 @@ const trato = [
 const perfiles = [
   {
     t: "Si acabas de empezar",
-    d: "Te damos de alta, pedimos la tarifa plana si te corresponde y te explicamos qué facturar y qué guardar desde el primer día.",
+    d: "Te damos de alta, pedimos la tarifa plana si te corresponde y te explicamos qué facturar y qué guardar desde el primer día. Si cobras el paro, te ayudamos a capitalizarlo antes del alta.",
   },
   {
     t: "Si trabajas para empresas",
@@ -296,6 +296,7 @@ export default function Autonomos() {
             </ol>
             <p style={{ marginTop: "2rem" }}>
               ¿Ya tienes gestoría? Te explicamos <Link href="/cambiar-de-gestoria/">cómo cambiarte sin dejar nada a medias</Link>.
+              ¿Cobras el paro? <Link href="/capitalizar-paro/">Puedes capitalizarlo para empezar</Link>.
             </p>
           </div>
         </section>

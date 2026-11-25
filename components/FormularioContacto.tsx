@@ -1,6 +1,6 @@
 import { site } from "@/lib/site";
 
-type Tema = "autonomo" | "sociedad" | "cripto" | "otro";
+type Tema = "autonomo" | "sociedad" | "cripto" | "paro" | "licitacion" | "otro";
 
 // Envío con JavaScript mínimo: sin React en el navegador.
 const script = `(function(){
@@ -52,6 +52,8 @@ export function FormularioContacto({ temaInicial = "autonomo" }: { temaInicial?:
             <option value="autonomo">Gestoría de autónomo</option>
             <option value="sociedad">Gestoría de sociedad</option>
             <option value="cripto">Declarar criptomonedas</option>
+            <option value="paro">Capitalizar el paro</option>
+            <option value="licitacion">Presentarme a una licitación</option>
             <option value="otro">Otra consulta</option>
           </select>
         </div>

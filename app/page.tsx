@@ -109,7 +109,9 @@ export default function Inicio() {
             </ul>
             <p className="carta-nota">
               Nóminas a {prices.nominaMes} € al mes por trabajador. Requerimientos e inspecciones, con presupuesto
-              cerrado antes de empezar. <Link href="/precios/">Todos los precios</Link>
+              cerrado antes de empezar. También te ayudamos a <Link href="/capitalizar-paro/">capitalizar el paro</Link> y
+              con la parte económica de las <Link href="/licitaciones-publicas/">licitaciones públicas</Link>.{" "}
+              <Link href="/precios/">Todos los precios</Link>
             </p>
           </div>
         </section>

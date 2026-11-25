@@ -2919,3 +2919,25 @@ td.comparar-nos {
   .anio { grid-template-columns: var(--columnas, repeat(12, minmax(0, 1fr))); }
   .anio > li:not(.con-hito) .mes { color: var(--grafito); }
 }
+
+@media (min-width: 1100px) {
+  .pasos-cinco { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5rem; }
+}
+
+.definiciones { margin: 1.5rem 0 0; }
+.definiciones > div {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--linea);
+}
+.definiciones > div:last-child { border-bottom: 1px solid var(--linea); }
+.definiciones dt { font-family: var(--sans); font-weight: 700; }
+.definiciones dd { margin: 0; }
+@media (max-width: 640px) {
+  .definiciones > div { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; }
+}
+
+.documento-alerta { border-top: 4px solid var(--subrayador); }
+.documento-alerta > p:not(.nota-ejemplo) { margin-top: 1rem; font-size: 1.1rem; line-height: 1.5; }

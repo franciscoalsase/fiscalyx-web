@@ -58,6 +58,12 @@ export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
               <Link href="/cambiar-de-gestoria/">Cambiar de gestoría</Link>
             </li>
             <li>
+              <Link href="/capitalizar-paro/">Capitalizar el paro</Link>
+            </li>
+            <li>
+              <Link href="/licitaciones-publicas/">Licitaciones públicas</Link>
+            </li>
+            <li>
               <Link href="/gestoria-alicante/">Gestoría en Alicante</Link>
             </li>
             <li>
