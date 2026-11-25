@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
@@ -181,7 +182,10 @@ export default function Criptomonedas() {
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="estimador-titulo">¿Cuánto podrías pagar?</h2>
-              <p>Una primera cifra orientativa con los tipos actuales. No guardamos ningún dato de los que escribas.</p>
+              <p>
+                Una primera cifra orientativa con los tipos actuales. Si quieres calcularlo venta por venta, usa la{" "}
+                <Link href="/calculadora-criptomonedas/">calculadora con FIFO</Link>.
+              </p>
             </div>
             <Estimador />
           </div>

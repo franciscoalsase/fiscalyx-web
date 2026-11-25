@@ -90,7 +90,8 @@ export default function DeclararCriptoRenta() {
       <p>
         Compras 1 ETH en marzo por 2.000 € y otro en septiembre por 3.000 €. En diciembre vendes 1 ETH por 3.500 €. Con
         FIFO, el que vendes es el de marzo: tu ganancia es de 1.500 €, no de 500 €. El ETH de septiembre sigue en tu poder
-        con su coste de 3.000 €.
+        con su coste de 3.000 €. Puedes probar con tus operaciones en nuestra{" "}
+        <Link href="/calculadora-criptomonedas/">calculadora de criptomonedas con FIFO</Link>.
       </p>
       <p>
         Cuando se mezclan varios exchanges, transferencias entre monederos y cientos de operaciones, el cálculo a mano es

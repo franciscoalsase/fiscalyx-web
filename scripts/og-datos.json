@@ -5,26 +5,46 @@
   "autonomos": {
     "kicker": "Gestoría para autónomos",
     "sub": "Trimestrales, resúmenes anuales y tu Renta, con un economista que conoce tu actividad.",
-    "dato": { "pre": "Cuota fija", "cifra": "49 €", "pie": "al mes + IVA, con la Renta incluida" }
+    "dato": {
+      "pre": "Cuota fija",
+      "cifra": "49 €",
+      "pie": "al mes + IVA, con la Renta incluida"
+    }
   },
   "sociedades": {
     "kicker": "Gestoría para sociedades",
     "sub": "Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales, dentro de la cuota.",
-    "dato": { "pre": "Desde", "cifra": "129 €", "pie": "al mes + IVA, con el cierre del año incluido" }
+    "dato": {
+      "pre": "Desde",
+      "cifra": "129 €",
+      "pie": "al mes + IVA, con el cierre del año incluido"
+    }
   },
   "criptomonedas": {
     "kicker": "Renta con criptomonedas",
     "sub": "Cálculo con FIFO, presentación y un informe que lo justifica, con precio cerrado antes de empezar.",
-    "dato": { "pre": "Desde", "cifra": "249 €", "pie": "por ejercicio, con informe incluido" }
+    "dato": {
+      "pre": "Desde",
+      "cifra": "249 €",
+      "pie": "por ejercicio, con informe incluido"
+    }
   },
   "precios": {
     "sub": "Autónomos, sociedades y criptomonedas, con lo que entra y lo que va aparte por escrito.",
-    "dato": { "pre": "Autónomos", "cifra": "49 €", "pie": "al mes + IVA, sin permanencia" }
+    "dato": {
+      "pre": "Autónomos",
+      "cifra": "49 €",
+      "pie": "al mes + IVA, sin permanencia"
+    }
   },
   "empezar": {
     "sub": "Tres pasos y dos minutos. Te llamamos en 24 horas laborables con tu presupuesto cerrado."
   },
   "guias-calendario-fiscal-autonomos-2027": {
     "sub": "Todos los plazos de autónomos y sociedades, y un calendario para el móvil con aviso cinco días antes."
+  },
+  "calculadora-criptomonedas": {
+    "kicker": "Calculadora gratuita",
+    "sub": "Apunta tus compras y ventas y calcula la ganancia de cada venta como lo hace Hacienda."
   }
 }

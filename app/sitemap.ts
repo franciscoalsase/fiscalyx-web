@@ -10,6 +10,7 @@ const rutas = [
   "/autonomos/",
   "/sociedades/",
   "/capitalizar-paro/",
+  "/calculadora-criptomonedas/",
   "/licitaciones-publicas/",
   "/criptomonedas/",
   "/calculadora-autonomos/",

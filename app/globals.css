@@ -2999,3 +2999,77 @@ td.comparar-nos {
 @media (min-width: 761px) {
   .calculadora-guia { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
+
+/* ---------- Calculadora FIFO ---------- */
+.fifo-cabecera,
+.fifo-fila {
+  display: grid;
+  grid-template-columns: 10rem 8rem 6rem minmax(0, 1fr) minmax(0, 1.3fr) 2.5rem;
+  gap: 0.75rem;
+  align-items: center;
+}
+.fifo-cabecera { font-family: var(--sans); font-size: 0.88rem; color: var(--grafito); padding-bottom: 0.5rem; }
+.fifo-lista { display: grid; gap: 0.5rem; }
+.fifo-fila label { display: block; min-width: 0; }
+.fifo-fila input,
+.fifo-fila select { width: 100%; min-width: 0; }
+.fifo-etiqueta { display: none; }
+.fifo-quitar {
+  width: 2.5rem; height: 2.5rem;
+  border: 1px solid var(--linea); border-radius: var(--radio);
+  background: #fff; color: var(--grafito); font-size: 1.3rem; line-height: 1; cursor: pointer;
+}
+.fifo-quitar:hover { color: var(--tinta); border-color: var(--tinta); }
+.fifo-acciones { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; margin-top: 1.25rem; }
+.fifo-acciones .enlace-sencillo { background: none; border: 0; cursor: pointer; font: inherit; padding: 0; }
+
+.fifo-resultado-cabeza { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.fifo-anio { font-family: var(--sans); font-weight: 600; }
+.fifo-anio select { margin-left: 0.5rem; width: auto; }
+.fifo-resumen {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.75rem 0 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 2px solid var(--tinta);
+  border-bottom: 1px solid var(--linea);
+}
+.fifo-cifra { font-family: var(--sans); font-weight: 750; font-size: clamp(1.5rem, 2.6vw, 2.1rem); letter-spacing: -0.02em; margin-top: 0.25rem; }
+.fifo-cifra mark {
+  color: inherit;
+  background: linear-gradient(transparent 6%, var(--subrayador) 6%, var(--subrayador) 96%, transparent 96%);
+  padding: 0 0.2em; border-radius: 2px;
+}
+.fifo-aviso { padding: 0.75rem 0.9rem; border-left: 3px solid var(--subrayador); background: #fffbe6; margin-bottom: 1.25rem; }
+.fifo-ventas td { font-variant-numeric: tabular-nums; }
+.fifo-ventas .positivo { color: var(--verde); font-weight: 600; }
+.fifo-ventas .negativo { color: #a3361f; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .fifo-cabecera { display: none; }
+  .fifo-fila {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    background: #fff; border: 1px solid var(--linea); border-radius: var(--radio);
+    padding: 0.9rem; position: relative;
+  }
+  .fifo-etiqueta { display: block; font-family: var(--sans); font-size: 0.82rem; color: var(--grafito); margin-bottom: 0.25rem; }
+  .fifo-fila label:nth-child(5) { grid-column: 1 / -1; }
+  .fifo-quitar { position: absolute; top: 0.4rem; right: 0.4rem; width: 2rem; height: 2rem; border: 0; background: none; }
+  .fifo-resumen { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+.fifo-fila input,
+.fifo-fila select,
+.fifo-anio select {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  color: var(--tinta);
+  background: #fff;
+  border: 1px solid #c9c6bb;
+  border-radius: var(--radio);
+  padding: 0.6rem 0.7rem;
+}
+.fifo-fila input:focus,
+.fifo-fila select:focus,
+.fifo-anio select:focus { outline: 2px solid var(--verde); outline-offset: 0; border-color: var(--verde); }

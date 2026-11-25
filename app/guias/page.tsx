@@ -82,6 +82,12 @@ export default function Guias() {
               </li>
               <li>
                 <h3>
+                  <Link href="/calculadora-criptomonedas/">Impuestos de tus criptomonedas con FIFO</Link>
+                </h3>
+                <p>Apunta compras y ventas y calcula la ganancia de cada venta y lo que pagarías.</p>
+              </li>
+              <li>
+                <h3>
                   <Link href="/criptomonedas/#presupuesto">Presupuesto de la Renta con criptomonedas</Link>
                 </h3>
                 <p>Tu precio en tres preguntas: operaciones, tipo de inversiones y años pendientes.</p>
