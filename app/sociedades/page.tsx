@@ -258,7 +258,7 @@ export default function Sociedades() {
                 </details>
               ))}
             </div>
-            <GuiasRelacionadas slugs={["autonomo-o-sociedad", "factura-electronica-verifactu", "cuota-autonomos-2027"]} />
+            <GuiasRelacionadas slugs={["autonomo-o-sociedad", "factura-electronica-verifactu", "facturar-clientes-extranjeros", "cuanto-cuesta-una-gestoria"]} />
             <p style={{ marginTop: "2rem" }}>
               ¿Aún no tienes la sociedad? <Link href="/constituir-sociedad/">Te ayudamos a constituirla</Link>. ¿No sabes si te compensa? <Link href="/calculadora-autonomo-o-sociedad/">Compáralo en un minuto</Link>. ¿Eres
               autónomo? <Link href="/autonomos/">Mira nuestro plan para autónomos</Link>.

@@ -125,6 +125,7 @@ export function Articulo({
               <div className="acciones">
                 <Link className="boton boton-principal" href={cta.href}>
                   {cta.boton}
+                  {cta.boton === "Empezar" && <span className="visualmente-oculto"> con Fiscalyx</span>}
                 </Link>
                 <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
                   Escríbenos por WhatsApp
