@@ -37,8 +37,8 @@ export const guias: Guia[] = [
   },
   {
     slug: "calendario-fiscal-autonomos-2027",
-    titulo: "Calendario fiscal del autónomo en 2027",
-    resumen: "Todos los plazos del año para un autónomo en estimación directa, mes a mes, y qué pasa cuando el último día cae en fin de semana.",
+    titulo: "Calendario fiscal de 2027 para autónomos y sociedades",
+    resumen: "Todos los plazos del año, mes a mes, y un calendario para descargar en el móvil con aviso cinco días antes de cada uno.",
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },

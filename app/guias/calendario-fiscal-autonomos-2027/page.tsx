@@ -1,37 +1,29 @@
 import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
+import plazos from "@/lib/plazos-2027.json";
 
 export const metadata: Metadata = {
-  title: "Calendario fiscal del autónomo en 2027: todos los plazos",
+  title: "Calendario fiscal 2027 para autónomos y sociedades (descargable)",
   description:
-    "Plazos de 2027 para autónomos en estimación directa: modelos 303, 130, 111, 115, 390, 190, 180 y la Renta, mes a mes.",
+    "Todos los plazos de 2027 de autónomos y sociedades: 303, 130, 111, 115, 390, 347, 721, 200 y 202. Descárgalo en tu calendario con aviso 5 días antes.",
   alternates: { canonical: "/guias/calendario-fiscal-autonomos-2027/" },
 };
 
-const plazos = [
-  { cuando: "1 al 20 de enero", que: "Modelos 111 y 115 del cuarto trimestre de 2026, si tienes trabajadores, pagas a profesionales o alquilas un local." },
-  { cuando: "1 de enero al 1 de febrero", que: "Modelos 303 y 130 del cuarto trimestre de 2026 y modelo 390, el resumen anual del IVA. El día 30 cae en sábado y el plazo pasa al lunes." },
-  { cuando: "1 de enero al 1 de febrero", que: "Modelos 190 y 180, resúmenes anuales de retenciones, si presentas 111 o 115. El día 31 cae en domingo." },
-  { cuando: "Hasta el 1 de marzo", que: "Modelo 347, si tus operaciones con un mismo cliente o proveedor superaron 3.005,06 € en 2026." },
-  { cuando: "1 de enero al 31 de marzo", que: "Modelos 720 y 721, solo si tienes bienes o criptomonedas en el extranjero por encima de los umbrales." },
-  { cuando: "1 al 20 de abril", que: "Modelos 303 y 130 (y 111 o 115) del primer trimestre de 2027." },
-  { cuando: "Abril a finales de junio", que: "Declaración de la Renta de 2026. La Agencia Tributaria fija las fechas exactas cada primavera." },
-  { cuando: "1 al 20 de julio", que: "Modelos 303 y 130 (y 111 o 115) del segundo trimestre." },
-  { cuando: "1 al 20 de octubre", que: "Modelos 303 y 130 (y 111 o 115) del tercer trimestre." },
-];
+const autonomo = plazos.filter((p) => p.para.includes("autonomo"));
+const sociedad = plazos.filter((p) => p.para.includes("sociedad") && !p.para.includes("autonomo"));
 
 export default function Calendario2027() {
   return (
     <Articulo
-      titulo="Calendario fiscal del autónomo en 2027"
-      entradilla="Un autónomo en estimación directa presenta impuestos cuatro veces al año y hace la Renta en primavera. Estos son los plazos de 2027, mes a mes."
+      titulo="Calendario fiscal de 2027"
+      entradilla="Todos los plazos de 2027 para autónomos y sociedades limitadas, mes a mes, y un calendario para descargar en el móvil con aviso cinco días antes de cada uno."
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
         titulo: "Que los plazos sean cosa nuestra.",
         texto: "Te avisamos antes de cada uno, te llamamos para revisar las cifras y presentamos los modelos. Por una cuota fija y sin permanencia.",
-        href: "/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Agencia Tributaria: calendario del contribuyente", url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente.html" },
@@ -50,7 +42,25 @@ export default function Calendario2027() {
         presentarse hasta el lunes 1 de febrero.
       </p>
 
-      <h2>Todos los plazos de 2027</h2>
+      <h2>Llévalo en tu calendario</h2>
+      <p>
+        Descarga el calendario y ábrelo: se añade a Google Calendar, Outlook o el calendario del iPhone con cada plazo
+        en su último día y un aviso cinco días antes. Si cambia alguna fecha, lo actualizamos aquí.
+      </p>
+      <div className="descargas-calendario">
+        <a className="boton boton-principal" href="/calendario-fiscal-2027-autonomos.ics" download>
+          Calendario de autónomo
+        </a>
+        <a className="boton boton-secundario" href="/calendario-fiscal-2027-sociedades.ics" download>
+          Calendario de sociedad
+        </a>
+      </div>
+      <p className="nota-tabla">
+        En Google Calendar, desde el ordenador: Configuración, Importar y exportar, y eliges el archivo. En el iPhone y
+        en Outlook basta con abrirlo.
+      </p>
+
+      <h2>Todos los plazos de 2027 para autónomos</h2>
       <div className="tabla-scroll">
         <table className="tabla tabla-guia">
           <thead>
@@ -60,10 +70,12 @@ export default function Calendario2027() {
             </tr>
           </thead>
           <tbody>
-            {plazos.map((p, i) => (
+            {autonomo.map((p, i) => (
               <tr key={i}>
                 <th scope="row">{p.cuando}</th>
-                <td>{p.que}</td>
+                <td>
+                  <strong>{p.titulo}.</strong> {p.texto}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -72,6 +84,36 @@ export default function Calendario2027() {
       <p className="nota-tabla">
         Fechas calculadas con las reglas generales. La Agencia Tributaria publica el calendario oficial de 2027 a
         finales de año: si cambia algo, actualizamos esta tabla.
+      </p>
+
+      <h2>Si tienes una sociedad limitada</h2>
+      <p>
+        La sociedad presenta el IVA y las retenciones en los mismos plazos que un autónomo, pero no el modelo 130. A
+        cambio, tiene sus propias fechas:
+      </p>
+      <div className="tabla-scroll">
+        <table className="tabla tabla-guia">
+          <thead>
+            <tr>
+              <th scope="col">Plazo</th>
+              <th scope="col">Qué se presenta</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sociedad.map((p, i) => (
+              <tr key={i}>
+                <th scope="row">{p.cuando}</th>
+                <td>
+                  <strong>{p.titulo}.</strong> {p.texto}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Para una pyme, el modelo 202 solo se presenta cuando sale cantidad a pagar, y eso ocurre si el último Impuesto
+        sobre Sociedades salió a pagar. Una sociedad recién creada no lo paga en su primer año.
       </p>
 
       <h2>Si pagas por domiciliación</h2>

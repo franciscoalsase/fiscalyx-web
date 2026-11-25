@@ -1,0 +1,239 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fiscalyx//Plazos fiscales 2027//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Plazos fiscales 2027 de sociedad (Fiscalyx)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:20270120-sociedad-0@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Último día: Modelos 111 y 115 del 4.º trimestre de 2026
+DESCRIPTION:Retenciones de trabajadores y profesionales (111) y del alquile
+ r de un local (115) del cuarto trimestre de 2026. Solo si las practicas.\n
+ \nPlazo: 1 al 20 de enero.\nMás información: https://www.fiscalyx.com/gu
+ ias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 111 y 115 del 4.º trimestre de 2026
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270201-sociedad-1@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Último día: Modelo 303 del 4.º trimestre y 390
+DESCRIPTION:IVA del cuarto trimestre de 2026 (303) y resumen anual del IVA 
+ (390). El 30 de enero cae en sábado y el plazo pasa al lunes.\n\nPlazo: 1
+  de enero al 1 de febrero.\nMás información: https://www.fiscalyx.com/gu
+ ias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelo 303 del 4.º trimestre y 390
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270201-sociedad-2@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Último día: Modelos 190 y 180
+DESCRIPTION:Resúmenes anuales de retenciones de 2026\, si presentaste 111 
+ o 115 durante el año. El 31 de enero cae en domingo.\n\nPlazo: 1 de enero
+  al 1 de febrero.\nMás información: https://www.fiscalyx.com/guias/calen
+ dario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 190 y 180
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270301-sociedad-3@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Último día: Modelo 347
+DESCRIPTION:Operaciones con terceros de 2026: solo si con un mismo cliente 
+ o proveedor superaste 3.005\,06 € en el año. El 28 de febrero cae en do
+ mingo.\n\nPlazo: Hasta el 1 de marzo.\nMás información: https://www.fisc
+ alyx.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelo 347
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270331-sociedad-4@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Último día: Modelos 720 y 721
+DESCRIPTION:Bienes en el extranjero (720) y criptomonedas en exchanges extr
+ anjeros (721) a 31 de diciembre de 2026\, solo si superas los umbrales.\n\
+ nPlazo: 1 de enero al 31 de marzo.\nMás información: https://www.fiscaly
+ x.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 720 y 721
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270420-sociedad-5@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:Último día: Trimestre 1: modelo 303 y primer pago del 202
+DESCRIPTION:IVA del primer trimestre de 2027 (303)\, 111 y 115 si los prese
+ ntas\, y primer pago fraccionado del Impuesto sobre Sociedades (202) si te
+  toca.\n\nPlazo: 1 al 20 de abril.\nMás información: https://www.fiscaly
+ x.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Trimestre 1: modelo 303 y primer pago del 202
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270720-sociedad-6@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:Último día: Trimestre 2: modelo 303
+DESCRIPTION:IVA del segundo trimestre (303)\, más 111 y 115 si los present
+ as.\n\nPlazo: 1 al 20 de julio.\nMás información: https://www.fiscalyx.c
+ om/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Trimestre 2: modelo 303
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270726-sociedad-7@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270726
+DTEND;VALUE=DATE:20270727
+SUMMARY:Último día: Impuesto sobre Sociedades de 2026 (modelo 200)
+DESCRIPTION:Para sociedades con ejercicio de enero a diciembre. El plazo or
+ dinario acaba el 25 de julio\, que en 2027 cae en domingo.\n\nPlazo: 1 al 
+ 26 de julio.\nMás información: https://www.fiscalyx.com/guias/calendario
+ -fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Impuesto sobre Sociedades de 2026 (modelo 200)
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270730-sociedad-8@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270730
+DTEND;VALUE=DATE:20270731
+SUMMARY:Último día: Depósito de las cuentas anuales de 2026
+DESCRIPTION:Un mes desde que la junta aprueba las cuentas. Si se aprobaron 
+ el último día posible\, el 30 de junio\, el depósito en el Registro Mer
+ cantil vence el 30 de julio.\n\nPlazo: Hasta el 30 de julio.\nMás informa
+ ción: https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Depósito de las cuentas anuales de 2026
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271020-sociedad-9@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:Último día: Trimestre 3: modelo 303 y segundo pago del 202
+DESCRIPTION:IVA del tercer trimestre (303)\, 111 y 115 si los presentas\, y
+  segundo pago fraccionado del Impuesto sobre Sociedades (202) si te toca.\
+ n\nPlazo: 1 al 20 de octubre.\nMás información: https://www.fiscalyx.com
+ /guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Trimestre 3: modelo 303 y segundo pago del 202
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271220-sociedad-10@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20271220
+DTEND;VALUE=DATE:20271221
+SUMMARY:Último día: Tercer pago del modelo 202
+DESCRIPTION:Tercer pago fraccionado del Impuesto sobre Sociedades\, si te t
+ oca.\n\nPlazo: 1 al 20 de diciembre.\nMás información: https://www.fisca
+ lyx.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Tercer pago del modelo 202
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280120-sociedad-11@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20280120
+DTEND;VALUE=DATE:20280121
+SUMMARY:Último día: Modelos 111 y 115 del 4.º trimestre de 2027
+DESCRIPTION:Retenciones del cuarto trimestre de 2027\, si las practicas.\n\
+ nPlazo: 1 al 20 de enero de 2028.\nMás información: https://www.fiscalyx
+ .com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 111 y 115 del 4.º trimestre de 2027
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280131-sociedad-12@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20280131
+DTEND;VALUE=DATE:20280201
+SUMMARY:Último día: Cierre de 2027: 303\, 390\, 190 y 180
+DESCRIPTION:IVA del cuarto trimestre de 2027 y resúmenes anuales. El 30 de
+  enero de 2028 cae en domingo y el plazo pasa al lunes 31.\n\nPlazo: 1 al 
+ 31 de enero de 2028.\nMás información: https://www.fiscalyx.com/guias/ca
+ lendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Cierre de 2027: 303\, 390\, 190 y 180
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

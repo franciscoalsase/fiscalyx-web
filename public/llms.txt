@@ -29,7 +29,7 @@
 - [¿Autónomo o sociedad limitada?](https://www.fiscalyx.com/guias/autonomo-o-sociedad/)
 - [Permutas de criptomonedas y método FIFO](https://www.fiscalyx.com/guias/permutas-criptomonedas-fifo/)
 - [Pérdidas con criptomonedas: cómo compensarlas](https://www.fiscalyx.com/guias/compensar-perdidas-criptomonedas/)
-- [Calendario fiscal del autónomo en 2027](https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/)
+- [Calendario fiscal de 2027 para autónomos y sociedades](https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/), con descarga .ics
 - [DAC8: qué sabrá Hacienda de tus criptomonedas y desde cuándo](https://www.fiscalyx.com/guias/dac8-criptomonedas/)
 - [Cómo declarar criptomonedas en la Renta](https://www.fiscalyx.com/guias/declarar-criptomonedas-renta/)
 - [Modelo 721: quién tiene que presentarlo y cuándo](https://www.fiscalyx.com/guias/modelo-721/)

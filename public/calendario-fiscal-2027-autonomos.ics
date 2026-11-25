@@ -1,0 +1,224 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fiscalyx//Plazos fiscales 2027//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Plazos fiscales 2027 de autónomo (Fiscalyx)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:20270120-autonomo-0@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Último día: Modelos 111 y 115 del 4.º trimestre de 2026
+DESCRIPTION:Retenciones de trabajadores y profesionales (111) y del alquile
+ r de un local (115) del cuarto trimestre de 2026. Solo si las practicas.\n
+ \nPlazo: 1 al 20 de enero.\nMás información: https://www.fiscalyx.com/gu
+ ias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 111 y 115 del 4.º trimestre de 2026
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270201-autonomo-1@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Último día: Modelos 303 y 130 del 4.º trimestre y 390
+DESCRIPTION:IVA (303) y pago fraccionado del IRPF (130) del cuarto trimestr
+ e de 2026\, y resumen anual del IVA (390). El 30 de enero cae en sábado y
+  el plazo pasa al lunes.\n\nPlazo: 1 de enero al 1 de febrero.\nMás infor
+ mación: https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 303 y 130 del 4.º trimestre y 390
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270201-autonomo-2@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Último día: Modelos 190 y 180
+DESCRIPTION:Resúmenes anuales de retenciones de 2026\, si presentaste 111 
+ o 115 durante el año. El 31 de enero cae en domingo.\n\nPlazo: 1 de enero
+  al 1 de febrero.\nMás información: https://www.fiscalyx.com/guias/calen
+ dario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 190 y 180
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270301-autonomo-3@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Último día: Modelo 347
+DESCRIPTION:Operaciones con terceros de 2026: solo si con un mismo cliente 
+ o proveedor superaste 3.005\,06 € en el año. El 28 de febrero cae en do
+ mingo.\n\nPlazo: Hasta el 1 de marzo.\nMás información: https://www.fisc
+ alyx.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelo 347
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270331-autonomo-4@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Último día: Modelos 720 y 721
+DESCRIPTION:Bienes en el extranjero (720) y criptomonedas en exchanges extr
+ anjeros (721) a 31 de diciembre de 2026\, solo si superas los umbrales.\n\
+ nPlazo: 1 de enero al 31 de marzo.\nMás información: https://www.fiscaly
+ x.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 720 y 721
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270420-autonomo-5@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:Último día: Trimestre 1: modelos 303 y 130
+DESCRIPTION:IVA (303) y pago fraccionado del IRPF (130) del primer trimestr
+ e de 2027\, más 111 y 115 si los presentas.\n\nPlazo: 1 al 20 de abril.\n
+ Más información: https://www.fiscalyx.com/guias/calendario-fiscal-autono
+ mos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Trimestre 1: modelos 303 y 130
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270630-autonomo-6@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270630
+DTEND;VALUE=DATE:20270701
+SUMMARY:Último día: Renta de 2026: fin de plazo (previsto)
+DESCRIPTION:Fecha prevista según los años anteriores. La Agencia Tributar
+ ia publica las fechas exactas de la campaña en primavera\; si cambian\, a
+ ctualizamos este calendario. Con domiciliación\, el plazo acaba unos día
+ s antes.\n\nPlazo: Abril a finales de junio.\nMás información: https://w
+ ww.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Renta de 2026: fin de plazo (previsto)
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270720-autonomo-7@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:Último día: Trimestre 2: modelos 303 y 130
+DESCRIPTION:IVA (303) y pago fraccionado del IRPF (130) del segundo trimest
+ re\, más 111 y 115 si los presentas.\n\nPlazo: 1 al 20 de julio.\nMás in
+ formación: https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-202
+ 7/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Trimestre 2: modelos 303 y 130
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271020-autonomo-8@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:Último día: Trimestre 3: modelos 303 y 130
+DESCRIPTION:IVA (303) y pago fraccionado del IRPF (130) del tercer trimestr
+ e\, más 111 y 115 si los presentas.\n\nPlazo: 1 al 20 de octubre.\nMás i
+ nformación: https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-20
+ 27/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Trimestre 3: modelos 303 y 130
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271105-autonomo-9@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:Último día: Segundo pago de la Renta\, si la fraccionaste
+DESCRIPTION:Si al presentar la Renta elegiste pagar en dos plazos (60 % y 4
+ 0 %)\, el 40 % restante se carga el 5 de noviembre.\n\nPlazo: Hasta el 5 d
+ e noviembre.\nMás información: https://www.fiscalyx.com/guias/calendario
+ -fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Segundo pago de la Renta\, si la fraccionaste
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280120-autonomo-10@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20280120
+DTEND;VALUE=DATE:20280121
+SUMMARY:Último día: Modelos 111 y 115 del 4.º trimestre de 2027
+DESCRIPTION:Retenciones del cuarto trimestre de 2027\, si las practicas.\n\
+ nPlazo: 1 al 20 de enero de 2028.\nMás información: https://www.fiscalyx
+ .com/guias/calendario-fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Modelos 111 y 115 del 4.º trimestre de 2027
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280131-autonomo-11@fiscalyx.com
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20280131
+DTEND;VALUE=DATE:20280201
+SUMMARY:Último día: Cierre de 2027: 303\, 130\, 390\, 190 y 180
+DESCRIPTION:Cuarto trimestre de 2027 y resúmenes anuales. El 30 de enero d
+ e 2028 cae en domingo y el plazo pasa al lunes 31.\n\nPlazo: 1 al 31 de en
+ ero de 2028.\nMás información: https://www.fiscalyx.com/guias/calendario
+ -fiscal-autonomos-2027/
+URL:https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quedan 5 días: Cierre de 2027: 303\, 130\, 390\, 190 y 180
+TRIGGER:-P5D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

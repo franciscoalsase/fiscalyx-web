@@ -60,7 +60,7 @@ export default function Guias() {
 
         <section className="seccion seccion-banda" aria-labelledby="herramientas">
           <div className="contenedor">
-            <h2 id="herramientas" className="grupo-guias">Calculadoras</h2>
+            <h2 id="herramientas" className="grupo-guias">Calculadoras y herramientas</h2>
             <ul className="lista-guias">
               <li>
                 <h3>
@@ -85,6 +85,12 @@ export default function Guias() {
                   <Link href="/criptomonedas/#presupuesto">Presupuesto de la Renta con criptomonedas</Link>
                 </h3>
                 <p>Tu precio en tres preguntas: operaciones, tipo de inversiones y años pendientes.</p>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/guias/calendario-fiscal-autonomos-2027/">Calendario fiscal de 2027 para tu móvil</Link>
+                </h3>
+                <p>Todos los plazos del año en Google Calendar, Outlook o el iPhone, con aviso cinco días antes.</p>
               </li>
             </ul>
           </div>
