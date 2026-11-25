@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 
 const enlaces = [
-  { href: "/", label: "Autónomos" },
+  { href: "/autonomos/", label: "Autónomos" },
   { href: "/sociedades/", label: "Sociedades" },
   { href: "/criptomonedas/", label: "Criptomonedas" },
   { href: "/guias/", label: "Guías" },

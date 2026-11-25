@@ -40,7 +40,7 @@ export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
           <h2>Servicios</h2>
           <ul>
             <li>
-              <Link href="/">Gestoría para autónomos</Link>
+              <Link href="/autonomos/">Gestoría para autónomos</Link>
             </li>
             <li>
               <Link href="/sociedades/">Gestoría para sociedades</Link>

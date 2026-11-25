@@ -144,8 +144,8 @@ export function PaginaLocal({
                 <p className="carta-precio">
                   {prices.autonomoMes} €<small>al mes + IVA</small>
                 </p>
-                <Link className="carta-enlace" href="/precios/">
-                  Qué incluye
+                <Link className="carta-enlace" href="/autonomos/">
+                  Ver el servicio
                 </Link>
               </li>
               <li>

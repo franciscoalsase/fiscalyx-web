@@ -144,7 +144,7 @@ export default function Inicio() {
                 <p className="carta-precio">
                   {prices.autonomoMes} €<small>al mes + IVA</small>
                 </p>
-                <a className="carta-enlace" href="#incluye">Qué incluye</a>
+                <Link className="carta-enlace" href="/autonomos/">Ver el servicio</Link>
               </li>
               <li>
                 <div>

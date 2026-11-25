@@ -7,6 +7,7 @@ import { guias } from "@/lib/guias";
 
 const rutas = [
   "/",
+  "/autonomos/",
   "/sociedades/",
   "/criptomonedas/",
   "/calculadora-autonomos/",

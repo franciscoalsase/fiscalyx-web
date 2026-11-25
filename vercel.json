@@ -157,16 +157,6 @@
       "permanent": true
     },
     {
-      "source": "/autonomos",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/autonomos/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/autonomos-2025",
       "destination": "/guias/calendario-fiscal-autonomos-2027/",
       "permanent": true
