@@ -148,7 +148,7 @@ export default function Autonomos() {
               </p>
               <div className="acciones">
                 <Link className="boton boton-principal" href="/empezar/?plan=autonomo">
-                  Empezar
+                  Empezar<span className="visualmente-oculto"> como autónomo</span>
                 </Link>
                 <a
                   className="enlace-sencillo"

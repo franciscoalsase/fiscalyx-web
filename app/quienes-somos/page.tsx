@@ -91,7 +91,47 @@ export default function QuienesSomos() {
           </div>
         </section>
 
-        <section className="seccion seccion-banda" aria-labelledby="principios-titulo">
+        <section className="seccion seccion-banda" aria-labelledby="comprobar-titulo">
+          <div className="contenedor texto-estrecho">
+            <h2 id="comprobar-titulo">Lo que puedes comprobar tú</h2>
+            <p style={{ marginTop: "1rem" }}>
+              Antes de darle a alguien acceso a tus impuestos, conviene verificar quién es. Esto no tienes que creértelo:
+              puedes comprobarlo.
+            </p>
+            <dl className="definiciones">
+              <div>
+                <dt>La colegiación</dt>
+                <dd>
+                  Todo colegio profesional debe ofrecer en su web un registro público de colegiados. Busca a{" "}
+                  {site.owner} y verás el número {site.colegiado}.
+                </dd>
+              </div>
+              <div>
+                <dt>Lo que presentamos</dt>
+                <dd>
+                  Cada justificante de Hacienda que te mandamos lleva un código seguro de verificación. Puedes
+                  contrastarlo en la sede electrónica de la Agencia Tributaria y ver que se presentó lo que te dijimos.
+                </dd>
+              </div>
+              <div>
+                <dt>Lo que cobramos</dt>
+                <dd>
+                  Los precios están publicados en <Link href="/precios/">nuestra página de precios</Link> y tu cuota
+                  va por escrito antes de empezar. Sin permanencia.
+                </dd>
+              </div>
+              <div>
+                <dt>Lo que sabemos</dt>
+                <dd>
+                  Nuestras <Link href="/guias/">guías</Link> citan la norma y las consultas de Hacienda en las que se
+                  basan. Si algo cambia, las actualizamos y lo decimos.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section className="seccion" aria-labelledby="principios-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="principios-titulo">Cómo entendemos el trabajo</h2>
@@ -105,8 +145,8 @@ export default function QuienesSomos() {
               ))}
             </div>
             <div className="acciones" style={{ marginTop: "3rem" }}>
-              <Link className="boton boton-principal" href="/#contacto">
-                Pedir presupuesto
+              <Link className="boton boton-principal" href="/empezar/">
+                Empezar
               </Link>
             </div>
           </div>

@@ -56,7 +56,7 @@ export default function Inicio() {
               </p>
               <div className="acciones">
                 <Link className="boton boton-principal" href="/empezar/">
-                  Empezar
+                  Empezar<span className="visualmente-oculto"> con Fiscalyx</span>
                 </Link>
                 <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
                   Escríbenos por WhatsApp

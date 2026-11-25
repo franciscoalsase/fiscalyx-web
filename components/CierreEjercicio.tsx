@@ -15,6 +15,13 @@ export function CierreEjercicio() {
       </div>
       <table>
         <caption className="visualmente-oculto">Pasos del cierre anual de una sociedad limitada</caption>
+        <thead className="visualmente-oculto">
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Trámite</th>
+            <th scope="col">En la cuota</th>
+          </tr>
+        </thead>
         <tbody>
           {pasos.map((p) => (
             <tr key={p.fecha}>

@@ -5,6 +5,7 @@ const enlaces = [
   { href: "/autonomos/", label: "Autónomos" },
   { href: "/sociedades/", label: "Sociedades" },
   { href: "/criptomonedas/", label: "Criptomonedas" },
+  { href: "/precios/", label: "Precios" },
   { href: "/guias/", label: "Guías" },
   { href: "/quienes-somos/", label: "Quiénes somos" },
 ];
@@ -24,7 +25,7 @@ export function Cabecera({ actual }: { actual?: string }) {
             </Link>
           ))}
           <Link href="/empezar/" className="boton boton-principal boton-pequeno">
-            Empezar
+            Empezar<span className="visualmente-oculto"> con Fiscalyx</span>
           </Link>
         </nav>
 
@@ -36,7 +37,7 @@ export function Cabecera({ actual }: { actual?: string }) {
                 {e.label}
               </Link>
             ))}
-            <Link href="/empezar/">Empezar</Link>
+            <Link href="/empezar/">Empezar<span className="visualmente-oculto"> con Fiscalyx</span></Link>
           </nav>
         </details>
       </div>

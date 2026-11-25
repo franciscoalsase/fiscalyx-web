@@ -24,6 +24,13 @@ export function ExtractoInforme() {
         <caption className="saltar" style={{ position: "absolute", left: "-9999px" }}>
           Extracto de ejemplo de un informe de operaciones con criptomonedas
         </caption>
+        <thead className="visualmente-oculto">
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Operación</th>
+            <th scope="col">Importe</th>
+          </tr>
+        </thead>
         <tbody>
           {filas.map((f) => (
             <tr key={f.op}>

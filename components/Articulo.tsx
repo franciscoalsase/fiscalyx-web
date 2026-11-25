@@ -1,9 +1,26 @@
 import Link from "next/link";
+import { Children, cloneElement, isValidElement, type ReactElement, type ReactNode } from "react";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { site, whatsappLink } from "@/lib/site";
 
 type Fuente = { nombre: string; url: string };
+
+// Texto plano de un trozo de JSX, para el índice y el tiempo de lectura.
+function texto(n: ReactNode): string {
+  if (typeof n === "string" || typeof n === "number") return String(n);
+  if (Array.isArray(n)) return n.map(texto).join(" ");
+  if (isValidElement(n)) return texto((n.props as { children?: ReactNode }).children);
+  return "";
+}
+
+const slug = (t: string) =>
+  t
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 
 export function Articulo({
   titulo,
@@ -55,6 +72,19 @@ export function Articulo({
     ],
   };
 
+  // Cada h2 del cuerpo recibe un id y entra en el índice.
+  const indice: { id: string; t: string }[] = [];
+  const cuerpo = Children.toArray(children).map((n) => {
+    if (isValidElement(n) && n.type === "h2") {
+      const t = texto(n);
+      const id = slug(t);
+      indice.push({ id, t });
+      return cloneElement(n as ReactElement<{ id?: string }>, { id });
+    }
+    return n;
+  });
+  const minutos = Math.max(2, Math.round(texto(children).split(/\s+/).filter(Boolean).length / 220));
+
   return (
     <>
       <Cabecera actual="/guias/" />
@@ -69,11 +99,25 @@ export function Articulo({
               <p className="entradilla">{entradilla}</p>
               <p className="firma">
                 Revisado por <Link href="/quienes-somos/">{site.owner}</Link>, economista colegiado n.º {site.colegiado}.
-                Actualizado en {fecha}.
+                Actualizado en {fecha}. {minutos} minutos de lectura.
               </p>
             </header>
 
-            <div className="articulo-cuerpo">{children}</div>
+            <div className="articulo-rejilla">
+            {indice.length >= 4 && (
+              <nav className="indice" aria-label="En esta guía">
+                <p className="indice-titulo">En esta guía</p>
+                <ol>
+                  {indice.map((h) => (
+                    <li key={h.id}>
+                      <a href={`#${h.id}`}>{h.t}</a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )}
+            <div className="articulo-principal">
+            <div className="articulo-cuerpo">{cuerpo}</div>
 
             <aside className="articulo-cta" aria-label="Contacto">
               <h2>{cta.titulo}</h2>
@@ -104,6 +148,8 @@ export function Articulo({
                 las guías cada vez que hay novedades.
               </p>
             </section>
+            </div>
+            </div>
           </div>
         </article>
       </main>
