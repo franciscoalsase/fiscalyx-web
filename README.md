@@ -14,3 +14,10 @@ npm install
 npm run dev     # desarrollo
 npm run build   # versión estática en out/
 ```
+
+## Imágenes para compartir y calendario
+
+- `npm run build` genera también los calendarios `.ics` desde `lib/plazos-2027.json`.
+- Las imágenes de `public/og/` se generan en local después de construir: `python3 scripts/og.py`
+  (necesita Playwright). Vuelve a ejecutarlo si cambias un título, una descripción o un precio,
+  y ajusta los textos de las páginas principales en `scripts/og-datos.json`.
