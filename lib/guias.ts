@@ -126,4 +126,11 @@ export const guias: Guia[] = [
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "modelo-130-retenciones",
+    titulo: "Modelo 130 y retenciones: cómo adelanta el IRPF un autónomo",
+    resumen: "Retención del 15 % o del 7 %, cuándo no te toca el 130, cómo se calcula y la deducción de hasta 100 € por trimestre.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];

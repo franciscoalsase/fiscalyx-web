@@ -132,7 +132,8 @@ export default function Calendario2027() {
         </li>
         <li>
           <strong>130 (IRPF)</strong>: autónomos en estimación directa, salvo que más del 70 % de tus ingresos ya
-          lleven retención, como pasa a muchos profesionales.
+          lleven retención, como pasa a muchos profesionales. Más en la{" "}
+          <Link href="/guias/modelo-130-retenciones/">guía del 130 y las retenciones</Link>.
         </li>
         <li>
           <strong>111 y 115</strong>: solo si tienes trabajadores, pagas facturas con retención a otros profesionales

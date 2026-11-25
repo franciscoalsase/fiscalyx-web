@@ -10,6 +10,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guias/" },
 };
 
+// Guías de autónomos y sociedades, por el momento en que se necesitan.
+const grupos = [
+  { id: "guias-empezar", t: "Si estás empezando", slugs: ["darse-de-alta-autonomo", "autonomo-o-sociedad", "cuanto-cuesta-una-gestoria"] },
+  {
+    id: "guias-impuestos",
+    t: "Tus impuestos del trimestre y del año",
+    slugs: ["calendario-fiscal-autonomos-2027", "modelo-303-iva-trimestral", "modelo-130-retenciones", "modelo-347", "facturar-clientes-extranjeros", "factura-electronica-verifactu"],
+  },
+  { id: "guias-cuota", t: "Cuota de autónomos y gastos", slugs: ["cuota-autonomos-2027", "gastos-deducibles-autonomos"] },
+];
+
 export default function Guias() {
   return (
     <>
@@ -27,19 +38,26 @@ export default function Guias() {
         </section>
         <section className="seccion" style={{ paddingTop: 0, borderTop: "none" }} aria-labelledby="guias-autonomos">
           <div className="contenedor">
-            <h2 id="guias-autonomos" className="grupo-guias">Autónomos y sociedades</h2>
-            <ul className="lista-guias">
-              {guias
-                .filter((g) => g.tema !== "Criptomonedas")
-                .map((g) => (
-                  <li key={g.slug}>
-                    <h3>
-                      <Link href={`/guias/${g.slug}/`}>{g.titulo}</Link>
-                    </h3>
-                    <p>{g.resumen}</p>
-                  </li>
-                ))}
-            </ul>
+            {grupos.map((gr) => (
+              <div key={gr.id} className="grupo">
+                <h2 id={gr.id} className="grupo-guias">
+                  {gr.t}
+                </h2>
+                <ul className="lista-guias">
+                  {gr.slugs
+                    .map((sl) => guias.find((g) => g.slug === sl))
+                    .filter((g): g is (typeof guias)[number] => Boolean(g))
+                    .map((g) => (
+                      <li key={g.slug}>
+                        <h3>
+                          <Link href={`/guias/${g.slug}/`}>{g.titulo}</Link>
+                        </h3>
+                        <p>{g.resumen}</p>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ))}
 
             <h2 id="guias-cripto" className="grupo-guias">Criptomonedas</h2>
             <ul className="lista-guias">
