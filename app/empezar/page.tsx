@@ -58,7 +58,7 @@ export default function Empezar() {
         <section className="portada portada-corta">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "18ch" }}>Empieza con Fiscalyx.</h1>
+              <h1 style={{ maxWidth: "18ch" }}>Empieza con Fiscalyx</h1>
               <p className="entradilla">
                 Tres pasos y dos minutos. Te llamamos en 24 horas laborables con tu presupuesto cerrado, y no pagas nada
                 hasta que lo aceptes.

@@ -45,7 +45,7 @@ export default function QuienesSomos() {
         <section className="portada">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho.</h1>
+              <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho</h1>
               <p className="entradilla">
                 Fiscalyx nace para que autónomos y pequeñas empresas tengan un asesor de verdad sin pagar lo que cuesta un
                 despacho tradicional ni conformarse con una aplicación.
@@ -78,7 +78,7 @@ export default function QuienesSomos() {
         <section className="seccion" aria-labelledby="pasos-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="pasos-titulo">Así trabajamos contigo.</h2>
+              <h2 id="pasos-titulo">Así trabajamos contigo</h2>
             </div>
             <ol className="pasos">
               {pasos.map((p) => (
@@ -94,7 +94,7 @@ export default function QuienesSomos() {
         <section className="seccion seccion-banda" aria-labelledby="principios-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="principios-titulo">Cómo entendemos el trabajo.</h2>
+              <h2 id="principios-titulo">Cómo entendemos el trabajo</h2>
             </div>
             <div className="dos-columnas">
               {principios.map((p) => (

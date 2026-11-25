@@ -152,7 +152,7 @@ export default function CalculadoraCuota() {
 
         <section className="seccion seccion-banda" aria-labelledby="cuota-saber">
           <div className="contenedor texto-estrecho local-texto">
-            <h2 id="cuota-saber">Lo que conviene saber.</h2>
+            <h2 id="cuota-saber">Lo que conviene saber</h2>
             <p>
               La cuota se ajusta a lo que ganas de verdad. Durante el año cotizas por una previsión y, cuando Hacienda tiene
               tu Renta, la Seguridad Social regulariza: te devuelve si pagaste de más y te reclama si pagaste de menos.

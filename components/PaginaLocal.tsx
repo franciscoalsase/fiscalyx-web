@@ -133,7 +133,7 @@ export function PaginaLocal({
         <section className="seccion seccion-banda" aria-labelledby="local-servicios">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="local-servicios">Lo que hacemos por ti.</h2>
+              <h2 id="local-servicios">Lo que hacemos por ti</h2>
             </div>
             <ul className="carta">
               <li>
@@ -184,7 +184,7 @@ export function PaginaLocal({
         <section className="seccion" aria-labelledby="local-preguntas">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="local-preguntas">Preguntas frecuentes.</h2>
+              <h2 id="local-preguntas">Preguntas frecuentes</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (
@@ -200,7 +200,7 @@ export function PaginaLocal({
         <section className="seccion seccion-banda" id="contacto" aria-labelledby="local-contacto">
           <div className="contenedor contacto">
             <div>
-              <h2 id="local-contacto">Cuéntanos tu caso.</h2>
+              <h2 id="local-contacto">Cuéntanos tu caso</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 Te respondemos en 24 horas laborables con un presupuesto cerrado. La primera conversación es gratuita.
               </p>

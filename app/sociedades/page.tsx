@@ -76,7 +76,7 @@ export default function Sociedades() {
         <section className="portada portada-cripto">
           <div className="contenedor">
             <div>
-              <h1 style={{ maxWidth: "17ch" }}>La gestoría de tu sociedad, con un economista que la conoce.</h1>
+              <h1 style={{ maxWidth: "17ch" }}>La gestoría de tu sociedad, con un economista que la conoce</h1>
               <p className="entradilla">
                 Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL, desde{" "}
                 {prices.sociedadMes} € al mes. Todo incluido en la cuota y siempre con el mismo asesor.
@@ -113,7 +113,7 @@ export default function Sociedades() {
         <section className="seccion seccion-banda" id="calendario" aria-labelledby="anio-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="anio-sl">El año de una sociedad, organizado por nosotros.</h2>
+              <h2 id="anio-sl">El año de una sociedad, organizado por nosotros</h2>
               <p>
                 Impuestos trimestrales, pagos fraccionados, cuentas anuales y el Impuesto sobre Sociedades. Para una
                 sociedad cuyo ejercicio coincide con el año natural.
@@ -126,7 +126,7 @@ export default function Sociedades() {
         <section className="seccion" aria-labelledby="incluye-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="incluye-sl">Qué incluye la cuota.</h2>
+              <h2 id="incluye-sl">Qué incluye la cuota</h2>
               <p>Todo lo que necesita tu sociedad durante el año, con el mismo asesor.</p>
             </div>
             <ul className="lista-incluye lista-incluye-doble">
@@ -147,7 +147,7 @@ export default function Sociedades() {
         <section className="seccion seccion-banda" aria-labelledby="julio-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="julio-sl">Sin factura extra en julio.</h2>
+              <h2 id="julio-sl">Sin factura extra en julio</h2>
               <p>
                 En julio toca el Impuesto sobre Sociedades y el depósito de las cuentas anuales, y es cuando muchas
                 gestorías pasan una factura aparte. Con nosotros, el cierre del año va dentro de la cuota.
@@ -197,7 +197,7 @@ export default function Sociedades() {
         <section className="seccion seccion-verde" aria-labelledby="precio-sl">
           <div className="contenedor precio">
             <div>
-              <h2 id="precio-sl">Precio cerrado, antes de empezar.</h2>
+              <h2 id="precio-sl">Precio cerrado, antes de empezar</h2>
               <p className="cifra" aria-label={`Desde ${prices.sociedadMes} euros al mes más IVA`}>
                 <span className="cifra-desde">desde</span>
                 {prices.sociedadMes} €<small>al mes + IVA</small>
@@ -243,7 +243,7 @@ export default function Sociedades() {
         <section className="seccion" aria-labelledby="preguntas-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-sl">Preguntas frecuentes.</h2>
+              <h2 id="preguntas-sl">Preguntas frecuentes</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (
@@ -264,7 +264,7 @@ export default function Sociedades() {
         <section className="seccion seccion-banda" id="contacto" aria-labelledby="contacto-sl">
           <div className="contenedor contacto">
             <div>
-              <h2 id="contacto-sl">Cuéntanos cómo es tu sociedad.</h2>
+              <h2 id="contacto-sl">Cuéntanos cómo es tu sociedad</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 A qué se dedica, cuántas facturas emite y recibe al mes y si tiene trabajadores. Te contestamos con una
                 cuota cerrada en 24 horas laborables.

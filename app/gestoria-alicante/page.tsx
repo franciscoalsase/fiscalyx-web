@@ -13,13 +13,13 @@ export default function GestoriaAlicante() {
   return (
     <PaginaLocal
       zona="Alicante"
-      titulo="Tu gestoría en Alicante, con economistas colegiados."
+      titulo="Tu gestoría en Alicante, con economistas colegiados"
       entradilla="Llevamos los impuestos y la contabilidad de autónomos y sociedades de Alicante, Elche y su área, y la Renta de quienes invierten en criptomonedas. Online, con cuota fija y siempre el mismo asesor."
       municipios={["Elche", "San Vicente del Raspeig", "Sant Joan d'Alacant", "El Campello", "Mutxamel", "Santa Pola", "Crevillent"]}
       areaServida={["Alicante", "Elche", "Provincia de Alicante"]}
       intro={
         <>
-          <h2>Una gestoría de aquí que trabaja como las online.</h2>
+          <h2>Una gestoría de aquí que trabaja como las online</h2>
           <p>
             La sede de Fiscalyx está en Alicante. Trabajamos sobre todo en remoto, por WhatsApp, correo y videollamada,
             porque es lo que piden la mayoría de autónomos: no perder una mañana para entregar facturas. Pero cuando hace
@@ -31,7 +31,7 @@ export default function GestoriaAlicante() {
             fuera. Muchos de ellos, además, tienen inversiones en criptomonedas, y ahí está nuestra diferencia: los
             llevamos con el mismo asesor.
           </p>
-          <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana.</h2>
+          <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana</h2>
           <p>
             La mitad de tu IRPF va con la escala autonómica, y la valenciana tiene sus propios tramos, su mínimo
             personal y una de las listas de deducciones más largas de España. Un programa genérico no las aplica; un
@@ -64,7 +64,7 @@ export default function GestoriaAlicante() {
       extra={
         <section className="seccion" aria-labelledby="alicante-cripto">
           <div className="contenedor texto-estrecho local-texto">
-            <h2 id="alicante-cripto">Asesor fiscal de criptomonedas en Alicante.</h2>
+            <h2 id="alicante-cripto">Asesor fiscal de criptomonedas en Alicante</h2>
             <p>
               Preparamos la Renta con criptomonedas de inversores de Alicante y Elche: descargamos el historial de cada
               exchange y monedero, calculamos las ganancias y pérdidas con el método FIFO y presentamos la declaración con

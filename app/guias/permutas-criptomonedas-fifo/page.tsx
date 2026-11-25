@@ -16,7 +16,7 @@ export default function PermutasFifo() {
       tema="Criptomonedas"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Cientos de permutas no se calculan a mano.",
+        titulo: "Cientos de permutas no se calculan a mano",
         texto: "Reconstruimos tu historial de todos los exchanges y monederos, aplicamos FIFO operación por operación y presentamos tu Renta con el archivo que lo justifica.",
         href: "/criptomonedas/#contacto",
         boton: "Pedir presupuesto",

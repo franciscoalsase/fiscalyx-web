@@ -17,7 +17,7 @@ export default function StakingDefi() {
       tema="Criptomonedas"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Cientos de recompensas pequeñas, una sola Renta.",
+        titulo: "Cientos de recompensas pequeñas, una sola Renta",
         texto: "Recogemos cada recompensa de tus plataformas y monederos, la valoramos en euros a su fecha y la integramos con tus compras y ventas.",
         href: "/criptomonedas/#contacto",
         boton: "Pedir presupuesto",

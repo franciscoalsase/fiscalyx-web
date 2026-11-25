@@ -13,13 +13,13 @@ export default function GestoriaVegaBaja() {
   return (
     <PaginaLocal
       zona="la Vega Baja"
-      titulo="Tu gestoría en la Vega Baja, de Orihuela a Torrevieja."
+      titulo="Tu gestoría en la Vega Baja, de Orihuela a Torrevieja"
       entradilla="Somos de aquí. Llevamos los impuestos y la contabilidad de autónomos y sociedades de la Vega Baja, y la Renta de quienes invierten en criptomonedas, con cuota fija y un asesor que conoce la comarca."
       municipios={["Orihuela", "Torrevieja", "Callosa de Segura", "Almoradí", "Pilar de la Horadada", "Rojales", "Guardamar del Segura", "Cox", "Redován", "Catral", "Dolores", "Albatera"]}
       areaServida={["Vega Baja del Segura", "Orihuela", "Torrevieja", "Callosa de Segura", "Almoradí", "Pilar de la Horadada"]}
       intro={
         <>
-          <h2>Una gestoría online con raíces en la comarca.</h2>
+          <h2>Una gestoría online con raíces en la comarca</h2>
           <p>
             Detrás de Fiscalyx hay economistas que llevan años trabajando con empresas y autónomos de la Vega Baja desde
             Callosa de Segura. Conocemos cómo funciona la comarca: el comercio de los pueblos, los negocios de la costa que
@@ -31,7 +31,7 @@ export default function GestoriaVegaBaja() {
             nos las envías por WhatsApp o correo, te avisamos de cada plazo y te llamamos antes de cada trimestre para
             que sepas lo que vas a pagar.
           </p>
-          <h2>Quién se encarga de cada impuesto.</h2>
+          <h2>Quién se encarga de cada impuesto</h2>
           <p>
             Una de las dudas que más nos plantean es a qué administración hay que acudir. Vivir en la Vega Baja significa
             tratar con cuatro: Hacienda, la Seguridad Social, la Agència Tributària Valenciana y tu ayuntamiento. Te lo
@@ -60,7 +60,7 @@ export default function GestoriaVegaBaja() {
       extra={
         <section className="seccion" aria-labelledby="vega-cripto">
           <div className="contenedor texto-estrecho local-texto">
-            <h2 id="vega-cripto">También tus criptomonedas.</h2>
+            <h2 id="vega-cripto">También tus criptomonedas</h2>
             <p>
               Cada vez más clientes de la comarca tienen criptomonedas y no saben cómo declararlas. Calculamos las
               ganancias y pérdidas de todos tus exchanges y monederos con el método FIFO, presentamos tu Renta y te

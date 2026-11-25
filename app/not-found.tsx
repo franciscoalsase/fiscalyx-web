@@ -15,7 +15,7 @@ export default function NoEncontrada() {
       <main id="contenido">
         <div className="contenedor">
           <div className="texto-legal">
-            <h1>Esta página no existe.</h1>
+            <h1>Esta página no existe</h1>
             <p>Puede que el enlace esté mal escrito o que la página se haya movido.</p>
             <p style={{ marginTop: "1.5rem" }}>
               <Link className="boton boton-principal" href="/">

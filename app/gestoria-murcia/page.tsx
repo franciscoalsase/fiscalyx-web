@@ -13,13 +13,13 @@ export default function GestoriaMurcia() {
   return (
     <PaginaLocal
       zona="Murcia"
-      titulo="Tu gestoría online en Murcia, con economistas colegiados."
+      titulo="Tu gestoría online en Murcia, con economistas colegiados"
       entradilla="Llevamos los impuestos y la contabilidad de autónomos y sociedades de la Región de Murcia, y la Renta de quienes invierten en criptomonedas. Con cuota fija y siempre el mismo asesor."
       municipios={["Molina de Segura", "Alcantarilla", "Cartagena", "Lorca", "Santomera", "Beniel", "San Javier", "Torre-Pacheco"]}
       areaServida={["Región de Murcia", "Murcia", "Cartagena", "Molina de Segura"]}
       intro={
         <>
-          <h2>Al lado de la Región, y online.</h2>
+          <h2>Al lado de la Región, y online</h2>
           <p>
             Trabajamos desde la Vega Baja, a pocos kilómetros de Murcia, y muchos de nuestros clientes viven a un lado
             del límite y trabajan al otro. Por eso conocemos bien las dos normativas autonómicas y lo que cambia en tus
@@ -29,7 +29,7 @@ export default function GestoriaMurcia() {
             El servicio es el mismo para toda la Región: nos envías tus facturas por WhatsApp o correo, te avisamos de
             cada plazo, te llamamos antes de cada trimestre y presentamos todo en tu nombre. Sin desplazamientos.
           </p>
-          <h2>Murcia tiene su propia escala del IRPF.</h2>
+          <h2>Murcia tiene su propia escala del IRPF</h2>
           <p>
             La parte autonómica de tu IRPF va con la escala murciana, con menos tramos que la estatal y unos tipos que no
             coinciden con los de la Comunitat Valenciana. Si te mudas de Orihuela a Murcia, o al revés, tu Renta cambia
@@ -61,7 +61,7 @@ export default function GestoriaMurcia() {
       extra={
         <section className="seccion" aria-labelledby="murcia-cripto">
           <div className="contenedor texto-estrecho local-texto">
-            <h2 id="murcia-cripto">Asesor fiscal de criptomonedas en Murcia.</h2>
+            <h2 id="murcia-cripto">Asesor fiscal de criptomonedas en Murcia</h2>
             <p>
               Preparamos la Renta con criptomonedas de inversores de toda la Región: historial de cada exchange y monedero,
               cálculo con el método FIFO, presentación de la declaración y un informe que la justifica ante Hacienda.

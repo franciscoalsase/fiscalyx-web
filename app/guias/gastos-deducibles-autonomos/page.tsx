@@ -30,7 +30,7 @@ export default function GastosDeducibles() {
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Que no se te escape ningún gasto.",
+        titulo: "Que no se te escape ningún gasto",
         texto: "En la llamada antes de cada trimestre repasamos tus gastos contigo y te decimos cuáles entran. Desde 49 € al mes, sin permanencia.",
         href: "/#contacto",
         boton: "Pedir presupuesto",

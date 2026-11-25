@@ -17,7 +17,7 @@ export default function RetirarBinance() {
       tema="Criptomonedas"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Antes de retirar una cantidad grande, háblalo con nosotros.",
+        titulo: "Antes de retirar una cantidad grande, háblalo con nosotros",
         texto: "Calculamos lo que debes declarar, te preparamos el informe de origen de fondos que suele pedir el banco y, si hay años sin declarar, te decimos cómo regularizarlos.",
         href: "/criptomonedas/#contacto",
         boton: "Pedir presupuesto",

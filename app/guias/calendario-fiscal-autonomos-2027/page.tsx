@@ -20,7 +20,7 @@ export default function Calendario2027() {
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Que los plazos sean cosa nuestra.",
+        titulo: "Que los plazos sean cosa nuestra",
         texto: "Te avisamos antes de cada uno, te llamamos para revisar las cifras y presentamos los modelos. Por una cuota fija y sin permanencia.",
         href: "/empezar/",
         boton: "Empezar",

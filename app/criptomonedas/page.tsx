@@ -81,7 +81,7 @@ export default function Criptomonedas() {
         <section className="portada portada-cripto">
           <div className="contenedor">
             <div>
-              <h1 style={{ maxWidth: "18ch" }}>Tus criptomonedas, declaradas operación por operación.</h1>
+              <h1 style={{ maxWidth: "18ch" }}>Tus criptomonedas, declaradas operación por operación</h1>
               <p className="entradilla">
                 Calculamos tus ganancias y pérdidas, presentamos tu Renta y el Modelo 721 y te entregamos el archivo
                 para justificarlo si Hacienda pregunta. Con precio cerrado antes de empezar.
@@ -118,7 +118,7 @@ export default function Criptomonedas() {
         <section className="seccion seccion-banda" aria-labelledby="dac8-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="dac8-titulo">Por qué la Renta de 2026 es distinta.</h2>
+              <h2 id="dac8-titulo">Por qué la Renta de 2026 es distinta</h2>
               <p>
                 Hasta ahora, Hacienda dependía en gran parte de lo que tú declarabas. Con la directiva DAC8 recibirá
                 los datos directamente de las plataformas.
@@ -138,7 +138,7 @@ export default function Criptomonedas() {
         <section className="seccion" aria-labelledby="servicios-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="servicios-titulo">Qué hacemos y cuánto cuesta.</h2>
+              <h2 id="servicios-titulo">Qué hacemos y cuánto cuesta</h2>
               <p>El precio depende del número de operaciones. Te lo confirmamos por escrito antes de empezar.</p>
             </div>
             <div className="servicios">
@@ -170,7 +170,7 @@ export default function Criptomonedas() {
         <section className="seccion seccion-banda" id="presupuesto" aria-labelledby="presupuesto-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="presupuesto-titulo">Tu precio en tres preguntas.</h2>
+              <h2 id="presupuesto-titulo">Tu precio en tres preguntas</h2>
               <p>Marca lo que hiciste el año pasado y te decimos qué plan te corresponde. Sin dejar tus datos.</p>
             </div>
             <PresupuestoCripto />
@@ -190,7 +190,7 @@ export default function Criptomonedas() {
         <section className="seccion" aria-labelledby="preguntas-cripto">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-cripto">Dudas frecuentes.</h2>
+              <h2 id="preguntas-cripto">Dudas frecuentes</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (
@@ -207,7 +207,7 @@ export default function Criptomonedas() {
         <section className="seccion seccion-banda" id="contacto" aria-labelledby="contacto-cripto">
           <div className="contenedor contacto">
             <div>
-              <h2 id="contacto-cripto">Cuéntanos qué tienes.</h2>
+              <h2 id="contacto-cripto">Cuéntanos qué tienes</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 Qué exchanges usas, cuántas operaciones haces más o menos y de qué años. Te respondemos con un
                 presupuesto cerrado en 24 horas laborables.

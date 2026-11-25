@@ -16,7 +16,7 @@ export default function FacturaElectronica() {
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Llega a tu fecha con todo preparado.",
+        titulo: "Llega a tu fecha con todo preparado",
         texto: "Te ayudamos a elegir un programa de facturación adaptado y revisamos tus primeras facturas para que salgan bien desde el primer día.",
         href: "/#contacto",
         boton: "Pedir presupuesto",

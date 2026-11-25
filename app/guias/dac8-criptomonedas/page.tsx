@@ -16,7 +16,7 @@ export default function Dac8() {
       tema="Criptomonedas"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Revisa tus operaciones antes de que lo haga Hacienda.",
+        titulo: "Revisa tus operaciones antes de que lo haga Hacienda",
         texto: "Reconstruimos tu historial, calculamos cada operación y presentamos tu Renta y el Modelo 721. Si hay años anteriores mal declarados, te decimos cómo regularizarlos y cuánto costaría.",
         href: "/criptomonedas/#contacto",
         boton: "Pedir presupuesto",

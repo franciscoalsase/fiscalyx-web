@@ -18,7 +18,7 @@ export default function Guias() {
         <section className="portada portada-corta">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "20ch" }}>Guías para entender tus impuestos.</h1>
+              <h1 style={{ maxWidth: "20ch" }}>Guías para entender tus impuestos</h1>
               <p className="entradilla">
                 Escritas y revisadas por economistas colegiados, con las fuentes oficiales al final de cada una.
               </p>

@@ -17,7 +17,7 @@ export default function AutonomoOSociedad() {
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Hagamos la cuenta con tus números.",
+        titulo: "Hagamos la cuenta con tus números",
         texto: "Comparamos lo que pagas hoy como autónomo con lo que pagarías con una sociedad, incluidos los costes de la SL. Si compensa, te ayudamos a crearla.",
         href: "/constituir-sociedad/#contacto",
         boton: "Pedir presupuesto",

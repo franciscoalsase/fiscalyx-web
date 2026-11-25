@@ -55,7 +55,7 @@ export default function ConstituirSociedad() {
         <section className="portada portada-corta">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "19ch" }}>Crea tu sociedad limitada sin perderte en trámites.</h1>
+              <h1 style={{ maxWidth: "19ch" }}>Crea tu sociedad limitada sin perderte en trámites</h1>
               <p className="entradilla">
                 Desde comprobar si te conviene hasta el NIF definitivo y las altas. Nos ocupamos de todo con un
                 presupuesto cerrado, y seguimos contigo después si quieres.
@@ -91,7 +91,7 @@ export default function ConstituirSociedad() {
         <section className="seccion seccion-banda" aria-labelledby="pasos-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="pasos-sl">Los seis pasos, de la idea a la sociedad inscrita.</h2>
+              <h2 id="pasos-sl">Los seis pasos, de la idea a la sociedad inscrita</h2>
             </div>
             <ol className="pasos pasos-seis">
               {pasos.map((p) => (
@@ -107,7 +107,7 @@ export default function ConstituirSociedad() {
         <section className="seccion" aria-labelledby="preguntas-constituir">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-constituir">Preguntas frecuentes.</h2>
+              <h2 id="preguntas-constituir">Preguntas frecuentes</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (
@@ -126,7 +126,7 @@ export default function ConstituirSociedad() {
         <section className="seccion seccion-banda" id="contacto" aria-labelledby="contacto-constituir">
           <div className="contenedor contacto">
             <div>
-              <h2 id="contacto-constituir">Cuéntanos tu proyecto.</h2>
+              <h2 id="contacto-constituir">Cuéntanos tu proyecto</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 A qué se va a dedicar la sociedad, cuántos socios seréis y si ya eres autónomo. Te respondemos con un
                 presupuesto cerrado en 24 horas laborables.

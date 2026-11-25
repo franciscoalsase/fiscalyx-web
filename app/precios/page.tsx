@@ -44,7 +44,7 @@ export default function Precios() {
         <section className="portada portada-corta">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "18ch" }}>Precios claros, por escrito y sin permanencia.</h1>
+              <h1 style={{ maxWidth: "18ch" }}>Precios claros, por escrito y sin permanencia</h1>
               <p className="entradilla">
                 Cuota fija mensual para autónomos y sociedades, y precio cerrado por caso para criptomonedas. Precios sin
                 IVA.
@@ -122,7 +122,7 @@ export default function Precios() {
         <section className="seccion" aria-labelledby="preguntas-precios">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-precios">Dudas sobre los precios.</h2>
+              <h2 id="preguntas-precios">Dudas sobre los precios</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (

@@ -210,7 +210,7 @@ export default function CalculadoraForma() {
         <section className="seccion seccion-verde" aria-labelledby="forma-cta">
           <div className="contenedor calc-cta">
             <div>
-              <h2 id="forma-cta">Hagamos la cuenta con tus números reales.</h2>
+              <h2 id="forma-cta">Hagamos la cuenta con tus números reales</h2>
               <p className="precio-nota" style={{ maxWidth: "36rem" }}>
                 En una llamada revisamos tu facturación, tus gastos y tus planes, y te decimos si te compensa la
                 sociedad y desde cuándo. Sin compromiso.

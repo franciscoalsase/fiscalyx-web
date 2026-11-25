@@ -16,7 +16,7 @@ export default function CompensarPerdidas() {
       tema="Criptomonedas"
       fecha="noviembre de 2026"
       cta={{
-        titulo: "Revisa tu año antes del 31 de diciembre.",
+        titulo: "Revisa tu año antes del 31 de diciembre",
         texto: "Calculamos dónde estás este año, qué pérdidas tienes pendientes de años anteriores y cómo encajarlo todo en tu Renta.",
         href: "/criptomonedas/#contacto",
         boton: "Pedir presupuesto",

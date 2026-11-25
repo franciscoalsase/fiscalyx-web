@@ -141,7 +141,7 @@ export default function Autonomos() {
         <section className="portada">
           <div className="contenedor">
             <div>
-              <h1 style={{ maxWidth: "16ch" }}>Tus impuestos de autónomo, presentados y explicados.</h1>
+              <h1 style={{ maxWidth: "16ch" }}>Tus impuestos de autónomo, presentados y explicados</h1>
               <p className="entradilla">
                 Trimestrales, resúmenes anuales y tu declaración de la Renta por {prices.autonomoMes} € al mes. Con un
                 economista colegiado que conoce tu actividad y te dice cuánto vas a pagar antes de pagarlo.
@@ -178,7 +178,7 @@ export default function Autonomos() {
         <section className="seccion seccion-banda" id="incluye" aria-labelledby="incluye-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="incluye-aut">Todo lo que presenta un autónomo, dentro de la cuota.</h2>
+              <h2 id="incluye-aut">Todo lo que presenta un autónomo, dentro de la cuota</h2>
               <p>Sin un precio por cada modelo ni una factura aparte en abril por la Renta.</p>
             </div>
             <div className="dos-columnas">
@@ -197,7 +197,7 @@ export default function Autonomos() {
         <section className="seccion" aria-labelledby="comparar-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="comparar-aut">Lo que en otras gestorías va aparte.</h2>
+              <h2 id="comparar-aut">Lo que en otras gestorías va aparte</h2>
               <p>
                 Las cuotas bajas suelen dejar fuera la Renta, las llamadas o la atención de una persona concreta. Aquí
                 está lo que entra en la nuestra.
@@ -253,7 +253,7 @@ export default function Autonomos() {
         <section className="seccion seccion-banda" aria-labelledby="perfiles-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="perfiles-aut">Autónomos de todo tipo.</h2>
+              <h2 id="perfiles-aut">Autónomos de todo tipo</h2>
               <p>Lo que cambia de un caso a otro son los modelos que te tocan y los gastos que puedes deducir.</p>
             </div>
             <ul className="lista-incluye lista-incluye-doble">
@@ -274,7 +274,7 @@ export default function Autonomos() {
         <section className="seccion" aria-labelledby="empezar-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="empezar-aut">Cómo empezamos.</h2>
+              <h2 id="empezar-aut">Cómo empezamos</h2>
             </div>
             <ol className="pasos">
               <li>
@@ -303,7 +303,7 @@ export default function Autonomos() {
         <section className="seccion seccion-verde" aria-labelledby="precio-aut">
           <div className="contenedor precio">
             <div>
-              <h2 id="precio-aut">Una cuota, sin letra pequeña.</h2>
+              <h2 id="precio-aut">Una cuota, sin letra pequeña</h2>
               <p className="cifra" aria-label={`${prices.autonomoMes} euros al mes más IVA`}>
                 {prices.autonomoMes} €<small>al mes + IVA</small>
               </p>
@@ -351,7 +351,7 @@ export default function Autonomos() {
         <section className="seccion" aria-labelledby="herramientas-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="herramientas-aut">Haz tus números antes de hablar con nosotros.</h2>
+              <h2 id="herramientas-aut">Haz tus números antes de hablar con nosotros</h2>
             </div>
             <ul className="lista-guias lista-guias-cuatro">
               <li>
@@ -385,7 +385,7 @@ export default function Autonomos() {
         <section className="seccion seccion-banda" aria-labelledby="preguntas-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-aut">Preguntas frecuentes.</h2>
+              <h2 id="preguntas-aut">Preguntas frecuentes</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (

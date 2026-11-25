@@ -3,7 +3,11 @@ export type MesAnio = { mes: string; hito?: { t: string; d: string; renta?: bool
 export function LineaAnio({ meses, leyenda }: { meses: MesAnio[]; leyenda: [string, string] }) {
   return (
     <>
-      <ol className="anio" data-revelar="">
+      <ol
+        className="anio"
+        data-revelar=""
+        style={{ "--columnas": meses.map((m) => (m.hito ? "minmax(0, 2.6fr)" : "minmax(0, 1fr)")).join(" ") } as React.CSSProperties}
+      >
         {meses.map((m, i) => (
           <li
             key={m.mes}

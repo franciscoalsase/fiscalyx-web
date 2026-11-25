@@ -91,7 +91,7 @@ export default function CambiarDeGestoria() {
         <section className="portada portada-corta">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "20ch" }}>Cambiar de gestoría, sin dejar nada a medias.</h1>
+              <h1 style={{ maxWidth: "20ch" }}>Cambiar de gestoría, sin dejar nada a medias</h1>
               <p className="entradilla">
                 Si tu gestoría no contesta, te avisa tarde o no entiende tu negocio, cambiarse es más sencillo de lo que
                 parece. Tú nos autorizas; del resto nos encargamos nosotros, también de pedir tu documentación.
@@ -127,7 +127,7 @@ export default function CambiarDeGestoria() {
         <section className="seccion seccion-banda" aria-labelledby="cambio-pasos">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="cambio-pasos">Cinco pasos, y solo el segundo es tuyo.</h2>
+              <h2 id="cambio-pasos">Cinco pasos, y solo el segundo es tuyo</h2>
             </div>
             <ol className="pasos">
               {pasos.map((p) => (
@@ -142,7 +142,7 @@ export default function CambiarDeGestoria() {
 
         <section className="seccion" aria-labelledby="cambio-necesitamos">
           <div className="contenedor texto-estrecho">
-            <h2 id="cambio-necesitamos">Lo que pedimos a tu gestoría.</h2>
+            <h2 id="cambio-necesitamos">Lo que pedimos a tu gestoría</h2>
             <ul className="lista-incluye" style={{ marginTop: "1.5rem" }}>
               {necesitamos.map((i) => (
                 <li key={i.t}>
@@ -160,7 +160,7 @@ export default function CambiarDeGestoria() {
 
         <section className="seccion seccion-banda" aria-labelledby="cambio-cuando">
           <div className="contenedor texto-estrecho local-texto">
-            <h2 id="cambio-cuando">Señales de que toca cambiar.</h2>
+            <h2 id="cambio-cuando">Señales de que toca cambiar</h2>
             <p>
               Si te reconoces en dos o más, merece la pena hablar: te enteras de cuánto pagas el día antes del plazo; nadie
               te ha explicado nunca qué gastos te puedes deducir; tardan días en contestar un WhatsApp; cada vez te atiende
@@ -176,7 +176,7 @@ export default function CambiarDeGestoria() {
         <section className="seccion" aria-labelledby="cambio-preguntas">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="cambio-preguntas">Preguntas frecuentes.</h2>
+              <h2 id="cambio-preguntas">Preguntas frecuentes</h2>
             </div>
             <div className="preguntas">
               {preguntas.map((q) => (
@@ -192,7 +192,7 @@ export default function CambiarDeGestoria() {
         <section className="seccion seccion-banda" id="contacto" aria-labelledby="cambio-contacto">
           <div className="contenedor contacto">
             <div>
-              <h2 id="cambio-contacto">Cuéntanos cómo lo llevas ahora.</h2>
+              <h2 id="cambio-contacto">Cuéntanos cómo lo llevas ahora</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 Qué haces, cuántas facturas tienes al trimestre y qué te gustaría que cambiara. Te respondemos en 24 horas
                 laborables con un presupuesto cerrado.
