@@ -50,6 +50,16 @@ const datosEstructurados = {
   email: site.email,
   telephone: `+${site.phoneIntl}`,
   areaServed: { "@type": "Country", name: "España" },
+  logo: `${site.url}/icon.svg`,
+  image: `${site.url}/og.png`,
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "17:30",
+    },
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Plaza San Cristóbal 14",

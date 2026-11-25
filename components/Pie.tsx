@@ -21,6 +21,8 @@ export function Pie() {
               WhatsApp {site.phoneDisplay}
             </a>
             <br />
+            {site.horario}
+            <br />
             {site.address}
           </p>
         </div>

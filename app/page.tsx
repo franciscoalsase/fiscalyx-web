@@ -343,6 +343,10 @@ export default function Inicio() {
                     Reservar hora
                   </a>
                 </li>
+                <li>
+                  <span className="via-nombre">Horario</span>
+                  <span>{site.horario}</span>
+                </li>
               </ul>
             </div>
             <FormularioContacto />

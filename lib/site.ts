@@ -13,6 +13,7 @@ export const site = {
   email: "info@fiscalyx.com",
   phoneDisplay: "637 46 08 35",
   phoneIntl: "34637460835",
+  horario: "Lunes a viernes, de 8:30 a 17:30",
   calendly: "https://calendly.com/francisco-alsase/30min",
   formspreeId: "xkgljdvq",
 };
