@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "VeriFactu y factura electrónica: fechas de 2027 y 2028",
+  title: "VeriFactu se aplaza a octubre de 2028: fechas y qué hacer",
   description:
-    "Las dos obligaciones que cambian tu forma de facturar: VeriFactu, desde enero de 2027 para sociedades y julio de 2027 para autónomos, y la factura electrónica entre empresas.",
+    "VeriFactu se aplaza a octubre de 2028 para sociedades y autónomos, igual que la factura electrónica entre empresas. Las fechas y qué conviene hacer ya.",
   alternates: { canonical: "/guias/factura-electronica-verifactu/" },
 };
 
@@ -12,7 +12,7 @@ export default function FacturaElectronica() {
   return (
     <Articulo
       titulo="VeriFactu y factura electrónica: qué cambia y cuándo te toca"
-      entradilla="Se suelen mezclar, pero son dos obligaciones distintas con fechas distintas. VeriFactu exige que el programa con el que facturas cumpla unos requisitos. La factura electrónica obliga a enviar las facturas entre empresas en un formato estructurado."
+      entradilla="El Gobierno ha aprobado retrasar VeriFactu a octubre de 2028, para que coincida con la factura electrónica entre empresas. Son dos obligaciones distintas: una exige que tu programa de facturación cumpla unos requisitos y la otra, enviar las facturas a otras empresas en un formato estructurado."
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
@@ -22,7 +22,8 @@ export default function FacturaElectronica() {
         boton: "Pedir presupuesto",
       }}
       fuentes={[
-        { nombre: "Calendario de VeriFactu tras el Real Decreto-ley 15/2025", url: "https://www.infoautonomos.com/blog/verifactu-cuando-es-obligatorio-a-quien-afecta/" },
+        { nombre: "El Gobierno aplaza VeriFactu hasta octubre de 2028 (25/11/2026)", url: "https://www.grupoaseguranza.com/noticias-de-seguros/gobierno-aplaza-entrada-vigor-verifactu-hasta-octubre-2028" },
+        { nombre: "Nota de Hacienda del 5 de octubre de 2026 y calendario anterior", url: "https://www.infoautonomos.com/blog/retraso-verifactu/" },
         { nombre: "Facturación electrónica obligatoria B2B: Orden HAC/1028/2026 y plazos", url: "https://www.cuatrecasas.com/es/spain/fiscalidad/art/facturacion-electronica-obligatoria-b2b" },
         { nombre: "Reglamento de facturación electrónica B2B (Real Decreto 238/2026)", url: "https://www.cuatrecasas.com/es/global/fiscalidad/art/reglamento-facturacion-electronica-obligatorio-operaciones" },
       ]}
@@ -41,12 +42,12 @@ export default function FacturaElectronica() {
             <tr>
               <th scope="row">VeriFactu</th>
               <td>Sociedades (Impuesto sobre Sociedades)</td>
-              <td>1 de enero de 2027</td>
+              <td>Octubre de 2028 (antes, 1 de enero de 2027)</td>
             </tr>
             <tr>
               <th scope="row">VeriFactu</th>
               <td>Autónomos y demás obligados</td>
-              <td>1 de julio de 2027</td>
+              <td>Octubre de 2028 (antes, 1 de julio de 2027)</td>
             </tr>
             <tr>
               <th scope="row">Factura electrónica</th>
@@ -86,10 +87,17 @@ export default function FacturaElectronica() {
         no generan los registros que exige el reglamento.
       </p>
 
-      <h3>Las fechas se han retrasado dos veces</h3>
+      <h3>Las fechas se han vuelto a retrasar: ahora, octubre de 2028</h3>
       <p>
         El calendario inicial preveía 2026. El Real Decreto-ley 15/2025 lo llevó al 1 de enero de 2027 para las
-        sociedades y al 1 de julio de 2027 para los autónomos. Son las fechas vigentes a día de hoy.
+        sociedades y al 1 de julio de 2027 para los autónomos. El 5 de octubre de 2026, Hacienda anunció que lo
+        retrasaría otra vez para hacerlo coincidir con la factura electrónica, y el 25 de noviembre de 2026 el
+        Consejo de Ministros aprobó el Real Decreto-ley que lleva todas las obligaciones pendientes a octubre de
+        2028, con una sola fecha para sociedades y autónomos.
+      </p>
+      <p>
+        El cambio entra en vigor cuando se publique en el BOE, normalmente al día siguiente de su aprobación. En
+        cuanto aparezca el día exacto de octubre de 2028, actualizaremos esta guía.
       </p>
 
       <h2>Factura electrónica entre empresas: la Ley Crea y Crece</h2>
@@ -117,7 +125,8 @@ export default function FacturaElectronica() {
       </ul>
       <p>
         Las facturas a particulares no entran en esta obligación. Si solo trabajas con consumidores finales, te
-        afecta VeriFactu, pero no la factura electrónica entre empresas.
+        afecta VeriFactu, pero no la factura electrónica entre empresas. Con el aplazamiento, para la mayoría de
+        autónomos y pymes las dos obligaciones llegan a la vez, en octubre de 2028.
       </p>
 
       <h2>Qué hacer ahora</h2>
@@ -127,8 +136,9 @@ export default function FacturaElectronica() {
           incluye la modalidad VeriFactu. Muchos programas de facturación ya lo ofrecen.
         </li>
         <li>
-          <strong>Empieza antes de tu fecha.</strong> Cambiar de programa a mitad de un trimestre complica la
-          numeración y los libros. Lo más limpio es empezar el 1 de enero o el 1 de julio.
+          <strong>No esperes al último mes.</strong> Tienes margen hasta octubre de 2028, pero cambiar de programa
+          a mitad de un trimestre complica la numeración y los libros. Lo más limpio es empezar un 1 de enero o al
+          comienzo de un trimestre.
         </li>
         <li>
           <strong>Revisa tus series de facturas.</strong> Facturas rectificativas, abonos y facturas simplificadas
@@ -136,7 +146,7 @@ export default function FacturaElectronica() {
         </li>
         <li>
           <strong>Piensa ya en la factura electrónica.</strong> Si tu programa nuevo también emite en formato
-          estructurado, te ahorrarás un segundo cambio en 2028.
+          estructurado, harás un solo cambio para las dos obligaciones.
         </li>
       </ol>
     </Articulo>

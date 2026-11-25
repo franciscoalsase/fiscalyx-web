@@ -66,7 +66,7 @@ export const guias: Guia[] = [
   {
     slug: "factura-electronica-verifactu",
     titulo: "VeriFactu y factura electrónica: qué cambia y cuándo te toca",
-    resumen: "Las dos obligaciones que cambian tu forma de facturar, con sus fechas para sociedades y autónomos en 2027 y 2028.",
+    resumen: "VeriFactu se aplaza a octubre de 2028 y coincide con la factura electrónica entre empresas. Fechas y qué hacer ya.",
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
