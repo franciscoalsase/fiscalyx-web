@@ -16,6 +16,7 @@
 ## Herramientas
 
 - [Calculadora trimestral para autónomos](https://www.fiscalyx.com/calculadora-autonomos/): estimación del Modelo 303 (IVA) y del Modelo 130 (IRPF) de un trimestre.
+- [Cambiar de gestoría sin dejar nada a medias](https://www.fiscalyx.com/cambiar-de-gestoria/)
 - [Gestoría en Alicante y Elche](https://www.fiscalyx.com/gestoria-alicante/)
 - [Gestoría en la Vega Baja: Orihuela, Torrevieja, Callosa](https://www.fiscalyx.com/gestoria-vega-baja/)
 - [Gestoría en Murcia](https://www.fiscalyx.com/gestoria-murcia/)
@@ -29,6 +30,7 @@
 - [Pérdidas con criptomonedas: cómo compensarlas](https://www.fiscalyx.com/guias/compensar-perdidas-criptomonedas/)
 - [Calendario fiscal del autónomo en 2027](https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/)
 - [DAC8: qué sabrá Hacienda de tus criptomonedas y desde cuándo](https://www.fiscalyx.com/guias/dac8-criptomonedas/)
+- [Cómo declarar criptomonedas en la Renta](https://www.fiscalyx.com/guias/declarar-criptomonedas-renta/)
 - [Modelo 721: quién tiene que presentarlo y cuándo](https://www.fiscalyx.com/guias/modelo-721/)
 - [Cuota de autónomos en 2027](https://www.fiscalyx.com/guias/cuota-autonomos-2027/)
 - [VeriFactu y factura electrónica: fechas](https://www.fiscalyx.com/guias/factura-electronica-verifactu/)

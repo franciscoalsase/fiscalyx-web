@@ -14,6 +14,7 @@ const rutas = [
   "/gestoria-alicante/",
   "/gestoria-vega-baja/",
   "/gestoria-murcia/",
+  "/cambiar-de-gestoria/",
   "/precios/",
   "/constituir-sociedad/",
   "/guias/",

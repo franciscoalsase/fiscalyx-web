@@ -200,7 +200,7 @@ export default function Criptomonedas() {
                 </details>
               ))}
             </div>
-            <GuiasRelacionadas slugs={["dac8-criptomonedas", "permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda"]} />
+            <GuiasRelacionadas slugs={["declarar-criptomonedas-renta", "dac8-criptomonedas", "permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda"]} />
           </div>
         </section>
 

@@ -84,4 +84,11 @@ export const guias: Guia[] = [
     tema: "Criptomonedas",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "declarar-criptomonedas-renta",
+    titulo: "Cómo declarar criptomonedas en la Renta",
+    resumen: "Qué operaciones tributan, cómo se calcula la ganancia con FIFO, cuánto se paga, cómo compensar pérdidas y qué documentación guardar.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
 ];

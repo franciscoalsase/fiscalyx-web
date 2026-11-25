@@ -55,6 +55,9 @@ export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
               <Link href="/constituir-sociedad/">Constituir una SL</Link>
             </li>
             <li>
+              <Link href="/cambiar-de-gestoria/">Cambiar de gestoría</Link>
+            </li>
+            <li>
               <Link href="/gestoria-alicante/">Gestoría en Alicante</Link>
             </li>
             <li>
