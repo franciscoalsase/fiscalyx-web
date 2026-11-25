@@ -2,8 +2,17 @@ import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
 import { Logo } from "@/components/Logo";
 
-export function Pie() {
+export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
   return (
+    <>
+    <nav className="barra-movil" aria-label="Contacto rápido">
+      <a className="boton boton-principal" href={contacto}>
+        Pedir presupuesto
+      </a>
+      <a className="boton boton-secundario" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+        WhatsApp
+      </a>
+    </nav>
     <footer className="pie">
       <div className="contenedor">
         <div>
@@ -44,6 +53,15 @@ export function Pie() {
             </li>
             <li>
               <Link href="/constituir-sociedad/">Constituir una SL</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-alicante/">Gestoría en Alicante</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-vega-baja/">Gestoría en la Vega Baja</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-murcia/">Gestoría en Murcia</Link>
             </li>
           </ul>
         </div>
@@ -89,5 +107,6 @@ export function Pie() {
         </p>
       </div>
     </footer>
+    </>
   );
 }

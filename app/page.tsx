@@ -101,10 +101,10 @@ export default function Inicio() {
         <section className="portada">
           <div className="contenedor">
             <div>
-              <h1>Tu gestoría online, en manos de economistas colegiados.</h1>
+              <h1>Tu negocio y tus criptomonedas, con el mismo economista.</h1>
               <p className="entradilla">
-                Llevamos los impuestos y la contabilidad de autónomos y sociedades de toda España, con una cuota fija
-                y siempre el mismo asesor. Por WhatsApp, y con una llamada antes de cada trimestre.
+                Somos una gestoría online para autónomos y sociedades de toda España. Te llevamos los impuestos y la
+                contabilidad con una cuota fija, y si inviertes en cripto, también tu Renta, sin cambiar de asesor.
               </p>
               <div className="acciones">
                 <a className="boton boton-principal" href="#contacto">
@@ -119,7 +119,7 @@ export default function Inicio() {
                   <Check /> Sin permanencia
                 </li>
                 <li>
-                  <Check /> Autónomos y sociedades
+                  <Check /> Respuesta en 24 h laborables
                 </li>
                 <li>
                   <Check /> Para toda España
@@ -170,7 +170,70 @@ export default function Inicio() {
           </div>
         </section>
 
-        <section className="seccion seccion-banda" aria-labelledby="anio-titulo">
+
+        <section className="seccion seccion-banda" aria-labelledby="porque-titulo">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="porque-titulo">Lo que nos diferencia.</h2>
+              <p>
+                Hay gestorías online que no entienden de criptomonedas y asesorías cripto que no llevan tu negocio.
+                Nosotros hacemos las dos cosas, con la misma persona.
+              </p>
+            </div>
+            <div className="tabla-scroll">
+              <table className="tabla comparar">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span className="visualmente-oculto">Qué comparamos</span>
+                    </th>
+                    <th scope="col">Gestoría online habitual</th>
+                    <th scope="col">Asesoría solo de cripto</th>
+                    <th scope="col" className="comparar-nos">Fiscalyx</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Quién te atiende</th>
+                    <td>Un gestor, a menudo por chat; las llamadas, solo en los planes altos</td>
+                    <td>Un especialista en cripto</td>
+                    <td className="comparar-nos">Un economista colegiado, por WhatsApp y por teléfono</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Autónomos y sociedades</th>
+                    <td>Sí</td>
+                    <td>Casi nunca</td>
+                    <td className="comparar-nos">Sí</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Criptomonedas</th>
+                    <td>Pocas veces, y sin servicio especializado</td>
+                    <td>Sí, pero solo eso</td>
+                    <td className="comparar-nos">Sí, con el mismo asesor que lleva tu negocio</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Declaración de la Renta</th>
+                    <td>Incluida en unos planes y aparte en otros</td>
+                    <td>Es su servicio principal</td>
+                    <td className="comparar-nos">Incluida en la cuota del autónomo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Precio</th>
+                    <td>De 20 a 65 € al mes, con extras según el plan</td>
+                    <td>De 75 a 700 € por campaña</td>
+                    <td className="comparar-nos">Publicado y cerrado antes de empezar</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="nota-fuente">
+              Comparación con las tarifas y condiciones publicadas por gestorías online y asesorías cripto en noviembre de
+              2026.
+            </p>
+          </div>
+        </section>
+
+        <section className="seccion" aria-labelledby="anio-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="anio-titulo">Un año de impuestos, sin tener que acordarte de nada.</h2>
@@ -189,7 +252,7 @@ export default function Inicio() {
           </div>
         </section>
 
-        <section className="seccion" id="incluye" aria-labelledby="incluye-titulo">
+        <section className="seccion seccion-banda" id="incluye" aria-labelledby="incluye-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="incluye-titulo">Si eres autónomo, todo dentro de la cuota.</h2>
@@ -353,7 +416,7 @@ export default function Inicio() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie contacto="#contacto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );

@@ -224,7 +224,7 @@ export default function Sociedades() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie contacto="#contacto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );

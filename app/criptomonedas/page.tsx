@@ -4,6 +4,7 @@ import { Pie } from "@/components/Pie";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { Estimador } from "@/components/Estimador";
+import { PresupuestoCripto } from "@/components/PresupuestoCripto";
 import { Check } from "@/components/Iconos";
 import { ExtractoInforme } from "@/components/ExtractoInforme";
 import { prices, whatsappLink } from "@/lib/site";
@@ -166,7 +167,17 @@ export default function Criptomonedas() {
           </div>
         </section>
 
-        <section className="seccion seccion-banda" aria-labelledby="estimador-titulo">
+        <section className="seccion seccion-banda" id="presupuesto" aria-labelledby="presupuesto-titulo">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="presupuesto-titulo">Tu precio en tres preguntas.</h2>
+              <p>Marca lo que hiciste el año pasado y te decimos qué plan te corresponde. Sin dejar tus datos.</p>
+            </div>
+            <PresupuestoCripto />
+          </div>
+        </section>
+
+        <section className="seccion" aria-labelledby="estimador-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="estimador-titulo">¿Cuánto podrías pagar?</h2>
@@ -206,7 +217,7 @@ export default function Criptomonedas() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie contacto="#contacto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );
