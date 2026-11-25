@@ -127,7 +127,7 @@ export default function Sociedades() {
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="incluye-sl">Qué incluye la cuota.</h2>
-              <p>Sin facturas aparte en julio por el Impuesto sobre Sociedades ni por las cuentas anuales.</p>
+              <p>Todo lo que necesita tu sociedad durante el año, con el mismo asesor.</p>
             </div>
             <ul className="lista-incluye lista-incluye-doble">
               {incluye.map((i) => (
@@ -141,6 +141,56 @@ export default function Sociedades() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        <section className="seccion seccion-banda" aria-labelledby="julio-sl">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="julio-sl">Sin factura extra en julio.</h2>
+              <p>
+                En julio toca el Impuesto sobre Sociedades y el depósito de las cuentas anuales, y es cuando muchas
+                gestorías pasan una factura aparte. Con nosotros, el cierre del año va dentro de la cuota.
+              </p>
+            </div>
+            <div className="tabla-scroll">
+              <table className="tabla comparar">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span className="visualmente-oculto">Concepto</span>
+                    </th>
+                    <th scope="col">Lo habitual</th>
+                    <th scope="col" className="comparar-nos">Fiscalyx</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Contabilidad y trimestrales</th>
+                    <td>En la cuota</td>
+                    <td className="comparar-nos">En la cuota</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Impuesto sobre Sociedades (Modelo 200)</th>
+                    <td>A veces aparte, o con condiciones</td>
+                    <td className="comparar-nos">En la cuota</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cuentas anuales y legalización de libros</th>
+                    <td>Muchas veces aparte</td>
+                    <td className="comparar-nos">En la cuota; solo pagas los aranceles del Registro</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Quién te atiende</th>
+                    <td>Depende del plan; a menudo, por chat</td>
+                    <td className="comparar-nos">Un economista colegiado asignado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="nota-fuente">
+              Comparación con las tarifas y condiciones publicadas por gestorías online para sociedades en noviembre de 2026.
+            </p>
           </div>
         </section>
 

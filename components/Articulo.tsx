@@ -29,9 +29,30 @@ export function Articulo({
     description: entradilla,
     inLanguage: "es-ES",
     dateModified: "2026-11-25",
-    author: { "@type": "Person", name: site.owner, jobTitle: "Economista colegiado" },
-    publisher: { "@type": "Organization", name: "Fiscalyx", url: site.url },
+    author: {
+      "@type": "Person",
+      name: site.owner,
+      jobTitle: "Economista colegiado",
+      url: `${site.url}/quienes-somos/`,
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Colegiación profesional",
+        name: `Economista colegiado n.º ${site.colegiado}`,
+        recognizedBy: { "@type": "Organization", name: site.colegio },
+      },
+    },
+    reviewedBy: { "@type": "Person", name: site.owner, url: `${site.url}/quienes-somos/` },
+    publisher: { "@type": "Organization", name: "Fiscalyx", url: site.url, logo: `${site.url}/icon.svg` },
     citation: fuentes.map((f) => f.url),
+  };
+  const migas = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: `${site.url}/` },
+      { "@type": "ListItem", position: 2, name: "Guías", item: `${site.url}/guias/` },
+      { "@type": "ListItem", position: 3, name: titulo },
+    ],
   };
 
   return (
@@ -47,7 +68,8 @@ export function Articulo({
               <h1>{titulo}</h1>
               <p className="entradilla">{entradilla}</p>
               <p className="firma">
-                Revisado por {site.owner}, economista colegiado. Actualizado en {fecha}.
+                Revisado por <Link href="/quienes-somos/">{site.owner}</Link>, economista colegiado n.º {site.colegiado}.
+                Actualizado en {fecha}.
               </p>
             </header>
 
@@ -86,7 +108,7 @@ export function Articulo({
         </article>
       </main>
       <Pie />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([schema, migas]) }} />
     </>
   );
 }
