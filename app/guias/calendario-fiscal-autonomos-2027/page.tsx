@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 import plazos from "@/lib/plazos-2027.json";
 
@@ -127,7 +128,7 @@ export default function Calendario2027() {
       <ul>
         <li>
           <strong>303 (IVA)</strong>: casi todos los autónomos, salvo actividades exentas como la sanidad o la
-          formación reglada.
+          formación reglada. Te lo explicamos en la <Link href="/guias/modelo-303-iva-trimestral/">guía del 303</Link>.
         </li>
         <li>
           <strong>130 (IRPF)</strong>: autónomos en estimación directa, salvo que más del 70 % de tus ingresos ya
@@ -139,6 +140,10 @@ export default function Calendario2027() {
         </li>
         <li>
           <strong>390, 190 y 180</strong>: los resúmenes anuales de los anteriores, en enero.
+        </li>
+        <li>
+          <strong>347</strong>: si con un mismo cliente o proveedor pasaste de 3.005,06 € en el año, en febrero. Los
+          detalles, en la <Link href="/guias/modelo-347/">guía del 347</Link>.
         </li>
       </ul>
     </Articulo>

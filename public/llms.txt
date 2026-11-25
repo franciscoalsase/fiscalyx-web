@@ -34,6 +34,8 @@
 - [Pérdidas con criptomonedas: cómo compensarlas](https://www.fiscalyx.com/guias/compensar-perdidas-criptomonedas/)
 - [Calculadora de criptomonedas con FIFO](https://www.fiscalyx.com/calculadora-criptomonedas/): ganancia o pérdida de cada venta y cuota estimada con la escala del ahorro.
 - [Facturar a clientes extranjeros](https://www.fiscalyx.com/guias/facturar-clientes-extranjeros/): IVA por tipo de cliente, ROI, modelo 349, OSS y modelo 130.
+- [Modelo 303](https://www.fiscalyx.com/guias/modelo-303-iva-trimestral/): IVA trimestral, cálculo, deducciones y plazos de 2027.
+- [Modelo 347](https://www.fiscalyx.com/guias/modelo-347/): operaciones con terceros, umbral, exclusiones y plazo.
 - [Cuánto cuesta una gestoría](https://www.fiscalyx.com/guias/cuanto-cuesta-una-gestoria/): rangos de precios, extras habituales y calculadora del coste anual.
 - [Darse de alta como autónomo](https://www.fiscalyx.com/guias/darse-de-alta-autonomo/): orden de los trámites, modelo 036, Seguridad Social y tarifa plana.
 - [Calendario fiscal de 2027 para autónomos y sociedades](https://www.fiscalyx.com/guias/calendario-fiscal-autonomos-2027/), con descarga .ics

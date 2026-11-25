@@ -112,4 +112,18 @@ export const guias: Guia[] = [
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "modelo-303-iva-trimestral",
+    titulo: "Modelo 303: el IVA trimestral, explicado",
+    resumen: "Cómo se calcula con un ejemplo, qué IVA puedes deducir, los plazos de 2027 y qué pasa si sale a devolver o a cero.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "modelo-347",
+    titulo: "Modelo 347: la declaración de operaciones con terceros",
+    resumen: "Cuándo superas los 3.005,06 €, qué se declara y qué no, el plazo de 2027 y por qué conviene cuadrarlo antes.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];
