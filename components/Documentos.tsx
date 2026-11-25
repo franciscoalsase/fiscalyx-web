@@ -100,3 +100,72 @@ export function ResumenAnio() {
     </figure>
   );
 }
+
+export function PrevisionSociedades() {
+  const ingresos = 310000;
+  const gastos = 248000;
+  const resultado = ingresos - gastos;
+  const ajuste = 600;
+  const base = resultado + ajuste;
+  const cuota = Math.min(base, 50000) * 0.19 + Math.max(base - 50000, 0) * 0.21;
+  const pagado = 3100;
+  return (
+    <figure className="documento">
+      <div className="documento-cabeza">
+        <strong>Previsión del Impuesto sobre Sociedades de 2026</strong>
+        <span>Ejemplo</span>
+      </div>
+      <p className="documento-para">Microempresa, cifra de negocios inferior a 1 millón de euros</p>
+      <table>
+        <caption className="visualmente-oculto">Previsión de ejemplo del Impuesto sobre Sociedades</caption>
+        <tbody>
+          <tr>
+            <th scope="row">Ingresos previstos del año</th>
+            <td>{eur(ingresos)}</td>
+          </tr>
+          <tr>
+            <th scope="row">Gastos previstos</th>
+            <td>−{eur(gastos)}</td>
+          </tr>
+          <tr>
+            <th scope="row">Resultado antes de impuestos</th>
+            <td>{eur(resultado)}</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Gastos no deducibles<span>Una sanción de tráfico pagada por la sociedad</span>
+            </th>
+            <td>+{eur(ajuste)}</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Impuesto<span>19 % hasta 50.000 € y 21 % el resto</span>
+            </th>
+            <td>{eur(cuota)}</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Ya pagado a cuenta<span>Modelos 202 de abril y octubre</span>
+            </th>
+            <td>−{eur(pagado)}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">A pagar en julio de 2027</th>
+            <td>
+              <mark>{eur(cuota - pagado)}</mark>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <p className="documento-nota">
+        Nos faltan 1.800 € en facturas de proveedores de este año. Si nos las pasas antes del cierre, el impuesto baja{" "}
+        {eur(1800 * 0.21)}.
+      </p>
+      <figcaption className="nota-ejemplo">
+        Lo que te mandamos en noviembre, antes de cerrar el año. Datos ficticios.
+      </figcaption>
+    </figure>
+  );
+}

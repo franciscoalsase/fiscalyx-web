@@ -3076,3 +3076,7 @@ td.comparar-nos {
 .tabla-guia thead th:last-child,
 .tabla-guia td:last-child { min-width: 7.5rem; }
 .tabla-guia tbody th[scope="row"] { white-space: normal; min-width: 10.5rem; }
+.dos-columnas-doc { align-items: start; }
+@media (min-width: 900px) {
+  .dos-columnas-doc { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); gap: 4rem; }
+}

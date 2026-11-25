@@ -7,6 +7,7 @@ import { FormularioContacto } from "@/components/FormularioContacto";
 import { LineaAnio, type MesAnio } from "@/components/LineaAnio";
 import { Check } from "@/components/Iconos";
 import { CierreEjercicio } from "@/components/CierreEjercicio";
+import { PrevisionSociedades } from "@/components/Documentos";
 import { prices, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -144,7 +145,28 @@ export default function Sociedades() {
           </div>
         </section>
 
-        <section className="seccion seccion-banda" aria-labelledby="julio-sl">
+        <section className="seccion seccion-banda" aria-labelledby="prevision-sl">
+          <div className="contenedor dos-columnas dos-columnas-doc">
+            <div>
+              <h2 id="prevision-sl">Lo que pagarás, antes de que acabe el año</h2>
+              <p style={{ marginTop: "1.25rem" }}>
+                En noviembre, antes de cerrar el año, te mandamos una previsión del Impuesto sobre Sociedades con lo
+                que llevas facturado y gastado. Así sabes cuánto pagarás en julio y aún hay tiempo de hacer algo.
+              </p>
+              <p style={{ marginTop: "1rem" }}>
+                Revisamos lo que suele quedarse fuera: facturas de proveedores que no nos han llegado, gastos que no
+                son deducibles o un pago a cuenta que conviene ajustar.
+              </p>
+              <p style={{ marginTop: "1rem" }}>
+                Y te decimos si te compensa repartir dividendos, subirte el sueldo de administrador o dejar el
+                beneficio en la sociedad.
+              </p>
+            </div>
+            <PrevisionSociedades />
+          </div>
+        </section>
+
+        <section className="seccion" aria-labelledby="julio-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="julio-sl">Sin factura extra en julio</h2>

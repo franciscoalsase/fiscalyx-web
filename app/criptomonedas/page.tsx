@@ -4,7 +4,6 @@ import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
-import { Estimador } from "@/components/Estimador";
 import { PresupuestoCripto } from "@/components/PresupuestoCripto";
 import { Check } from "@/components/Iconos";
 import { ExtractoInforme } from "@/components/ExtractoInforme";
@@ -178,20 +177,35 @@ export default function Criptomonedas() {
           </div>
         </section>
 
-        <section className="seccion" aria-labelledby="estimador-titulo">
+        <section className="seccion" aria-labelledby="cuentas-cripto">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="estimador-titulo">¿Cuánto podrías pagar?</h2>
-              <p>
-                Una primera cifra orientativa con los tipos actuales. Si quieres calcularlo venta por venta, usa la{" "}
-                <Link href="/calculadora-criptomonedas/">calculadora con FIFO</Link>.
-              </p>
+              <h2 id="cuentas-cripto">Haz tus cuentas antes de hablar con nosotros</h2>
             </div>
-            <Estimador />
+            <ul className="lista-guias">
+              <li>
+                <h3>
+                  <Link href="/calculadora-criptomonedas/">Calculadora con FIFO</Link>
+                </h3>
+                <p>Apunta tus compras y ventas y mira la ganancia de cada venta y lo que pagarías en la Renta.</p>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/guias/declarar-criptomonedas-renta/">Cómo declarar criptomonedas en la Renta</Link>
+                </h3>
+                <p>Qué tributa, cómo se calcula, cuánto se paga y qué documentación guardar.</p>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/guias/dac8-criptomonedas/">Qué sabrá Hacienda con DAC8</Link>
+                </h3>
+                <p>Qué datos envían los exchanges desde 2026 y qué hacer si tienes años sin declarar.</p>
+              </li>
+            </ul>
           </div>
         </section>
 
-        <section className="seccion" aria-labelledby="preguntas-cripto">
+        <section className="seccion seccion-banda" aria-labelledby="preguntas-cripto">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="preguntas-cripto">Dudas frecuentes</h2>
@@ -204,11 +218,11 @@ export default function Criptomonedas() {
                 </details>
               ))}
             </div>
-            <GuiasRelacionadas slugs={["declarar-criptomonedas-renta", "dac8-criptomonedas", "permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda"]} />
+            <GuiasRelacionadas slugs={["permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda"]} />
           </div>
         </section>
 
-        <section className="seccion seccion-banda" id="contacto" aria-labelledby="contacto-cripto">
+        <section className="seccion" id="contacto" aria-labelledby="contacto-cripto">
           <div className="contenedor contacto">
             <div>
               <h2 id="contacto-cripto">Cuéntanos qué tienes</h2>
