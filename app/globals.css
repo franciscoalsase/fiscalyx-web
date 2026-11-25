@@ -3096,3 +3096,12 @@ td.comparar-nos {
   }
   .menu-movil[open] summary { background: var(--tinta); color: #fff; border-color: var(--tinta); }
 }
+
+/* ---------- Precios: detalle y coste anual ---------- */
+.tabla-planes th[scope="row"] { font-family: var(--sans); font-weight: 600; white-space: normal; min-width: 11rem; }
+.tabla-planes td { vertical-align: top; }
+.anual { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; border-top: 2px solid var(--tinta); padding-top: 1.5rem; max-width: 52rem; }
+.anual-cifra { font-family: var(--sans); font-weight: 750; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.03em; margin: 0.3rem 0; }
+.anual-cifra mark { color: inherit; background: linear-gradient(transparent 6%, var(--subrayador) 6%, var(--subrayador) 96%, transparent 96%); padding: 0 0.15em; border-radius: 2px; }
+.anual-desde { font-size: 0.45em; font-weight: 500; color: var(--grafito); letter-spacing: 0; }
+@media (max-width: 640px) { .anual { grid-template-columns: minmax(0, 1fr); } }

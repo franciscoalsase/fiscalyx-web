@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const preguntas = [
   {
     p: "¿Por qué no sois la gestoría más barata?",
-    r: "Porque cada cliente tiene un asesor asignado, economista colegiado, que le llama antes de cada trimestre. Hay gestorías online más baratas que funcionan con chat o con equipos rotativos; nosotros preferimos conocer tu caso.",
+    r: "Porque cada cliente tiene un asesor asignado, economista colegiado, que le llama antes de cada trimestre. Hay gestorías online más baratas que atienden sobre todo por chat; nosotros preferimos conocer tu caso y hablar contigo.",
   },
   {
     p: "¿Hay costes de alta o de salida?",
@@ -28,6 +28,35 @@ const preguntas = [
     p: "¿Qué pasa si tengo muchas facturas?",
     r: "La cuota de autónomo cubre la actividad habitual de un profesional o un pequeño negocio. Si tu volumen es muy alto, te lo decimos antes de empezar y te damos una cuota cerrada.",
   },
+];
+
+const eur = (n: number) =>
+  `${n.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: "always" } as Intl.NumberFormatOptions)} €`;
+
+const detalle: [string, string, string][] = [
+  ["IVA y retenciones trimestrales", "303, 111 y 115", "303, 111 y 115"],
+  ["Pago a cuenta trimestral", "130, si te toca", "202, si te toca"],
+  ["Resúmenes anuales", "390, 190, 180 y 347", "390, 190, 180 y 347"],
+  ["Contabilidad", "Libros de ingresos y gastos", "Contabilidad completa y libros oficiales"],
+  ["Impuesto anual", "Tu declaración de la Renta", "Impuesto sobre Sociedades"],
+  ["Cuentas anuales", "No aplica", "Formulación, acta de la junta y depósito"],
+  ["Altas y cambios", "Alta, cambios y baja en Hacienda y Seguridad Social", "Cambios censales en Hacienda"],
+  ["Cuota de autónomos", "Revisión de tu base de cotización", "Revisión de la base del administrador"],
+  ["Antes de pagar", "Aviso con las cifras antes de cada trimestre", "Aviso trimestral y previsión del impuesto en noviembre"],
+  ["Tu asesor", "Economista colegiado asignado, WhatsApp y llamada trimestral", "Economista colegiado asignado, WhatsApp y llamada trimestral"],
+  ["Cartas de Hacienda", "Te explicamos qué piden; la respuesta, con presupuesto cerrado", "Te explicamos qué piden; la respuesta, con presupuesto cerrado"],
+  ["Nóminas", `${prices.nominaMes} € al mes por trabajador`, `${prices.nominaMes} € al mes por trabajador`],
+];
+
+const puntuales: [string, string, string][] = [
+  ["Cambiarte desde otra gestoría", "/cambiar-de-gestoria/", "Sin coste si contratas una cuota"],
+  ["Renta con criptomonedas", "/criptomonedas/", `Desde ${prices.cripto[0].tiers[0].price}`],
+  ["Modelo 721", "/guias/modelo-721/", prices.cripto[1].tiers[0].price.replace(/^d/, "D")],
+  ["Regularizar años anteriores de cripto", "/criptomonedas/", `Diagnóstico de ${prices.cripto[2].tiers[0].price}, descontable`],
+  ["Capitalizar el paro", "/capitalizar-paro/", "Presupuesto cerrado"],
+  ["Documentación económica para una licitación", "/licitaciones-publicas/", "Presupuesto cerrado"],
+  ["Constituir una sociedad limitada", "/constituir-sociedad/", "Presupuesto cerrado; notaría y Registro aparte"],
+  ["Responder a un requerimiento de Hacienda", "/empezar/", "Presupuesto cerrado"],
 ];
 
 const faqSchema = {
@@ -119,7 +148,98 @@ export default function Precios() {
           </div>
         </section>
 
-        <section className="seccion" aria-labelledby="preguntas-precios">
+        <section className="seccion" aria-labelledby="detalle-precios">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="detalle-precios">Qué entra en cada cuota, línea a línea</h2>
+              <p>Para que compares con cualquier otro presupuesto sin letra pequeña.</p>
+            </div>
+            <div className="tabla-scroll">
+              <table className="tabla comparar tabla-planes">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span className="visualmente-oculto">Concepto</span>
+                    </th>
+                    <th scope="col">Autónomo</th>
+                    <th scope="col">Sociedad limitada</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {detalle.map(([c, a, sl]) => (
+                    <tr key={c}>
+                      <th scope="row">{c}</th>
+                      <td>{a}</td>
+                      <td>{sl}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section className="seccion seccion-banda" aria-labelledby="anual-precios">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="anual-precios">Lo que pagas en todo el año</h2>
+              <p>Sin extras en abril ni en julio. El IVA, como autónomo o sociedad, normalmente te lo deduces.</p>
+            </div>
+            <div className="anual">
+              <div>
+                <p className="ayuda-campo">Autónomo</p>
+                <p className="anual-cifra">
+                  <mark>{eur(prices.autonomoMes * 12)}</mark>
+                </p>
+                <p className="ayuda-campo">al año sin IVA; {eur(prices.autonomoMes * 12 * 1.21)} con IVA</p>
+              </div>
+              <div>
+                <p className="ayuda-campo">Sociedad limitada</p>
+                <p className="anual-cifra">
+                  <span className="anual-desde">desde </span>
+                  <mark>{eur(prices.sociedadMes * 12)}</mark>
+                </p>
+                <p className="ayuda-campo">
+                  al año sin IVA; {eur(prices.sociedadMes * 12 * 1.21)} con IVA, más las tasas del Registro
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="seccion" aria-labelledby="puntuales-precios">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="puntuales-precios">Trámites sueltos</h2>
+              <p>Si no necesitas una cuota mensual, o además de ella.</p>
+            </div>
+            <div className="tabla-scroll">
+              <table className="tabla tabla-guia">
+                <thead>
+                  <tr>
+                    <th scope="col">Trámite</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {puntuales.map(([t, href, pr]) => (
+                    <tr key={t}>
+                      <th scope="row">
+                        <Link href={href}>{t}</Link>
+                      </th>
+                      <td>{pr}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="nota-tabla">
+              «Presupuesto cerrado» quiere decir que te damos el precio por escrito antes de empezar, y no cambia.
+            </p>
+          </div>
+        </section>
+
+        <section className="seccion seccion-banda" aria-labelledby="preguntas-precios">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="preguntas-precios">Dudas sobre los precios</h2>
@@ -136,8 +256,8 @@ export default function Precios() {
               ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta de verdad una gestoría al año</Link>, con lo que suele ir aparte.
             </p>
             <div className="acciones" style={{ marginTop: "2.5rem" }}>
-              <Link className="boton boton-principal" href="/#contacto">
-                Pedir presupuesto
+              <Link className="boton boton-principal" href="/empezar/">
+                Empezar
               </Link>
               <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
                 Escríbenos por WhatsApp
