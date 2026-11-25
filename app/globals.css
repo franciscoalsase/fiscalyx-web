@@ -2966,3 +2966,6 @@ td.comparar-nos {
   .indice { order: 2; position: sticky; top: 6rem; margin-top: 2.5rem; }
   .articulo-principal { order: 1; }
 }
+
+.cifra small { display: inline-block; white-space: nowrap; line-height: 1.2; }
+.precio .cifra { font-size: clamp(4rem, 7vw, 6rem); }
