@@ -56,4 +56,32 @@ export const guias: Guia[] = [
     tema: "Criptomonedas",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "cuota-autonomos-2027",
+    titulo: "Cuota de autónomos en 2027: tramos y cómo se calcula",
+    resumen: "Los 15 tramos por rendimientos, la tarifa plana, la cuota del autónomo societario y cómo funciona la regularización anual.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "factura-electronica-verifactu",
+    titulo: "VeriFactu y factura electrónica: qué cambia y cuándo te toca",
+    resumen: "Las dos obligaciones que cambian tu forma de facturar, con sus fechas para sociedades y autónomos en 2027 y 2028.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "staking-defi-impuestos",
+    titulo: "Staking y DeFi: cómo tributan las recompensas",
+    resumen: "Por qué las recompensas tributan al recibirlas, cómo se valoran y qué ha dicho Hacienda de los préstamos y los pools de liquidez.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "retirar-dinero-binance-hacienda",
+    titulo: "Retirar dinero de Binance al banco: qué ve Hacienda",
+    resumen: "La transferencia no tributa, la venta sí. Qué te puede pedir el banco y cómo regularizar años sin declarar.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
 ];

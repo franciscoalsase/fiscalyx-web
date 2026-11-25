@@ -2063,16 +2063,18 @@ a {
 
 @media (max-width: 860px) {
   .calculadora {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 .calc-formulario {
+  min-width: 0;
   display: grid;
   gap: 2rem;
 }
 
 .calc-formulario fieldset {
+  min-width: 0;
   border: none;
   margin: 0;
   padding: 0;
@@ -2482,4 +2484,39 @@ a {
   padding-left: 1.1rem;
   display: grid;
   gap: 0.4rem;
+}
+
+/* ---------- Calculadora de autónomo o sociedad ---------- */
+
+.veredicto {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.comparativa thead th {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: right;
+  border-bottom: 2px solid var(--tinta);
+}
+
+.comparativa thead th:first-child {
+  text-align: left;
+}
+
+.comparativa td.importe {
+  white-space: nowrap;
+}
+
+.texto-estrecho {
+  max-width: 46rem;
+}
+
+.texto-estrecho p + p {
+  margin-top: 1rem;
 }

@@ -2,7 +2,7 @@
 
 export const site = {
   name: "Fiscalyx",
-  url: "https://fiscalyx.com",
+  url: "https://www.fiscalyx.com",
   owner: "Francisco Seva Soriano",
   ownerShort: "Francisco Seva",
   nif: "48559762T",

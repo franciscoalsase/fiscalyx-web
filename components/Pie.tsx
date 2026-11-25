@@ -53,6 +53,9 @@ export function Pie() {
               <Link href="/calculadora-autonomos/">Calculadora trimestral</Link>
             </li>
             <li>
+              <Link href="/calculadora-autonomo-o-sociedad/">¿Autónomo o sociedad?</Link>
+            </li>
+            <li>
               <Link href="/guias/">Guías</Link>
             </li>
             <li>

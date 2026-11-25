@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
@@ -110,6 +111,11 @@ export default function AutonomoOSociedad() {
         La única forma fiable es hacer la cuenta completa con tus números: beneficio previsto, lo que necesitas sacar
         cada año, tu comunidad autónoma y los costes de la SL. Si la diferencia a favor de la sociedad no compensa con
         claridad esos costes y la complejidad, lo sensato es seguir como autónomo un año más y volver a revisarlo.
+      </p>
+      <p>
+        Para una primera idea, prueba tu caso en nuestra{" "}
+        <Link href="/calculadora-autonomo-o-sociedad/">calculadora de autónomo o sociedad</Link>: compara IRPF,
+        Impuesto sobre Sociedades y Seguridad Social con las cifras de 2026.
       </p>
     </Articulo>
   );
