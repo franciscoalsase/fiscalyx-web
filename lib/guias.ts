@@ -91,4 +91,18 @@ export const guias: Guia[] = [
     tema: "Criptomonedas",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "cuanto-cuesta-una-gestoria",
+    titulo: "Cuánto cuesta una gestoría para autónomos y sociedades",
+    resumen: "Cuotas reales de gestorías online y tradicionales, lo que suele ir aparte y una calculadora del coste de verdad al año.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "darse-de-alta-autonomo",
+    titulo: "Cómo darse de alta como autónomo, paso a paso",
+    resumen: "El orden correcto: paro, modelo 036, Seguridad Social, tarifa plana, licencias y primera factura, con los errores que más caros salen.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];

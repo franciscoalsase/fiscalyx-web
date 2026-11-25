@@ -39,7 +39,7 @@ const pasos = [
 const necesitamos = [
   { t: "Modelos presentados", d: "Trimestrales y anuales de los últimos cuatro años. Si tu gestoría tarda, los descargamos de la sede de Hacienda con tu autorización." },
   { t: "Libros y contabilidad", d: "Libros de ingresos y gastos si eres autónomo; contabilidad completa y cuentas anuales si tienes una sociedad." },
-  { t: "Datos censales", d: "Tu alta en Hacienda (modelo 036 o 037) y en la Seguridad Social, con las actividades y epígrafes." },
+  { t: "Datos censales", d: "Tu alta en Hacienda (modelo 036, o el antiguo 037 si te diste de alta antes de 2025) y en la Seguridad Social, con las actividades y epígrafes." },
   { t: "Trabajadores, si los tienes", d: "Contratos, nóminas y seguros sociales, para no interrumpir ningún pago." },
 ];
 

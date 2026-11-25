@@ -20,7 +20,7 @@ const modelos = [
   { t: "Retenciones (modelos 111 y 115)", d: "Si tienes trabajadores, pagas a otros profesionales o alquilas un local." },
   { t: "Resúmenes anuales (390, 190, 180 y 347)", d: "En enero y febrero, con los datos de todo el año ya cuadrados." },
   { t: "Tu declaración de la Renta", d: "La del titular va en la cuota. La preparamos con el año revisado, no con el borrador." },
-  { t: "Alta, cambios y baja", d: "Alta en Hacienda (036 o 037) y en la Seguridad Social, cambios de actividad o de domicilio, y la baja si llega el día." },
+  { t: "Alta, cambios y baja", d: "Alta en Hacienda (modelo 036) y en la Seguridad Social, cambios de actividad o de domicilio, y la baja si llega el día." },
 ];
 
 const trato = [
@@ -396,7 +396,7 @@ export default function Autonomos() {
                 </details>
               ))}
             </div>
-            <GuiasRelacionadas slugs={["gastos-deducibles-autonomos", "cuota-autonomos-2027", "factura-electronica-verifactu"]} />
+            <GuiasRelacionadas slugs={["darse-de-alta-autonomo", "cuanto-cuesta-una-gestoria", "gastos-deducibles-autonomos", "cuota-autonomos-2027"]} />
             <p style={{ marginTop: "2rem" }}>
               ¿Tienes una sociedad? <Link href="/sociedades/">Mira el plan de sociedades</Link>.
             </p>

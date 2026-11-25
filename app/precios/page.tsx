@@ -132,6 +132,9 @@ export default function Precios() {
                 </details>
               ))}
             </div>
+            <p style={{ marginTop: "2rem" }}>
+              ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta de verdad una gestoría al año</Link>, con lo que suele ir aparte.
+            </p>
             <div className="acciones" style={{ marginTop: "2.5rem" }}>
               <Link className="boton boton-principal" href="/#contacto">
                 Pedir presupuesto

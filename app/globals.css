@@ -2969,3 +2969,33 @@ td.comparar-nos {
 
 .cifra small { display: inline-block; white-space: nowrap; line-height: 1.2; }
 .precio .cifra { font-size: clamp(4rem, 7vw, 6rem); }
+
+/* Pasos dentro de una guía */
+.articulo-cuerpo .pasos-guia { list-style: none; padding: 0; counter-reset: pg; margin-top: 1.25rem; }
+.pasos-guia li {
+  counter-increment: pg;
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  column-gap: 0.75rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--linea);
+}
+.pasos-guia li:last-child { border-bottom: 1px solid var(--linea); }
+.pasos-guia li::before {
+  content: counter(pg);
+  grid-row: span 2;
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--verde);
+  line-height: 1.3;
+}
+.pasos-guia strong { font-family: var(--sans); font-weight: 650; }
+.pasos-guia span { display: block; margin-top: 0.3rem; color: var(--grafito); }
+.articulo-cuerpo li + li.pasos-guia-li { margin-top: 0; }
+.pasos-guia li + li { margin-top: 0; }
+
+.calculadora-guia { margin-top: 1.25rem; }
+@media (min-width: 761px) {
+  .calculadora-guia { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
