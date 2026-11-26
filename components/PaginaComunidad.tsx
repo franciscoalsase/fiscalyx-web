@@ -25,11 +25,14 @@ export function tituloComunidad(slug: string) {
 export function PaginaComunidad({ slug }: { slug: string }) {
   const c = comunidades.find((x) => x.slug === slug)!;
   const maxTotal = Math.round((c.max + ESTATAL_MAX) * 100) / 100;
+  // La deducción que mejor distingue a la comunidad: la primera que no es de las que tienen casi todas.
+  const comunes = /^(Nacimiento|Alquiler de la vivienda habitual$|Familia numerosa|Edad o discapacidad|Cuidado|Acogimiento)/;
+  const destacada = c.deducciones.find((d) => !comunes.test(d)) ?? c.deducciones[c.deducciones.length - 1];
   return (
     <PaginaLocal
       zona={c.corto}
       titulo={`Gestoría online en ${c.corto}`}
-      entradilla={`Autónomos y sociedades de ${c.ciudades.slice(0, 3).join(", ")} y el resto de ${c.corto}, con su escala y sus deducciones aplicadas.`}
+      entradilla={`Llevamos los impuestos y la contabilidad de autónomos y sociedades de ${c.ciudades[0]}, ${c.ciudades[1]} y el resto de la comunidad, online y con cuota fija. Aquí el tipo máximo del IRPF es del ${pct(maxTotal)}, y en tu Renta aplicamos las deducciones autonómicas, como la de ${destacada.charAt(0).toLowerCase() + destacada.slice(1)}.`}
       municipios={c.ciudades}
       servicios={false}
       areaServida={[c.nombre, ...c.ciudades.slice(0, 3)]}
