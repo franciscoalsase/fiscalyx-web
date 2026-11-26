@@ -18,8 +18,11 @@ export const site = {
   formspreeId: "xkgljdvq",
 };
 
-export const whatsappLink = (text = "Hola, vengo de la web de Fiscalyx.") =>
+// Los enlaces de WhatsApp pasan por /whatsapp/ para contar los clics en la analítica sin cookies;
+// esa página redirige a wa.me con el mismo texto.
+export const whatsappDirecto = (text = "Hola, vengo de la web de Fiscalyx.") =>
   `https://wa.me/${site.phoneIntl}?text=${encodeURIComponent(text)}`;
+export const whatsappLink = (text = "Hola, vengo de la web de Fiscalyx.") => `/whatsapp/?t=${encodeURIComponent(text)}`;
 
 export const prices = {
   autonomoMes: 49,

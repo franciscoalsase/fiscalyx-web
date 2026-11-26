@@ -261,7 +261,8 @@ export default function Precios() {
               ))}
             </dl>
             <p style={{ marginTop: "2rem" }}>
-              ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta una gestoría en un año completo</Link>, con lo que suele ir aparte.
+              ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta una gestoría en un año completo</Link>, con lo que suele ir aparte, y tienes una{" "}
+              <Link href="/guias/comparativa-gestorias-online/">comparativa de gestorías online</Link> con sus precios publicados.
             </p>
             <div className="acciones" style={{ marginTop: "2.5rem" }}>
               <Link className="boton boton-principal" href="/empezar/">

@@ -92,6 +92,13 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "comparativa-gestorias-online",
+    titulo: "Gestorías online para autónomos: comparativa de 2026",
+    resumen: "Precios publicados, Renta, permanencia y programa de seis gestorías online, y seis preguntas antes de contratar.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "cuanto-cuesta-una-gestoria",
     titulo: "Cuánto cuesta una gestoría para autónomos y sociedades",
     resumen: "Cuotas reales de gestorías online y tradicionales, lo que suele ir aparte y una calculadora del coste de verdad al año.",

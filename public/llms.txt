@@ -56,6 +56,7 @@
 - [La Renta del autónomo](https://www.fiscalyx.com/guias/renta-autonomos/): cálculo del rendimiento, pagos a cuenta, deducciones olvidadas y pago fraccionado.
 - [Modelo 347](https://www.fiscalyx.com/guias/modelo-347/): operaciones con terceros, umbral, exclusiones y plazo.
 - [IRPF por comunidades 2026](https://www.fiscalyx.com/guias/irpf-por-comunidades-2026/): escala autonómica de cada comunidad de régimen común, ordenada.
+- [Comparativa de gestorías online 2026](https://www.fiscalyx.com/guias/comparativa-gestorias-online/): precios publicados, Renta, permanencia y software de seis gestorías.
 - [Carta de Hacienda](https://www.fiscalyx.com/guias/requerimiento-hacienda/): tipos de carta, plazos de respuesta, cómo contestar y qué pasa si no se hace.
 - [Cuánto cuesta una gestoría](https://www.fiscalyx.com/guias/cuanto-cuesta-una-gestoria/): rangos de precios, extras habituales y calculadora del coste anual.
 - [Darse de alta como autónomo](https://www.fiscalyx.com/guias/darse-de-alta-autonomo/): orden de los trámites, modelo 036, Seguridad Social y tarifa plana.

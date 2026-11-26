@@ -79,7 +79,9 @@ export default function Inicio() {
             <div>
               <h2 id="trimestre-titulo">Un trimestre con nosotros</h2>
               <p className="trimestre-intro">
-                Con el ejemplo de arriba: un diseñador web en estimación directa, tercer trimestre de 2027.
+                Con el ejemplo de arriba: una diseñadora web en estimación directa, tercer trimestre de 2027. Puedes{" "}
+                <a href="/ejemplos/aviso-trimestral-ejemplo.pdf">descargar el aviso completo en PDF</a>, tal como lo
+                recibiría, con datos ficticios.
               </p>
               <ol className="cronologia">
                 <li>

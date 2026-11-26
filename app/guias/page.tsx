@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 // Guías de autónomos y sociedades, por el momento en que se necesitan.
 const grupos = [
-  { id: "guias-empezar", t: "Si estás empezando", slugs: ["darse-de-alta-autonomo", "autonomo-o-sociedad", "cuanto-cuesta-una-gestoria"] },
+  { id: "guias-empezar", t: "Si estás empezando", slugs: ["darse-de-alta-autonomo", "autonomo-o-sociedad", "cuanto-cuesta-una-gestoria", "comparativa-gestorias-online"] },
   {
     id: "guias-impuestos",
     t: "Tus impuestos del trimestre y del año",

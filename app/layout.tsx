@@ -22,14 +22,14 @@ const serif = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Gestoría online de economistas colegiados | Fiscalyx",
+    default: "Gestoría y asesoría online de economistas colegiados | Fiscalyx",
     template: "%s | Fiscalyx",
   },
   description:
     "Gestoría online para autónomos y sociedades de toda España. Economistas colegiados, cuota fija, un asesor asignado y sin permanencia.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Gestoría online de economistas colegiados | Fiscalyx",
+    title: "Gestoría y asesoría online de economistas colegiados | Fiscalyx",
     description:
       "Economistas colegiados. Impuestos y contabilidad por una cuota fija, con un asesor asignado.",
     url: site.url,
