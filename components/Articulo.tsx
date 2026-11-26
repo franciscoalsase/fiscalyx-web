@@ -127,7 +127,7 @@ export function Articulo({
                   {cta.boton}
                   {cta.boton === "Empezar" && <span className="visualmente-oculto"> con Fiscalyx</span>}
                 </Link>
-                <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+                <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
                   Escríbenos por WhatsApp
                 </a>
               </div>

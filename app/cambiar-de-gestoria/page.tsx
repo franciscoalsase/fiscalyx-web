@@ -104,7 +104,7 @@ export default function CambiarDeGestoria() {
                   className="enlace-sencillo"
                   href={whatsappLink("Hola, quiero cambiar de gestoría.")}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

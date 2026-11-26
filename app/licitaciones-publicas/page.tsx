@@ -86,7 +86,7 @@ export default function Licitaciones() {
                   className="enlace-sencillo"
                   href={whatsappLink("Hola, me quiero presentar a una licitación.")}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

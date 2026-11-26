@@ -95,7 +95,7 @@ export default function Sociedades() {
                   className="enlace-sencillo"
                   href={whatsappLink("Hola, quería información para mi sociedad.")}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

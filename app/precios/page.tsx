@@ -268,7 +268,7 @@ export default function Precios() {
               <Link className="boton boton-principal" href="/empezar/">
                 Empezar
               </Link>
-              <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+              <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
                 Escríbenos por WhatsApp
               </a>
             </div>

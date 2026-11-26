@@ -94,7 +94,7 @@ export default function CapitalizarParo() {
                   className="enlace-sencillo"
                   href={whatsappLink("Hola, quiero capitalizar el paro para hacerme autónomo.")}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

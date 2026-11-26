@@ -155,7 +155,7 @@ export default function Autonomos() {
                   className="enlace-sencillo"
                   href={whatsappLink("Hola, soy autónomo y quería información.")}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

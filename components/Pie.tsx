@@ -9,7 +9,7 @@ export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
       <a className="boton boton-principal" href={contacto}>
         {contacto.startsWith("/empezar") || contacto === "#alta" ? "Empezar ahora" : "Pedir presupuesto"}
       </a>
-      <a className="boton boton-secundario" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+      <a className="boton boton-secundario" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
         WhatsApp
       </a>
     </nav>
@@ -27,7 +27,7 @@ export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
             <a href={`mailto:${site.email}`}>{site.email}</a>
             <br />
             <a href={`tel:+${site.phoneIntl}`}>{site.phoneDisplay}</a>, también por{" "}
-            <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+            <a href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
               WhatsApp
             </a>
             <br />

@@ -72,7 +72,7 @@ export function PaginaLocal({
                   className="enlace-sencillo"
                   href={whatsappLink(`Hola, os escribo desde ${zona}.`)}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

@@ -93,7 +93,7 @@ export default function Criptomonedas() {
                   className="enlace-sencillo"
                   href={whatsappLink("Hola, tengo una consulta sobre criptomonedas.")}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                 >
                   Escríbenos por WhatsApp
                 </a>

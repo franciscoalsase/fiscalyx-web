@@ -49,7 +49,7 @@ export default function Gracias() {
             </ol>
             <p className="gracias-nota">
               ¿Es urgente, por ejemplo una carta de Hacienda con plazo? Escríbenos también por{" "}
-              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">WhatsApp</a> y dinos la fecha límite.
+              <a href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">WhatsApp</a> y dinos la fecha límite.
               Mientras tanto, puedes <Link href="/guias/calendario-fiscal-autonomos-2027/">añadir los plazos de 2027 a tu
               calendario</Link> o <Link href="/guias/">leer nuestras guías</Link>.
             </p>

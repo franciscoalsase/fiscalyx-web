@@ -62,7 +62,7 @@ export default function Inicio() {
                 <Link className="boton boton-principal" href="/empezar/">
                   Empezar<span className="visualmente-oculto"> con Fiscalyx</span>
                 </Link>
-                <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+                <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
                   Escríbenos por WhatsApp
                 </a>
               </div>
@@ -251,7 +251,7 @@ export default function Inicio() {
                   <span className="via-nombre">Teléfono y WhatsApp</span>
                   <a href={`tel:+${site.phoneIntl}`}>{site.phoneDisplay}</a>
                   <span className="via-extra">
-                    o <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>
+                    o <a href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">escríbenos por WhatsApp</a>
                   </span>
                 </li>
                 <li>
