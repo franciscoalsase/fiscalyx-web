@@ -67,27 +67,13 @@ export default function Inicio() {
                 </a>
               </div>
               <p className="portada-condiciones">Pagas mes a mes y te puedes ir cuando quieras.</p>
+              <p className="confianza">
+              Llevamos <strong>más de 25 años</strong> con los impuestos de autónomos y empresas. Somos{" "}
+              <strong>colaboradores sociales de la Agencia Tributaria</strong> y de varias haciendas autonómicas,
+              estamos <strong>autorizados en el Sistema RED</strong> de la Seguridad Social y, si un error nuestro te
+              cuesta un recargo, <strong>lo pagamos nosotros</strong>.
+            </p>
             </div>
-          </div>
-          <div className="contenedor">
-            <ul className="confianza" aria-label="Por qué fiarte de nosotros">
-              <li>
-                <strong>Más de 25 años</strong>
-                <span>llevando impuestos de autónomos y empresas</span>
-              </li>
-              <li>
-                <strong>Colaboradores sociales</strong>
-                <span>de la Agencia Tributaria y de varias haciendas autonómicas</span>
-              </li>
-              <li>
-                <strong>Autorizados RED</strong>
-                <span>para tus altas y cotizaciones en la Seguridad Social</span>
-              </li>
-              <li>
-                <strong>Garantía</strong>
-                <span>si un error nuestro te cuesta un recargo, lo pagamos</span>
-              </li>
-            </ul>
           </div>
         </section>
 
@@ -149,41 +135,79 @@ export default function Inicio() {
             <div className="cabeza-seccion">
               <h2 id="lineas-titulo">Servicios y precios</h2>
             </div>
-            <ul className="tarifas">
-              <li className="tarifa tarifa-destacada">
-                <h3>Autónomos</h3>
-                <p className="tarifa-precio">
-                  {prices.autonomoMes} €<small>al mes + IVA</small>
-                </p>
-                <p>Trimestrales, resúmenes anuales y tu Renta, con un asesor que conoce tu actividad.</p>
-                <p className="tarifa-incluye">La Renta va dentro de la cuota; en muchas gestorías se cobra aparte.</p>
-                <Link className="tarifa-enlace" href="/autonomos/">Ver el servicio de autónomos</Link>
-              </li>
-              <li className="tarifa">
-                <h3>Sociedades</h3>
-                <p className="tarifa-precio">
-                  <span>desde </span>{prices.sociedadMes} €<small>al mes + IVA</small>
-                </p>
-                <p>Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL.</p>
-                <p className="tarifa-incluye">En noviembre te decimos cuánto saldrá el Impuesto sobre Sociedades.</p>
-                <Link className="tarifa-enlace" href="/sociedades/">Ver el servicio de sociedades</Link>
-              </li>
-              <li className="tarifa">
-                <h3>Criptomonedas</h3>
-                <p className="tarifa-precio">
-                  <span>desde </span>{prices.cripto[0].tiers[0].price}<small>Renta con hasta 200 operaciones</small>
-                </p>
-                <p>Renta con cripto, Modelo 721 y regularizaciones, operación por operación.</p>
-                <p className="tarifa-incluye">Con el informe que justifica cada operación si Hacienda pregunta.</p>
-                <Link className="tarifa-enlace" href="/criptomonedas/">Ver el servicio de cripto</Link>
-              </li>
-            </ul>
-            <p className="carta-nota">
-              Nóminas a {prices.nominaMes} € al mes por trabajador. También te ayudamos a{" "}
-              <Link href="/capitalizar-paro/">capitalizar el paro</Link> y con la parte económica de las{" "}
-              <Link href="/licitaciones-publicas/">licitaciones públicas</Link>. <Link href="/precios/">Todos los precios</Link>
-            </p>
+            <div className="precios-mesa">
+            <div className="honorarios">
+              <div className="honorarios-cabeza">
+                <p className="honorarios-titulo">Honorarios</p>
+                <p>Cuotas mensuales, sin permanencia. IVA aparte.</p>
+              </div>
+              <ul className="honorarios-lista">
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>
+                      <Link href="/autonomos/">Autónomos</Link>
+                    </h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      {prices.autonomoMes} €<small> al mes</small>
+                    </p>
+                  </div>
+                  <p>
+                    Trimestrales, resúmenes anuales y tu Renta, con un asesor que conoce tu actividad.{" "}
+                    <mark>La Renta va dentro de la cuota</mark>; en muchas gestorías se cobra aparte.
+                  </p>
+                </li>
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>
+                      <Link href="/sociedades/">Sociedades</Link>
+                    </h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      <span>desde </span>
+                      {prices.sociedadMes} €<small> al mes</small>
+                    </p>
+                  </div>
+                  <p>
+                    Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL.{" "}
+                    <mark>En noviembre te decimos cuánto saldrá el Impuesto sobre Sociedades.</mark>
+                  </p>
+                </li>
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>
+                      <Link href="/criptomonedas/">Criptomonedas</Link>
+                    </h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      <span>desde </span>
+                      {prices.cripto[0].tiers[0].price}
+                    </p>
+                  </div>
+                  <p>
+                    Renta con cripto hasta 200 operaciones, Modelo 721 y regularizaciones.{" "}
+                    <mark>Con el informe que justifica cada operación si Hacienda pregunta.</mark>
+                  </p>
+                </li>
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>Nóminas</h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      {prices.nominaMes} €<small> al mes</small>
+                    </p>
+                  </div>
+                  <p>Por trabajador, con sus seguros sociales.</p>
+                </li>
+              </ul>
+              <p className="honorarios-pie">
+                Para <Link href="/capitalizar-paro/">capitalizar el paro</Link> o la parte económica de las{" "}
+                <Link href="/licitaciones-publicas/">licitaciones públicas</Link> te damos presupuesto antes de empezar.{" "}
+                <Link href="/precios/">Ver todos los precios</Link>
+              </p>
+            </div>
             <Garantia clase="garantia-destacada" />
+            </div>
             <p className="carta-nota">
               Antes de escribirnos puedes calcular{" "}
               <Link href="/calculadora-autonomos/">cuánto pagarás este trimestre</Link>,{" "}

@@ -3330,19 +3330,17 @@ td.comparar-nos {
 .portada-inicio {
   background: var(--tinta);
   color: #fff;
-  padding-bottom: 0;
   position: relative;
-  overflow: hidden;
 }
 .portada-inicio::before {
   /* luz suave detrás del papel, como un flexo sobre la mesa */
   content: "";
   position: absolute;
-  right: -10%;
-  top: -20%;
-  width: 60%;
-  height: 120%;
-  background: radial-gradient(closest-side, rgba(255, 232, 110, 0.1), transparent 70%);
+  right: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  background: radial-gradient(closest-side, rgba(255, 232, 110, 0.09), transparent 75%);
   pointer-events: none;
 }
 .portada-inicio .contenedor { position: relative; }
@@ -3387,106 +3385,7 @@ td.comparar-nos {
   .portada-inicio .documento-aviso:hover { transform: rotate(0deg); }
 }
 
-/* Franja de confianza */
-.confianza {
-  grid-column: 1 / -1;
-  list-style: none;
-  margin: clamp(3rem, 6vw, 4.5rem) 0 0;
-  padding: 1.6rem 0 1.8rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem 2rem;
-  font-family: var(--sans);
-}
-.confianza li { display: flex; flex-direction: column; gap: 0.25rem; padding-left: 0.9rem; border-left: 2px solid var(--subrayador); }
-.confianza strong { font-size: 1.05rem; font-weight: 700; color: #fff; }
-.confianza span { font-size: 0.9rem; line-height: 1.4; color: rgba(255, 255, 255, 0.7); }
-@media (max-width: 900px) { .confianza { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 480px) { .confianza { grid-template-columns: minmax(0, 1fr); } }
 
-/* ---------- Tarifas de la portada ---------- */
-
-.tarifas {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1.12fr 1fr 1fr;
-  gap: 1.25rem;
-  align-items: stretch;
-}
-.tarifa {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.75rem 1.6rem 1.6rem;
-  background: #fff;
-  border: 1px solid var(--linea);
-  border-radius: var(--radio);
-}
-.tarifa h3 { font-size: 1.3rem; }
-.tarifa > p { margin: 0; color: var(--grafito); }
-.tarifa-precio {
-  font-family: var(--sans);
-  font-weight: 800;
-  font-size: 2.6rem;
-  letter-spacing: -0.035em;
-  line-height: 1;
-  color: var(--tinta);
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--linea);
-}
-.tarifa .tarifa-precio { color: var(--tinta); }
-.tarifa-precio span { font-size: 1rem; font-weight: 600; letter-spacing: 0; color: var(--grafito); }
-.tarifa-precio small {
-  display: block;
-  margin-top: 0.45rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  color: var(--grafito);
-}
-.tarifa .tarifa-incluye {
-  font-family: var(--sans);
-  font-size: 0.92rem;
-  color: var(--verde-oscuro);
-}
-.tarifa-enlace {
-  margin-top: auto;
-  padding-top: 0.75rem;
-  font-family: var(--sans);
-  font-weight: 600;
-}
-
-/* Autónomos: la tarifa que lleva la Renta dentro va en tinta */
-.tarifa-destacada {
-  background: var(--tinta);
-  border-color: var(--tinta);
-  color: #fff;
-  box-shadow: 0 24px 50px -30px rgba(27, 42, 65, 0.7);
-}
-.tarifa-destacada h3,
-.tarifa-destacada .tarifa-precio { color: #fff; }
-.tarifa-destacada > p { color: rgba(255, 255, 255, 0.82); }
-.tarifa-destacada .tarifa-precio { border-bottom-color: rgba(255, 255, 255, 0.18); }
-.tarifa-destacada .tarifa-precio small { color: rgba(255, 255, 255, 0.7); }
-.tarifa-destacada .tarifa-incluye { color: var(--subrayador); }
-.tarifa-destacada .tarifa-enlace {
-  align-self: flex-start;
-  margin-top: auto;
-  padding: 0.7rem 1.1rem;
-  background: var(--subrayador);
-  color: var(--tinta);
-  border-radius: var(--radio);
-  text-decoration: none;
-}
-.tarifa-destacada .tarifa-enlace:hover { background: #fff3a8; }
-.tarifa-destacada :focus-visible { outline-color: var(--subrayador); }
-
-@media (max-width: 900px) {
-  .tarifas { grid-template-columns: minmax(0, 1fr); }
-}
 
 /* Garantía destacada */
 .garantia.garantia-destacada {
@@ -3506,7 +3405,6 @@ td.comparar-nos {
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
-.tarifas + .carta-nota { margin-top: 1.75rem; }
 .seccion-verde .garantia.garantia-destacada { color: var(--tinta); }
 
 /* ---------- Banda de cierre antes del pie ---------- */
@@ -3564,3 +3462,97 @@ td.comparar-nos {
   border-color: transparent;
   box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.55);
 }
+
+
+/* ---------- Portada v5: el aviso se sale de la banda, confianza en una frase ---------- */
+
+@media (min-width: 861px) {
+  .portada-inicio { padding-bottom: clamp(3rem, 5vw, 4.5rem); }
+  .portada-inicio .contenedor {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    grid-template-areas: "titulo titulo" "texto doc" "acciones doc";
+    grid-template-rows: auto auto 1fr;
+    column-gap: clamp(2.5rem, 5vw, 5rem);
+  }
+  .portada-inicio .portada-texto { display: contents; }
+  .portada-inicio h1 { grid-area: titulo; max-width: 24ch; margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
+  .portada-inicio .entradilla { grid-area: texto; margin-top: 0; }
+  .portada-inicio .documento-aviso {
+    align-self: end;
+    margin-bottom: calc(-1 * clamp(6rem, 10vw, 8.5rem));
+    z-index: 2;
+  }
+  .portada-inicio + section { padding-top: clamp(8.5rem, 13vw, 11rem); }
+}
+.portada-inicio h1 { font-size: clamp(2.4rem, 5.2vw, 4.4rem); }
+
+.confianza {
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  max-width: 38rem;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+}
+.confianza strong { color: #fff; font-weight: 600; font-family: var(--sans); font-size: 0.97em; }
+
+/* ---------- Hoja de honorarios ---------- */
+
+.honorarios {
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  box-shadow: 0 1px 0 var(--linea), 0 24px 50px -34px rgba(27, 42, 65, 0.5);
+  padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 3rem) clamp(1.25rem, 3vw, 2rem);
+}
+.honorarios-cabeza {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1.5rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid var(--tinta);
+}
+.honorarios-titulo { font-family: var(--sans); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; }
+.honorarios-cabeza p:not(.honorarios-titulo) { font-family: var(--sans); font-size: 0.92rem; color: var(--grafito); }
+.honorarios-lista { list-style: none; margin: 0; padding: 0; }
+.honorarios-lista li { padding: 1.35rem 0 1.3rem; border-bottom: 1px solid var(--linea); }
+.honorarios-linea { display: flex; align-items: baseline; gap: 0.75rem; }
+.honorarios-linea h3 { font-size: 1.3rem; flex: none; }
+.honorarios-linea h3 a { color: var(--tinta); text-decoration: none; }
+.honorarios-linea h3 a:hover { text-decoration: underline; text-decoration-color: var(--subrayador); text-decoration-thickness: 3px; }
+.honorarios-puntos { flex: 1; min-width: 1.5rem; border-bottom: 2px dotted #c9c6bb; transform: translateY(-0.3rem); }
+.honorarios-importe {
+  flex: none;
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+  color: var(--tinta);
+}
+.honorarios-importe span, .honorarios-importe small {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--grafito);
+}
+.honorarios-lista li > p { margin-top: 0.4rem; max-width: 40rem; color: var(--grafito); }
+.honorarios-lista mark {
+  color: var(--tinta);
+  background: linear-gradient(transparent 55%, var(--subrayador) 55%, var(--subrayador) 92%, transparent 92%);
+  padding: 0 0.1em;
+}
+.honorarios-pie { margin-top: 1.1rem; font-size: 0.98rem; color: var(--grafito); }
+.honorarios + .garantia-destacada { max-width: 54rem; }
+@media (max-width: 520px) {
+  .honorarios-linea h3 { font-size: 1.15rem; }
+  .honorarios-importe { font-size: 1.3rem; }
+}
+
+/* Honorarios y garantía, uno al lado del otro */
+.precios-mesa { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: 1.5rem 2.5rem; align-items: start; }
+.precios-mesa .garantia.garantia-destacada { margin: 0; max-width: none; position: sticky; top: 6rem; }
+@media (max-width: 960px) { .precios-mesa { grid-template-columns: minmax(0, 1fr); } .precios-mesa .garantia.garantia-destacada { position: static; } }
+.portada-inicio { overflow-x: clip; }
