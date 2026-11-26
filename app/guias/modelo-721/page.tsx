@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
+import { prices } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Modelo 721 de criptomonedas: guía para 2027",
@@ -147,6 +148,19 @@ export default function Modelo721() {
         <Link href="/guias/permutas-criptomonedas-fifo/">ganancias y pérdidas calculadas con FIFO</Link>.
       </p>
 
+      <h2>Cuánto cuesta presentar el Modelo 721</h2>
+      <p>
+        Presentarlo tú es gratis: se hace en la sede electrónica de la Agencia Tributaria con certificado digital o
+        Cl@ve. Lo que cuesta es reunir los datos de cada exchange y valorar cada moneda a 31 de diciembre sin
+        equivocarte.
+      </p>
+      <p>
+        Si lo presentamos nosotros, el precio es desde {prices.cripto[1].tiers[0].price} por ejercicio, más IVA. Depende
+        de cuántos exchanges y monedas tengas. Si además te hacemos la{" "}
+        <Link href="/guias/declarar-criptomonedas-renta/">Renta con criptomonedas</Link>, usamos los mismos datos para las
+        dos declaraciones. Tienes todos los precios en la página de{" "}
+        <Link href="/criptomonedas/">gestoría para criptomonedas</Link>.
+      </p>
       <h2>Errores frecuentes</h2>
       <ul>
         <li>Contar solo una plataforma y no sumar el resto para ver si se supera el umbral.</li>

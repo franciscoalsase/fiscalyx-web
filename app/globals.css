@@ -3518,7 +3518,7 @@ td.comparar-nos {
 .honorarios-titulo { font-family: var(--sans); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; }
 .honorarios-cabeza p:not(.honorarios-titulo) { font-family: var(--sans); font-size: 0.92rem; color: var(--grafito); }
 .honorarios-lista { list-style: none; margin: 0; padding: 0; }
-.honorarios-lista li { padding: 1.35rem 0 1.3rem; border-bottom: 1px solid var(--linea); }
+.honorarios-lista > li { padding: 1.35rem 0 1.3rem; border-bottom: 1px solid var(--linea); }
 .honorarios-linea { display: flex; align-items: baseline; gap: 0.75rem; }
 .honorarios-linea h3 { font-size: 1.3rem; flex: none; }
 .honorarios-linea h3 a { color: var(--tinta); text-decoration: none; }
@@ -3538,7 +3538,7 @@ td.comparar-nos {
   letter-spacing: 0;
   color: var(--grafito);
 }
-.honorarios-lista li > p { margin-top: 0.4rem; max-width: 40rem; color: var(--grafito); }
+.honorarios-lista > li > p { margin-top: 0.4rem; max-width: 40rem; color: var(--grafito); }
 .honorarios-lista mark {
   color: var(--tinta);
   background: linear-gradient(transparent 55%, var(--subrayador) 55%, var(--subrayador) 92%, transparent 92%);
@@ -3668,4 +3668,27 @@ td.comparar-nos {
   .portada-quienes .foto-vertical { margin-bottom: 0; }
   .portada-quienes .foto-vertical img { aspect-ratio: 4 / 3; }
   .portada-quienes + section { padding-top: clamp(3rem, 7vw, 5rem); }
+}
+
+/* Hoja de honorarios: lo que incluye cada línea */
+.honorarios-incluye {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem 1.5rem;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--tinta);
+}
+.honorarios-incluye li { padding-left: 1.1rem; position: relative; }
+.honorarios-incluye li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.5rem; height: 2px; background: var(--verde); }
+.honorarios-enlace { display: inline-block; margin-top: 0.9rem; font-family: var(--sans); font-weight: 600; }
+@media (max-width: 600px) { .honorarios-incluye { grid-template-columns: minmax(0, 1fr); } }
+.seccion-verde .honorarios { color: var(--tinta); }
+@media (max-width: 520px) {
+  .honorarios-linea { flex-wrap: wrap; row-gap: 0.15rem; }
+  .honorarios-linea .honorarios-puntos { display: none; }
+  .honorarios-linea h3 { flex-basis: 100%; }
 }

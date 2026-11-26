@@ -50,6 +50,7 @@ const datosEstructurados = {
   email: site.email,
   telephone: `+${site.phoneIntl}`,
   areaServed: { "@type": "Country", name: "España" },
+  priceRange: "Desde 49 € al mes",
   logo: `${site.url}/icon.svg`,
   image: `${site.url}/og.png`,
   openingHoursSpecification: [

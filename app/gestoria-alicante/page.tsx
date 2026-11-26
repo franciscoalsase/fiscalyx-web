@@ -37,6 +37,13 @@ export default function GestoriaAlicante() {
             Si tu negocio está en Elche y vendes a otros países, mira nuestra página de{" "}
             <Link href="/gestoria-elche/">gestoría en Elche</Link>, con el IVA de las ventas al extranjero.
           </p>
+          <p>
+            Si estás en el sur de la provincia, tienes lo que cambia allí en nuestras páginas de la{" "}
+            <Link href="/gestoria-vega-baja/">Vega Baja</Link>, de{" "}
+            <Link href="/gestoria-orihuela/">Orihuela y Orihuela Costa</Link> y de{" "}
+            <Link href="/gestoria-torrevieja/">Torrevieja</Link>, donde muchos autónomos son residentes extranjeros con
+            rentas en otros países.
+          </p>
           <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana</h2>
           <p>
             La mitad de tu IRPF va con la escala autonómica, y la valenciana tiene sus propios tramos, su mínimo

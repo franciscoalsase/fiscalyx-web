@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { Garantia } from "@/components/Garantia";
-import { Check } from "@/components/Iconos";
 import { prices, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -91,68 +90,95 @@ export default function Precios() {
             <h2 id="planes-titulo" className="visualmente-oculto">
               Planes
             </h2>
-            <div className="planes planes-tres">
-              <div className="tarjeta-blanca plan">
-                <h3>Autónomo</h3>
-                <p className="plan-precio">
-                  <span className="cifra-desde">cuota fija</span>
-                  {prices.autonomoMes} €<small>al mes</small>
-                </p>
-                <p className="plan-diferencia">La Renta va dentro. En muchas gestorías online se cobra aparte, desde unos 40 €.</p>
-                <ul className="plan-lista">
-                  <li><Check /> Modelos 303, 130, 111 y 115</li>
-                  <li><Check /> Resúmenes 390, 190, 180 y 347</li>
-                  <li><Check /> Declaración de la Renta del titular</li>
-                  <li><Check /> Alta en Hacienda y Seguridad Social</li>
-                  <li><Check /> Asesor asignado, WhatsApp y llamada trimestral</li>
-                </ul>
-                <Link className="boton boton-principal" href="/empezar/?plan=autonomo">Empezar con este plan</Link>
+            <div className="precios-mesa">
+            <div className="honorarios">
+              <div className="honorarios-cabeza">
+                <p className="honorarios-titulo">Honorarios</p>
+                <p>Cuotas sin permanencia. IVA aparte.</p>
               </div>
-              <div className="tarjeta-blanca plan">
-                <h3>Sociedad limitada</h3>
-                <p className="plan-precio">
-                  <span className="cifra-desde">desde</span>
-                  {prices.sociedadMes} €<small>al mes</small>
-                </p>
-                <p className="plan-diferencia">Las cuentas anuales van dentro, y en noviembre te decimos cuánto saldrá el impuesto.</p>
-                <ul className="plan-lista">
-                  <li><Check /> Contabilidad y libros oficiales</li>
-                  <li><Check /> Modelos 303, 111, 115 y 202</li>
-                  <li><Check /> Impuesto sobre Sociedades</li>
-                  <li><Check /> Cuentas anuales, acta y depósito</li>
-                  <li><Check /> Asesor asignado, WhatsApp y llamada trimestral</li>
-                </ul>
-                <Link className="boton boton-principal" href="/empezar/?plan=sociedad">Empezar con este plan</Link>
-              </div>
-              <div className="tarjeta-blanca plan">
-                <h3>Criptomonedas</h3>
-                <p className="plan-precio">
-                  <span className="cifra-desde">desde</span>
-                  {prices.cripto[0].tiers[0].price}
-                  <small>por ejercicio</small>
-                </p>
-                <p className="plan-diferencia">Con el informe que justifica cada operación ante Hacienda.</p>
-                <ul className="plan-lista">
-                  {prices.cripto[0].tiers.map((t) => (
-                    <li key={t.label}>
-                      <Check /> Renta, {t.label.toLowerCase()}: {t.price}
-                    </li>
-                  ))}
-                  <li>
-                    <Check /> Modelo 721: {prices.cripto[1].tiers[0].price}
-                  </li>
-                  <li>
-                    <Check /> Regularización: diagnóstico de {prices.cripto[2].tiers[0].price}, descontable
-                  </li>
-                </ul>
-                <Link className="boton boton-principal" href="/empezar/?plan=cripto">Empezar con este plan</Link>
-              </div>
+              <ul className="honorarios-lista">
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>Autónomo</h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      {prices.autonomoMes} €<small> al mes</small>
+                    </p>
+                  </div>
+                  <p>
+                    <mark>La Renta va dentro.</mark> En muchas gestorías online se cobra aparte, desde unos 40 €.
+                  </p>
+                  <ul className="honorarios-incluye">
+                    <li>Modelos 303, 130, 111 y 115</li>
+                    <li>Resúmenes 390, 190, 180 y 347</li>
+                    <li>Declaración de la Renta del titular</li>
+                    <li>Alta en Hacienda y Seguridad Social</li>
+                    <li>Asesor asignado, WhatsApp y llamada trimestral</li>
+                  </ul>
+                  <Link className="honorarios-enlace" href="/empezar/?plan=autonomo">Calcular y empezar como autónomo</Link>
+                </li>
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>Sociedad limitada</h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      <span>desde </span>
+                      {prices.sociedadMes} €<small> al mes</small>
+                    </p>
+                  </div>
+                  <p>
+                    <mark>Las cuentas anuales van dentro</mark>, y en noviembre te decimos cuánto saldrá el impuesto.
+                  </p>
+                  <ul className="honorarios-incluye">
+                    <li>Contabilidad y libros oficiales</li>
+                    <li>Modelos 303, 111, 115 y 202</li>
+                    <li>Impuesto sobre Sociedades</li>
+                    <li>Cuentas anuales, acta y depósito</li>
+                    <li>Asesor asignado, WhatsApp y llamada trimestral</li>
+                  </ul>
+                  <Link className="honorarios-enlace" href="/empezar/?plan=sociedad">Calcular y empezar con tu SL</Link>
+                </li>
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>Criptomonedas</h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      <span>desde </span>
+                      {prices.cripto[0].tiers[0].price}
+                      <small> por ejercicio</small>
+                    </p>
+                  </div>
+                  <p>
+                    <mark>Con el informe que justifica cada operación</mark> si Hacienda pregunta.
+                  </p>
+                  <ul className="honorarios-incluye">
+                    {prices.cripto[0].tiers.map((t) => (
+                      <li key={t.label}>
+                        Renta, {t.label.charAt(0).toLowerCase() + t.label.slice(1)}: {t.price}
+                      </li>
+                    ))}
+                    <li>Modelo 721: {prices.cripto[1].tiers[0].price}</li>
+                    <li>Regularización: diagnóstico de {prices.cripto[2].tiers[0].price}, descontable</li>
+                  </ul>
+                  <Link className="honorarios-enlace" href="/empezar/?plan=cripto">Calcular y empezar con cripto</Link>
+                </li>
+                <li>
+                  <div className="honorarios-linea">
+                    <h3>Nóminas</h3>
+                    <span className="honorarios-puntos" aria-hidden="true" />
+                    <p className="honorarios-importe">
+                      {prices.nominaMes} €<small> al mes</small>
+                    </p>
+                  </div>
+                  <p>Por trabajador, con sus seguros sociales. Aparte en todos los planes.</p>
+                </li>
+              </ul>
+              <p className="honorarios-pie">
+                Los requerimientos e inspecciones van aparte, con el precio por escrito antes de empezar.
+              </p>
             </div>
-            <p className="planes-nota">
-              Aparte en todos los planes: nóminas y seguros sociales a {prices.nominaMes} € al mes por trabajador, y
-              requerimientos o inspecciones, con el precio por escrito antes de empezar.
-            </p>
             <Garantia clase="garantia-destacada" />
+            </div>
           </div>
         </section>
 

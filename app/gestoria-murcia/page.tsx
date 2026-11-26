@@ -21,8 +21,9 @@ export default function GestoriaMurcia() {
         <>
           <h2>Al lado de la Región, y online</h2>
           <p>
-            Trabajamos desde la Vega Baja, a pocos kilómetros de Murcia, y muchos de nuestros clientes viven a un lado
-            del límite y trabajan al otro. Por eso conocemos bien las dos normativas autonómicas y lo que cambia en tus
+            Trabajamos desde la <Link href="/gestoria-vega-baja/">Vega Baja</Link>, a pocos kilómetros de Murcia, y
+            muchos de nuestros clientes viven a un lado del límite y trabajan al otro, entre{" "}
+            <Link href="/gestoria-orihuela/">Orihuela</Link> y la Región. Por eso conocemos bien las dos normativas autonómicas y lo que cambia en tus
             impuestos según dónde tengas tu residencia.
           </p>
           <p>
