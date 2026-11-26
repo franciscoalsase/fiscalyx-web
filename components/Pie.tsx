@@ -82,6 +82,9 @@ export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
             <li>
               <Link href="/gestoria-murcia/">Gestoría en Murcia</Link>
             </li>
+            <li>
+              <Link href="/guias/irpf-por-comunidades-2026/">Gestoría en otras comunidades</Link>
+            </li>
           </ul>
         </div>
 

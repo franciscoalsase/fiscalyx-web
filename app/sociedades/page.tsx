@@ -43,6 +43,10 @@ const incluye = [
 
 const preguntas = [
   {
+    p: "¿Trabajáis con clientes de cualquier comunidad?",
+    r: "Trabajamos con toda España salvo el País Vasco y Navarra, que tienen haciendas forales propias, y Canarias, Ceuta y Melilla, que tienen otro sistema de impuestos indirectos. Si tu domicilio fiscal está en una de esas zonas, te lo decimos antes de empezar para que busques un asesor de allí.",
+  },
+  {
     p: "¿El Impuesto sobre Sociedades y las cuentas anuales van incluidos?",
     r: "Sí, dentro de la cuota mensual. Solo pagas aparte las tasas del Registro Mercantil por el depósito de cuentas y la legalización de libros.",
   },

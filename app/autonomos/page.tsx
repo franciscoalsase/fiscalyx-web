@@ -57,7 +57,7 @@ const preguntas = [
   },
   {
     p: "¿Tengo que estar en Alicante o en Murcia?",
-    r: "No. Trabajamos con autónomos de toda España por WhatsApp, correo y videollamada. Para presentar en tu nombre basta con que nos autorices ante Hacienda y la Seguridad Social, y te guiamos para hacerlo.",
+    r: "No. Todo se hace en remoto, por WhatsApp, teléfono, correo y videollamada, y atendemos a toda España salvo el País Vasco y Navarra, que tienen haciendas forales propias, y Canarias, Ceuta y Melilla, que tienen otro sistema de impuestos indirectos. Para presentar en tu nombre basta con que nos autorices ante Hacienda y la Seguridad Social, y te guiamos para hacerlo.",
   },
   {
     p: "Me he retrasado con un trimestre. ¿Qué hago?",

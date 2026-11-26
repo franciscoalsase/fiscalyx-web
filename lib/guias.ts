@@ -120,6 +120,13 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "irpf-por-comunidades-2026",
+    titulo: "El IRPF por comunidades en 2026",
+    resumen: "La escala autonómica de cada comunidad, ordenada de menor a mayor: tramos, tipo mínimo y máximo, el máximo con la estatal y el ITP.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "requerimiento-hacienda",
     titulo: "Te ha llegado una carta de Hacienda: qué hacer",
     resumen: "Qué tipo de carta es, cuántos días tienes y cómo se cuentan, cómo se contesta por la sede electrónica y qué pasa si no lo haces.",

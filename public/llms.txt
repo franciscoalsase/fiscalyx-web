@@ -26,6 +26,18 @@
 - [Gestoría en Orihuela](https://www.fiscalyx.com/gestoria-orihuela/): régimen especial agrario del IVA y residentes extranjeros en la costa.
 - [Gestoría en Torrevieja](https://www.fiscalyx.com/gestoria-torrevieja/): autónomos extranjeros, residencia fiscal y modelo 720.
 - [Gestoría en Murcia](https://www.fiscalyx.com/gestoria-murcia/)
+- [Gestoría online en Comunidad de Madrid](https://www.fiscalyx.com/gestoria-madrid/)
+- [Gestoría online en Andalucía](https://www.fiscalyx.com/gestoria-andalucia/)
+- [Gestoría online en Cataluña](https://www.fiscalyx.com/gestoria-cataluna/)
+- [Gestoría online en Galicia](https://www.fiscalyx.com/gestoria-galicia/)
+- [Gestoría online en Castilla y León](https://www.fiscalyx.com/gestoria-castilla-y-leon/)
+- [Gestoría online en Castilla-La Mancha](https://www.fiscalyx.com/gestoria-castilla-la-mancha/)
+- [Gestoría online en Aragón](https://www.fiscalyx.com/gestoria-aragon/)
+- [Gestoría online en Principado de Asturias](https://www.fiscalyx.com/gestoria-asturias/)
+- [Gestoría online en Illes Balears](https://www.fiscalyx.com/gestoria-baleares/)
+- [Gestoría online en Cantabria](https://www.fiscalyx.com/gestoria-cantabria/)
+- [Gestoría online en Extremadura](https://www.fiscalyx.com/gestoria-extremadura/)
+- [Gestoría online en La Rioja](https://www.fiscalyx.com/gestoria-la-rioja/)
 - [Calculadora de la cuota de autónomos](https://www.fiscalyx.com/calculadora-cuota-autonomos/): tramo y cuota mínima según los rendimientos netos, con la tabla de 2026.
 - [Calculadora de autónomo o sociedad](https://www.fiscalyx.com/calculadora-autonomo-o-sociedad/): compara impuestos y cotizaciones de trabajar como autónomo o con una sociedad limitada.
 
@@ -43,6 +55,7 @@
 - [Cuentas anuales de una SL](https://www.fiscalyx.com/guias/cuentas-anuales-sociedad/): plazos de 2027, legalización de libros, depósito y sanciones.
 - [La Renta del autónomo](https://www.fiscalyx.com/guias/renta-autonomos/): cálculo del rendimiento, pagos a cuenta, deducciones olvidadas y pago fraccionado.
 - [Modelo 347](https://www.fiscalyx.com/guias/modelo-347/): operaciones con terceros, umbral, exclusiones y plazo.
+- [IRPF por comunidades 2026](https://www.fiscalyx.com/guias/irpf-por-comunidades-2026/): escala autonómica de cada comunidad de régimen común, ordenada.
 - [Carta de Hacienda](https://www.fiscalyx.com/guias/requerimiento-hacienda/): tipos de carta, plazos de respuesta, cómo contestar y qué pasa si no se hace.
 - [Cuánto cuesta una gestoría](https://www.fiscalyx.com/guias/cuanto-cuesta-una-gestoria/): rangos de precios, extras habituales y calculadora del coste anual.
 - [Darse de alta como autónomo](https://www.fiscalyx.com/guias/darse-de-alta-autonomo/): orden de los trámites, modelo 036, Seguridad Social y tarifa plana.

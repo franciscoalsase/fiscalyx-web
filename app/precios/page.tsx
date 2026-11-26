@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 
 const preguntas = [
   {
+    p: "¿Trabajáis con clientes de cualquier comunidad?",
+    r: "Trabajamos con toda España salvo el País Vasco y Navarra, que tienen haciendas forales propias, y Canarias, Ceuta y Melilla, que tienen otro sistema de impuestos indirectos. Si tu domicilio fiscal está en una de esas zonas, te lo decimos antes de empezar para que busques un asesor de allí.",
+  },
+  {
     p: "¿Por qué no sois la gestoría más barata?",
     r: "Porque cada cliente tiene un asesor asignado, economista colegiado, que le llama antes de cada trimestre. Hay gestorías online más baratas que atienden sobre todo por chat; nosotros preferimos conocer tu caso y hablar contigo.",
   },
