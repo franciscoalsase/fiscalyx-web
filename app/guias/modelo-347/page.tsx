@@ -23,7 +23,7 @@ export default function Modelo347() {
         boton: "Empezar",
       }}
       fuentes={[
-        { nombre: "Agencia Tributaria: modelo 347, declaración anual de operaciones con terceras personas", url: "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-347-decla_____racion-anual-operaciones-personas_.html" },
+        { nombre: "Agencia Tributaria: modelo 347, declaración anual de operaciones con terceras personas", url: "https://sede.agenciatributaria.gob.es/Sede/procedimientos/GI27.shtml" },
         { nombre: "Real Decreto 1065/2007, artículos 31 a 35", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984" },
         { nombre: "Guía Fiscal: modelo 347 para autónomos", url: "https://guiafiscal.es/iva/modelo-347-autonomo-guia/" },
       ]}
