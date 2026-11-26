@@ -55,9 +55,12 @@ export default function GestoriaOrihuela() {
       fuentes={[
         { nombre: "Agencia Tributaria: régimen especial de la agricultura, ganadería y pesca", url: "https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-especial-agricultura-ganaderia-pesca.html" },
         { nombre: "Agencia Tributaria: cálculo de la compensación, manual de IVA 2026", url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-06-regimenes-especiales-iva/regimen-especial-agricultura-ganaderia-pesca/calculo-reintegro-compensacion.html" },
+        { nombre: "Generalitat Valenciana: preguntas frecuentes sobre viviendas de uso turístico (octubre de 2025)", url: "https://www.gva.es/descarregues/2025/10/124825-Preguntas_frecuentes_(FAQs)_viviendas_de_uso_turistico_16_10_2025_ultima_version.pdf" },
+        { nombre: "Tribunal Supremo: sentencia 620/2026 que anula el registro único de arrendamientos (BOE)", url: "https://www.boe.es/boe/dias/2026/06/08/pdfs/BOE-A-2026-12300.pdf" },
         { nombre: "Orihuela cierra 2025 rozando los 89.000 habitantes (Alicante Plaza)", url: "https://alicanteplaza.es/alicanteplaza/orihuela1/orihuela-cierra-2025-rozando-los-89000-habitantes-crece-un-37-con-la-costa-como-motor" },
       ]}
       extra={
+        <>
         <section className="seccion" aria-labelledby="orihuela-costa">
           <div className="contenedor texto-estrecho local-texto">
             <h2 id="orihuela-costa">Si vives en Orihuela Costa y vienes de otro país</h2>
@@ -74,8 +77,35 @@ export default function GestoriaOrihuela() {
             </p>
           </div>
         </section>
+        <section className="seccion seccion-banda" aria-labelledby="orihuela-turistico">
+          <div className="contenedor texto-estrecho local-texto">
+            <h2 id="orihuela-turistico">Si alquilas tu casa de Orihuela Costa a turistas</h2>
+            <p>
+              En la Comunitat Valenciana, una vivienda de uso turístico es una casa entera que se alquila por estancias
+              de 10 días o menos. Para anunciarla hay que inscribirla en el Registro de Turismo de la Comunitat
+              Valenciana, con una declaración responsable que se presenta por internet y un informe de compatibilidad
+              urbanística del ayuntamiento. La inscripción dura cinco años y el número tiene que aparecer en todos los
+              anuncios.
+            </p>
+            <p>
+              El registro estatal que exigían Airbnb y Booking desde julio de 2025 ya no hace falta: el Tribunal Supremo lo
+              anuló en mayo de 2026. El registro autonómico, en cambio, sigue siendo obligatorio.
+            </p>
+            <p>
+              En impuestos, si vives en España, lo que cobras va a tu Renta como rendimiento del capital inmobiliario,
+              con sus gastos deducibles, pero sin la reducción que tiene el alquiler de vivienda habitual. Si das
+              servicios de hotel, como limpieza durante la estancia, cambio de ropa o recepción, el alquiler deja de
+              estar exento de IVA y pasa a llevar el 10&nbsp;%. Si vives fuera, se declara en el modelo 210.
+            </p>
+          </div>
+        </section>
+        </>
       }
       preguntas={[
+        {
+          p: "¿Sigo necesitando el número de registro único para anunciar mi casa en Airbnb?",
+          r: "El número del registro estatal ya no es obligatorio: el Tribunal Supremo anuló ese registro en mayo de 2026. Lo que sí necesitas es la inscripción en el Registro de Turismo de la Comunitat Valenciana, y su número tiene que aparecer en el anuncio.",
+        },
         {
           p: "¿Atendéis en Orihuela Costa?",
           r: "Sí. Trabajamos en remoto con toda Orihuela, sus pedanías y la costa, por WhatsApp, teléfono, correo y videollamada. Si necesitas que nos veamos, lo concertamos.",

@@ -56,7 +56,37 @@ export default function GestoriaTorrevieja() {
         { nombre: "Torrevieja supera los 113.000 habitantes (Alicante Plaza, 2026)", url: "https://alicanteplaza.es/alicanteplaza/orihuela1/torrevieja-supera-los-113000-habitantes-un-57-son-extranjeros-de-hasta-120-nacionalidades-diferentes" },
         { nombre: "Torrevieja lidera el crecimiento de población en España en 2025 (Alicante Plaza)", url: "https://alicanteplaza.es/alicanteplaza/orihuela1/torrevieja-lidera-el-crecimiento-de-poblacion-en-espana-en-2025-con-un-aumento-del-45" },
         { nombre: "Ley 35/2006 del IRPF (artículo 9, residencia fiscal)", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" },
+        { nombre: "Agencia Tributaria: rentas imputadas de inmuebles urbanos de no residentes", url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-tributacion-no-residentes/capitulo-03-tributacion-rentas-comunes-nr/rentas-imputadas-bienes-inmuebles-urbanos.html" },
+        { nombre: "Agencia Tributaria: plazos del modelo 210 tras la Orden HAC/623/2026", url: "https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/declaracion-irnr-sin-establecimiento-permanente/modelo-plazo-declaracion.html" },
       ]}
+      extra={
+        <section className="seccion" aria-labelledby="torrevieja-no-residentes">
+          <div className="contenedor texto-estrecho local-texto">
+            <h2 id="torrevieja-no-residentes">Si tienes una casa en Torrevieja y vives fuera de España</h2>
+            <p>
+              Muchos propietarios de Torrevieja no son residentes en España: pasan aquí unas semanas al año y el resto
+              viven en su país. Aunque la casa no se alquile, Hacienda considera que te da una renta, y cada año hay que
+              presentar por ella el modelo 210 del Impuesto sobre la Renta de no Residentes.
+            </p>
+            <p>
+              La renta es un porcentaje del valor catastral que figura en el recibo del IBI: el 1,1&nbsp;% si el valor se
+              revisó en los últimos años y el 2&nbsp;% en los demás casos. Sobre esa cantidad se paga un 19&nbsp;% si
+              vives en la Unión Europea, Islandia, Noruega o Liechtenstein, y un 24&nbsp;% si vives en cualquier otro
+              país, también el Reino Unido. No se puede restar ningún gasto.
+            </p>
+            <p>
+              <strong>Ojo con el plazo de este año.</strong> La renta de 2025 se declara hasta el 31 de diciembre de
+              2026. Desde la renta de 2026 cambia el calendario: se presentará entre el 1 de abril y el 31 de diciembre
+              de 2027.
+            </p>
+            <p>
+              Si la alquilas, lo que cobras se declara aparte, también en el modelo 210, y si la vendes, el comprador
+              retiene el 3&nbsp;% del precio a cuenta de tu impuesto. Te llevamos todo esto aunque vivas fuera, con el
+              mismo asesor y por correo o WhatsApp.
+            </p>
+          </div>
+        </section>
+      }
       preguntas={[
         {
           p: "Soy extranjero y quiero darme de alta como autónomo. ¿Por dónde empiezo?",
@@ -69,6 +99,10 @@ export default function GestoriaTorrevieja() {
         {
           p: "Mi negocio factura casi todo en verano. ¿Cómo lo hacemos con los trimestres?",
           r: "Ajustamos tu base de cotización a los meses de más y menos actividad, y te avisamos antes de cada trimestre de lo que vas a pagar, para que en invierno no te llegue un 303 que no esperabas.",
+        },
+        {
+          p: "No vivo en España pero tengo un piso en Torrevieja. ¿Tengo que pagar algo aunque no lo alquile?",
+          r: "Sí. Hacienda calcula una renta del 1,1 % o el 2 % del valor catastral y sobre ella pagas un 19 % si vives en la Unión Europea o un 24 % si vives fuera, por ejemplo en el Reino Unido. Se declara en el modelo 210: la de 2025, hasta el 31 de diciembre de 2026.",
         },
         {
           p: "¿Tenéis oficina en Torrevieja?",
