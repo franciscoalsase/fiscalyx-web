@@ -105,6 +105,18 @@ export function Pie({ contacto = "/empezar/", cierre = false }: { contacto?: str
               <Link href="/gestoria-torrevieja/">Gestoría en Torrevieja</Link>
             </li>
             <li>
+              <Link href="/gestoria-benidorm/">Gestoría en Benidorm</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-alcoy/">Gestoría en Alcoy</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-elda-petrer/">Gestoría en Elda y Petrer</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-denia/">Gestoría en Dénia</Link>
+            </li>
+            <li>
               <Link href="/gestoria-murcia/">Gestoría en Murcia</Link>
             </li>
             <li>

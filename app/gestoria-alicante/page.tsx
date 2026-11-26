@@ -44,6 +44,13 @@ export default function GestoriaAlicante() {
             <Link href="/gestoria-torrevieja/">Torrevieja</Link>, donde muchos autónomos son residentes extranjeros con
             rentas en otros países.
           </p>
+          <p>
+            Y en el resto de la provincia, cada zona tiene sus preguntas: la hostelería de{" "}
+            <Link href="/gestoria-benidorm/">Benidorm</Link>, las empresas industriales de{" "}
+            <Link href="/gestoria-alcoy/">Alcoy</Link>, el calzado de{" "}
+            <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link> y los propietarios extranjeros de{" "}
+            <Link href="/gestoria-denia/">Dénia</Link>.
+          </p>
           <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana</h2>
           <p>
             La mitad de tu IRPF va con la escala autonómica, y la valenciana tiene sus propios tramos, su mínimo
