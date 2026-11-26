@@ -20,20 +20,20 @@ export function AvisoTrimestre() {
             <th scope="row">
               Modelo 303<span>IVA del trimestre</span>
             </th>
-            <td>{eur(iva)}</td>
+            <td data-contar={iva}>{eur(iva)}</td>
           </tr>
           <tr>
             <th scope="row">
               Modelo 130<span>Pago a cuenta del IRPF</span>
             </th>
-            <td>{eur(irpf)}</td>
+            <td data-contar={irpf}>{eur(irpf)}</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <th scope="row">A pagar el 20 de octubre</th>
             <td>
-              <mark>{eur(iva + irpf)}</mark>
+              <mark data-contar={Math.round((iva + irpf) * 100) / 100}>{eur(iva + irpf)}</mark>
             </td>
           </tr>
         </tfoot>

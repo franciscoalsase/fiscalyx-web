@@ -3296,3 +3296,31 @@ td.comparar-nos {
 .lista-simple { margin: 1rem 0 0; padding-left: 1.2rem; }
 .lista-simple li { margin-top: 0.4rem; padding-left: 0.2rem; }
 .lista-simple li::marker { color: var(--verde); }
+
+/* ---------- Mapa del IRPF por comunidades ---------- */
+.mapa-irpf { margin: 2rem 0 0; }
+.mapa-irpf svg { display: block; width: 100%; height: auto; max-width: 760px; }
+.mapa-region path, .mapa-foral { stroke: var(--papel); stroke-width: 1.5; stroke-linejoin: round; }
+.mapa-region path { transition: fill 0.15s ease; }
+.mapa-region:hover path, .mapa-region:focus-visible path { fill: #ffe86e; }
+.mapa-region:focus-visible { outline: none; }
+.mapa-actual path { stroke: #ffe86e; stroke-width: 4; paint-order: stroke; }
+.mapa-cifra { font-family: var(--sans); font-size: 15px; font-weight: 700; fill: var(--tinta); pointer-events: none; font-variant-numeric: tabular-nums; }
+.mapa-cifra-clara { fill: #fff; }
+.mapa-leyenda { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-family: var(--sans); font-size: 0.86rem; color: var(--grafito); }
+.mapa-leyenda li { display: flex; align-items: center; gap: 0.4rem; }
+.mapa-leyenda span { width: 0.9rem; height: 0.9rem; border-radius: 2px; display: inline-block; }
+.mapa-leyenda-foral { background: repeating-linear-gradient(45deg, #efeee9 0 3px, #cfcdc4 3px 5px); }
+.mapa-irpf figcaption p { margin-top: 0.6rem; font-family: var(--sans); font-size: 0.86rem; color: var(--grafito); max-width: 44rem; }
+.mapa-compacto svg { max-width: 420px; }
+@media (prefers-reduced-motion: reduce) { .mapa-region path { transition: none; } }
+.donde { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; margin-top: clamp(2.5rem, 5vw, 4rem); padding-top: clamp(2rem, 4vw, 3rem); border-top: 1px solid var(--linea); }
+.donde .mapa-irpf { margin: 0; }
+.donde h3 { font-size: 1.55rem; }
+.donde p { margin-top: 0.8rem; color: var(--grafito); max-width: 32rem; }
+@media (max-width: 760px) { .donde { grid-template-columns: minmax(0, 1fr); } }
+.mapa-cifra-estrecha { font-size: 13px; letter-spacing: -0.02em; }
+
+/* Animación única de la portada: las cifras del aviso se cuentan y el total se subraya */
+.documento mark.por-subrayar { background-size: 0% 100%; background-repeat: no-repeat; }
+.documento mark.por-subrayar.subrayar { background-size: 100% 100%; transition: background-size 0.55s cubic-bezier(0.2, 0.7, 0.2, 1); }

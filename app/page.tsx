@@ -6,6 +6,7 @@ import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { FichaProfesional } from "@/components/FichaProfesional";
 import { AvisoTrimestre, ResumenAnio } from "@/components/Documentos";
+import { MapaIrpf } from "@/components/MapaIrpf";
 import { prices, site, whatsappLink } from "@/lib/site";
 
 const preguntas = [
@@ -179,6 +180,20 @@ export default function Inicio() {
               <Link href="/guias/calendario-fiscal-autonomos-2027/">los plazos de 2027 a tu calendario</Link>. Sin
               registrarte.
             </p>
+            <div className="donde">
+              <MapaIrpf compacto />
+              <div>
+                <h3>Para casi toda España</h3>
+                <p>
+                  Trabajamos en remoto con autónomos y sociedades de todas las comunidades de régimen común. Lo que cambia
+                  según dónde vivas es la mitad de tu IRPF: el tipo máximo va del 45&nbsp;% de Madrid al 53,85&nbsp;% de la
+                  Comunitat Valenciana, y cada comunidad tiene sus propias deducciones.
+                </p>
+                <p>
+                  <Link href="/guias/irpf-por-comunidades-2026/">Compara tu comunidad</Link>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

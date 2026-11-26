@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 import { comunidades, otrasComunidades, ESTATAL_MAX, pct } from "@/lib/comunidades";
+import { MapaIrpf } from "@/components/MapaIrpf";
 
 export const metadata: Metadata = {
   title: "IRPF por comunidades en 2026: escalas y tipos",
@@ -47,6 +48,8 @@ export default function IrpfComunidades() {
       </p>
 
       <h2>La escala de cada comunidad</h2>
+      <p>Pasa el ratón o toca una comunidad para ver su tipo máximo y entrar en su página.</p>
+      <MapaIrpf />
       <div className="tabla-scroll">
         <table className="tabla tabla-guia">
           <thead>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
+import { MapaIrpf } from "@/components/MapaIrpf";
 import { comunidades, ESTATAL_MAX, pct } from "@/lib/comunidades";
 
 const FUENTE = {
@@ -61,6 +62,19 @@ export function PaginaComunidad({ slug }: { slug: string }) {
       }
       fuentes={[FUENTE]}
       extra={
+        <>
+        <section className="seccion seccion-banda" aria-labelledby="comunidad-mapa">
+          <div className="contenedor">
+            <div className="cabeza-seccion">
+              <h2 id="comunidad-mapa">{c.corto} frente al resto de España</h2>
+              <p>
+                Tipo máximo del IRPF en cada comunidad, sumando la mitad estatal. {c.corto} está marcada en amarillo;
+                toca cualquier otra para ver su página.
+              </p>
+            </div>
+            <MapaIrpf actual={c.slug} />
+          </div>
+        </section>
         <section className="seccion" aria-labelledby="comunidad-deducciones">
           <div className="contenedor texto-estrecho local-texto">
             <h2 id="comunidad-deducciones">Deducciones autonómicas de {c.corto}</h2>
@@ -72,6 +86,7 @@ export function PaginaComunidad({ slug }: { slug: string }) {
             </ul>
           </div>
         </section>
+        </>
       }
       preguntas={[
         ...c.preguntas,

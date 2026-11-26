@@ -86,6 +86,15 @@ const datosEstructurados = {
 
 const efectos = `document.documentElement.classList.add("js");
 addEventListener("DOMContentLoaded",function(){
+  var cs=document.querySelectorAll(".portada [data-contar]");
+  if(cs.length&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
+    var fmt=function(n){return n.toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2,useGrouping:"always"})+" \u20ac"};
+    var mk=document.querySelector(".portada mark[data-contar]"); if(mk)mk.classList.add("por-subrayar");
+    cs.forEach(function(el,i){var fin=parseFloat(el.getAttribute("data-contar")),t0=null,dur=900,ret=250+i*180;
+      el.textContent=fmt(0);
+      setTimeout(function(){requestAnimationFrame(function paso(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);
+        el.textContent=fmt(fin*e);if(p<1)requestAnimationFrame(paso);else{el.textContent=fmt(fin);if(el===mk)mk.classList.add("subrayar")}})},ret)});
+  }
   var els=document.querySelectorAll("[data-revelar]");
   var pa=document.querySelector(".portada .acciones"),bm=document.querySelector(".barra-movil");
   if(pa&&bm&&("IntersectionObserver" in window)){new IntersectionObserver(function(es){bm.classList.toggle("oculta",es[0].isIntersecting)}).observe(pa)}
