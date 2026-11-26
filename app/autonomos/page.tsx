@@ -185,6 +185,11 @@ export default function Autonomos() {
               <div>
                 <h3>Lo que presentamos</h3>
                 <Lista items={modelos} />
+                <p className="ayuda-campo" style={{ marginTop: "1rem" }}>
+                  Cada modelo, explicado: <Link href="/guias/modelo-303-iva-trimestral/">el 303</Link>,{" "}
+                  <Link href="/guias/modelo-130-retenciones/">el 130 y las retenciones</Link> y{" "}
+                  <Link href="/guias/modelo-347/">el 347</Link>.
+                </p>
               </div>
               <div>
                 <h3>Lo que hacemos además</h3>
