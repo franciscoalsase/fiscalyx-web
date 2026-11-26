@@ -154,7 +154,7 @@ export function Articulo({
           </div>
         </article>
       </main>
-      <Pie />
+      <Pie cierre />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([schema, migas]) }} />
     </>
   );

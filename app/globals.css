@@ -8,7 +8,7 @@
   --papel: #fcfcfa;
   --banda: #f1f0eb;
   --tinta: #1b2a41;
-  --grafito: #566072;
+  --grafito: #4a5468;
   --linea: #dfddd5;
   --verde: #1d6a51;
   --verde-oscuro: #15533f;
@@ -3133,7 +3133,7 @@ td.comparar-nos {
 
 @media (max-width: 860px) {
   .portada-inicio .contenedor {
-    grid-template-areas: "texto" "doc" "acciones";
+    grid-template-areas: "texto" "acciones" "doc";
     grid-template-rows: auto;
     row-gap: 2rem;
   }
@@ -3324,3 +3324,243 @@ td.comparar-nos {
 /* Animación única de la portada: las cifras del aviso se cuentan y el total se subraya */
 .documento mark.por-subrayar { background-size: 0% 100%; background-repeat: no-repeat; }
 .documento mark.por-subrayar.subrayar { background-size: 100% 100%; transition: background-size 0.55s cubic-bezier(0.2, 0.7, 0.2, 1); }
+
+/* ---------- Portada v4: cabecera oscura, papel sobre la mesa y franja de confianza ---------- */
+
+.portada-inicio {
+  background: var(--tinta);
+  color: #fff;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+.portada-inicio::before {
+  /* luz suave detrás del papel, como un flexo sobre la mesa */
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: -20%;
+  width: 60%;
+  height: 120%;
+  background: radial-gradient(closest-side, rgba(255, 232, 110, 0.1), transparent 70%);
+  pointer-events: none;
+}
+.portada-inicio .contenedor { position: relative; }
+.portada-inicio h1 { color: #fff; }
+.portada-inicio .entradilla { color: rgba(255, 255, 255, 0.82); }
+.portada-inicio .portada-condiciones { color: rgba(255, 255, 255, 0.62); }
+.portada-inicio .boton-principal { background: var(--subrayador); color: var(--tinta); }
+.portada-inicio .boton-principal:hover { background: #fff3a8; color: var(--tinta); }
+.portada-inicio .enlace-sencillo { color: #fff; text-decoration-color: var(--subrayador); }
+.portada-inicio .enlace-sencillo:hover { color: var(--subrayador); }
+.portada-inicio :focus-visible { outline-color: var(--subrayador); }
+
+/* El aviso, como un papel sobre la mesa con otro debajo */
+.portada-inicio .documento-aviso {
+  position: relative;
+  color: var(--tinta);
+  background: transparent;
+  border-color: transparent;
+  transform: rotate(-1.2deg);
+  box-shadow: none;
+}
+/* ::before es la hoja de debajo; ::after, el papel blanco del aviso */
+.portada-inicio .documento-aviso::before,
+.portada-inicio .documento-aviso::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: var(--radio);
+}
+.portada-inicio .documento-aviso::before {
+  background: #dcd9cf;
+  transform: rotate(3deg) translate(10px, 8px);
+  box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.6);
+}
+.portada-inicio .documento-aviso::after {
+  background: #fff;
+  box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.55);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .portada-inicio .documento-aviso { transition: transform 0.4s ease; }
+  .portada-inicio .documento-aviso:hover { transform: rotate(0deg); }
+}
+
+/* Franja de confianza */
+.confianza {
+  grid-column: 1 / -1;
+  list-style: none;
+  margin: clamp(3rem, 6vw, 4.5rem) 0 0;
+  padding: 1.6rem 0 1.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+  font-family: var(--sans);
+}
+.confianza li { display: flex; flex-direction: column; gap: 0.25rem; padding-left: 0.9rem; border-left: 2px solid var(--subrayador); }
+.confianza strong { font-size: 1.05rem; font-weight: 700; color: #fff; }
+.confianza span { font-size: 0.9rem; line-height: 1.4; color: rgba(255, 255, 255, 0.7); }
+@media (max-width: 900px) { .confianza { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .confianza { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Tarifas de la portada ---------- */
+
+.tarifas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1.12fr 1fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+.tarifa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem 1.6rem 1.6rem;
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+}
+.tarifa h3 { font-size: 1.3rem; }
+.tarifa > p { margin: 0; color: var(--grafito); }
+.tarifa-precio {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 2.6rem;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--tinta);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--linea);
+}
+.tarifa .tarifa-precio { color: var(--tinta); }
+.tarifa-precio span { font-size: 1rem; font-weight: 600; letter-spacing: 0; color: var(--grafito); }
+.tarifa-precio small {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--grafito);
+}
+.tarifa .tarifa-incluye {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--verde-oscuro);
+}
+.tarifa-enlace {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-family: var(--sans);
+  font-weight: 600;
+}
+
+/* Autónomos: la tarifa que lleva la Renta dentro va en tinta */
+.tarifa-destacada {
+  background: var(--tinta);
+  border-color: var(--tinta);
+  color: #fff;
+  box-shadow: 0 24px 50px -30px rgba(27, 42, 65, 0.7);
+}
+.tarifa-destacada h3,
+.tarifa-destacada .tarifa-precio { color: #fff; }
+.tarifa-destacada > p { color: rgba(255, 255, 255, 0.82); }
+.tarifa-destacada .tarifa-precio { border-bottom-color: rgba(255, 255, 255, 0.18); }
+.tarifa-destacada .tarifa-precio small { color: rgba(255, 255, 255, 0.7); }
+.tarifa-destacada .tarifa-incluye { color: var(--subrayador); }
+.tarifa-destacada .tarifa-enlace {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.7rem 1.1rem;
+  background: var(--subrayador);
+  color: var(--tinta);
+  border-radius: var(--radio);
+  text-decoration: none;
+}
+.tarifa-destacada .tarifa-enlace:hover { background: #fff3a8; }
+.tarifa-destacada :focus-visible { outline-color: var(--subrayador); }
+
+@media (max-width: 900px) {
+  .tarifas { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Garantía destacada */
+.garantia.garantia-destacada {
+  max-width: none;
+  margin: 2rem 0 1.5rem;
+  padding: 1.5rem 1.75rem;
+  border-left: 0;
+  border-radius: var(--radio);
+  background: #fff6c4;
+  font-size: 1rem;
+  color: var(--tinta);
+}
+.garantia-destacada strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.tarifas + .carta-nota { margin-top: 1.75rem; }
+.seccion-verde .garantia.garantia-destacada { color: var(--tinta); }
+
+/* ---------- Banda de cierre antes del pie ---------- */
+
+.cierre {
+  background: var(--tinta);
+  color: #fff;
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+}
+.cierre .contenedor {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 2rem 4rem;
+  align-items: center;
+}
+.cierre h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.3rem); max-width: 22ch; }
+.cierre p { margin-top: 0.9rem; color: rgba(255, 255, 255, 0.8); max-width: 42rem; }
+.cierre-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; font-family: var(--sans); }
+.cierre .boton-principal { background: var(--subrayador); color: var(--tinta); }
+.cierre .boton-principal:hover { background: #fff3a8; color: var(--tinta); }
+.cierre .enlace-sencillo { color: #fff; font-weight: 600; text-decoration-color: var(--subrayador); }
+.cierre .enlace-sencillo:hover { color: var(--subrayador); }
+.cierre-telefono { flex-basis: 100%; color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; text-decoration: none; }
+.cierre-telefono:hover { color: #fff; text-decoration: underline; }
+.cierre :focus-visible { outline-color: var(--subrayador); }
+.cierre + .barra-movil + .pie, .cierre ~ .pie { border-top: 0; }
+@media (max-width: 860px) { .cierre .contenedor { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Cabecera oscura en las páginas de servicio ---------- */
+
+.portada-oscura { background: var(--tinta); color: #fff; position: relative; overflow: hidden; }
+.portada-oscura::before {
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: -20%;
+  width: 60%;
+  height: 120%;
+  background: radial-gradient(closest-side, rgba(255, 232, 110, 0.1), transparent 70%);
+  pointer-events: none;
+}
+.portada-oscura .contenedor { position: relative; }
+.portada-oscura h1 { color: #fff; }
+.portada-oscura .entradilla { color: rgba(255, 255, 255, 0.82); }
+.portada-oscura .portada-condiciones { color: rgba(255, 255, 255, 0.65); }
+.portada-oscura .migas, .portada-oscura .migas a { color: rgba(255, 255, 255, 0.7); }
+.portada-oscura .boton-principal { background: var(--subrayador); color: var(--tinta); }
+.portada-oscura .boton-principal:hover { background: #fff3a8; color: var(--tinta); }
+.portada-oscura .enlace-sencillo { color: #fff; text-decoration-color: var(--subrayador); }
+.portada-oscura .enlace-sencillo:hover { color: var(--subrayador); }
+.portada-oscura :focus-visible { outline-color: var(--subrayador); }
+.portada-oscura :is(.agenda, .informe, .documento) {
+  color: var(--tinta);
+  background: #fff;
+  border-color: transparent;
+  box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.55);
+}

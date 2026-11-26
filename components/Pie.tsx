@@ -2,12 +2,37 @@ import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
 import { Logo } from "@/components/Logo";
 
-export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
+export function Pie({ contacto = "/empezar/", cierre = false }: { contacto?: string; cierre?: boolean }) {
+  const alta = contacto.startsWith("/empezar") || contacto === "#alta";
   return (
     <>
+    {cierre && (
+      <section className="cierre" aria-labelledby="cierre-titulo">
+        <div className="contenedor">
+          <div>
+            <h2 id="cierre-titulo">Cuéntanos tu caso y te decimos cuánto te costaría</h2>
+            <p>
+              Te contestamos en 24 horas laborables. La primera conversación es gratuita y, si cambias de gestoría, nos
+              encargamos del traspaso.
+            </p>
+          </div>
+          <div className="cierre-acciones">
+            <a className="boton boton-principal" href={contacto}>
+              {alta ? "Empezar ahora" : "Pedir presupuesto"}
+            </a>
+            <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
+              Escríbenos por WhatsApp
+            </a>
+            <a className="cierre-telefono" href={`tel:+${site.phoneIntl}`}>
+              o llámanos al {site.phoneDisplay}
+            </a>
+          </div>
+        </div>
+      </section>
+    )}
     <nav className="barra-movil" aria-label="Contacto rápido">
       <a className="boton boton-principal" href={contacto}>
-        {contacto.startsWith("/empezar") || contacto === "#alta" ? "Empezar ahora" : "Pedir presupuesto"}
+        {alta ? "Empezar ahora" : "Pedir presupuesto"}
       </a>
       <a className="boton boton-secundario" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
         WhatsApp

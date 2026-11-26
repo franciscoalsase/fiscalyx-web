@@ -161,7 +161,7 @@ export default function QuienesSomos() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie cierre />
     </>
   );
 }

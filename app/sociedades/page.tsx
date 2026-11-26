@@ -79,7 +79,7 @@ export default function Sociedades() {
     <>
       <Cabecera actual="/sociedades/" />
       <main id="contenido">
-        <section className="portada portada-cripto">
+        <section className="portada portada-cripto portada-oscura">
           <div className="contenedor">
             <div>
               <h1 style={{ maxWidth: "17ch" }}>La gestoría de tu sociedad, con un economista que la conoce</h1>
@@ -222,7 +222,7 @@ export default function Sociedades() {
               <p className="precio-nota">
                 Revisamos el volumen de tu sociedad y te damos una cuota fija por escrito. Sin permanencia.
               </p>
-              <Garantia />
+              <Garantia clase="garantia-destacada" />
               <p style={{ marginTop: "1.5rem" }}>
                 <Link className="boton boton-claro" href="/empezar/?plan=sociedad">
                   Empezar con este plan

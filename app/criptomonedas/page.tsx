@@ -77,7 +77,7 @@ export default function Criptomonedas() {
     <>
       <Cabecera actual="/criptomonedas/" />
       <main id="contenido">
-        <section className="portada portada-cripto">
+        <section className="portada portada-cripto portada-oscura">
           <div className="contenedor">
             <div>
               <h1 style={{ maxWidth: "18ch" }}>Tus criptomonedas, declaradas operación por operación</h1>

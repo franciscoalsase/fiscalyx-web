@@ -152,7 +152,7 @@ export default function Precios() {
               Aparte en todos los planes: nóminas y seguros sociales a {prices.nominaMes} € al mes por trabajador, y
               requerimientos o inspecciones, con el precio por escrito antes de empezar.
             </p>
-            <Garantia />
+            <Garantia clase="garantia-destacada" />
           </div>
         </section>
 
@@ -275,7 +275,7 @@ export default function Precios() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie cierre />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );

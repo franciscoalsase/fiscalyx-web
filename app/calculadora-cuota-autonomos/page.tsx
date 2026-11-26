@@ -167,7 +167,7 @@ export default function CalculadoraCuota() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie cierre />
       <script id="cuota" dangerouslySetInnerHTML={{ __html: script }} />
     </>
   );

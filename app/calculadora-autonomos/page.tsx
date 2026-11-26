@@ -186,7 +186,7 @@ export default function Calculadora() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie cierre />
       <script id="calculadora" dangerouslySetInnerHTML={{ __html: script }} />
     </>
   );

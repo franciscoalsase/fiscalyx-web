@@ -139,7 +139,7 @@ export default function Autonomos() {
     <>
       <Cabecera actual="/autonomos/" />
       <main id="contenido">
-        <section className="portada">
+        <section className="portada portada-oscura">
           <div className="contenedor">
             <div>
               <h1 style={{ maxWidth: "16ch" }}>Tus impuestos de autónomo, presentados y explicados</h1>
@@ -324,7 +324,7 @@ export default function Autonomos() {
                 {prices.autonomoMes} €<small>al mes + IVA</small>
               </p>
               <p className="precio-nota">Sin permanencia. Si te vas, te entregamos toda tu documentación.</p>
-              <Garantia />
+              <Garantia clase="garantia-destacada" />
               <p style={{ marginTop: "1.5rem" }}>
                 <Link className="boton boton-claro" href="/empezar/?plan=autonomo">
                   Empezar con este plan

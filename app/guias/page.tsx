@@ -121,7 +121,7 @@ export default function Guias() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie cierre />
     </>
   );
 }

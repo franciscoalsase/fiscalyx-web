@@ -66,11 +66,28 @@ export default function Inicio() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <p className="portada-condiciones">
-                Colaboradores sociales de la Agencia Tributaria y de varias haciendas autonómicas, y autorizados del
-                Sistema RED de la Seguridad Social. Pagas mes a mes y te puedes ir cuando quieras.
-              </p>
+              <p className="portada-condiciones">Pagas mes a mes y te puedes ir cuando quieras.</p>
             </div>
+          </div>
+          <div className="contenedor">
+            <ul className="confianza" aria-label="Por qué fiarte de nosotros">
+              <li>
+                <strong>Más de 25 años</strong>
+                <span>llevando impuestos de autónomos y empresas</span>
+              </li>
+              <li>
+                <strong>Colaboradores sociales</strong>
+                <span>de la Agencia Tributaria y de varias haciendas autonómicas</span>
+              </li>
+              <li>
+                <strong>Autorizados RED</strong>
+                <span>para tus altas y cotizaciones en la Seguridad Social</span>
+              </li>
+              <li>
+                <strong>Garantía</strong>
+                <span>si un error nuestro te cuesta un recargo, lo pagamos</span>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -132,39 +149,33 @@ export default function Inicio() {
             <div className="cabeza-seccion">
               <h2 id="lineas-titulo">Servicios y precios</h2>
             </div>
-            <ul className="carta">
-              <li>
-                <div>
-                  <h3>Autónomos</h3>
-                  <p>Trimestrales, resúmenes anuales y tu Renta, con un asesor que conoce tu actividad.</p>
-                  <p className="carta-incluye">La Renta va dentro de la cuota; en muchas gestorías se cobra aparte.</p>
-                </div>
-                <p className="carta-precio">
+            <ul className="tarifas">
+              <li className="tarifa tarifa-destacada">
+                <h3>Autónomos</h3>
+                <p className="tarifa-precio">
                   {prices.autonomoMes} €<small>al mes + IVA</small>
                 </p>
-                <Link className="carta-enlace" href="/autonomos/">Ver el servicio</Link>
+                <p>Trimestrales, resúmenes anuales y tu Renta, con un asesor que conoce tu actividad.</p>
+                <p className="tarifa-incluye">La Renta va dentro de la cuota; en muchas gestorías se cobra aparte.</p>
+                <Link className="tarifa-enlace" href="/autonomos/">Ver el servicio de autónomos</Link>
               </li>
-              <li>
-                <div>
-                  <h3>Sociedades</h3>
-                  <p>Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL.</p>
-                  <p className="carta-incluye">En noviembre te decimos cuánto saldrá el Impuesto sobre Sociedades.</p>
-                </div>
-                <p className="carta-precio">
+              <li className="tarifa">
+                <h3>Sociedades</h3>
+                <p className="tarifa-precio">
                   <span>desde </span>{prices.sociedadMes} €<small>al mes + IVA</small>
                 </p>
-                <Link className="carta-enlace" href="/sociedades/">Ver el servicio</Link>
+                <p>Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL.</p>
+                <p className="tarifa-incluye">En noviembre te decimos cuánto saldrá el Impuesto sobre Sociedades.</p>
+                <Link className="tarifa-enlace" href="/sociedades/">Ver el servicio de sociedades</Link>
               </li>
-              <li>
-                <div>
-                  <h3>Criptomonedas</h3>
-                  <p>Renta con cripto, Modelo 721 y regularizaciones, operación por operación.</p>
-                  <p className="carta-incluye">Con el informe que justifica cada operación si Hacienda pregunta.</p>
-                </div>
-                <p className="carta-precio">
-                  <span>desde </span>{prices.cripto[0].tiers[0].price}
+              <li className="tarifa">
+                <h3>Criptomonedas</h3>
+                <p className="tarifa-precio">
+                  <span>desde </span>{prices.cripto[0].tiers[0].price}<small>Renta con hasta 200 operaciones</small>
                 </p>
-                <Link className="carta-enlace" href="/criptomonedas/">Ver el servicio</Link>
+                <p>Renta con cripto, Modelo 721 y regularizaciones, operación por operación.</p>
+                <p className="tarifa-incluye">Con el informe que justifica cada operación si Hacienda pregunta.</p>
+                <Link className="tarifa-enlace" href="/criptomonedas/">Ver el servicio de cripto</Link>
               </li>
             </ul>
             <p className="carta-nota">
@@ -172,7 +183,7 @@ export default function Inicio() {
               <Link href="/capitalizar-paro/">capitalizar el paro</Link> y con la parte económica de las{" "}
               <Link href="/licitaciones-publicas/">licitaciones públicas</Link>. <Link href="/precios/">Todos los precios</Link>
             </p>
-            <Garantia />
+            <Garantia clase="garantia-destacada" />
             <p className="carta-nota">
               Antes de escribirnos puedes calcular{" "}
               <Link href="/calculadora-autonomos/">cuánto pagarás este trimestre</Link>,{" "}

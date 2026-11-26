@@ -298,7 +298,7 @@ export default function CalculadoraCripto() {
           </div>
         </section>
       </main>
-      <Pie contacto="/empezar/?plan=cripto" />
+      <Pie cierre contacto="/empezar/?plan=cripto" />
       <script id="fifo-script" dangerouslySetInnerHTML={{ __html: script }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>

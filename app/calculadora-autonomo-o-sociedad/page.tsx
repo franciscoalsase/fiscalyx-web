@@ -222,7 +222,7 @@ export default function CalculadoraForma() {
           </div>
         </section>
       </main>
-      <Pie />
+      <Pie cierre />
       <script id="comparador" dangerouslySetInnerHTML={{ __html: script }} />
     </>
   );
