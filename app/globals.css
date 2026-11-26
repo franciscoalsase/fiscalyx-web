@@ -3276,3 +3276,5 @@ td.comparar-nos {
 }
 .garantia strong { font-family: var(--sans); font-weight: 700; }
 .seccion-verde .garantia { color: inherit; }
+.via-extra { display: block; margin-top: 0.2rem; font-size: 0.95rem; color: var(--grafito); }
+.vias .via-extra a { font-size: inherit; font-weight: 600; }

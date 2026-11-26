@@ -234,10 +234,11 @@ export default function Inicio() {
               </p>
               <ul className="vias">
                 <li>
-                  <span className="via-nombre">WhatsApp</span>
-                  <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
-                    {site.phoneDisplay}
-                  </a>
+                  <span className="via-nombre">Teléfono y WhatsApp</span>
+                  <a href={`tel:+${site.phoneIntl}`}>{site.phoneDisplay}</a>
+                  <span className="via-extra">
+                    o <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>
+                  </span>
                 </li>
                 <li>
                   <span className="via-nombre">Correo</span>

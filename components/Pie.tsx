@@ -26,8 +26,9 @@ export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
           <p>
             <a href={`mailto:${site.email}`}>{site.email}</a>
             <br />
+            <a href={`tel:+${site.phoneIntl}`}>{site.phoneDisplay}</a>, también por{" "}
             <a href={whatsappLink()} target="_blank" rel="noopener noreferrer">
-              WhatsApp {site.phoneDisplay}
+              WhatsApp
             </a>
             <br />
             {site.horario}
