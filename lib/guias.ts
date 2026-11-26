@@ -147,4 +147,11 @@ export const guias: Guia[] = [
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "renta-autonomos",
+    titulo: "La Renta del autónomo: qué cambia y qué revisar",
+    resumen: "Por qué no sirve el borrador, cómo se calcula el rendimiento, qué se resta y lo que más se olvida, como el plan de pensiones de autónomos.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];
