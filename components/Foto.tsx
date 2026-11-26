@@ -1,9 +1,6 @@
-// Fotos de Alicante de Unsplash (licencia Unsplash: uso comercial gratuito). Sin personas.
+// Fotos de Unsplash (licencia Unsplash: uso comercial gratuito), solo en páginas locales. Sin personas.
 const fotos = {
-  "castillo-atardecer": { w: 1600, h: 1066, autor: "Dean Milenkovic", alt: "El castillo de Santa Bárbara sobre los tejados de Alicante al atardecer" },
   puerto: { w: 1600, h: 902, autor: "Etienne Dayer", alt: "El puerto de Alicante con el monte Benacantil al fondo" },
-  "santa-cruz": { w: 1600, h: 1062, autor: "Joseph Corl", alt: "Una calle del barrio de Santa Cruz de Alicante con macetas en las fachadas" },
-  "arco-castillo": { w: 1600, h: 2400, autor: "Alpha Perspective", alt: "Un arco del castillo de Santa Bárbara con el mar de Alicante al fondo" },
 } as const;
 
 export type NombreFoto = keyof typeof fotos;

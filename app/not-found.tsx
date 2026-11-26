@@ -20,15 +20,19 @@ export default function NoEncontrada() {
     <>
       <Cabecera />
       <main id="contenido">
-        <section className="seccion">
-          <div className="contenedor">
-            <div className="cabeza-seccion">
+        <section className="portada portada-corta">
+          <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
+            <div>
               <h1>Esta página no existe</h1>
-              <p>
+              <p className="entradilla">
                 Puede que el enlace esté mal escrito o que la página haya cambiado de dirección. Esto es lo que suele
                 buscar quien llega aquí:
               </p>
             </div>
+          </div>
+        </section>
+        <section className="seccion">
+          <div className="contenedor">
             <ul className="lista-guias lista-guias-cuatro">
               {destinos.map((x) => (
                 <li key={x.href}>

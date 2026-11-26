@@ -48,16 +48,16 @@ def plantilla(titulo, subtitulo, kicker, dato):
 @font-face {{ font-family: S; src: url({SANS}); font-weight: 400 900; }}
 @font-face {{ font-family: R; src: url({SERIF}); font-weight: 200 900; }}
 * {{ margin: 0; box-sizing: border-box; }}
-body {{ width: 1200px; height: 630px; background: #fcfcfa; color: #1b2a41; font-family: S; position: relative; overflow: hidden; }}
+body {{ width: 1200px; height: 630px; background: #1b2a41; color: #fff; font-family: S; position: relative; overflow: hidden; }}
 .marca {{ position: absolute; left: 72px; top: 60px; display: flex; align-items: center; gap: 14px; font-weight: 800; font-size: 34px; letter-spacing: -0.02em; }}
-.palabra {{ font-size: 38px; letter-spacing: -0.04em; background: linear-gradient(transparent 52%, #ffe86e 52%, #ffe86e 94%, transparent 94%); padding: 0 6px; margin-left: -6px; }}
+.palabra {{ color: #1b2a41; font-size: 36px; letter-spacing: -0.04em; background: #ffe86e; padding: 2px 12px 4px; border-radius: 5px; }}
 .cuerpo {{ position: absolute; left: 72px; top: 158px; width: {ancho}px; }}
-.kicker {{ font-size: 24px; color: #1d6a51; font-weight: 600; margin-bottom: 18px; }}
+.kicker {{ font-size: 24px; color: #ffe86e; font-weight: 600; margin-bottom: 18px; }}
 h1 {{ font-size: {tam}px; line-height: 1.06; font-weight: 750; letter-spacing: -0.025em; }}
-.sub {{ font-family: R; font-size: 27px; line-height: 1.4; color: #566072; margin-top: 26px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
-.base {{ position: absolute; left: 72px; right: 72px; bottom: 50px; border-top: 2px solid #1b2a41; padding-top: 16px; display: flex; justify-content: space-between; font-size: 21px; color: #566072; }}
-.base b {{ color: #1b2a41; font-weight: 700; }}
-.dato {{ position: absolute; right: 72px; top: 160px; width: 330px; background: #fff; border: 1px solid #dfddd5; border-radius: 6px; padding: 34px 34px 30px; box-shadow: 0 24px 48px -34px rgba(27,42,65,.55); }}
+.sub {{ font-family: R; font-size: 27px; line-height: 1.4; color: rgba(255,255,255,.8); margin-top: 26px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+.base {{ position: absolute; left: 72px; right: 72px; bottom: 50px; border-top: 2px solid rgba(255,255,255,.25); padding-top: 16px; display: flex; justify-content: space-between; font-size: 21px; color: rgba(255,255,255,.72); }}
+.base b {{ color: #fff; font-weight: 700; }}
+.dato {{ position: absolute; right: 72px; top: 160px; width: 330px; background: #fff; color: #1b2a41; border-radius: 6px; padding: 34px 34px 30px; box-shadow: 0 30px 60px -24px rgba(0,0,0,.6); transform: rotate(-1.2deg); }}
 .pre {{ font-size: 21px; color: #566072; }}
 .cifra {{ white-space: nowrap; font-size: {cifra}px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; margin: 10px 0 14px; }}
 .cifra span {{ background: linear-gradient(transparent 62%, #ffe86e 62%, #ffe86e 90%, transparent 90%); padding: 0 4px; }}
