@@ -163,38 +163,16 @@ export default function Criptomonedas() {
               <p>Marca lo que hiciste el año pasado y te decimos qué plan te corresponde. Sin dejar tus datos.</p>
             </div>
             <PresupuestoCripto />
+            <p className="carta-nota" style={{ marginTop: "2rem" }}>
+              Si prefieres hacer números antes, tienes la <Link href="/calculadora-criptomonedas/">calculadora con
+              FIFO</Link> para ver la ganancia de cada venta, la guía de{" "}
+              <Link href="/guias/declarar-criptomonedas-renta/">cómo declarar criptomonedas en la Renta</Link> y la de{" "}
+              <Link href="/guias/dac8-criptomonedas/">qué sabrá Hacienda con DAC8</Link>.
+            </p>
           </div>
         </section>
 
-        <section className="seccion" aria-labelledby="cuentas-cripto">
-          <div className="contenedor">
-            <div className="cabeza-seccion">
-              <h2 id="cuentas-cripto">Haz tus cuentas antes de hablar con nosotros</h2>
-            </div>
-            <ul className="lista-guias">
-              <li>
-                <h3>
-                  <Link href="/calculadora-criptomonedas/">Calculadora con FIFO</Link>
-                </h3>
-                <p>Apunta tus compras y ventas y mira la ganancia de cada venta y lo que pagarías en la Renta.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/guias/declarar-criptomonedas-renta/">Cómo declarar criptomonedas en la Renta</Link>
-                </h3>
-                <p>Qué tributa, cómo se calcula, cuánto se paga y qué documentación guardar.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/guias/dac8-criptomonedas/">Qué sabrá Hacienda con DAC8</Link>
-                </h3>
-                <p>Qué datos envían los exchanges desde 2026 y qué hacer si tienes años sin declarar.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="seccion seccion-banda" aria-labelledby="preguntas-cripto">
+        <section className="seccion" aria-labelledby="preguntas-cripto">
           <div className="contenedor">
             <div className="cabeza-seccion">
               <h2 id="preguntas-cripto">Dudas frecuentes</h2>

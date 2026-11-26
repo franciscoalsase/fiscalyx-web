@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
 
 export const metadata: Metadata = {
-  title: "Gestoría en la Vega Baja: Orihuela, Torrevieja y Callosa",
+  title: "Gestoría en la Vega Baja para autónomos y sociedades",
   description:
     "Gestoría online para autónomos y sociedades de la Vega Baja: Orihuela, Torrevieja, Callosa de Segura, Almoradí y Pilar de la Horadada. Economistas colegiados.",
   alternates: { canonical: "/gestoria-vega-baja/" },
@@ -30,6 +30,11 @@ export default function GestoriaVegaBaja() {
             Lo que cambia con Fiscalyx es la forma de trabajar. No hace falta que vengas a la oficina a dejar facturas:
             nos las envías por WhatsApp o correo, te avisamos de cada plazo y te llamamos antes de cada trimestre para
             que sepas lo que vas a pagar.
+          </p>
+          <p>
+            Si estás en Orihuela o en Torrevieja, tienes páginas con lo propio de cada sitio:{" "}
+            <Link href="/gestoria-orihuela/">el régimen agrario y la costa de Orihuela</Link> y{" "}
+            <Link href="/gestoria-torrevieja/">los autónomos extranjeros de Torrevieja</Link>.
           </p>
           <h2>Quién se encarga de cada impuesto</h2>
           <p>
@@ -80,7 +85,7 @@ export default function GestoriaVegaBaja() {
         },
         {
           p: "Tengo un negocio en la costa que trabaja por temporadas. ¿Me podéis llevar?",
-          r: "Sí. Te ayudamos a organizar los trimestres de más y menos actividad, a revisar tu cuota de autónomo según lo que ganes en realid y a no llevarte sorpresas en la Renta.",
+          r: "Sí. Te ayudamos a organizar los trimestres de más y menos actividad, a revisar tu cuota de autónomo según lo que ganes en realidad y a no llevarte sorpresas en la Renta.",
         },
         {
           p: "¿Lleváis también sociedades de la Vega Baja?",

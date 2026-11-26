@@ -5,7 +5,7 @@ import { PaginaLocal } from "@/components/PaginaLocal";
 export const metadata: Metadata = {
   title: "Gestoría en Alicante para autónomos y sociedades",
   description:
-    "Gestoría online con sede en Alicante para autónomos, sociedades e inversores en criptomonedas de Alicante, Elche y su área. Economistas colegiados y cuota fija.",
+    "Gestoría online con sede en Alicante para autónomos, sociedades e inversores en criptomonedas de Alicante y su área. Economistas colegiados y cuota fija.",
   alternates: { canonical: "/gestoria-alicante/" },
 };
 
@@ -14,7 +14,7 @@ export default function GestoriaAlicante() {
     <PaginaLocal
       zona="Alicante"
       titulo="Tu gestoría en Alicante, con economistas colegiados"
-      entradilla="Llevamos los impuestos y la contabilidad de autónomos y sociedades de Alicante, Elche y su área, y la Renta de quienes invierten en criptomonedas. Online, con cuota fija y siempre el mismo asesor."
+      entradilla="Llevamos los impuestos y la contabilidad de autónomos y sociedades de Alicante y su área, y la Renta de quienes invierten en criptomonedas. Online, con cuota fija y siempre el mismo asesor."
       municipios={["Elche", "San Vicente del Raspeig", "Sant Joan d'Alacant", "El Campello", "Mutxamel", "Santa Pola", "Crevillent"]}
       areaServida={["Alicante", "Elche", "Provincia de Alicante"]}
       intro={
@@ -30,6 +30,10 @@ export default function GestoriaAlicante() {
             ligados al turismo y cada vez más trabajadores digitales que viven en Alicante y trabajan para clientes de
             fuera. Muchos de ellos, además, tienen inversiones en criptomonedas, y ahí está nuestra diferencia: los
             llevamos con el mismo asesor.
+          </p>
+          <p>
+            Si tu negocio está en Elche y vendes a otros países, mira nuestra página de{" "}
+            <Link href="/gestoria-elche/">gestoría en Elche</Link>, con el IVA de las ventas al extranjero.
           </p>
           <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana</h2>
           <p>

@@ -20,8 +20,11 @@
 
 - [Calculadora trimestral para autónomos](https://www.fiscalyx.com/calculadora-autonomos/): estimación del Modelo 303 (IVA) y del Modelo 130 (IRPF) de un trimestre.
 - [Cambiar de gestoría sin dejar nada a medias](https://www.fiscalyx.com/cambiar-de-gestoria/)
-- [Gestoría en Alicante y Elche](https://www.fiscalyx.com/gestoria-alicante/)
-- [Gestoría en la Vega Baja: Orihuela, Torrevieja, Callosa](https://www.fiscalyx.com/gestoria-vega-baja/)
+- [Gestoría en Alicante](https://www.fiscalyx.com/gestoria-alicante/)
+- [Gestoría en Elche](https://www.fiscalyx.com/gestoria-elche/): IVA intracomunitario, exportaciones y ventas online.
+- [Gestoría en la Vega Baja](https://www.fiscalyx.com/gestoria-vega-baja/)
+- [Gestoría en Orihuela](https://www.fiscalyx.com/gestoria-orihuela/): régimen especial agrario del IVA y residentes extranjeros en la costa.
+- [Gestoría en Torrevieja](https://www.fiscalyx.com/gestoria-torrevieja/): autónomos extranjeros, residencia fiscal y modelo 720.
 - [Gestoría en Murcia](https://www.fiscalyx.com/gestoria-murcia/)
 - [Calculadora de la cuota de autónomos](https://www.fiscalyx.com/calculadora-cuota-autonomos/): tramo y cuota mínima según los rendimientos netos, con la tabla de 2026.
 - [Calculadora de autónomo o sociedad](https://www.fiscalyx.com/calculadora-autonomo-o-sociedad/): compara impuestos y cotizaciones de trabajar como autónomo o con una sociedad limitada.

@@ -71,6 +71,15 @@ export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
               <Link href="/gestoria-vega-baja/">Gestoría en la Vega Baja</Link>
             </li>
             <li>
+              <Link href="/gestoria-elche/">Gestoría en Elche</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-orihuela/">Gestoría en Orihuela</Link>
+            </li>
+            <li>
+              <Link href="/gestoria-torrevieja/">Gestoría en Torrevieja</Link>
+            </li>
+            <li>
               <Link href="/gestoria-murcia/">Gestoría en Murcia</Link>
             </li>
           </ul>
