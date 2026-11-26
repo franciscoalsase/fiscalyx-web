@@ -24,7 +24,7 @@ export default function RentaAutonomos() {
       }}
       fuentes={[
         { nombre: "Ley 35/2006 del IRPF, artículos 28 a 32 y 96", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" },
-        { nombre: "Ley 12/2022, de planes de pensiones de empleo: límite adicional para autónomos", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2022-10297" },
+        { nombre: "Ley 12/2022, de planes de pensiones de empleo: límite adicional para autónomos", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2022-10852" },
       ]}
     >
       <h2>Qué cambia respecto a un asalariado</h2>
