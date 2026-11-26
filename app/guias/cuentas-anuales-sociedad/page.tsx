@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Cuentas anuales de una SL: plazos de 2027, depósito y sanciones",
+  title: "Cuentas anuales de una SL: plazos de 2027",
   description:
-    "Formular, legalizar los libros, aprobar en junta y depositar en el Registro Mercantil: las fechas de 2027 para una sociedad limitada y qué pasa si no depositas las cuentas.",
+    "Formular, legalizar libros, aprobar en junta y depositar en el Registro: las fechas de 2027 para una SL y qué pasa si no depositas.",
   alternates: { canonical: "/guias/cuentas-anuales-sociedad/" },
 };
 

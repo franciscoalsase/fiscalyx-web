@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Pérdidas con criptomonedas: cómo compensarlas en la Renta",
+  title: "Pérdidas con criptomonedas: cómo compensarlas",
   description:
     "Las pérdidas con criptomonedas reducen lo que pagas por tus ganancias, este año y los cuatro siguientes. Cómo funciona la compensación, con un ejemplo.",
   alternates: { canonical: "/guias/compensar-perdidas-criptomonedas/" },
@@ -18,8 +18,8 @@ export default function CompensarPerdidas() {
       cta={{
         titulo: "Revisa tu año antes del 31 de diciembre",
         texto: "Calculamos dónde estás este año, qué pérdidas tienes pendientes de años anteriores y cómo encajarlo todo en tu Renta.",
-        href: "/criptomonedas/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=cripto",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Ley del IRPF, artículo 49 (integración y compensación en la base del ahorro)", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" },

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Modelo 347: operaciones con terceros, quién lo presenta y cuándo",
+  title: "Modelo 347: quién lo presenta y cuándo",
   description:
-    "Qué es el modelo 347, cuándo superas los 3.005,06 €, qué operaciones se declaran y cuáles no, el plazo de 2027 y por qué conviene cuadrarlo con tus clientes y proveedores.",
+    "Qué es el modelo 347, cuándo superas los 3.005,06 €, qué se declara y qué no, el plazo de 2027 y por qué conviene cuadrarlo antes con tus clientes.",
   alternates: { canonical: "/guias/modelo-347/" },
 };
 

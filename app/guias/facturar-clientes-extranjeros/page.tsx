@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Cómo facturar a clientes extranjeros siendo autónomo: IVA, ROI y 349",
+  title: "Facturar a clientes extranjeros: IVA, ROI y 349",
   description:
-    "Cuándo una factura a un cliente de otro país lleva IVA y cuándo no, qué es el ROI, cuándo presentar el modelo 349 y qué cambia en tu IRPF. Con un cuadro por tipo de cliente.",
+    "Cuándo una factura a un cliente de otro país lleva IVA y cuándo no, qué es el ROI, cuándo presentar el 349 y qué cambia en tu IRPF.",
   alternates: { canonical: "/guias/facturar-clientes-extranjeros/" },
 };
 

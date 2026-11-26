@@ -6,9 +6,9 @@ import { FormularioContacto } from "@/components/FormularioContacto";
 import { site, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Licitaciones públicas: solvencia económica y documentación",
+  title: "Licitaciones públicas: solvencia y documentación",
   description:
-    "Preparamos la parte económica de tu licitación: solvencia, cuentas anuales o libros legalizados, certificados de Hacienda y Seguridad Social y el DEUC. Calcula el volumen de negocios que te pueden pedir.",
+    "Preparamos la parte económica de tu licitación: solvencia, cuentas, certificados y DEUC. Calcula el volumen de negocios que te pueden pedir.",
   alternates: { canonical: "/licitaciones-publicas/" },
 };
 

@@ -37,8 +37,8 @@ export default function CuotaAutonomos2027() {
       cta={{
         titulo: "¿Estás en el tramo que te toca?",
         texto: "Revisamos tus rendimientos cada trimestre y te avisamos de cuándo conviene cambiar de base, para que la regularización no te pille por sorpresa.",
-        href: "/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=autonomo",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Seguridad Social: simulador de cuotas de autónomos", url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico/inicio/" },

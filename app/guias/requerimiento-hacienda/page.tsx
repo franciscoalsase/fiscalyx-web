@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Requerimiento de Hacienda: qué hacer si te llega una carta",
+  title: "Requerimiento de Hacienda: qué hacer",
   description:
-    "Cómo saber qué tipo de carta te ha mandado Hacienda, cuántos días tienes para contestar, cómo se cuentan, cómo se responde por la sede electrónica y qué pasa si no lo haces.",
+    "Qué tipo de carta te ha mandado Hacienda, cuántos días tienes para contestar, cómo se responde por la sede electrónica y qué pasa si no lo haces.",
   alternates: { canonical: "/guias/requerimiento-hacienda/" },
 };
 

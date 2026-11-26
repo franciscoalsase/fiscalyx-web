@@ -4,9 +4,9 @@ import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 
 export const metadata: Metadata = {
-  title: "Calculadora de la cuota de autónomos por ingresos reales",
+  title: "Calculadora de la cuota de autónomos",
   description:
-    "Calcula en qué tramo estás y cuánto pagarás de cuota de autónomos según tus rendimientos netos, con la tabla de 2026. También para autónomos societarios y tarifa plana.",
+    "Calcula tu tramo y tu cuota de autónomos según tus rendimientos netos, con la tabla de 2026. También para societarios y tarifa plana.",
   alternates: { canonical: "/calculadora-cuota-autonomos/" },
 };
 

@@ -10,8 +10,8 @@ import { Check } from "@/components/Iconos";
 import { prices, site, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Gestoría online para autónomos, con la Renta incluida",
-  description: `Trimestrales, resúmenes anuales y tu declaración de la Renta por ${prices.autonomoMes} € al mes, con un economista colegiado asignado. Sin permanencia y para toda España.`,
+  title: "Gestoría online para autónomos, Renta incluida",
+  description: `Trimestrales, resúmenes anuales y tu Renta por ${prices.autonomoMes} € al mes, con un economista colegiado asignado y sin permanencia.`,
   alternates: { canonical: "/autonomos/" },
 };
 
@@ -378,7 +378,7 @@ export default function Autonomos() {
                 </div>
               ))}
             </dl>
-            <GuiasRelacionadas slugs={["darse-de-alta-autonomo", "cuanto-cuesta-una-gestoria", "gastos-deducibles-autonomos", "cuota-autonomos-2027"]} />
+            <GuiasRelacionadas slugs={["darse-de-alta-autonomo", "renta-autonomos", "requerimiento-hacienda", "gastos-deducibles-autonomos", "cuota-autonomos-2027", "factura-electronica-verifactu"]} />
             <p style={{ marginTop: "2rem" }}>
               ¿Tienes una sociedad? <Link href="/sociedades/">Mira el plan de sociedades</Link>.
             </p>

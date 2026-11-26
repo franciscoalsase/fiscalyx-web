@@ -6,7 +6,7 @@ import { FormularioContacto } from "@/components/FormularioContacto";
 import { whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Constituir una sociedad limitada: pasos, plazos y capital",
+  title: "Constituir una sociedad limitada: pasos y plazos",
   description:
     "Te ayudamos a crear tu SL de principio a fin: denominación, estatutos, notaría, Registro Mercantil, NIF y altas. También con capital desde 1 €.",
   alternates: { canonical: "/constituir-sociedad/" },

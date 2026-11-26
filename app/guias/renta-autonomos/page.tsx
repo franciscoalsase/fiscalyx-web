@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "La Renta del autónomo: qué cambia, cómo se calcula y qué revisar",
+  title: "La Renta del autónomo: cómo se calcula",
   description:
-    "Cómo hace la declaración de la Renta un autónomo: rendimiento de la actividad, pagos a cuenta del 130 y retenciones, deducciones que se suelen olvidar, plan de pensiones de autónomos y pago en dos plazos.",
+    "Cómo hace la Renta un autónomo: rendimiento de la actividad, pagos a cuenta y retenciones, deducciones olvidadas y plan de pensiones de autónomos.",
   alternates: { canonical: "/guias/renta-autonomos/" },
 };
 

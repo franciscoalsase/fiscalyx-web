@@ -5,7 +5,7 @@ import { Pie } from "@/components/Pie";
 import { guias } from "@/lib/guias";
 
 export const metadata: Metadata = {
-  title: "Guías de impuestos para autónomos, sociedades y cripto",
+  title: "Guías de impuestos para autónomos y cripto",
   description: "Guías y calculadoras revisadas por economistas colegiados: cuota de autónomos, gastos deducibles, autónomo o SL, Renta con criptomonedas, Modelo 721 y más.",
   alternates: { canonical: "/guias/" },
 };

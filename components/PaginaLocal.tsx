@@ -21,6 +21,7 @@ export function PaginaLocal({
   extra,
   preguntas,
   areaServida,
+  servicios = true,
 }: {
   zona: string;
   titulo: string;
@@ -34,6 +35,7 @@ export function PaginaLocal({
   extra?: React.ReactNode;
   preguntas: Pregunta[];
   areaServida: string[];
+  servicios?: boolean;
 }) {
   const schema = [
     {
@@ -63,8 +65,8 @@ export function PaginaLocal({
               <h1 style={{ maxWidth: "20ch" }}>{titulo}</h1>
               <p className="entradilla">{entradilla}</p>
               <div className="acciones">
-                <a className="boton boton-principal" href="#contacto">
-                  Pedir presupuesto
+                <a className="boton boton-principal" href="/empezar/">
+                  Empezar<span className="visualmente-oculto"> con Fiscalyx</span>
                 </a>
                 <a
                   className="enlace-sencillo"
@@ -119,6 +121,7 @@ export function PaginaLocal({
 
         {extra}
 
+        {servicios && (
         <section className="seccion seccion-banda" aria-labelledby="local-servicios">
           <div className="contenedor">
             <div className="cabeza-seccion">
@@ -169,6 +172,7 @@ export function PaginaLocal({
             </p>
           </div>
         </section>
+        )}
 
         <section className="seccion" aria-labelledby="local-preguntas">
           <div className="contenedor">
@@ -198,7 +202,7 @@ export function PaginaLocal({
           </div>
         </section>
       </main>
-      <Pie contacto="#contacto" />
+      <Pie />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>
   );

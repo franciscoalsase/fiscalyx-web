@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
 
 export const metadata: Metadata = {
-  title: "Gestoría en la Vega Baja para autónomos y sociedades",
+  title: "Gestoría online en la Vega Baja",
   description:
     "Gestoría online para autónomos y sociedades de la Vega Baja: Orihuela, Torrevieja, Callosa de Segura, Almoradí y Pilar de la Horadada. Economistas colegiados.",
   alternates: { canonical: "/gestoria-vega-baja/" },

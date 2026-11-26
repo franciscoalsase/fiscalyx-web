@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Cómo cobrar de tu sociedad limitada: sueldo de administrador o dividendos",
+  title: "Cómo cobrar de tu SL: sueldo o dividendos",
   description:
-    "Las tres formas de sacar dinero de tu SL: retribución como administrador (retención del 35 % o 19 %), sueldo por tu trabajo o dividendos. Qué tributa cada una, qué dicen los estatutos y la cuota de autónomo societario.",
+    "Las tres formas de sacar dinero de tu SL: retribución de administrador, sueldo o dividendos. Qué tributa cada una y qué dicen los estatutos.",
   alternates: { canonical: "/guias/cobrar-de-tu-sociedad/" },
 };
 

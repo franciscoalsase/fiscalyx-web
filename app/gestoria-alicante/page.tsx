@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
 
 export const metadata: Metadata = {
-  title: "Gestoría en Alicante para autónomos y sociedades",
+  title: "Gestoría online en Alicante para autónomos",
   description:
     "Gestoría online con sede en Alicante para autónomos, sociedades e inversores en criptomonedas de Alicante y su área. Economistas colegiados y cuota fija.",
   alternates: { canonical: "/gestoria-alicante/" },

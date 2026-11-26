@@ -4,9 +4,9 @@ import { Articulo } from "@/components/Articulo";
 import { prices } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cuánto cuesta una gestoría para autónomos y SL en 2027",
+  title: "Cuánto cuesta una gestoría en 2027",
   description:
-    "Precios reales de gestorías online y tradicionales para autónomos y sociedades, lo que suele ir aparte y una calculadora del coste de verdad al año, con IVA y extras.",
+    "Precios reales de gestorías online y tradicionales para autónomos y sociedades, lo que va aparte y una calculadora del coste anual completo.",
   alternates: { canonical: "/guias/cuanto-cuesta-una-gestoria/" },
 };
 

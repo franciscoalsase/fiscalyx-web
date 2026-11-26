@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Permutas de criptomonedas y método FIFO: cómo tributan",
+  title: "Permutas de criptomonedas y método FIFO",
   description:
     "Cambiar una criptomoneda por otra tributa aunque no pases a euros. Cómo se calcula la ganancia con el método FIFO, con un ejemplo paso a paso.",
   alternates: { canonical: "/guias/permutas-criptomonedas-fifo/" },
@@ -18,8 +18,8 @@ export default function PermutasFifo() {
       cta={{
         titulo: "Cientos de permutas no se calculan a mano",
         texto: "Reconstruimos tu historial de todos los exchanges y monederos, aplicamos FIFO operación por operación y presentamos tu Renta con el archivo que lo justifica.",
-        href: "/criptomonedas/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=cripto",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Dirección General de Tributos: consulta vinculante V0999-18", url: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0999-18" },

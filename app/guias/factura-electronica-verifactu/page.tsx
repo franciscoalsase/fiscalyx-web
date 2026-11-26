@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "VeriFactu se aplaza a octubre de 2028: fechas y qué hacer",
+  title: "VeriFactu, aplazado a octubre de 2028",
   description:
     "VeriFactu se aplaza a octubre de 2028 para sociedades y autónomos, igual que la factura electrónica entre empresas. Las fechas y qué conviene hacer ya.",
   alternates: { canonical: "/guias/factura-electronica-verifactu/" },
@@ -18,8 +18,8 @@ export default function FacturaElectronica() {
       cta={{
         titulo: "Llega a tu fecha con todo preparado",
         texto: "Te ayudamos a elegir un programa de facturación adaptado y revisamos tus primeras facturas para que salgan bien desde el primer día.",
-        href: "/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=autonomo",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "El Gobierno aplaza VeriFactu hasta octubre de 2028 (25/11/2026)", url: "https://www.grupoaseguranza.com/noticias-de-seguros/gobierno-aplaza-entrada-vigor-verifactu-hasta-octubre-2028" },

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Cómo darse de alta como autónomo en 2027, paso a paso",
+  title: "Darse de alta como autónomo en 2027, paso a paso",
   description:
-    "El orden correcto para hacerte autónomo: paro, modelo 036 en Hacienda, alta en la Seguridad Social, tarifa plana, licencias y primera factura. Con los errores que más caros salen.",
+    "El orden correcto para hacerte autónomo: paro, 036, alta en la Seguridad Social, tarifa plana y primera factura. Con los errores más caros.",
   alternates: { canonical: "/guias/darse-de-alta-autonomo/" },
 };
 

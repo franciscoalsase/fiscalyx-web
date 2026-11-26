@@ -13,7 +13,7 @@ import { prices, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Gestoría online para sociedades limitadas",
-  description: `Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL, llevados por economistas colegiados. Desde ${prices.sociedadMes} € al mes, sin permanencia.`,
+  description: `Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL, con economistas colegiados. Desde ${prices.sociedadMes} € al mes, sin permanencia.`,
   alternates: { canonical: "/sociedades/" },
 };
 
@@ -88,8 +88,8 @@ export default function Sociedades() {
                 {prices.sociedadMes} € al mes. Todo incluido en la cuota y siempre con el mismo asesor.
               </p>
               <div className="acciones">
-                <a className="boton boton-principal" href="#contacto">
-                  Pedir presupuesto
+                <a className="boton boton-principal" href="/empezar/?plan=sociedad">
+                  Empezar<span className="visualmente-oculto"> con tu sociedad</span>
                 </a>
                 <a
                   className="enlace-sencillo"
@@ -297,7 +297,7 @@ export default function Sociedades() {
           </div>
         </section>
       </main>
-      <Pie contacto="#contacto" />
+      <Pie contacto="/empezar/?plan=sociedad" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );

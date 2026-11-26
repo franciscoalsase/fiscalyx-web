@@ -3,9 +3,9 @@ import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
 
 export const metadata: Metadata = {
-  title: "Gestoría en Orihuela para autónomos, agricultores y sociedades",
+  title: "Gestoría en Orihuela y Orihuela Costa",
   description:
-    "Gestoría online para autónomos y sociedades de Orihuela, sus pedanías y Orihuela Costa: régimen especial agrario del IVA, negocios de costa y residentes extranjeros. Economistas colegiados y cuota fija.",
+    "Gestoría online para autónomos y sociedades de Orihuela y Orihuela Costa: régimen agrario del IVA, negocios de costa y residentes extranjeros.",
   alternates: { canonical: "/gestoria-orihuela/" },
 };
 

@@ -180,8 +180,8 @@ export default function Calculadora() {
                 del 303, el 130 y tu Renta.
               </p>
             </div>
-            <Link className="boton boton-claro" href="/#contacto">
-              Pedir presupuesto
+            <Link className="boton boton-claro" href="/empezar/?plan=autonomo">
+              Empezar<span className="visualmente-oculto"> como autónomo</span>
             </Link>
           </div>
         </section>

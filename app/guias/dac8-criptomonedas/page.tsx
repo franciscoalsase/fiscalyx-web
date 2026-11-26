@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "DAC8: qué sabrá Hacienda de tus criptomonedas y desde cuándo",
+  title: "DAC8: qué sabrá Hacienda de tus criptomonedas",
   description:
     "La directiva DAC8 obliga a los exchanges a informar de saldos y operaciones desde 2026. Qué datos llegan a Hacienda, cuándo y qué conviene revisar.",
   alternates: { canonical: "/guias/dac8-criptomonedas/" },
@@ -18,8 +18,8 @@ export default function Dac8() {
       cta={{
         titulo: "Revisa tus operaciones antes de que lo haga Hacienda",
         texto: "Reconstruimos tu historial, calculamos cada operación y presentamos tu Renta y el Modelo 721. Si hay años anteriores mal declarados, te decimos cómo regularizarlos y cuánto costaría.",
-        href: "/criptomonedas/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=cripto",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Comisión Europea: DAC8", url: "https://taxation-customs.ec.europa.eu/taxation/tax-transparency-cooperation/administrative-co-operation-and-mutual-assistance/directive-administrative-cooperation-dac/dac8_en" },

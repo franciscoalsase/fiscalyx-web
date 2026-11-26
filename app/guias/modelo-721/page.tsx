@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Modelo 721 de criptomonedas: guía completa para 2027",
+  title: "Modelo 721 de criptomonedas: guía para 2027",
   description:
-    "Quién debe presentar el Modelo 721, el umbral de 50.000 €, qué datos pide, cómo saber si tu exchange es extranjero, el plazo hasta el 31 de marzo de 2027 y las sanciones.",
+    "Quién presenta el Modelo 721, el umbral de 50.000 €, cómo saber si tu exchange es extranjero, el plazo de 2027 y las sanciones.",
   alternates: { canonical: "/guias/modelo-721/" },
 };
 
@@ -19,8 +19,8 @@ export default function Modelo721() {
       cta={{
         titulo: "¿No sabes si te toca?",
         texto: "Revisamos tus saldos a 31 de diciembre, te decimos si estás obligado y, si lo estás, lo presentamos junto con tu Renta.",
-        href: "/criptomonedas/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=cripto",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Agencia Tributaria: qué información debe suministrarse en el modelo 721", url: "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-721-decla-sobre-monedas-extranjero/preguntas-frecuentes-sobre-modelo-721/que-informacion-debe-suministrarse-modelo-721.html" },

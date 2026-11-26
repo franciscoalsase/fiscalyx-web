@@ -4,9 +4,9 @@ import { Articulo } from "@/components/Articulo";
 import { comunidades, otrasComunidades, ESTATAL_MAX, pct } from "@/lib/comunidades";
 
 export const metadata: Metadata = {
-  title: "IRPF por comunidades en 2026: escalas, tipos máximos y ITP",
+  title: "IRPF por comunidades en 2026: escalas y tipos",
   description:
-    "La escala autonómica del IRPF de 2026 en cada comunidad de régimen común: número de tramos, tipo mínimo y máximo, tipo máximo total y el ITP de la vivienda usada, con datos del Ministerio de Hacienda.",
+    "La escala autonómica del IRPF de 2026 en cada comunidad: tramos, tipo mínimo y máximo, máximo con la estatal e ITP, con datos de Hacienda.",
   alternates: { canonical: "/guias/irpf-por-comunidades-2026/" },
 };
 

@@ -5,7 +5,7 @@ import { join } from "node:path";
 
 const OUT = "out";
 const PROPIOS = new Set(["efectos", "calculadora", "estimador", "formulario", "plazo", "comparador", "presupuesto", "analitica", "cuota", "alta-script", "solvencia-script", "coste-script", "fifo-script"]);
-const CONSERVAR_TXT = new Set(["robots.txt", "llms.txt"]);
+const CONSERVAR_TXT = new Set(["robots.txt", "llms.txt", "b123850b6e54d9e67cec1ab029166f3b.txt"]);
 
 function recorrer(dir, fn) {
   for (const nombre of readdirSync(dir)) {

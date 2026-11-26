@@ -5,7 +5,7 @@ import { PaginaLocal } from "@/components/PaginaLocal";
 export const metadata: Metadata = {
   title: "Gestoría en Torrevieja para autónomos y sociedades",
   description:
-    "Gestoría online para autónomos y sociedades de Torrevieja: negocios de temporada, autónomos extranjeros, residencia fiscal y modelo 720. Economistas colegiados y cuota fija.",
+    "Gestoría online para autónomos y sociedades de Torrevieja: negocios de temporada, autónomos extranjeros, residencia fiscal y modelo 720.",
   alternates: { canonical: "/gestoria-torrevieja/" },
 };
 

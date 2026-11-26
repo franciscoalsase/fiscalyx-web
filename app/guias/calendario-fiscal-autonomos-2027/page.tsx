@@ -4,7 +4,7 @@ import { Articulo } from "@/components/Articulo";
 import plazos from "@/lib/plazos-2027.json";
 
 export const metadata: Metadata = {
-  title: "Calendario fiscal 2027 para autónomos y sociedades (descargable)",
+  title: "Calendario fiscal 2027 para autónomos y SL",
   description:
     "Todos los plazos de 2027 de autónomos y sociedades: 303, 130, 111, 115, 390, 347, 721, 200 y 202. Descárgalo en tu calendario con aviso 5 días antes.",
   alternates: { canonical: "/guias/calendario-fiscal-autonomos-2027/" },

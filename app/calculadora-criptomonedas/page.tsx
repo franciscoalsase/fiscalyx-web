@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Calculadora de impuestos de criptomonedas con FIFO",
   description:
-    "Apunta tus compras y ventas de criptomonedas y calcula la ganancia o pérdida de cada venta con el método FIFO que exige Hacienda, y cuánto pagarías en la Renta.",
+    "Apunta tus compras y ventas de criptomonedas y calcula la ganancia de cada venta con el método FIFO de Hacienda y lo que pagarías en la Renta.",
   alternates: { canonical: "/calculadora-criptomonedas/" },
 };
 
@@ -298,7 +298,7 @@ export default function CalculadoraCripto() {
           </div>
         </section>
       </main>
-      <Pie contacto="/criptomonedas/#presupuesto" />
+      <Pie contacto="/empezar/?plan=cripto" />
       <script id="fifo-script" dangerouslySetInnerHTML={{ __html: script }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>

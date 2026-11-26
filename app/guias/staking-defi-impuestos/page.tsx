@@ -5,7 +5,7 @@ import { Articulo } from "@/components/Articulo";
 export const metadata: Metadata = {
   title: "Staking y DeFi: cómo tributan en la Renta",
   description:
-    "Cómo declarar las recompensas de staking, préstamos y pools de liquidez: qué dice Hacienda, en qué parte de la Renta van y qué pasa cuando vendes lo que recibiste.",
+    "Cómo declarar el staking, los préstamos y los pools de liquidez: qué dice Hacienda, dónde van en la Renta y qué pasa al vender lo recibido.",
   alternates: { canonical: "/guias/staking-defi-impuestos/" },
 };
 
@@ -19,8 +19,8 @@ export default function StakingDefi() {
       cta={{
         titulo: "Cientos de recompensas pequeñas, una sola Renta",
         texto: "Recogemos cada recompensa de tus plataformas y monederos, la valoramos en euros a su fecha y la integramos con tus compras y ventas.",
-        href: "/criptomonedas/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=cripto",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Dirección General de Tributos: consulta vinculante V1766-22 sobre staking", url: "https://www.cuatrecasas.com/es/spain/articulo/tributacion-del-staking-en-irpf" },

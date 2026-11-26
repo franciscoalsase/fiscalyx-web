@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Gastos deducibles de autónomos en 2026: lista y límites",
+  title: "Gastos deducibles de autónomos en 2026",
   description:
     "Qué gastos puede deducirse un autónomo en el IRPF y en el IVA en 2026: suministros, dietas, vehículo, seguro médico y el 5 % de difícil justificación.",
   alternates: { canonical: "/guias/gastos-deducibles-autonomos/" },
@@ -32,8 +32,8 @@ export default function GastosDeducibles() {
       cta={{
         titulo: "Que no se te escape ningún gasto",
         texto: "En la llamada antes de cada trimestre repasamos tus gastos contigo y te decimos cuáles entran. Desde 49 € al mes, sin permanencia.",
-        href: "/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=autonomo",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Agencia Tributaria: estimación directa simplificada y difícil justificación", url: "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Presentacion/100/7_4_2.html" },

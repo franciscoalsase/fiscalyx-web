@@ -5,7 +5,7 @@ import { Articulo } from "@/components/Articulo";
 export const metadata: Metadata = {
   title: "Retirar dinero de Binance al banco: qué ve Hacienda",
   description:
-    "Pasar tus euros de Binance a tu cuenta no tributa, pero la venta que hay detrás sí. Qué declarar, qué te puede pedir el banco y cómo regularizar años anteriores.",
+    "Pasar tus euros de Binance al banco no tributa, pero la venta que hay detrás sí. Qué declarar, qué puede pedirte el banco y cómo regularizar.",
   alternates: { canonical: "/guias/retirar-dinero-binance-hacienda/" },
 };
 
@@ -19,8 +19,8 @@ export default function RetirarBinance() {
       cta={{
         titulo: "Antes de retirar una cantidad grande, háblalo con nosotros",
         texto: "Calculamos lo que debes declarar, te preparamos el informe de origen de fondos que suele pedir el banco y, si hay años sin declarar, te decimos cómo regularizarlos.",
-        href: "/criptomonedas/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=cripto",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Ley 10/2010 de prevención del blanqueo de capitales", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737" },

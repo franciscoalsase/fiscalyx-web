@@ -3293,3 +3293,6 @@ td.comparar-nos {
 .via-extra { display: block; margin-top: 0.2rem; font-size: 0.95rem; color: var(--grafito); }
 .vias .via-extra a { font-size: inherit; font-weight: 600; }
 .cronologia-ancha { max-width: 52rem; margin-top: 0; }
+.lista-simple { margin: 1rem 0 0; padding-left: 1.2rem; }
+.lista-simple li { margin-top: 0.4rem; padding-left: 0.2rem; }
+.lista-simple li::marker { color: var(--verde); }

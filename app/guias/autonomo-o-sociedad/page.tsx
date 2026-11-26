@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "¿Autónomo o sociedad limitada? Cuándo compensa en 2026",
+  title: "¿Autónomo o sociedad limitada? Cuándo compensa",
   description:
     "Comparamos el IRPF del autónomo con el Impuesto sobre Sociedades de 2026 (19 % y 21 % para microempresas) y lo que de verdad decide si te conviene una SL.",
   alternates: { canonical: "/guias/autonomo-o-sociedad/" },
@@ -19,8 +19,8 @@ export default function AutonomoOSociedad() {
       cta={{
         titulo: "Hagamos la cuenta con tus números",
         texto: "Comparamos lo que pagas hoy como autónomo con lo que pagarías con una sociedad, incluidos los costes de la SL. Si compensa, te ayudamos a crearla.",
-        href: "/constituir-sociedad/#contacto",
-        boton: "Pedir presupuesto",
+        href: "/empezar/?plan=sociedad",
+        boton: "Empezar",
       }}
       fuentes={[
         { nombre: "Agencia Tributaria: tipos de gravamen del Impuesto sobre Sociedades 2025 y siguientes", url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/principales-novedades-impuesto-sobre-sociedades-2025/tipos-gravamen.html" },

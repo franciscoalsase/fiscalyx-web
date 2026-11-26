@@ -218,7 +218,7 @@ export default function Inicio() {
                 </div>
               ))}
             </dl>
-            <GuiasRelacionadas slugs={["gastos-deducibles-autonomos", "declarar-criptomonedas-renta", "autonomo-o-sociedad"]} />
+            <GuiasRelacionadas slugs={["gastos-deducibles-autonomos", "renta-autonomos", "requerimiento-hacienda", "declarar-criptomonedas-renta", "autonomo-o-sociedad"]} />
           </div>
         </section>
 

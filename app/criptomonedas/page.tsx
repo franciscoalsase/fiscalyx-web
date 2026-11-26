@@ -9,7 +9,7 @@ import { ExtractoInforme } from "@/components/ExtractoInforme";
 import { prices, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Asesoría fiscal de criptomonedas: Renta y Modelo 721",
+  title: "Asesoría fiscal de criptomonedas y Modelo 721",
   description:
     "Calculamos tus ganancias con criptomonedas operación por operación y presentamos tu Renta y el Modelo 721. Economistas colegiados y precio cerrado.",
   alternates: { canonical: "/criptomonedas/" },
@@ -86,8 +86,8 @@ export default function Criptomonedas() {
                 para justificarlo si Hacienda pregunta. El precio, antes de empezar y por escrito.
               </p>
               <div className="acciones">
-                <a className="boton boton-principal" href="#contacto">
-                  Pedir presupuesto
+                <a className="boton boton-principal" href="/empezar/?plan=cripto">
+                  Empezar<span className="visualmente-oculto"> con tus criptomonedas</span>
                 </a>
                 <a
                   className="enlace-sencillo"
@@ -202,7 +202,7 @@ export default function Criptomonedas() {
           </div>
         </section>
       </main>
-      <Pie contacto="#contacto" />
+      <Pie contacto="/empezar/?plan=cripto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );

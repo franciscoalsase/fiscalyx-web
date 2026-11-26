@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Modelo 130 y retenciones del 15 % y 7 %: el IRPF del autónomo",
+  title: "Modelo 130 y retenciones del autónomo",
   description:
-    "Cómo adelanta el IRPF un autónomo: retención del 15 % o del 7 % en sus facturas y modelo 130 trimestral. Cuándo no tienes que presentarlo, cómo se calcula y la deducción de hasta 100 € al trimestre.",
+    "Cómo adelanta el IRPF un autónomo: retención del 15 % o del 7 % y modelo 130 trimestral. Cuándo no se presenta y cómo se calcula.",
   alternates: { canonical: "/guias/modelo-130-retenciones/" },
 };
 

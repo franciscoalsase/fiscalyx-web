@@ -216,8 +216,8 @@ export default function CalculadoraForma() {
                 sociedad y desde cuándo. Sin compromiso.
               </p>
             </div>
-            <Link className="boton boton-claro" href="/sociedades/#contacto">
-              Pedir presupuesto
+            <Link className="boton boton-claro" href="/empezar/?plan=sociedad">
+              Empezar<span className="visualmente-oculto"> con una sociedad</span>
             </Link>
           </div>
         </section>

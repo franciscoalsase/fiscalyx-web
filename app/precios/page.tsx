@@ -8,7 +8,7 @@ import { prices, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `Tarifas de la gestoría: autónomos a ${prices.autonomoMes} € al mes`,
-  description: `Autónomos, ${prices.autonomoMes} € al mes. Sociedades, desde ${prices.sociedadMes} € al mes. Criptomonedas, precio por caso antes de empezar. Todo lo que incluye cada cuota, por escrito.`,
+  description: `Autónomos, ${prices.autonomoMes} € al mes con la Renta. Sociedades, desde ${prices.sociedadMes} €. Criptomonedas, precio por caso. Todo lo que incluye cada cuota, por escrito.`,
   alternates: { canonical: "/precios/" },
 };
 

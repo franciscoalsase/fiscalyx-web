@@ -6,9 +6,9 @@ import { FormularioContacto } from "@/components/FormularioContacto";
 import { site, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Capitalizar el paro para hacerte autónomo (pago único)",
+  title: "Capitalizar el paro para ser autónomo",
   description:
-    "Te preparamos la memoria y el plan de inversión del pago único, te decimos en qué orden hacer cada trámite y te damos de alta a tiempo. Economistas colegiados, presupuesto cerrado.",
+    "Preparamos la memoria y el plan de inversión del pago único, te decimos en qué orden hacer cada trámite y te damos de alta a tiempo.",
   alternates: { canonical: "/capitalizar-paro/" },
 };
 

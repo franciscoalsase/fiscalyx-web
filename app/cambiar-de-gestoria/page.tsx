@@ -7,9 +7,9 @@ import { Check } from "@/components/Iconos";
 import { whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cambiar de gestoría: cómo hacerlo sin dejar nada a medias",
+  title: "Cambiar de gestoría sin dejar nada a medias",
   description:
-    "Cómo cambiar de gestoría siendo autónomo o con una sociedad: cuándo hacerlo, qué documentación necesitas y cómo nos encargamos nosotros de pedírsela a tu gestoría actual.",
+    "Cómo cambiar de gestoría siendo autónomo o con una SL: cuándo hacerlo, qué documentación hace falta y cómo la pedimos nosotros, sin coste.",
   alternates: { canonical: "/cambiar-de-gestoria/" },
 };
 
@@ -192,7 +192,7 @@ export default function CambiarDeGestoria() {
           </div>
         </section>
       </main>
-      <Pie contacto="#contacto" />
+      <Pie contacto="/empezar/" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, howTo]) }} />
     </>
   );

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
 
 export const metadata: Metadata = {
-  title: "Gestoría en Elche para autónomos y empresas",
+  title: "Gestoría online en Elche para autónomos y empresas",
   description:
-    "Gestoría online para autónomos y sociedades de Elche, también para los que venden a otros países: IVA intracomunitario, modelo 349, exportaciones y ventas por internet. Economistas colegiados y cuota fija.",
+    "Gestoría online para autónomos y empresas de Elche que venden fuera: IVA intracomunitario, modelo 349, exportaciones y ventas por internet.",
   alternates: { canonical: "/gestoria-elche/" },
 };
 

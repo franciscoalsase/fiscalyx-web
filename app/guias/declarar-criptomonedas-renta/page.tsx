@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Cómo declarar criptomonedas en la Renta: guía completa",
+  title: "Cómo declarar criptomonedas en la Renta",
   description:
-    "Qué operaciones con criptomonedas tributan, cómo se calcula la ganancia con FIFO, cuánto se paga, cómo compensar pérdidas y qué documentación guardar. Con ejemplos.",
+    "Qué operaciones con criptomonedas tributan, cómo se calcula la ganancia con FIFO, cuánto se paga y cómo compensar pérdidas. Con ejemplos.",
   alternates: { canonical: "/guias/declarar-criptomonedas-renta/" },
 };
 

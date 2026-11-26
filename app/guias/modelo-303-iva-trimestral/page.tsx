@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "Modelo 303: el IVA trimestral del autónomo explicado",
+  title: "Modelo 303: el IVA trimestral del autónomo",
   description:
-    "Qué es el modelo 303, cómo se calcula con un ejemplo, qué IVA puedes deducir, plazos de 2027, qué pasa si sale a devolver o a cero y los errores más habituales.",
+    "Qué es el modelo 303, cómo se calcula con un ejemplo, qué IVA puedes deducir, los plazos de 2027 y los errores más habituales.",
   alternates: { canonical: "/guias/modelo-303-iva-trimestral/" },
 };
 
