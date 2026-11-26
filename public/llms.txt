@@ -36,6 +36,7 @@
 - [Facturar a clientes extranjeros](https://www.fiscalyx.com/guias/facturar-clientes-extranjeros/): IVA por tipo de cliente, ROI, modelo 349, OSS y modelo 130.
 - [Modelo 303](https://www.fiscalyx.com/guias/modelo-303-iva-trimestral/): IVA trimestral, cálculo, deducciones y plazos de 2027.
 - [Modelo 130 y retenciones](https://www.fiscalyx.com/guias/modelo-130-retenciones/): retención del 15 % y del 7 %, regla del 70 %, cálculo del 130 y deducción de hasta 100 €.
+- [Cómo cobrar de tu SL](https://www.fiscalyx.com/guias/cobrar-de-tu-sociedad/): retribución de administrador (35 % o 19 %), nómina por funciones, dividendos y autónomo societario.
 - [Cuentas anuales de una SL](https://www.fiscalyx.com/guias/cuentas-anuales-sociedad/): plazos de 2027, legalización de libros, depósito y sanciones.
 - [Modelo 347](https://www.fiscalyx.com/guias/modelo-347/): operaciones con terceros, umbral, exclusiones y plazo.
 - [Cuánto cuesta una gestoría](https://www.fiscalyx.com/guias/cuanto-cuesta-una-gestoria/): rangos de precios, extras habituales y calculadora del coste anual.

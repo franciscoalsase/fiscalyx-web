@@ -140,4 +140,11 @@ export const guias: Guia[] = [
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
+  {
+    slug: "cobrar-de-tu-sociedad",
+    titulo: "Cómo cobrar de tu sociedad limitada",
+    resumen: "Sueldo de administrador (35 % o 19 %), nómina por tu trabajo o dividendos: qué tributa cada uno y la cuota de autónomo societario.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
 ];
