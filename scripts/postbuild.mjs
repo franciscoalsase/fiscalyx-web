@@ -50,6 +50,8 @@ recorrer(OUT, (ruta, nombre) => {
     html = html.replace(/<link\b[^>]*rel="(?:preload|modulepreload)"[^>]*as="script"[^>]*\/?>/g, "");
     html = html.replace(/<link\b[^>]*as="script"[^>]*rel="(?:preload|modulepreload)"[^>]*\/?>/g, "");
     html = metasSociales(html);
+    // Google pide que la URL del favicon sea estable: quitamos el ?hash que añade Next.
+    html = html.replace(/(href="\/(?:favicon\.ico|icon\.svg|icon\.png|apple-icon\.png))\?[^"]*"/g, '$1"');
     writeFileSync(ruta, html);
     paginas++;
   } else if ((nombre.endsWith(".txt") && !CONSERVAR_TXT.has(nombre)) || (ruta.includes("/_next/static/chunks/") && nombre.endsWith(".js"))) {
