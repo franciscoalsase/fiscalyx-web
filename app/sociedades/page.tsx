@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
+import { Garantia } from "@/components/Garantia";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { LineaAnio, type MesAnio } from "@/components/LineaAnio";
@@ -227,6 +228,7 @@ export default function Sociedades() {
               <p className="precio-nota">
                 Revisamos el volumen de tu sociedad y te damos una cuota fija por escrito. Sin permanencia.
               </p>
+              <Garantia />
               <p style={{ marginTop: "1.5rem" }}>
                 <Link className="boton boton-claro" href="/empezar/?plan=sociedad">
                   Empezar con este plan

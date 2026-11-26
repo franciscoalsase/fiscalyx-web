@@ -2,7 +2,7 @@ import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
 import { Logo } from "@/components/Logo";
 
-export function Pie({ contacto = "/#contacto" }: { contacto?: string }) {
+export function Pie({ contacto = "/empezar/" }: { contacto?: string }) {
   return (
     <>
     <nav className="barra-movil" aria-label="Contacto rápido">

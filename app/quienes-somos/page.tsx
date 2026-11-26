@@ -48,7 +48,8 @@ export default function QuienesSomos() {
               <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho</h1>
               <p className="entradilla">
                 Fiscalyx nace para que autónomos y pequeñas empresas tengan un economista que les conozca sin pagar lo que cuesta un
-                despacho tradicional ni conformarse con una aplicación.
+                despacho tradicional ni conformarse con una aplicación. Detrás hay economistas colegiados con más de 25 años
+                de oficio.
               </p>
             </div>
           </div>
@@ -104,6 +105,14 @@ export default function QuienesSomos() {
                 <dd>
                   Todo colegio profesional debe ofrecer en su web un registro público de colegiados. Busca a{" "}
                   {site.owner} y verás el número {site.colegiado}.
+                </dd>
+              </div>
+              <div>
+                <dt>La colaboración con Hacienda</dt>
+                <dd>
+                  Somos colaboradores sociales de la Agencia Tributaria y de varias haciendas autonómicas, y autorizados
+                  del Sistema RED de la Seguridad Social. Con tu autorización, presentamos en tu nombre impuestos, altas y
+                  cotizaciones sin que tengas que hacer nada.
                 </dd>
               </div>
               <div>

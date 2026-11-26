@@ -25,6 +25,14 @@ export function FichaProfesional() {
           <dd>{site.colegio}</dd>
         </div>
         <div>
+          <dt>Agencia Tributaria</dt>
+          <dd>Colaborador social</dd>
+        </div>
+        <div>
+          <dt>Seguridad Social</dt>
+          <dd>Autorizado del Sistema RED</dd>
+        </div>
+        <div>
           <dt>Seguro</dt>
           <dd>Responsabilidad civil profesional</dd>
         </div>

@@ -18,7 +18,7 @@ export default function Modelo347() {
       fecha="noviembre de 2026"
       cta={{
         titulo: "Lo cuadramos por ti",
-        texto: "Preparamos el 347 con tu contabilidad y lo contrastamos con tus clientes y proveedores antes de presentarlo. Dentro de la cuota.",
+        texto: "Preparamos el 347 con tu contabilidad y lo revisamos contigo antes de presentarlo. Dentro de la cuota.",
         href: "/empezar/",
         boton: "Empezar",
       }}
@@ -95,7 +95,7 @@ export default function Modelo347() {
       </p>
       <p>
         Por eso, antes de presentarlo, conviene pedir a los clientes y proveedores con importes grandes que confirmen
-        su cifra. Es lo que hacemos en enero.
+        su cifra.
       </p>
 
       <h2>Si no lo presentas o lo presentas mal</h2>

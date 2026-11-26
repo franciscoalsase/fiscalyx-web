@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
+import { Garantia } from "@/components/Garantia";
 import { Check } from "@/components/Iconos";
 import { prices, whatsappLink } from "@/lib/site";
 
@@ -147,6 +148,7 @@ export default function Precios() {
               Aparte en todos los planes: nóminas y seguros sociales a {prices.nominaMes} € al mes por trabajador, y
               requerimientos o inspecciones, con el precio por escrito antes de empezar.
             </p>
+            <Garantia />
           </div>
         </section>
 

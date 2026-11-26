@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
+import { Garantia } from "@/components/Garantia";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { ProximoPlazo } from "@/components/ProximoPlazo";
@@ -314,6 +315,7 @@ export default function Autonomos() {
                 {prices.autonomoMes} €<small>al mes + IVA</small>
               </p>
               <p className="precio-nota">Sin permanencia. Si te vas, te entregamos toda tu documentación.</p>
+              <Garantia />
               <p style={{ marginTop: "1.5rem" }}>
                 <Link className="boton boton-claro" href="/empezar/?plan=autonomo">
                   Empezar con este plan

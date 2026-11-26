@@ -3264,3 +3264,15 @@ td.comparar-nos {
   width: calc(100% + 0.3em);
   height: 0.62em;
 }
+
+/* Garantía */
+.garantia {
+  margin-top: 1.5rem;
+  max-width: 40rem;
+  padding-left: 1rem;
+  border-left: 3px solid #ffe86e;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.garantia strong { font-family: var(--sans); font-weight: 700; }
+.seccion-verde .garantia { color: inherit; }

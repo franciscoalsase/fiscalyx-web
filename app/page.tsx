@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
+import { Garantia } from "@/components/Garantia";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { FichaProfesional } from "@/components/FichaProfesional";
@@ -64,7 +65,10 @@ export default function Inicio() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <p className="portada-condiciones">Pagas mes a mes y te puedes ir cuando quieras.</p>
+              <p className="portada-condiciones">
+                Colaboradores sociales de la Agencia Tributaria y de varias haciendas autonómicas, y autorizados del
+                Sistema RED de la Seguridad Social. Pagas mes a mes y te puedes ir cuando quieras.
+              </p>
             </div>
           </div>
         </section>
@@ -165,6 +169,7 @@ export default function Inicio() {
               <Link href="/capitalizar-paro/">capitalizar el paro</Link> y con la parte económica de las{" "}
               <Link href="/licitaciones-publicas/">licitaciones públicas</Link>. <Link href="/precios/">Todos los precios</Link>
             </p>
+            <Garantia />
             <p className="carta-nota">
               Antes de escribirnos puedes calcular{" "}
               <Link href="/calculadora-autonomos/">cuánto pagarás este trimestre</Link>,{" "}
@@ -188,7 +193,7 @@ export default function Inicio() {
                 inviertes, acabas con dos asesores que no se hablan.
               </p>
               <p>
-                Nosotros somos economistas colegiados y hacemos las dos cosas. Cada cliente tiene un asesor asignado,
+                Nosotros somos economistas colegiados, con más de 25 años llevando los impuestos de autónomos y empresas, y hacemos las dos cosas. Cada cliente tiene un asesor asignado,
                 de modo que quien te contesta es siempre la misma persona y no tienes que explicar tu caso dos veces.
               </p>
               <p className="firma-carta">
