@@ -96,17 +96,7 @@ export default function Sociedades() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <ul className="garantias">
-                <li>
-                  <Check /> Impuesto sobre Sociedades incluido
-                </li>
-                <li>
-                  <Check /> Cuentas anuales incluidas
-                </li>
-                <li>
-                  <Check /> Sin permanencia
-                </li>
-              </ul>
+              <p className="portada-condiciones">El Impuesto sobre Sociedades y las cuentas anuales van dentro de la cuota, y no hay permanencia.</p>
             </div>
             <CierreEjercicio />
           </div>
@@ -272,16 +262,16 @@ export default function Sociedades() {
         <section className="seccion" aria-labelledby="preguntas-sl">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-sl">Preguntas frecuentes</h2>
+              <h2 id="preguntas-sl">Dudas sobre llevar tu sociedad</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <GuiasRelacionadas slugs={["autonomo-o-sociedad", "factura-electronica-verifactu", "cobrar-de-tu-sociedad", "cuentas-anuales-sociedad"]} />
             <p style={{ marginTop: "2rem" }}>
               ¿Aún no tienes la sociedad? <Link href="/constituir-sociedad/">Te ayudamos a constituirla</Link>. ¿No sabes si te compensa? <Link href="/calculadora-autonomo-o-sociedad/">Compáralo en un minuto</Link>. ¿Eres

@@ -109,17 +109,7 @@ export default function CambiarDeGestoria() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <ul className="garantias">
-                <li>
-                  <Check /> Pedimos tu documentación
-                </li>
-                <li>
-                  <Check /> Presupuesto cerrado
-                </li>
-                <li>
-                  <Check /> Sin permanencia
-                </li>
-              </ul>
+              <p className="portada-condiciones">El cambio no te cuesta nada: pedimos nosotros tu documentación a la gestoría anterior y no hay permanencia.</p>
             </div>
           </div>
         </section>
@@ -176,16 +166,16 @@ export default function CambiarDeGestoria() {
         <section className="seccion" aria-labelledby="cambio-preguntas">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="cambio-preguntas">Preguntas frecuentes</h2>
+              <h2 id="cambio-preguntas">Dudas sobre el cambio</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
           </div>
         </section>
 

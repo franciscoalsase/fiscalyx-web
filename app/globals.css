@@ -1238,58 +1238,73 @@ img {
 .ficha {
   background: #fff;
   border: 1px solid var(--linea);
-  border-radius: var(--radio);
-  padding: 1.5rem 1.5rem 1.25rem;
-  box-shadow: 0 1px 0 var(--linea), 0 18px 40px -30px rgba(27, 42, 65, 0.45);
+  border-top: 4px solid var(--tinta);
+  border-radius: 2px;
+  padding: 1.6rem 1.6rem 1.35rem;
 }
 
-.ficha-cabeza {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  padding-bottom: 0.85rem;
-  border-bottom: 2px solid var(--tinta);
+.ficha-rol {
   font-family: var(--sans);
-}
-
-.ficha-cabeza strong {
-  font-size: 1.05rem;
-}
-
-.ficha-cabeza span {
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.ficha dl {
-  margin: 0;
-}
-
-.ficha dl > div {
-  display: grid;
-  grid-template-columns: 7.5rem 1fr;
-  gap: 0.75rem;
-  padding: 0.7rem 0;
-  border-bottom: 1px solid var(--linea);
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.ficha dl > div:last-child {
-  border-bottom: none;
-}
-
-.ficha dt {
-  font-family: var(--sans);
-  color: var(--grafito);
   font-size: 0.92rem;
+  color: var(--grafito);
 }
 
-.ficha dd {
-  margin: 0;
+.ficha-nombre {
+  margin-top: 0.35rem;
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--tinta);
+}
+
+.ficha-colegio {
+  margin-top: 0.6rem;
   font-family: var(--sans);
-  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.ficha-colegio mark {
+  font-weight: 700;
+  background: linear-gradient(transparent 50%, #ffe86e 50%, #ffe86e 92%, transparent 92%);
+  padding: 0 0.15em;
+  color: inherit;
+}
+
+.ficha-sub {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--linea);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--grafito);
+}
+
+.ficha-habilitaciones {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.ficha-habilitaciones li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.15rem 1rem;
+  padding: 0.5rem 0;
+  font-family: var(--sans);
+  font-size: 0.96rem;
+}
+
+.ficha-habilitaciones li + li { border-top: 1px dashed var(--linea); }
+.ficha-habilitaciones span { color: var(--grafito); }
+
+.ficha-pie {
+  margin-top: 1.1rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--grafito);
 }
 
 .equipo-ficha {
@@ -2035,8 +2050,7 @@ a {
 }
 
 .agenda,
-.informe,
-.ficha {
+.informe {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -3278,3 +3292,4 @@ td.comparar-nos {
 .seccion-verde .garantia { color: inherit; }
 .via-extra { display: block; margin-top: 0.2rem; font-size: 0.95rem; color: var(--grafito); }
 .vias .via-extra a { font-size: inherit; font-weight: 600; }
+.cronologia-ancha { max-width: 52rem; margin-top: 0; }

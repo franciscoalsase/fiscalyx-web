@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { FormularioContacto } from "@/components/FormularioContacto";
-import { Check } from "@/components/Iconos";
 import { prices, site, whatsappLink } from "@/lib/site";
 
 type Pregunta = { p: string; r: string };
@@ -76,17 +75,7 @@ export function PaginaLocal({
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <ul className="garantias">
-                <li>
-                  <Check /> Autónomos desde {prices.autonomoMes} € al mes
-                </li>
-                <li>
-                  <Check /> Sociedades desde {prices.sociedadMes} € al mes
-                </li>
-                <li>
-                  <Check /> Renta con criptomonedas
-                </li>
-              </ul>
+              <p className="portada-condiciones">Autónomos desde {prices.autonomoMes} € al mes y sociedades desde {prices.sociedadMes} €. También hacemos la Renta con criptomonedas.</p>
             </div>
           </div>
         </section>
@@ -184,16 +173,16 @@ export function PaginaLocal({
         <section className="seccion" aria-labelledby="local-preguntas">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="local-preguntas">Preguntas frecuentes</h2>
+              <h2 id="local-preguntas">Preguntas desde {zona}</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
           </div>
         </section>
 

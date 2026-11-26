@@ -160,17 +160,7 @@ export default function Autonomos() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <ul className="garantias">
-                <li>
-                  <Check /> Renta incluida
-                </li>
-                <li>
-                  <Check /> Sin permanencia
-                </li>
-                <li>
-                  <Check /> Para toda España
-                </li>
-              </ul>
+              <p className="portada-condiciones">La Renta va dentro de la cuota, no hay permanencia y trabajamos con autónomos de toda España.</p>
             </div>
             <ProximoPlazo />
           </div>
@@ -282,27 +272,46 @@ export default function Autonomos() {
             <div className="cabeza-seccion">
               <h2 id="empezar-aut">Cómo empezamos</h2>
             </div>
-            <ol className="pasos">
+            <ol className="cronologia cronologia-ancha">
               <li>
-                <h3>Nos cuentas tu caso</h3>
-                <p>En el formulario de alta o por WhatsApp. Tarda dos minutos.</p>
+                <span className="cronologia-cuando">Hoy</span>
+                <div>
+                  <strong>Nos cuentas tu caso</strong>
+                  <p>En el formulario de alta o por WhatsApp. Son dos minutos.</p>
+                </div>
               </li>
               <li>
-                <h3>Te llamamos</h3>
-                <p>En 24 horas laborables, para conocer tu actividad y confirmarte la cuota por escrito.</p>
+                <span className="cronologia-cuando">En 24 horas laborables</span>
+                <div>
+                  <strong>Te llamamos</strong>
+                  <p>Para conocer tu actividad y confirmarte la cuota por escrito.</p>
+                </div>
               </li>
               <li>
-                <h3>Nos autorizas</h3>
-                <p>Ante Hacienda y la Seguridad Social. Te guiamos paso a paso.</p>
+                <span className="cronologia-cuando">Cuando aceptas</span>
+                <div>
+                  <strong>Nos autorizas ante Hacienda y la Seguridad Social</strong>
+                  <p>Te guiamos paso a paso. Si vienes de otra gestoría, le pedimos nosotros tu documentación.</p>
+                </div>
               </li>
               <li>
-                <h3>Nos ocupamos</h3>
-                <p>Si vienes de otra gestoría, le pedimos nosotros tu documentación y seguimos desde ahí.</p>
+                <span className="cronologia-cuando">Desde el siguiente plazo</span>
+                <div>
+                  <strong>Llevamos tus impuestos</strong>
+                  <p>Con el aviso de importes antes de cada trimestre y tu Renta en primavera.</p>
+                </div>
               </li>
             </ol>
             <p style={{ marginTop: "2rem" }}>
               ¿Ya tienes gestoría? Te explicamos <Link href="/cambiar-de-gestoria/">cómo cambiarte sin dejar nada a medias</Link>.
               ¿Cobras el paro? <Link href="/capitalizar-paro/">Puedes capitalizarlo para empezar</Link>.
+            </p>
+            <p className="carta-nota">
+              Antes de escribirnos puedes calcular{" "}
+              <Link href="/calculadora-autonomos/">cuánto pagarás este trimestre</Link>,{" "}
+              <Link href="/calculadora-cuota-autonomos/">tu cuota de autónomos</Link> o{" "}
+              <Link href="/calculadora-autonomo-o-sociedad/">si te compensa una sociedad</Link>, y añadir{" "}
+              <Link href="/guias/calendario-fiscal-autonomos-2027/">los plazos de 2027 a tu calendario</Link>.
             </p>
           </div>
         </section>
@@ -356,53 +365,19 @@ export default function Autonomos() {
           </div>
         </section>
 
-        <section className="seccion" aria-labelledby="herramientas-aut">
+        <section className="seccion" aria-labelledby="preguntas-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="herramientas-aut">Haz tus números antes de hablar con nosotros</h2>
+              <h2 id="preguntas-aut">Dudas de autónomos antes de empezar</h2>
             </div>
-            <ul className="lista-guias lista-guias-cuatro">
-              <li>
-                <h3>
-                  <Link href="/calculadora-autonomos/">Cuánto pagarás este trimestre</Link>
-                </h3>
-                <p>El IVA y el IRPF de tu próximo 303 y 130 con tus ingresos y gastos.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/calculadora-cuota-autonomos/">Tu cuota de autónomos</Link>
-                </h3>
-                <p>En qué tramo estás según lo que ganas, con la tabla vigente y la tarifa plana.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/calculadora-autonomo-o-sociedad/">¿Te compensa una sociedad?</Link>
-                </h3>
-                <p>IRPF frente a Impuesto sobre Sociedades, con tus números.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/guias/calendario-fiscal-autonomos-2027/">Los plazos de 2027 en tu móvil</Link>
-                </h3>
-                <p>Un calendario para descargar, con aviso cinco días antes de cada plazo.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="seccion seccion-banda" aria-labelledby="preguntas-aut">
-          <div className="contenedor">
-            <div className="cabeza-seccion">
-              <h2 id="preguntas-aut">Preguntas frecuentes</h2>
-            </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <GuiasRelacionadas slugs={["darse-de-alta-autonomo", "cuanto-cuesta-una-gestoria", "gastos-deducibles-autonomos", "cuota-autonomos-2027"]} />
             <p style={{ marginTop: "2rem" }}>
               ¿Tienes una sociedad? <Link href="/sociedades/">Mira el plan de sociedades</Link>.

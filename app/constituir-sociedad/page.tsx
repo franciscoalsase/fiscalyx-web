@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { FormularioContacto } from "@/components/FormularioContacto";
-import { Check } from "@/components/Iconos";
 import { whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -73,17 +72,7 @@ export default function ConstituirSociedad() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <ul className="garantias">
-                <li>
-                  <Check /> Presupuesto cerrado
-                </li>
-                <li>
-                  <Check /> Capital desde 1 €
-                </li>
-                <li>
-                  <Check /> Para toda España
-                </li>
-              </ul>
+              <p className="portada-condiciones">Te damos el precio por escrito antes de empezar. Desde 2022, una SL se puede constituir con 1 € de capital.</p>
             </div>
           </div>
         </section>
@@ -107,16 +96,16 @@ export default function ConstituirSociedad() {
         <section className="seccion" aria-labelledby="preguntas-constituir">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="preguntas-constituir">Preguntas frecuentes</h2>
+              <h2 id="preguntas-constituir">Dudas antes de constituir la sociedad</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <p style={{ marginTop: "2rem" }}>
               Una vez creada, mira <Link href="/sociedades/">qué incluye la gestoría de tu sociedad</Link>.
             </p>

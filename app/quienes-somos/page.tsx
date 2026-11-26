@@ -155,7 +155,7 @@ export default function QuienesSomos() {
             </div>
             <div className="acciones" style={{ marginTop: "3rem" }}>
               <Link className="boton boton-principal" href="/empezar/">
-                Empezar
+                Empezar<span className="visualmente-oculto"> con Fiscalyx</span>
               </Link>
             </div>
           </div>

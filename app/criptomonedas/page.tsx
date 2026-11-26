@@ -5,7 +5,6 @@ import { Pie } from "@/components/Pie";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { PresupuestoCripto } from "@/components/PresupuestoCripto";
-import { Check } from "@/components/Iconos";
 import { ExtractoInforme } from "@/components/ExtractoInforme";
 import { prices, whatsappLink } from "@/lib/site";
 
@@ -99,17 +98,7 @@ export default function Criptomonedas() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <ul className="garantias">
-                <li>
-                  <Check /> Economistas colegiados
-                </li>
-                <li>
-                  <Check /> Exchanges, DeFi, staking y NFT
-                </li>
-                <li>
-                  <Check /> Nunca pedimos tus claves
-                </li>
-              </ul>
+              <p className="portada-condiciones">Exchanges, DeFi, staking y NFT. Nunca te pedimos tus claves privadas ni acceso para mover tus fondos.</p>
             </div>
             <ExtractoInforme />
           </div>
@@ -210,14 +199,14 @@ export default function Criptomonedas() {
             <div className="cabeza-seccion">
               <h2 id="preguntas-cripto">Dudas frecuentes</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <GuiasRelacionadas slugs={["permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda"]} />
           </div>
         </section>

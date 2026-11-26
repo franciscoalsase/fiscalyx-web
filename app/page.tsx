@@ -196,10 +196,7 @@ export default function Inicio() {
                 Nosotros somos economistas colegiados, con más de 25 años llevando los impuestos de autónomos y empresas, y hacemos las dos cosas. Cada cliente tiene un asesor asignado,
                 de modo que quien te contesta es siempre la misma persona y no tienes que explicar tu caso dos veces.
               </p>
-              <p className="firma-carta">
-                {site.owner}
-                <span>Economista colegiado n.º {site.colegiado}, director de Fiscalyx</span>
-              </p>
+              <p className="firma-carta">{site.owner}</p>
               <p className="posdata">
                 <span>P. D.</span> Desde 2026 los exchanges europeos informan a Hacienda de tus operaciones. Si tienes
                 cripto sin declarar de otros años, <Link href="/criptomonedas/">mira cómo lo regularizamos</Link>.

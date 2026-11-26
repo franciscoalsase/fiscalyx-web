@@ -218,16 +218,16 @@ export default function CapitalizarParo() {
         <section className="seccion" aria-labelledby="paro-preguntas">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="paro-preguntas">Preguntas frecuentes</h2>
+              <h2 id="paro-preguntas">Dudas sobre el pago único</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <p className="nota-fuente" style={{ marginTop: "2rem" }}>
               Requisitos según la información del Servicio Público de Empleo Estatal (SEPE) sobre el pago único,
               revisada en noviembre de 2026. La exención en el IRPF está en el artículo 7.n de la Ley del IRPF.

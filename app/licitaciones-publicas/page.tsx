@@ -238,16 +238,16 @@ export default function Licitaciones() {
         <section className="seccion seccion-banda" aria-labelledby="licit-preguntas">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="licit-preguntas">Preguntas frecuentes</h2>
+              <h2 id="licit-preguntas">Dudas sobre la licitación</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <p className="nota-fuente" style={{ marginTop: "2rem" }}>
               Solvencia económica y financiera según el artículo 87 de la Ley 9/2017, de Contratos del Sector Público.
             </p>

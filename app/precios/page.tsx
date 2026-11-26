@@ -248,14 +248,14 @@ export default function Precios() {
             <div className="cabeza-seccion">
               <h2 id="preguntas-precios">Dudas sobre los precios</h2>
             </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <p style={{ marginTop: "2rem" }}>
               ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta una gestoría en un año completo</Link>, con lo que suele ir aparte.
             </p>
