@@ -61,8 +61,33 @@ export default function GestoriaVegaBaja() {
       fuentes={[
         { nombre: "Escala autonómica del IRPF 2026 en la Comunitat Valenciana", url: "https://guiafiscal.es/irpf/valencia/" },
         { nombre: "Agència Tributària Valenciana", url: "https://atv.gva.es/" },
+        { nombre: "Agencia Tributaria: novedades de la Orden de módulos para 2026 (Orden HAC/1425/2025)", url: "https://sede.agenciatributaria.gob.es/static_files/Sede/Actualidad/Novedades/2025/BOLINFORM_orden_modulos_2026.pdf" },
+        { nombre: "Agencia Tributaria: reducción de índices de rendimiento neto de 2025 (Orden HAC/484/2026)", url: "https://sede.agenciatributaria.gob.es/Sede/en_gb/todas-noticias/2026/mayo/18/reduccion-indices-rendimiento-neto-actividades-2025.html" },
       ]}
       extra={
+        <>
+        <section className="seccion seccion-banda" aria-labelledby="vega-agricultores">
+          <div className="contenedor texto-estrecho local-texto">
+            <h2 id="vega-agricultores">Si eres agricultor: los módulos del IRPF</h2>
+            <p>
+              La mayoría de agricultores de la huerta tributa en el IRPF por módulos. Tu rendimiento no sale de restar
+              gastos a ingresos: se multiplica lo que vendes por un índice que fija Hacienda para cada cultivo, distinto
+              para los cítricos, las hortalizas o los frutales.
+            </p>
+            <p>
+              Ese índice no es fijo. Cada primavera Hacienda rebaja los de los cultivos y municipios que han tenido un
+              mal año por sequía, granizo o plagas. Para la Renta de 2025 lo hizo la Orden HAC/484/2026, de 14 de mayo.
+              Además, todo el que tributa por módulos se aplica en 2026 una reducción general del 5&nbsp;% sobre el
+              rendimiento. Antes de presentar tu Renta comprobamos qué índice le toca a cada cultivo y a cada parcela.
+            </p>
+            <p>
+              Puedes seguir en módulos mientras tus ingresos agrarios no pasen de 250.000&nbsp;€, y la compensación
+              del 12&nbsp;% que te pagan tus compradores ya no cuenta para ese límite. En el IVA funcionas con el
+              régimen especial agrario, que te explicamos en la página de{" "}
+              <Link href="/gestoria-orihuela/">gestoría en Orihuela</Link>.
+            </p>
+          </div>
+        </section>
         <section className="seccion" aria-labelledby="vega-cripto">
           <div className="contenedor texto-estrecho local-texto">
             <h2 id="vega-cripto">También tus criptomonedas</h2>
@@ -77,6 +102,7 @@ export default function GestoriaVegaBaja() {
             </p>
           </div>
         </section>
+        </>
       }
       preguntas={[
         {
@@ -86,6 +112,10 @@ export default function GestoriaVegaBaja() {
         {
           p: "Tengo un negocio en la costa que trabaja por temporadas. ¿Me podéis llevar?",
           r: "Sí. Te ayudamos a organizar los trimestres de más y menos actividad, a revisar tu cuota de autónomo según lo que ganes en realidad y a no llevarte sorpresas en la Renta.",
+        },
+        {
+          p: "Soy agricultor y tributo por módulos. ¿Me puede bajar el IRPF por un mal año?",
+          r: "Sí. Cada primavera Hacienda rebaja los índices de los cultivos y municipios afectados por sequía, granizo u otras circunstancias; para 2025 lo hizo en mayo de 2026. Revisamos qué índice le toca a cada uno de tus cultivos antes de presentar tu Renta.",
         },
         {
           p: "¿Lleváis también sociedades de la Vega Baja?",

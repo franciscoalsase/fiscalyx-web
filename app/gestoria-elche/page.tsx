@@ -56,9 +56,33 @@ export default function GestoriaElche() {
       }
       fuentes={[
         { nombre: "Ley 37/1992 del IVA (artículos 21, 25 y 73)", url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740" },
+        { nombre: "Ley 20/2007 del Estatuto del trabajo autónomo (artículos 11 a 16, TRADE)", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409" },
+        { nombre: "Real Decreto 197/2009: contrato del TRADE y su registro", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2009-3673" },
         { nombre: "Elche y su peso en la producción de calzado (Esdiario, septiembre de 2026)", url: "https://www.esdiario.com/comunidad-valenciana/alicante/260915/197795/elche-ve-signos-recuperacion-calzado-temporadas-capa-caida.html" },
         { nombre: "AEC: empresas de fabricación de calzado de 2020 a 2025 (Alicante Plaza)", url: "https://alicanteplaza.es/alicanteplaza/elcheplaza/aec-alerta-del-deterioro-del-sector-del-calzado-y-sus-componentes-y-exige-un-plan-industrial-urgente" },
       ]}
+      extra={
+        <section className="seccion seccion-banda" aria-labelledby="elche-trade">
+          <div className="contenedor texto-estrecho local-texto">
+            <h2 id="elche-trade">Si trabajas casi solo para una fábrica</h2>
+            <p>
+              En el calzado de Elche es habitual el taller o el profesional que hace el aparado, el corte o el diseño
+              para una sola marca. Si al menos el 75&nbsp;% de tus ingresos viene de un único cliente, la ley te
+              considera trabajador autónomo económicamente dependiente, lo que se conoce como TRADE.
+            </p>
+            <p>
+              Ser TRADE no cambia tus impuestos, pero sí tus derechos: tienes al menos 18 días hábiles de descanso al
+              año y una indemnización si el cliente rompe el contrato sin causa. Para tenerlos, el contrato tiene que
+              estar por escrito y registrado en el SEPE en los 10 días hábiles siguientes a firmarlo.
+            </p>
+            <p>
+              Y hay una línea que conviene no cruzar: si trabajas con los medios de la fábrica, en su horario y bajo
+              sus órdenes, como un empleado más, no eres TRADE sino un falso autónomo. Revisamos tu caso antes de
+              firmar.
+            </p>
+          </div>
+        </section>
+      }
       preguntas={[
         {
           p: "¿Tenéis oficina en Elche?",
@@ -71,6 +95,10 @@ export default function GestoriaElche() {
         {
           p: "Tengo una tienda online y vendo a particulares de otros países. ¿Cobro IVA español?",
           r: "Hasta 10.000 € al año de ventas a distancia en toda la UE, sí. A partir de ahí, cobras el IVA de cada país y lo declaras en un único modelo trimestral, la ventanilla única. Te avisamos antes de que llegues a la cifra.",
+        },
+        {
+          p: "Hago aparado para una sola fábrica. ¿Soy autónomo normal o TRADE?",
+          r: "Si al menos el 75 % de tus ingresos viene de esa fábrica, puedes ser TRADE: tienes derecho a un mínimo de 18 días hábiles de descanso y a indemnización si rompen el contrato sin causa. El contrato tiene que registrarse en el SEPE en 10 días hábiles. Lo revisamos contigo.",
         },
         {
           p: "Llevo años con una gestoría de Elche. ¿Es complicado cambiarse?",
