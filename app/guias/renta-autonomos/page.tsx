@@ -61,14 +61,14 @@ export default function RentaAutonomos() {
         puedes deducir, en la guía de <Link href="/guias/gastos-deducibles-autonomos/">gastos deducibles</Link>.
       </p>
 
-      <h2>Lo que ya pagaste a cuenta</h2>
+      <h2>Los 130 y las retenciones se restan</h2>
       <p>
         Todo lo que adelantaste durante el año se resta del resultado: los modelos 130 que presentaste y las retenciones
         que te practicaron tus clientes en las facturas. Si adelantaste de más, la Renta sale a devolver. Te lo
         explicamos en la guía del <Link href="/guias/modelo-130-retenciones/">130 y las retenciones</Link>.
       </p>
 
-      <h2>Lo que más se olvida</h2>
+      <h2>Cinco descuidos que hacen pagar de más</h2>
       <ul>
         <li>
           <strong>El plan de pensiones de autónomos.</strong> Además de los 1.500 € de un plan individual, un autónomo

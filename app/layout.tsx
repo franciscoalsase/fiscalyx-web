@@ -22,14 +22,14 @@ const serif = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Gestoría online para autónomos y sociedades | Fiscalyx",
+    default: "Gestoría online de economistas colegiados | Fiscalyx",
     template: "%s | Fiscalyx",
   },
   description:
     "Gestoría online para autónomos y sociedades de toda España. Economistas colegiados, cuota fija, un asesor asignado y sin permanencia.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Gestoría online para autónomos y sociedades | Fiscalyx",
+    title: "Gestoría online de economistas colegiados | Fiscalyx",
     description:
       "Economistas colegiados. Impuestos y contabilidad por una cuota fija, con un asesor asignado.",
     url: site.url,
@@ -87,6 +87,8 @@ const datosEstructurados = {
 const efectos = `document.documentElement.classList.add("js");
 addEventListener("DOMContentLoaded",function(){
   var els=document.querySelectorAll("[data-revelar]");
+  var pa=document.querySelector(".portada .acciones"),bm=document.querySelector(".barra-movil");
+  if(pa&&bm&&("IntersectionObserver" in window)){new IntersectionObserver(function(es){bm.classList.toggle("oculta",es[0].isIntersecting)}).observe(pa)}
   if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("visible")});return}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target)}})},{threshold:0.35});
   els.forEach(function(e){io.observe(e)});

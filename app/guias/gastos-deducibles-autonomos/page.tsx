@@ -189,7 +189,7 @@ export default function GastosDeducibles() {
         </li>
       </ul>
 
-      <h2>Lo que nunca es deducible</h2>
+      <h2>Gastos que Hacienda no acepta nunca</h2>
       <ul>
         <li>Las multas y sanciones, y los recargos por presentar o pagar fuera de plazo.</li>
         <li>El propio IRPF que pagas, también los pagos fraccionados del modelo 130.</li>

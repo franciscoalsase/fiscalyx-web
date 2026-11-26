@@ -193,7 +193,7 @@ export default function CalculadoraForma() {
 
         <section className="seccion" aria-labelledby="forma-claves">
           <div className="contenedor texto-estrecho">
-            <h2 id="forma-claves">Lo que la calculadora no ve</h2>
+            <h2 id="forma-claves">Más allá del impuesto</h2>
             <p>
               El impuesto es solo una parte de la decisión. Una sociedad limita tu responsabilidad a lo que aportes,
               da otra imagen ante clientes grandes y facilita entrar con socios. A cambio, exige contabilidad

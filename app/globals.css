@@ -1711,7 +1711,7 @@ html {
 .logo-texto {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   letter-spacing: -0.04em;
   line-height: 1;
   color: var(--tinta);
@@ -3105,3 +3105,162 @@ td.comparar-nos {
 .anual-cifra mark { color: inherit; background: linear-gradient(transparent 6%, var(--subrayador) 6%, var(--subrayador) 96%, transparent 96%); padding: 0 0.15em; border-radius: 2px; }
 .anual-desde { font-size: 0.45em; font-weight: 500; color: var(--grafito); letter-spacing: 0; }
 @media (max-width: 640px) { .anual { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Portada (v3): texto, documento y acciones en rejilla ---------- */
+
+.portada-inicio .contenedor {
+  grid-template-areas: "texto doc" "acciones doc";
+  grid-template-rows: auto 1fr;
+  row-gap: 0;
+}
+.portada-inicio .portada-texto { grid-area: texto; align-self: end; }
+.portada-inicio .documento-aviso { grid-area: doc; align-self: center; }
+.portada-inicio .portada-acciones { grid-area: acciones; align-self: start; }
+
+@media (max-width: 860px) {
+  .portada-inicio .contenedor {
+    grid-template-areas: "texto" "doc" "acciones";
+    grid-template-rows: auto;
+    row-gap: 2rem;
+  }
+  .portada-inicio .acciones { margin-top: 0; }
+  .portada-inicio .entradilla { font-size: 1.12rem; }
+}
+
+/* ---------- Un trimestre con nosotros ---------- */
+
+.trimestre {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+.trimestre-intro {
+  margin-top: 1rem;
+  color: var(--grafito);
+  font-size: 1.1rem;
+  max-width: var(--medida);
+}
+.cronologia {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  border-top: 2px solid var(--tinta);
+}
+.cronologia li {
+  display: grid;
+  grid-template-columns: 10.5rem minmax(0, 1fr);
+  gap: 0.35rem 1.5rem;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+.cronologia-cuando {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--verde-oscuro);
+  padding-top: 0.15rem;
+}
+.cronologia strong {
+  font-family: var(--sans);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+.cronologia p {
+  margin-top: 0.35rem;
+  color: var(--grafito);
+}
+.trimestre-anio > p {
+  margin-top: 1.25rem;
+  color: var(--grafito);
+  font-size: 1rem;
+  max-width: 30rem;
+}
+@media (max-width: 900px) {
+  .trimestre { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .cronologia li { grid-template-columns: 1fr; }
+}
+
+/* ---------- Carta de servicios: qué incluye ---------- */
+
+.carta li p.carta-incluye {
+  margin-top: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--verde-oscuro);
+}
+
+/* ---------- Posdata de la carta ---------- */
+
+.carta-texto p.posdata {
+  margin-top: 2rem;
+  padding-top: 1.1rem;
+  border-top: 1px dashed var(--linea);
+  font-size: 1rem;
+  color: var(--grafito);
+}
+.posdata span {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--tinta);
+  margin-right: 0.35rem;
+}
+
+/* ---------- Preguntas a la vista ---------- */
+
+.preguntas-abiertas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.25rem clamp(2rem, 5vw, 4.5rem);
+  margin: 0;
+}
+.preguntas-abiertas > div {
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--linea);
+}
+.preguntas-abiertas dt {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+.preguntas-abiertas dd {
+  margin: 0.55rem 0 0;
+  color: var(--grafito);
+  max-width: 34rem;
+}
+@media (max-width: 760px) {
+  .preguntas-abiertas { grid-template-columns: 1fr; }
+}
+
+/* ---------- Barra móvil: se esconde mientras los botones de portada están a la vista ---------- */
+
+.barra-movil { transition: transform 0.25s ease; }
+.barra-movil.oculta { transform: translateY(110%); }
+@media (prefers-reduced-motion: reduce) {
+  .barra-movil { transition: none; }
+}
+.portada-inicio h1 { max-width: 20ch; }
+.plan-diferencia {
+  margin-top: 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--verde-oscuro);
+}
+.gracias .cabeza-seccion p { max-width: 36rem; }
+.gracias-pasos { max-width: 46rem; margin-top: 0; }
+.gracias-nota { margin-top: 2rem; max-width: 40rem; color: var(--grafito); }
+
+/* Logotipo con trazo de subrayador */
+.logo-texto { position: relative; z-index: 0; display: inline-block; padding: 0 0.04em; }
+.logo .logo-trazo {
+  position: absolute;
+  z-index: -1;
+  left: -0.16em;
+  bottom: 0;
+  width: calc(100% + 0.3em);
+  height: 0.62em;
+}

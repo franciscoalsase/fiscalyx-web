@@ -58,7 +58,7 @@ export default function CompensarPerdidas() {
         esa venta. Aún te quedan 1.950 € para los años siguientes, hasta 2030.
       </p>
 
-      <h2>Lo que hay que tener en cuenta</h2>
+      <h2>Condiciones para poder compensar</h2>
       <ul>
         <li>
           <strong>Hay que declararlas.</strong> Si no presentas la pérdida en la Renta del año en que se produce, no

@@ -16,7 +16,7 @@ const grupos = [
   {
     id: "guias-impuestos",
     t: "Tus impuestos del trimestre y del año",
-    slugs: ["calendario-fiscal-autonomos-2027", "modelo-303-iva-trimestral", "modelo-130-retenciones", "renta-autonomos", "modelo-347", "facturar-clientes-extranjeros", "factura-electronica-verifactu"],
+    slugs: ["calendario-fiscal-autonomos-2027", "modelo-303-iva-trimestral", "modelo-130-retenciones", "renta-autonomos", "modelo-347", "requerimiento-hacienda", "facturar-clientes-extranjeros", "factura-electronica-verifactu"],
   },
   { id: "guias-cuota", t: "Cuota de autónomos y gastos", slugs: ["cuota-autonomos-2027", "gastos-deducibles-autonomos"] },
   { id: "guias-sociedad", t: "Si tienes una sociedad", slugs: ["cobrar-de-tu-sociedad", "cuentas-anuales-sociedad"] },
@@ -85,7 +85,7 @@ export default function Guias() {
                 <h3>
                   <Link href="/calculadora-cuota-autonomos/">Calculadora de la cuota de autónomos</Link>
                 </h3>
-                <p>Tu tramo y tu cuota mínima según lo que ganas de verdad, con la tabla vigente.</p>
+                <p>Tu tramo y tu cuota mínima según tu rendimiento neto, con la tabla vigente.</p>
               </li>
               <li>
                 <h3>

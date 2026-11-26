@@ -84,7 +84,7 @@ export default function Criptomonedas() {
               <h1 style={{ maxWidth: "18ch" }}>Tus criptomonedas, declaradas operación por operación</h1>
               <p className="entradilla">
                 Calculamos tus ganancias y pérdidas, presentamos tu Renta y el Modelo 721 y te entregamos el archivo
-                para justificarlo si Hacienda pregunta. Con precio cerrado antes de empezar.
+                para justificarlo si Hacienda pregunta. El precio, antes de empezar y por escrito.
               </p>
               <div className="acciones">
                 <a className="boton boton-principal" href="#contacto">
@@ -228,7 +228,7 @@ export default function Criptomonedas() {
               <h2 id="contacto-cripto">Cuéntanos qué tienes</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 Qué exchanges usas, cuántas operaciones haces más o menos y de qué años. Te respondemos con un
-                presupuesto cerrado en 24 horas laborables.
+                presupuesto en 24 horas laborables.
               </p>
             </div>
             <FormularioContacto temaInicial="cripto" />

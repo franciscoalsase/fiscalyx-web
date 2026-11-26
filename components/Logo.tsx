@@ -12,11 +12,17 @@ export function Simbolo({ size = 30 }: { size?: number }) {
   );
 }
 
+// Logotipo: la palabra subrayada a mano con el mismo amarillo con el que marcamos
+// la cifra que importa en cada documento. El símbolo cuadrado queda para el favicon.
 export function Logo() {
   return (
     <span className="logo">
-      <Simbolo />
-      <span className="logo-texto">Fiscalyx</span>
+      <span className="logo-texto">
+        Fiscalyx
+        <svg className="logo-trazo" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path d="M1.2 4.6C18 3.1 41 4.2 63 3.3S92 3.6 99 4.4l-.6 6.3C79 11.6 52 10.2 31 11.1S7 11.4 1.6 10.9Z" fill="#ffe86e" />
+        </svg>
+      </span>
     </span>
   );
 }

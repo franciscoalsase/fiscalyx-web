@@ -31,7 +31,7 @@ export default function CuotaAutonomos2027() {
   return (
     <Articulo
       titulo="Cuota de autónomos en 2027: tramos y cómo se calcula"
-      entradilla="Desde 2023 la cuota depende de lo que ganas de verdad. Te explicamos qué tabla se aplica, cómo saber en qué tramo estás, cuánto pagan los autónomos societarios y qué pasa cuando la Seguridad Social regulariza el año."
+      entradilla="Desde 2023 la cuota depende de tu rendimiento neto. Te explicamos qué tabla se aplica, cómo saber en qué tramo estás, cuánto pagan los autónomos societarios y qué pasa cuando la Seguridad Social regulariza el año."
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{

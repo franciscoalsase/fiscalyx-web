@@ -6,7 +6,7 @@ import { prices, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Empieza con Fiscalyx: alta online en dos minutos",
   description:
-    "Elige tu plan, cuéntanos tu situación y te llamamos en 24 horas laborables con el presupuesto cerrado. Sin compromiso y sin pagar nada hasta que aceptes.",
+    "Elige tu plan, cuéntanos tu situación y te llamamos en 24 horas laborables con el precio. Sin compromiso y sin pagar nada hasta que aceptes.",
   alternates: { canonical: "/empezar/" },
 };
 
@@ -37,9 +37,7 @@ const script = `(function(){
     b.disabled=true; b.textContent="Enviando…"; err.hidden=true;
     fetch(f.action,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}})
       .then(function(r){ if(!r.ok) throw new Error();
-        var ok=document.createElement("div"); ok.className="enviado"; ok.setAttribute("role","status");
-        ok.innerHTML="<h2>Solicitud recibida</h2><p>Te llamamos en un plazo de 24 horas laborables, en la franja que nos has dicho, con tu presupuesto cerrado. Mientras tanto no tienes que hacer nada.</p>";
-        f.replaceWith(ok); window.scrollTo({top:0,behavior:"smooth"}); })
+        location.href="/gracias/?desde=alta"; })
       .catch(function(){ b.disabled=false; b.textContent="Enviar solicitud"; err.hidden=false; });
   });
   function inicio(){
@@ -60,7 +58,7 @@ export default function Empezar() {
             <div>
               <h1 style={{ maxWidth: "18ch" }}>Empieza con Fiscalyx</h1>
               <p className="entradilla">
-                Tres pasos y dos minutos. Te llamamos en 24 horas laborables con tu presupuesto cerrado, y no pagas nada
+                Tres pasos y dos minutos. Te llamamos en 24 horas laborables con tu precio, y no pagas nada
                 hasta que lo aceptes.
               </p>
             </div>
@@ -183,10 +181,10 @@ export default function Empezar() {
               <p className="aclaracion" id="alta-extra" hidden>
                 Y tu Renta con criptomonedas, con el mismo asesor. Te lo presupuestamos junto.
               </p>
-              <h2 className="alta-subtitulo">Lo que pasa después</h2>
+              <h2 className="alta-subtitulo">Después de enviar el formulario</h2>
               <ol className="alta-pasos">
                 <li>Te llamamos en 24 horas laborables para conocer tu caso.</li>
-                <li>Te enviamos el presupuesto cerrado y el contrato por escrito.</li>
+                <li>Te enviamos el presupuesto y el contrato por escrito.</li>
                 <li>Nos autorizas ante Hacienda y la Seguridad Social; te guiamos.</li>
                 <li>Si vienes de otra gestoría, pedimos nosotros tu documentación.</li>
               </ol>

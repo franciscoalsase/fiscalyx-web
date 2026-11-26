@@ -91,7 +91,7 @@ export default function Licitaciones() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <p className="portada-condiciones">Presupuesto cerrado antes de empezar. Para toda España.</p>
+              <p className="portada-condiciones">Te decimos el precio antes de empezar, y trabajamos con toda España.</p>
             </div>
             <figure className="documento documento-aviso">
               <div className="documento-cabeza">
@@ -175,7 +175,7 @@ export default function Licitaciones() {
         <section className="seccion" aria-labelledby="licit-incluye">
           <div className="contenedor dos-columnas">
             <div>
-              <h2 id="licit-incluye">Lo que preparamos</h2>
+              <h2 id="licit-incluye">Qué preparamos para tu oferta</h2>
               <ul className="lista-incluye">
                 <li>
                   <div>
@@ -218,7 +218,7 @@ export default function Licitaciones() {
               </ul>
             </div>
             <div>
-              <h2>Lo que no hacemos</h2>
+              <h2>Fuera de nuestro trabajo</h2>
               <p style={{ marginTop: "1.25rem" }}>
                 La memoria técnica y la propuesta de precio son tuyas: tú conoces tu trabajo. Tampoco llevamos
                 recursos ni reclamaciones contra una adjudicación.
@@ -260,7 +260,7 @@ export default function Licitaciones() {
               <h2 id="licit-contacto">Mándanos el pliego</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 Dinos qué contrato es, el plazo de presentación y si eres autónomo o sociedad. Te contestamos en 24
-                horas laborables con lo que te falta y un presupuesto cerrado.
+                horas laborables con lo que te falta y lo que costaría.
               </p>
             </div>
             <FormularioContacto temaInicial="licitacion" />

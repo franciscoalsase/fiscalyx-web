@@ -58,7 +58,7 @@ export default function ConstituirSociedad() {
               <h1 style={{ maxWidth: "19ch" }}>Crea tu sociedad limitada sin perderte en trámites</h1>
               <p className="entradilla">
                 Desde comprobar si te conviene hasta el NIF definitivo y las altas. Nos ocupamos de todo con un
-                presupuesto cerrado, y seguimos contigo después si quieres.
+                precio por escrito, y seguimos contigo después si quieres.
               </p>
               <div className="acciones">
                 <a className="boton boton-principal" href="#contacto">
@@ -129,7 +129,7 @@ export default function ConstituirSociedad() {
               <h2 id="contacto-constituir">Cuéntanos tu proyecto</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 A qué se va a dedicar la sociedad, cuántos socios seréis y si ya eres autónomo. Te respondemos con un
-                presupuesto cerrado en 24 horas laborables.
+                presupuesto en 24 horas laborables.
               </p>
             </div>
             <FormularioContacto temaInicial="sociedad" />

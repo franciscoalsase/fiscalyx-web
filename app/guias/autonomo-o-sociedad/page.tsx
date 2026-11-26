@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function AutonomoOSociedad() {
   return (
     <Articulo
-      titulo="¿Autónomo o sociedad limitada? Cuándo compensa de verdad"
+      titulo="¿Autónomo o sociedad limitada? Cuándo compensa"
       entradilla="No hay una cifra mágica. Una SL empieza a compensar cuando ganas bastante más de lo que necesitas para vivir y puedes dejar parte del beneficio dentro de la sociedad. Te explicamos por qué, con los tipos de 2026."
       tema="Autónomos"
       fecha="noviembre de 2026"

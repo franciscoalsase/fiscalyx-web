@@ -50,7 +50,7 @@ def plantilla(titulo, subtitulo, kicker, dato):
 * {{ margin: 0; box-sizing: border-box; }}
 body {{ width: 1200px; height: 630px; background: #fcfcfa; color: #1b2a41; font-family: S; position: relative; overflow: hidden; }}
 .marca {{ position: absolute; left: 72px; top: 60px; display: flex; align-items: center; gap: 14px; font-weight: 800; font-size: 34px; letter-spacing: -0.02em; }}
-.marca svg {{ width: 46px; height: 46px; }}
+.palabra {{ font-size: 38px; letter-spacing: -0.04em; background: linear-gradient(transparent 52%, #ffe86e 52%, #ffe86e 94%, transparent 94%); padding: 0 6px; margin-left: -6px; }}
 .cuerpo {{ position: absolute; left: 72px; top: 158px; width: {ancho}px; }}
 .kicker {{ font-size: 24px; color: #1d6a51; font-weight: 600; margin-bottom: 18px; }}
 h1 {{ font-size: {tam}px; line-height: 1.06; font-weight: 750; letter-spacing: -0.025em; }}
@@ -63,7 +63,7 @@ h1 {{ font-size: {tam}px; line-height: 1.06; font-weight: 750; letter-spacing: -
 .cifra span {{ background: linear-gradient(transparent 62%, #ffe86e 62%, #ffe86e 90%, transparent 90%); padding: 0 4px; }}
 .dato .pie {{ font-family: R; font-size: 23px; line-height: 1.35; color: #1b2a41; }}
 </style></head><body>
-<div class="marca">{ICONO}<span>Fiscalyx</span></div>
+<div class="marca"><span class="palabra">Fiscalyx</span></div>
 <div class="cuerpo">{f'<p class="kicker">{html.escape(kicker)}</p>' if kicker else ''}<h1>{html.escape(titulo)}</h1><p class="sub">{html.escape(subtitulo)}</p></div>
 {tarjeta}
 <div class="base"><b>fiscalyx.com</b><span>Economistas colegiados, para toda España</span></div>

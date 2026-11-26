@@ -24,7 +24,7 @@ const modelos = [
 ];
 
 const trato = [
-  { t: "Revisamos tu cuota de autónomo", d: "Con lo que ganas de verdad, para que no pagues de más ni te llegue una regularización de golpe." },
+  { t: "Revisamos tu cuota de autónomo", d: "Con tu rendimiento real, para que no pagues de más ni te llegue una regularización de golpe." },
   { t: "Una llamada antes de cada trimestre", d: "Quince minutos para revisar gastos y saber cuánto vas a pagar antes de pagarlo." },
   { t: "WhatsApp con tu asesor", d: "La misma persona todo el año. Respuesta en 24 horas laborables." },
   { t: "Cartas de Hacienda explicadas", d: "Nos reenvías la notificación y te decimos qué piden y qué hay que hacer." },
@@ -45,7 +45,7 @@ const perfiles = [
   },
   {
     t: "Si además inviertes en cripto",
-    d: "Tu Renta con criptomonedas la hace el mismo asesor que lleva tu actividad, con un presupuesto cerrado aparte.",
+    d: "Tu Renta con criptomonedas la hace el mismo asesor que lleva tu actividad, con su propio presupuesto.",
   },
 ];
 
@@ -183,7 +183,7 @@ export default function Autonomos() {
             </div>
             <div className="dos-columnas">
               <div>
-                <h3>Lo que presentamos</h3>
+                <h3>Modelos que presentamos</h3>
                 <Lista items={modelos} />
                 <p className="ayuda-campo" style={{ marginTop: "1rem" }}>
                   Cada modelo, explicado: <Link href="/guias/modelo-303-iva-trimestral/">el 303</Link>,{" "}
@@ -192,7 +192,7 @@ export default function Autonomos() {
                 </p>
               </div>
               <div>
-                <h3>Lo que hacemos además</h3>
+                <h3>Además de los modelos</h3>
                 <Lista items={trato} />
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function Autonomos() {
         <section className="seccion" aria-labelledby="comparar-aut">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="comparar-aut">Lo que en otras gestorías va aparte</h2>
+              <h2 id="comparar-aut">Incluido aquí, cobrado aparte en otras gestorías</h2>
               <p>
                 Las cuotas bajas suelen dejar fuera la Renta, las llamadas o la atención de una persona concreta. Aquí
                 está lo que entra en la nuestra.

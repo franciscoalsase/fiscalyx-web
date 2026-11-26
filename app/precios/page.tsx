@@ -6,8 +6,8 @@ import { Check } from "@/components/Iconos";
 import { prices, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Precios de gestoría online para autónomos y sociedades",
-  description: `Autónomos, ${prices.autonomoMes} € al mes. Sociedades, desde ${prices.sociedadMes} € al mes. Criptomonedas, precio cerrado por caso. Todo lo que incluye cada cuota, por escrito.`,
+  title: `Tarifas de la gestoría: autónomos a ${prices.autonomoMes} € al mes`,
+  description: `Autónomos, ${prices.autonomoMes} € al mes. Sociedades, desde ${prices.sociedadMes} € al mes. Criptomonedas, precio por caso antes de empezar. Todo lo que incluye cada cuota, por escrito.`,
   alternates: { canonical: "/precios/" },
 };
 
@@ -56,7 +56,7 @@ const puntuales: [string, string, string][] = [
   ["Capitalizar el paro", "/capitalizar-paro/", "Presupuesto cerrado"],
   ["Documentación económica para una licitación", "/licitaciones-publicas/", "Presupuesto cerrado"],
   ["Constituir una sociedad limitada", "/constituir-sociedad/", "Presupuesto cerrado; notaría y Registro aparte"],
-  ["Responder a un requerimiento de Hacienda", "/empezar/", "Presupuesto cerrado"],
+  ["Responder a un requerimiento de Hacienda", "/guias/requerimiento-hacienda/", "Presupuesto cerrado"],
 ];
 
 const faqSchema = {
@@ -73,10 +73,9 @@ export default function Precios() {
         <section className="portada portada-corta">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
-              <h1 style={{ maxWidth: "18ch" }}>Precios claros, por escrito y sin permanencia</h1>
+              <h1 style={{ maxWidth: "20ch" }}>Precios de la gestoría, por escrito y sin permanencia</h1>
               <p className="entradilla">
-                Cuota fija mensual para autónomos y sociedades, y precio cerrado por caso para criptomonedas. Precios sin
-                IVA.
+                Cuota fija mensual para autónomos y sociedades, y un precio por caso para criptomonedas, que te damos antes de empezar. Precios sin IVA.
               </p>
             </div>
           </div>
@@ -94,6 +93,7 @@ export default function Precios() {
                   <span className="cifra-desde">cuota fija</span>
                   {prices.autonomoMes} €<small>al mes</small>
                 </p>
+                <p className="plan-diferencia">La Renta va dentro. En muchas gestorías online se cobra aparte, desde unos 40 €.</p>
                 <ul className="plan-lista">
                   <li><Check /> Modelos 303, 130, 111 y 115</li>
                   <li><Check /> Resúmenes 390, 190, 180 y 347</li>
@@ -109,6 +109,7 @@ export default function Precios() {
                   <span className="cifra-desde">desde</span>
                   {prices.sociedadMes} €<small>al mes</small>
                 </p>
+                <p className="plan-diferencia">Las cuentas anuales van dentro, y en noviembre te decimos cuánto saldrá el impuesto.</p>
                 <ul className="plan-lista">
                   <li><Check /> Contabilidad y libros oficiales</li>
                   <li><Check /> Modelos 303, 111, 115 y 202</li>
@@ -125,6 +126,7 @@ export default function Precios() {
                   {prices.cripto[0].tiers[0].price}
                   <small>por ejercicio</small>
                 </p>
+                <p className="plan-diferencia">Con el informe que justifica cada operación ante Hacienda.</p>
                 <ul className="plan-lista">
                   {prices.cripto[0].tiers.map((t) => (
                     <li key={t.label}>
@@ -143,7 +145,7 @@ export default function Precios() {
             </div>
             <p className="planes-nota">
               Aparte en todos los planes: nóminas y seguros sociales a {prices.nominaMes} € al mes por trabajador, y
-              requerimientos o inspecciones con presupuesto cerrado antes de empezar.
+              requerimientos o inspecciones, con el precio por escrito antes de empezar.
             </p>
           </div>
         </section>
@@ -182,7 +184,7 @@ export default function Precios() {
         <section className="seccion seccion-banda" aria-labelledby="anual-precios">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="anual-precios">Lo que pagas en todo el año</h2>
+              <h2 id="anual-precios">Cuánto pagas en un año completo</h2>
               <p>Sin extras en abril ni en julio. El IVA, como autónomo o sociedad, normalmente te lo deduces.</p>
             </div>
             <div className="anual">
@@ -253,7 +255,7 @@ export default function Precios() {
               ))}
             </div>
             <p style={{ marginTop: "2rem" }}>
-              ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta de verdad una gestoría al año</Link>, con lo que suele ir aparte.
+              ¿Comparando presupuestos? Te explicamos <Link href="/guias/cuanto-cuesta-una-gestoria/">cuánto cuesta una gestoría en un año completo</Link>, con lo que suele ir aparte.
             </p>
             <div className="acciones" style={{ marginTop: "2.5rem" }}>
               <Link className="boton boton-principal" href="/empezar/">

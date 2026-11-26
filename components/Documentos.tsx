@@ -42,7 +42,7 @@ export function AvisoTrimestre() {
         Si nos pasas antes del día 15 la factura de la impresora (290 € más IVA), el 303 baja {eur(290 * 0.21)}.
       </p>
       <figcaption className="nota-ejemplo">
-        Lo que te mandamos antes de cada trimestre. Datos ficticios. Lo presentamos con tu visto bueno.
+        Así es el aviso que mandamos antes de cada trimestre, con datos ficticios. Lo presentamos con tu visto bueno.
       </figcaption>
     </figure>
   );
@@ -95,7 +95,7 @@ export function ResumenAnio() {
         </tfoot>
       </table>
       <figcaption className="nota-ejemplo">
-        Lo que te mandamos al cerrar el año, antes de la Renta. Datos ficticios.
+        Así es el resumen que mandamos al cerrar el año, antes de la Renta, con datos ficticios.
       </figcaption>
     </figure>
   );
@@ -164,7 +164,7 @@ export function PrevisionSociedades() {
         {eur(1800 * 0.21)}.
       </p>
       <figcaption className="nota-ejemplo">
-        Lo que te mandamos en noviembre, antes de cerrar el año. Datos ficticios.
+        Así es la previsión que mandamos en noviembre, antes de cerrar el año, con datos ficticios.
       </figcaption>
     </figure>
   );

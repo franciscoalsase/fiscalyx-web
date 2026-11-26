@@ -28,7 +28,7 @@ const principios = [
     d: "Cada cliente tiene un asesor asignado que conoce su actividad. Limitamos los clientes por asesor para que siga siendo así.",
   },
   {
-    t: "Precios cerrados y por escrito",
+    t: "Precios por escrito, que no cambian a mitad del año",
     d: "Lo que incluye la cuota está publicado. Lo que va aparte, te lo presupuestamos antes de empezar.",
   },
   {
@@ -47,7 +47,7 @@ export default function QuienesSomos() {
             <div>
               <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho</h1>
               <p className="entradilla">
-                Fiscalyx nace para que autónomos y pequeñas empresas tengan un asesor de verdad sin pagar lo que cuesta un
+                Fiscalyx nace para que autónomos y pequeñas empresas tengan un economista que les conozca sin pagar lo que cuesta un
                 despacho tradicional ni conformarse con una aplicación.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function QuienesSomos() {
 
         <section className="seccion seccion-banda" aria-labelledby="comprobar-titulo">
           <div className="contenedor texto-estrecho">
-            <h2 id="comprobar-titulo">Lo que puedes comprobar tú</h2>
+            <h2 id="comprobar-titulo">Cómo comprobar quiénes somos</h2>
             <p style={{ marginTop: "1rem" }}>
               Antes de darle a alguien acceso a tus impuestos, conviene verificar quién es. Esto no tienes que creértelo:
               puedes comprobarlo.

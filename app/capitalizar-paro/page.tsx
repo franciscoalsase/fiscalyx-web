@@ -99,7 +99,7 @@ export default function CapitalizarParo() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <p className="portada-condiciones">Presupuesto cerrado antes de empezar. Para toda España.</p>
+              <p className="portada-condiciones">Te decimos el precio antes de empezar, y trabajamos con toda España.</p>
             </div>
             <figure className="documento documento-aviso documento-alerta">
               <div className="documento-cabeza">
@@ -167,7 +167,7 @@ export default function CapitalizarParo() {
         <section className="seccion seccion-banda" aria-labelledby="paro-incluye">
           <div className="contenedor dos-columnas">
             <div>
-              <h2 id="paro-incluye">Lo que hacemos</h2>
+              <h2 id="paro-incluye">Nuestro trabajo, paso a paso</h2>
               <ul className="lista-incluye">
                 <li>
                   <div>

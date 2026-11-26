@@ -239,7 +239,7 @@ export default function CalculadoraCripto() {
         <section className="seccion seccion-banda" aria-labelledby="fifo-limites">
           <div className="contenedor dos-columnas">
             <div>
-              <h2 id="fifo-limites">Lo que esta calculadora no hace</h2>
+              <h2 id="fifo-limites">Límites de esta calculadora</h2>
               <ul className="lista-incluye">
                 <li>
                   <div>
@@ -274,7 +274,7 @@ export default function CalculadoraCripto() {
               <h2>Con cientos de operaciones</h2>
               <p style={{ marginTop: "1.25rem" }}>
                 A mano no hay forma. Importamos el historial de tus exchanges y carteras, calculamos cada operación y
-                te entregamos el informe que justifica tu Renta ante Hacienda, con precio cerrado antes de empezar.
+                te entregamos el informe que justifica tu Renta ante Hacienda. El precio te lo damos antes de empezar.
               </p>
               <p style={{ marginTop: "1.5rem" }}>
                 <Link className="boton boton-principal" href="/criptomonedas/#presupuesto">

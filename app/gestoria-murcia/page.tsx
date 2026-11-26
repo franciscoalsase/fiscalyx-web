@@ -38,7 +38,7 @@ export default function GestoriaMurcia() {
           </p>
         </>
       }
-      fiscalTitulo="Lo que cambia en tus impuestos por vivir en la Región de Murcia."
+      fiscalTitulo="Tus impuestos, por vivir en la Región de Murcia"
       fiscalFilas={[
         ["Escala autonómica del IRPF", "5 tramos, del 9,50 % al 22,50 %"],
         ["Impuesto sobre el Patrimonio", "Mínimo exento general de 700.000 € y una bonificación autonómica ligada al Impuesto de Solidaridad de las Grandes Fortunas"],

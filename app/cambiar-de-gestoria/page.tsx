@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 const pasos = [
   {
-    t: "Una llamada de 15 minutos",
-    d: "Nos cuentas tu actividad, tus facturas y lo que no te gusta de tu gestoría actual. Te damos un presupuesto cerrado por escrito.",
+    t: "Una llamada de media hora",
+    d: "Nos cuentas tu actividad, tus facturas y lo que no te gusta de tu gestoría actual. Te damos el precio por escrito.",
   },
   {
     t: "Nos autorizas",
@@ -142,7 +142,7 @@ export default function CambiarDeGestoria() {
 
         <section className="seccion" aria-labelledby="cambio-necesitamos">
           <div className="contenedor texto-estrecho">
-            <h2 id="cambio-necesitamos">Lo que pedimos a tu gestoría</h2>
+            <h2 id="cambio-necesitamos">Documentos que pedimos a tu gestoría</h2>
             <ul className="lista-incluye" style={{ marginTop: "1.5rem" }}>
               {necesitamos.map((i) => (
                 <li key={i.t}>
@@ -195,7 +195,7 @@ export default function CambiarDeGestoria() {
               <h2 id="cambio-contacto">Cuéntanos cómo lo llevas ahora</h2>
               <p style={{ marginTop: "1rem", color: "var(--grafito)" }}>
                 Qué haces, cuántas facturas tienes al trimestre y qué te gustaría que cambiara. Te respondemos en 24 horas
-                laborables con un presupuesto cerrado.
+                laborables con el precio.
               </p>
             </div>
             <FormularioContacto />

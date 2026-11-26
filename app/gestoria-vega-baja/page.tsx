@@ -39,7 +39,7 @@ export default function GestoriaVegaBaja() {
           </p>
         </>
       }
-      fiscalTitulo="Cada impuesto, con su administración."
+      fiscalTitulo="Cada impuesto, con su administración"
       fiscalFilas={[
         ["Agencia Tributaria", "IRPF y Renta, IVA, Impuesto sobre Sociedades, retenciones, Modelo 721 e Impuesto sobre el Patrimonio"],
         ["Seguridad Social", "Tu cuota de autónomo, las altas y bajas y los seguros sociales de tus trabajadores"],
@@ -80,7 +80,7 @@ export default function GestoriaVegaBaja() {
         },
         {
           p: "Tengo un negocio en la costa que trabaja por temporadas. ¿Me podéis llevar?",
-          r: "Sí. Te ayudamos a organizar los trimestres de más y menos actividad, a revisar tu cuota de autónomo según lo que ganes de verdad y a no llevarte sorpresas en la Renta.",
+          r: "Sí. Te ayudamos a organizar los trimestres de más y menos actividad, a revisar tu cuota de autónomo según lo que ganes en realid y a no llevarte sorpresas en la Renta.",
         },
         {
           p: "¿Lleváis también sociedades de la Vega Baja?",

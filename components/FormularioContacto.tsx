@@ -12,9 +12,7 @@ const script = `(function(){
     boton.disabled=true; boton.textContent="Enviando…"; if(error) error.hidden=true;
     fetch(f.action,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}})
       .then(function(r){ if(!r.ok) throw new Error();
-        var ok=document.createElement("div"); ok.className="enviado"; ok.setAttribute("role","status");
-        ok.innerHTML="<h3>Mensaje enviado</h3><p>Te contestamos en un plazo de 24 horas laborables, por correo o por teléfono si nos lo has dejado.</p>";
-        f.replaceWith(ok); })
+        location.href="/gracias/?desde=contacto"; })
       .catch(function(){ boton.disabled=false; boton.textContent="Enviar mensaje"; if(error) error.hidden=false; });
   });
 })();`;

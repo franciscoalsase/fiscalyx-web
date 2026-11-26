@@ -4,7 +4,6 @@ import { Pie } from "@/components/Pie";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
 import { FichaProfesional } from "@/components/FichaProfesional";
-import { ExtractoInforme } from "@/components/ExtractoInforme";
 import { AvisoTrimestre, ResumenAnio } from "@/components/Documentos";
 import { prices, site, whatsappLink } from "@/lib/site";
 
@@ -23,7 +22,7 @@ const preguntas = [
   },
   {
     p: "¿Y si Hacienda me envía un requerimiento?",
-    r: "Nos lo reenvías y te explicamos qué piden. Si hay que contestar por escrito o regularizar algo, te damos un presupuesto cerrado antes de empezar.",
+    r: "Nos lo reenvías y te explicamos qué piden. Si hay que contestar por escrito o regularizar algo, te decimos el precio por escrito antes de empezar.",
   },
   {
     p: "¿Hay permanencia?",
@@ -48,12 +47,15 @@ export default function Inicio() {
       <main id="contenido">
         <section className="portada portada-inicio">
           <div className="contenedor">
-            <div>
-              <h1>Tu negocio y tus criptomonedas, con el mismo economista</h1>
+            <div className="portada-texto">
+              <h1>Tu gestoría online, llevada por economistas colegiados</h1>
               <p className="entradilla">
-                Somos una gestoría online para autónomos y sociedades de toda España. Llevamos tus impuestos y tu
-                contabilidad por una cuota fija y, si inviertes en cripto, también tu Renta, sin cambiar de asesor.
+                Llevamos los impuestos y la contabilidad de autónomos y sociedades de toda España por una cuota fija,
+                con un asesor asignado que te contesta en 24 horas laborables. Si inviertes en cripto, también tu Renta.
               </p>
+            </div>
+            <AvisoTrimestre />
+            <div className="portada-acciones">
               <div className="acciones">
                 <Link className="boton boton-principal" href="/empezar/">
                   Empezar<span className="visualmente-oculto"> con Fiscalyx</span>
@@ -62,24 +64,73 @@ export default function Inicio() {
                   Escríbenos por WhatsApp
                 </a>
               </div>
-              <p className="portada-condiciones">
-                Sin permanencia. Respuesta en 24 horas laborables. Para toda España.
+              <p className="portada-condiciones">Pagas mes a mes y te puedes ir cuando quieras.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="seccion seccion-banda" aria-labelledby="trimestre-titulo">
+          <div className="contenedor trimestre">
+            <div>
+              <h2 id="trimestre-titulo">Un trimestre con nosotros</h2>
+              <p className="trimestre-intro">
+                Con el ejemplo de arriba: un diseñador web en estimación directa, tercer trimestre de 2027.
+              </p>
+              <ol className="cronologia">
+                <li>
+                  <span className="cronologia-cuando">Julio a septiembre</span>
+                  <div>
+                    <strong>Nos reenvías facturas y tickets cuando los tengas</strong>
+                    <p>Por WhatsApp o por correo, una foto o el PDF. No hace falta ordenarlos ni esperar a fin de mes.</p>
+                  </div>
+                </li>
+                <li>
+                  <span className="cronologia-cuando">Primeros de octubre</span>
+                  <div>
+                    <strong>Cerramos tus números</strong>
+                    <p>Cuadramos ingresos y gastos, y te pedimos lo que falte con nombre y fecha, no un «mándame todo».</p>
+                  </div>
+                </li>
+                <li>
+                  <span className="cronologia-cuando">Antes del día 15</span>
+                  <div>
+                    <strong>Te mandamos el aviso con los importes</strong>
+                    <p>
+                      Lo que vas a pagar de IVA y de IRPF, y si hay algo que lo baje legalmente, como esa factura de la
+                      impresora que aún no nos habías pasado.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="cronologia-cuando">Hasta el 20 de octubre</span>
+                  <div>
+                    <strong>Presentamos con tu visto bueno</strong>
+                    <p>Y te mandamos el justificante de Hacienda, con su código seguro de verificación para que lo compruebes.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div className="trimestre-anio">
+              <ResumenAnio />
+              <p>
+                Al cerrar el año hacemos lo mismo en una página: lo que has ganado, lo que ya has pagado y cómo saldrá tu
+                Renta, que también presentamos nosotros.
               </p>
             </div>
-            <AvisoTrimestre />
           </div>
         </section>
 
         <section className="seccion" aria-labelledby="lineas-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="lineas-titulo">Lo que llevamos</h2>
+              <h2 id="lineas-titulo">Servicios y precios</h2>
             </div>
             <ul className="carta">
               <li>
                 <div>
                   <h3>Autónomos</h3>
                   <p>Trimestrales, resúmenes anuales y tu Renta, con un asesor que conoce tu actividad.</p>
+                  <p className="carta-incluye">La Renta va dentro de la cuota; en muchas gestorías se cobra aparte.</p>
                 </div>
                 <p className="carta-precio">
                   {prices.autonomoMes} €<small>al mes + IVA</small>
@@ -90,6 +141,7 @@ export default function Inicio() {
                 <div>
                   <h3>Sociedades</h3>
                   <p>Contabilidad, impuestos, Impuesto sobre Sociedades y cuentas anuales de tu SL.</p>
+                  <p className="carta-incluye">En noviembre te decimos cuánto saldrá el Impuesto sobre Sociedades.</p>
                 </div>
                 <p className="carta-precio">
                   <span>desde </span>{prices.sociedadMes} €<small>al mes + IVA</small>
@@ -100,6 +152,7 @@ export default function Inicio() {
                 <div>
                   <h3>Criptomonedas</h3>
                   <p>Renta con cripto, Modelo 721 y regularizaciones, operación por operación.</p>
+                  <p className="carta-incluye">Con el informe que justifica cada operación si Hacienda pregunta.</p>
                 </div>
                 <p className="carta-precio">
                   <span>desde </span>{prices.cripto[0].tiers[0].price}
@@ -108,27 +161,19 @@ export default function Inicio() {
               </li>
             </ul>
             <p className="carta-nota">
-              Nóminas a {prices.nominaMes} € al mes por trabajador. Requerimientos e inspecciones, con presupuesto
-              cerrado antes de empezar. También te ayudamos a <Link href="/capitalizar-paro/">capitalizar el paro</Link> y
-              con la parte económica de las <Link href="/licitaciones-publicas/">licitaciones públicas</Link>.{" "}
-              <Link href="/precios/">Todos los precios</Link>
+              Nóminas a {prices.nominaMes} € al mes por trabajador. También te ayudamos a{" "}
+              <Link href="/capitalizar-paro/">capitalizar el paro</Link> y con la parte económica de las{" "}
+              <Link href="/licitaciones-publicas/">licitaciones públicas</Link>. <Link href="/precios/">Todos los precios</Link>
             </p>
-          </div>
-        </section>
-
-        <section className="seccion seccion-banda" aria-labelledby="recibes-titulo">
-          <div className="contenedor">
-            <div className="cabeza-seccion">
-              <h2 id="recibes-titulo">Sabes lo que vas a pagar antes de pagarlo</h2>
-              <p>
-                Antes de cada trimestre te mandamos las cifras y una sugerencia para pagar menos, si la hay. Al cerrar
-                el año, un resumen de una página. Y si tienes cripto, cada operación justificada.
-              </p>
-            </div>
-            <div className="documentos">
-              <ResumenAnio />
-              <ExtractoInforme />
-            </div>
+            <p className="carta-nota">
+              Antes de escribirnos puedes calcular{" "}
+              <Link href="/calculadora-autonomos/">cuánto pagarás este trimestre</Link>,{" "}
+              <Link href="/calculadora-cuota-autonomos/">tu cuota de autónomos</Link>,{" "}
+              <Link href="/calculadora-autonomo-o-sociedad/">si te compensa una sociedad</Link> o{" "}
+              <Link href="/calculadora-criptomonedas/">tus ganancias con cripto por FIFO</Link>, y añadir{" "}
+              <Link href="/guias/calendario-fiscal-autonomos-2027/">los plazos de 2027 a tu calendario</Link>. Sin
+              registrarte.
+            </p>
           </div>
         </section>
 
@@ -143,86 +188,34 @@ export default function Inicio() {
                 inviertes, acabas con dos asesores que no se hablan.
               </p>
               <p>
-                Nosotros somos economistas colegiados y hacemos las dos cosas. Trabajamos con un número limitado de
-                clientes por asesor, para conocer cada caso y contestar rápido, que es justo lo que suele perderse en
-                una gestoría online grande.
+                Nosotros somos economistas colegiados y hacemos las dos cosas. Cada cliente tiene un asesor asignado,
+                de modo que quien te contesta es siempre la misma persona y no tienes que explicar tu caso dos veces.
               </p>
               <p className="firma-carta">
                 {site.owner}
                 <span>Economista colegiado n.º {site.colegiado}, director de Fiscalyx</span>
               </p>
-              <p>
-                <Link href="/quienes-somos/">Cómo trabajamos</Link>
+              <p className="posdata">
+                <span>P. D.</span> Desde 2026 los exchanges europeos informan a Hacienda de tus operaciones. Si tienes
+                cripto sin declarar de otros años, <Link href="/criptomonedas/">mira cómo lo regularizamos</Link>.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="seccion seccion-tinta" aria-labelledby="cripto-titulo">
-          <div className="contenedor">
-            <div className="aviso-cripto">
-              <div>
-                <h2 id="cripto-titulo">¿Además tienes criptomonedas?</h2>
-                <p>
-                  Desde 2026 los exchanges europeos registran tus operaciones para Hacienda. Preparamos tu Renta con
-                  cripto, el Modelo 721 y las regularizaciones, con precio cerrado antes de empezar.
-                </p>
-              </div>
-              <Link className="boton boton-secundario" href="/criptomonedas/">
-                Ver el servicio de criptomonedas
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <section className="seccion" aria-labelledby="herramientas-titulo">
+        <section className="seccion" aria-labelledby="preguntas-titulo">
           <div className="contenedor">
             <div className="cabeza-seccion">
-              <h2 id="herramientas-titulo">Haz tus números</h2>
-              <p>Gratis y sin registrarte.</p>
+              <h2 id="preguntas-titulo">Preguntas antes de empezar</h2>
             </div>
-            <ul className="lista-guias lista-guias-cuatro">
-              <li>
-                <h3>
-                  <Link href="/calculadora-autonomos/">Cuánto pagarás este trimestre</Link>
-                </h3>
-                <p>El IVA y el IRPF de tu próximo 303 y 130.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/calculadora-cuota-autonomos/">Tu cuota de autónomos</Link>
-                </h3>
-                <p>Tu tramo según lo que ganas de verdad.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/calculadora-autonomo-o-sociedad/">¿Te compensa una sociedad?</Link>
-                </h3>
-                <p>IRPF frente a Impuesto sobre Sociedades.</p>
-              </li>
-              <li>
-                <h3>
-                  <Link href="/guias/calendario-fiscal-autonomos-2027/">Los plazos de 2027 en tu móvil</Link>
-                </h3>
-                <p>Con aviso cinco días antes de cada uno.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="seccion seccion-banda" aria-labelledby="preguntas-titulo">
-          <div className="contenedor">
-            <div className="cabeza-seccion">
-              <h2 id="preguntas-titulo">Preguntas frecuentes</h2>
-            </div>
-            <div className="preguntas">
+            <dl className="preguntas-abiertas">
               {preguntas.map((q) => (
-                <details key={q.p}>
-                  <summary>{q.p}</summary>
-                  <p>{q.r}</p>
-                </details>
+                <div key={q.p}>
+                  <dt>{q.p}</dt>
+                  <dd>{q.r}</dd>
+                </div>
               ))}
-            </div>
+            </dl>
             <GuiasRelacionadas slugs={["gastos-deducibles-autonomos", "declarar-criptomonedas-renta", "autonomo-o-sociedad"]} />
           </div>
         </section>
@@ -244,12 +237,6 @@ export default function Inicio() {
                 <li>
                   <span className="via-nombre">Correo</span>
                   <a href={`mailto:${site.email}`}>{site.email}</a>
-                </li>
-                <li>
-                  <span className="via-nombre">Llamada de 15 minutos</span>
-                  <a href={site.calendly} target="_blank" rel="noopener noreferrer">
-                    Reservar hora
-                  </a>
                 </li>
                 <li>
                   <span className="via-nombre">Horario</span>

@@ -111,7 +111,7 @@ export default function CuantoCuestaGestoria() {
         </li>
       </ul>
 
-      <h2>Lo que suele ir aparte</h2>
+      <h2>Servicios que casi siempre se cobran aparte</h2>
       <p>Antes de comparar cuotas, pregunta por cada uno de estos conceptos:</p>
       <ul>
         <li>La declaración de la Renta del titular, y la de tu pareja si la hacéis juntos.</li>
@@ -123,7 +123,7 @@ export default function CuantoCuestaGestoria() {
         <li>Criptomonedas, alquileres o inversiones en tu Renta.</li>
       </ul>
 
-      <h2>Calcula lo que te cuesta de verdad al año</h2>
+      <h2>Calcula el coste anual completo</h2>
       <p>Pon la cuota que te han dado y lo que te cobrarían aparte. Te sumamos el año completo con el IVA.</p>
       <div className="calculadora calculadora-guia">
         <form id="coste-gestoria" className="calc-formulario">

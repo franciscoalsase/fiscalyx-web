@@ -17,7 +17,7 @@ export const guias: Guia[] = [
   {
     slug: "autonomo-o-sociedad",
     titulo: "¿Autónomo o sociedad limitada? Cuándo compensa",
-    resumen: "Los tipos del Impuesto sobre Sociedades de 2026 frente al IRPF, y lo que de verdad decide si te conviene una SL.",
+    resumen: "Los tipos del Impuesto sobre Sociedades de 2026 frente al IRPF, y lo que decide si te conviene una SL, más allá del impuesto.",
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },
@@ -116,6 +116,13 @@ export const guias: Guia[] = [
     slug: "modelo-303-iva-trimestral",
     titulo: "Modelo 303: el IVA trimestral, explicado",
     resumen: "Cómo se calcula con un ejemplo, qué IVA puedes deducir, los plazos de 2027 y qué pasa si sale a devolver o a cero.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "requerimiento-hacienda",
+    titulo: "Te ha llegado una carta de Hacienda: qué hacer",
+    resumen: "Qué tipo de carta es, cuántos días tienes y cómo se cuentan, cómo se contesta por la sede electrónica y qué pasa si no lo haces.",
     tema: "Autónomos",
     fecha: "noviembre de 2026",
   },

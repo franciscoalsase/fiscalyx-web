@@ -51,7 +51,7 @@ const preguntas = [
   },
   {
     p: "¿Podéis constituir la sociedad?",
-    r: "Sí. Te ayudamos con los estatutos, el NIF y las altas en Hacienda y la Seguridad Social, con un presupuesto cerrado. La notaría y el Registro se pagan aparte. Lo explicamos paso a paso en la página de constituir una sociedad.",
+    r: "Sí. Te ayudamos con los estatutos, el NIF y las altas en Hacienda y la Seguridad Social, con el precio por escrito desde el principio. La notaría y el Registro se pagan aparte. Lo explicamos paso a paso en la página de constituir una sociedad.",
   },
   {
     p: "Soy autónomo. ¿Me conviene pasarme a sociedad?",
@@ -148,7 +148,7 @@ export default function Sociedades() {
         <section className="seccion seccion-banda" aria-labelledby="prevision-sl">
           <div className="contenedor dos-columnas dos-columnas-doc">
             <div>
-              <h2 id="prevision-sl">Lo que pagarás, antes de que acabe el año</h2>
+              <h2 id="prevision-sl">Tu Impuesto sobre Sociedades, calculado en noviembre</h2>
               <p style={{ marginTop: "1.25rem" }}>
                 En noviembre, antes de cerrar el año, te mandamos una previsión del Impuesto sobre Sociedades con lo
                 que llevas facturado y gastado. Así sabes cuánto pagarás en julio y aún hay tiempo de hacer algo.
@@ -219,7 +219,7 @@ export default function Sociedades() {
         <section className="seccion seccion-verde" aria-labelledby="precio-sl">
           <div className="contenedor precio">
             <div>
-              <h2 id="precio-sl">Precio cerrado, antes de empezar</h2>
+              <h2 id="precio-sl">Cuánto cuesta llevar tu sociedad</h2>
               <p className="cifra" aria-label={`Desde ${prices.sociedadMes} euros al mes más IVA`}>
                 <span className="cifra-desde">desde</span>
                 {prices.sociedadMes} €<small>al mes + IVA</small>

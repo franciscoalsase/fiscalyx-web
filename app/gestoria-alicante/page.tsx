@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PaginaLocal } from "@/components/PaginaLocal";
 
 export const metadata: Metadata = {
-  title: "Gestoría y asesoría fiscal en Alicante y Elche",
+  title: "Gestoría en Alicante para autónomos y sociedades",
   description:
     "Gestoría online con sede en Alicante para autónomos, sociedades e inversores en criptomonedas de Alicante, Elche y su área. Economistas colegiados y cuota fija.",
   alternates: { canonical: "/gestoria-alicante/" },
@@ -40,7 +40,7 @@ export default function GestoriaAlicante() {
           </p>
         </>
       }
-      fiscalTitulo="Lo que cambia en tus impuestos por vivir en la Comunitat Valenciana."
+      fiscalTitulo="Tus impuestos, por vivir en la Comunitat Valenciana"
       fiscalFilas={[
         ["Escala autonómica del IRPF de 2026", "11 tramos, del 8,80 % al 29,35 %, rebajada por la Ley 5/2026"],
         ["Mínimo personal autonómico", "6.105 €, distinto del estatal"],
