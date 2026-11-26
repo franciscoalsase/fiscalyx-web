@@ -12,7 +12,12 @@ export function tituloComunidad(slug: string) {
   const c = comunidades.find((x) => x.slug === slug)!;
   return {
     title: `Gestoría online en ${c.corto}`,
-    description: `Gestoría para autónomos y sociedades de ${c.ciudades[0]}, ${c.ciudades[1]} y toda ${c.corto}, con la escala del IRPF de 2026 aplicada. Economistas colegiados.`,
+    description: (() => {
+      const larga = `Gestoría para autónomos y sociedades de ${c.ciudades[0]}, ${c.ciudades[1]} y toda ${c.corto}, con la escala del IRPF de 2026 aplicada. Economistas colegiados.`;
+      return larga.length <= 160
+        ? larga
+        : `Gestoría para autónomos y sociedades de ${c.ciudades[0]} y toda ${c.corto}, con la escala del IRPF de 2026 aplicada. Economistas colegiados.`;
+    })(),
     alternates: { canonical: `/gestoria-${c.slug}/` },
   };
 }

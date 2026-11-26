@@ -6,6 +6,7 @@ import { Pie } from "@/components/Pie";
 export const metadata: Metadata = {
   title: "Página no encontrada",
   robots: { index: false, follow: true },
+  alternates: { canonical: null },
 };
 
 const destinos = [

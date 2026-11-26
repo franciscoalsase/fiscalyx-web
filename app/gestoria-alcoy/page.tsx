@@ -49,7 +49,9 @@ export default function GestoriaAlcoy() {
           Hubo un proyecto de ley para subir los límites de las cuentas abreviadas y de la auditoría, pero no llegó a
           aprobarse: a finales de 2026 siguen vigentes los de esta tabla. Lo explicamos con más detalle en la guía de{" "}
           <Link href="/guias/cuentas-anuales-sociedad/">cuentas anuales de una sociedad</Link>, y si eres socio y
-          trabajas en tu empresa, mira <Link href="/guias/cobrar-de-tu-sociedad/">cómo cobrar de tu sociedad</Link>.
+          trabajas en tu empresa, mira <Link href="/guias/cobrar-de-tu-sociedad/">cómo cobrar de tu sociedad</Link>.{" "}
+          Si tu sector pasa por un mal momento, explicamos el paro de los autónomos en la página de{" "}
+          <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link>.
         </p>
       }
       fuentes={[

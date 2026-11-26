@@ -1,3 +1,4 @@
+import fechasJson from "@/lib/fechas.json";
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 
@@ -50,10 +51,12 @@ const rutas = [
   "/cookies/",
 ];
 
+const fechas = fechasJson as Record<string, string>;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return rutas.map((ruta) => ({
     url: `${site.url}${ruta}`,
-    lastModified: new Date(),
+    ...(fechas[ruta] ? { lastModified: new Date(fechas[ruta]) } : {}),
     changeFrequency: ruta === "/" || ruta === "/criptomonedas/" ? "monthly" : "yearly",
     priority: ruta === "/" ? 1 : ruta === "/criptomonedas/" ? 0.9 : ruta.startsWith("/guias/") ? 0.7 : 0.3,
   }));

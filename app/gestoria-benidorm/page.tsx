@@ -49,7 +49,8 @@ export default function GestoriaBenidorm() {
           Antes de elegir entre módulos y estimación directa hacemos las cuentas con tus cifras de los dos últimos años.
           Si alquilas un apartamento a turistas, mira lo que exige ahora la Comunitat Valenciana en nuestra página de{" "}
           <Link href="/gestoria-orihuela/">Orihuela Costa</Link>, y calcula tu cuota con la{" "}
-          <Link href="/calculadora-cuota-autonomos/">calculadora de la cuota de autónomos</Link>.
+          <Link href="/calculadora-cuota-autonomos/">calculadora de la cuota de autónomos</Link>.{" "}
+          Si tu negocio está en la Marina Alta, mira también la página de <Link href="/gestoria-denia/">Dénia</Link>.
         </p>
       }
       fuentes={[

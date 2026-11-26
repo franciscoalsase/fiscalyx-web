@@ -49,7 +49,9 @@ export default function GestoriaEldaPetrer() {
           Las pérdidas hay que poder demostrarlas con la contabilidad y las declaraciones, y ahí es donde se deniegan
           muchas solicitudes. Si trabajas casi solo para una fábrica, mira también lo que cambia si eres{" "}
           <Link href="/gestoria-elche/">autónomo TRADE</Link>, y si vas a empezar de nuevo con otro negocio, cómo{" "}
-          <Link href="/capitalizar-paro/">capitalizar el paro</Link>.
+          <Link href="/capitalizar-paro/">capitalizar el paro</Link>.{" "}
+          Si tu empresa sigue creciendo, mira qué cambia al pasar ciertas cifras en la página de{" "}
+          <Link href="/gestoria-alcoy/">Alcoy</Link>.
         </p>
       }
       fuentes={[

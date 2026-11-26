@@ -50,7 +50,9 @@ export default function GestoriaDenia() {
           de mejora; con ellos la retención suele devolverse en parte. Si tienes la casa y no vives en España, mira
           también lo que hay que pagar cada año aunque no la alquiles en nuestra página de{" "}
           <Link href="/gestoria-torrevieja/">Torrevieja</Link>, y si la alquilas a turistas, lo que exige ahora la
-          Generalitat en la de <Link href="/gestoria-orihuela/">Orihuela Costa</Link>.
+          Generalitat en la de <Link href="/gestoria-orihuela/">Orihuela Costa</Link>.{" "}
+          Si tienes un bar o un restaurante, lo propio de la hostelería lo explicamos en la página de{" "}
+          <Link href="/gestoria-benidorm/">Benidorm</Link>.
         </p>
       }
       fuentes={[

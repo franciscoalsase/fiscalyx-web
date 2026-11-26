@@ -150,6 +150,46 @@ export default function CalculadoraCuota() {
           </div>
         </section>
 
+        <section className="seccion" aria-labelledby="cuota-como">
+          <div className="contenedor texto-estrecho local-texto">
+            <h2 id="cuota-como">Cómo hace la cuenta la calculadora</h2>
+            <p>
+              Parte de tus ingresos menos tus gastos del año, que es tu rendimiento neto. A esa cifra le resta un 7&nbsp;%
+              de gastos genéricos, o un 3&nbsp;% si eres autónomo societario, y la divide entre doce. El resultado es tu
+              rendimiento mensual, y según en qué tramo caiga te corresponde una base mínima de cotización. Tu cuota es
+              el 31,5&nbsp;% de esa base.
+            </p>
+            <div className="tabla-scroll" style={{ marginTop: "1.25rem" }}>
+              <table className="tabla">
+                <caption>Tramos de 2026: rendimiento neto mensual, base mínima y cuota mínima</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Tramo</th>
+                    <th scope="col">Rendimiento mensual hasta</th>
+                    <th scope="col">Base mínima</th>
+                    <th scope="col">Cuota mínima al mes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {TRAMOS.map(([hasta, base, nombre]) => (
+                    <tr key={nombre}>
+                      <th scope="row">{nombre}</th>
+                      <td>{hasta > 1e12 ? "Más de 6.000 €" : `${hasta.toLocaleString("es-ES", { minimumFractionDigits: hasta % 1 ? 2 : 0, maximumFractionDigits: 2 })} €`}</td>
+                      <td>{base.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</td>
+                      <td>{(Math.round(base * 0.315 * 100) / 100).toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="nota-tabla">
+              Fuente: Orden PJC/297/2026, de cotización a la Seguridad Social para 2026. Si eres socio y administrador de
+              tu sociedad, tu base no baja de 1.424,40&nbsp;€ al mes; en tu primer año puedes pagar la tarifa plana de
+              88,64&nbsp;€.
+            </p>
+          </div>
+        </section>
+
         <section className="seccion seccion-banda" aria-labelledby="cuota-saber">
           <div className="contenedor texto-estrecho local-texto">
             <h2 id="cuota-saber">La cuota se regulariza con tu Renta</h2>

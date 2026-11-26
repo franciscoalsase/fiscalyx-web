@@ -51,7 +51,9 @@ export default function GestoriaElche() {
           Lo explicamos paso a paso, con ejemplos de facturas, en la guía de{" "}
           <Link href="/guias/facturar-clientes-extranjeros/">cómo facturar a clientes extranjeros</Link>. Y como Elche
           está en la Comunitat Valenciana, tu IRPF lleva la escala y las deducciones valencianas; las tienes en nuestra
-          página de <Link href="/gestoria-alicante/">gestoría en Alicante</Link>.
+          página de <Link href="/gestoria-alicante/">gestoría en Alicante</Link>.{" "}
+          Y si tu taller atraviesa un mal año, mira el paro de los autónomos en la página de{" "}
+          <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link>.
         </p>
       }
       fuentes={[

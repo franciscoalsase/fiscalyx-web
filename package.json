@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/ics.mjs && next build && node scripts/postbuild.mjs",
+    "build": "node scripts/fechas.mjs && node scripts/ics.mjs && next build && node scripts/postbuild.mjs",
     "start": "next start"
   },
   "dependencies": {
