@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
+import { Foto } from "@/components/Foto";
 import { Garantia } from "@/components/Garantia";
 import { GuiasRelacionadas } from "@/components/GuiasRelacionadas";
 import { FormularioContacto } from "@/components/FormularioContacto";
@@ -273,6 +274,15 @@ export default function Inicio() {
             <GuiasRelacionadas slugs={["gastos-deducibles-autonomos", "renta-autonomos", "requerimiento-hacienda", "declarar-criptomonedas-renta", "autonomo-o-sociedad"]} />
           </div>
         </section>
+
+        <div className="banda-foto">
+          <div className="contenedor">
+            <Foto
+              nombre="castillo-atardecer"
+              pie="Alicante, con el castillo de Santa Bárbara. Nuestra sede está en el Centro ULab, en la plaza de San Cristóbal, y desde aquí llevamos autónomos y sociedades de toda España."
+            />
+          </div>
+        </div>
 
         <section className="seccion" id="contacto" aria-labelledby="contacto-titulo">
           <div className="contenedor contacto">

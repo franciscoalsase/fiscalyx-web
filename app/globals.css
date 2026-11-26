@@ -3433,10 +3433,10 @@ td.comparar-nos {
 .cierre + .barra-movil + .pie, .cierre ~ .pie { border-top: 0; }
 @media (max-width: 860px) { .cierre .contenedor { grid-template-columns: minmax(0, 1fr); } }
 
-/* ---------- Cabecera oscura en las páginas de servicio ---------- */
+/* ---------- Cabecera oscura en todas las páginas ---------- */
 
-.portada-oscura { background: var(--tinta); color: #fff; position: relative; overflow: hidden; }
-.portada-oscura::before {
+.portada { background: var(--tinta); color: #fff; position: relative; overflow-x: clip; }
+.portada::before {
   content: "";
   position: absolute;
   right: -10%;
@@ -3446,17 +3446,17 @@ td.comparar-nos {
   background: radial-gradient(closest-side, rgba(255, 232, 110, 0.1), transparent 70%);
   pointer-events: none;
 }
-.portada-oscura .contenedor { position: relative; }
-.portada-oscura h1 { color: #fff; }
-.portada-oscura .entradilla { color: rgba(255, 255, 255, 0.82); }
-.portada-oscura .portada-condiciones { color: rgba(255, 255, 255, 0.65); }
-.portada-oscura .migas, .portada-oscura .migas a { color: rgba(255, 255, 255, 0.7); }
-.portada-oscura .boton-principal { background: var(--subrayador); color: var(--tinta); }
-.portada-oscura .boton-principal:hover { background: #fff3a8; color: var(--tinta); }
-.portada-oscura .enlace-sencillo { color: #fff; text-decoration-color: var(--subrayador); }
-.portada-oscura .enlace-sencillo:hover { color: var(--subrayador); }
-.portada-oscura :focus-visible { outline-color: var(--subrayador); }
-.portada-oscura :is(.agenda, .informe, .documento) {
+.portada .contenedor { position: relative; }
+.portada h1 { color: #fff; }
+.portada .entradilla { color: rgba(255, 255, 255, 0.82); }
+.portada .portada-condiciones { color: rgba(255, 255, 255, 0.65); }
+.portada .migas, .portada .migas a { color: rgba(255, 255, 255, 0.7); }
+.portada .boton-principal { background: var(--subrayador); color: var(--tinta); }
+.portada .boton-principal:hover { background: #fff3a8; color: var(--tinta); }
+.portada .enlace-sencillo { color: #fff; text-decoration-color: var(--subrayador); }
+.portada .enlace-sencillo:hover { color: var(--subrayador); }
+.portada :focus-visible { outline-color: var(--subrayador); }
+.portada :is(.agenda, .informe, .documento) {
   color: var(--tinta);
   background: #fff;
   border-color: transparent;
@@ -3556,3 +3556,116 @@ td.comparar-nos {
 .precios-mesa .garantia.garantia-destacada { margin: 0; max-width: none; position: sticky; top: 6rem; }
 @media (max-width: 960px) { .precios-mesa { grid-template-columns: minmax(0, 1fr); } .precios-mesa .garantia.garantia-destacada { position: static; } }
 .portada-inicio { overflow-x: clip; }
+
+/* ---------- Sistema de botones y bandas: tinta sobre claro, subrayador sobre oscuro ---------- */
+
+.boton-principal { background: var(--tinta); color: #fff; }
+.boton-principal:hover { background: #0f1b2d; color: #fff; }
+:is(.portada, .seccion-verde, .cierre, .articulo-cta, .tarifa-destacada) .boton-principal {
+  background: var(--subrayador);
+  color: var(--tinta);
+}
+:is(.portada, .seccion-verde, .cierre, .articulo-cta) .boton-principal:hover { background: #fff3a8; color: var(--tinta); }
+.seccion-verde { background: var(--tinta); }
+
+/* Enlaces y migas dentro de las cabeceras oscuras */
+.portada :is(.entradilla, .portada-condiciones, .miga, p) a:not(.boton) { color: #fff; text-decoration-color: var(--subrayador); }
+.portada .miga { color: rgba(255, 255, 255, 0.65); }
+.portada .boton-secundario { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.45); }
+.portada .boton-secundario:hover { border-color: #fff; color: #fff; }
+
+/* Cabecera de las guías: banda de tinta a todo el ancho sin cambiar el HTML */
+.articulo-cabeza {
+  position: relative;
+  background: var(--tinta);
+  color: #fff;
+  box-shadow: 0 0 0 100vmax var(--tinta);
+  clip-path: inset(0 -100vmax);
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+.articulo-cabeza h1 { color: #fff; }
+.articulo-cabeza .entradilla { color: rgba(255, 255, 255, 0.82); }
+.articulo-cabeza .miga, .articulo-cabeza .miga a { color: rgba(255, 255, 255, 0.65); }
+.articulo-cabeza .firma { color: rgba(255, 255, 255, 0.7); border-top-color: rgba(255, 255, 255, 0.16); }
+.articulo-cabeza .firma a { color: #fff; text-decoration-color: var(--subrayador); }
+.articulo-cabeza :focus-visible { outline-color: var(--subrayador); }
+.articulo { padding-top: 0; }
+
+/* ---------- Presupuesto al momento (/empezar) ---------- */
+
+.alta.calculadora { row-gap: 0; }
+.alta #alta { display: contents; }
+.alta #alta > * { grid-column: 1; }
+.alta #alta > fieldset + fieldset, .alta #alta > .consentimiento { margin-top: 1.75rem; }
+.alta .presupuesto { grid-column: 2; grid-row: 1 / span 12; }
+@media (max-width: 860px) {
+  .alta #alta > * { order: 3; }
+  .alta #alta > fieldset:nth-of-type(1), .alta #alta > fieldset:nth-of-type(2) { order: 1; }
+  .alta .presupuesto { grid-column: 1; grid-row: auto; order: 2; margin: 2rem 0; }
+}
+.presupuesto {
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  box-shadow: 0 1px 0 var(--linea), 0 24px 50px -34px rgba(27, 42, 65, 0.5);
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+.presu-cabeza { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--tinta); font-family: var(--sans); }
+.presu-titulo { font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; }
+.presu-cabeza p:not(.presu-titulo) { font-size: 0.88rem; color: var(--grafito); }
+.presu-lineas { list-style: none; margin: 0; padding: 0; font-family: var(--sans); }
+.presu-lineas li { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.7rem 0; border-bottom: 1px solid var(--linea); font-size: 0.95rem; }
+.presu-lineas li strong { font-weight: 700; white-space: nowrap; }
+.presu-puntos { flex: 1; min-width: 1rem; border-bottom: 2px dotted #c9c6bb; transform: translateY(-0.25rem); }
+.presu-lineas .presu-total { font-size: 1.05rem; }
+.presu-lineas .presu-total strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(transparent 55%, var(--subrayador) 55%, var(--subrayador) 92%, transparent 92%);
+}
+.presu-notas { margin-top: 0.9rem; font-size: 0.92rem; color: var(--grafito); }
+.presu-notas:empty { display: none; }
+.portada-corta + .seccion { padding-top: clamp(2.5rem, 5vw, 3.5rem) !important; }
+
+/* ---------- Fotos ---------- */
+
+.foto { margin: 0; }
+.foto img { display: block; width: 100%; height: auto; border-radius: var(--radio); background: var(--banda); }
+.foto figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
+  margin-top: 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--grafito);
+}
+.foto figcaption span:first-child:not(.foto-credito) { max-width: 46rem; }
+.foto-credito { font-size: 0.8rem; }
+
+/* Banda de la portada antes del contacto */
+.banda-foto { padding: clamp(3rem, 6vw, 5rem) 0 0; }
+.banda-foto .foto img { aspect-ratio: 21 / 9; object-fit: cover; object-position: 50% 35%; }
+@media (max-width: 640px) { .banda-foto .foto img { aspect-ratio: 4 / 3; } }
+
+/* Foto que pisa el final de la cabecera oscura (páginas locales) */
+.foto-tras-portada { position: relative; z-index: 2; margin-top: calc(-1 * clamp(1.5rem, 4vw, 3rem)); margin-bottom: clamp(2rem, 4vw, 3rem); }
+.foto-tras-portada .foto img { aspect-ratio: 21 / 8; object-fit: cover; box-shadow: 0 30px 60px -30px rgba(27, 42, 65, 0.6); }
+@media (max-width: 640px) { .foto-tras-portada .foto img { aspect-ratio: 4 / 3; } }
+.portada:has(+ .foto-tras-portada) { padding-bottom: clamp(4rem, 8vw, 6rem); }
+
+/* Quiénes somos: foto vertical a la derecha que sale de la banda */
+.portada-quienes .contenedor { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+.portada-quienes .foto-vertical { margin-bottom: calc(-1 * clamp(5rem, 10vw, 9rem)); position: relative; z-index: 2; }
+.portada-quienes .foto-vertical img { aspect-ratio: 4 / 5; object-fit: cover; box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.55); }
+.portada-quienes .foto figcaption { color: var(--grafito); }
+.portada-quienes + section { padding-top: clamp(8rem, 13vw, 11rem); }
+@media (max-width: 860px) {
+  .portada-quienes .contenedor { grid-template-columns: minmax(0, 1fr); }
+  .portada-quienes .foto-vertical { margin-bottom: 0; }
+  .portada-quienes .foto-vertical img { aspect-ratio: 4 / 3; }
+  .portada-quienes + section { padding-top: clamp(3rem, 7vw, 5rem); }
+}

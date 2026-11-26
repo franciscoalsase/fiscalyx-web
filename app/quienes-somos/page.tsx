@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { site } from "@/lib/site";
+import { Foto } from "@/components/Foto";
 import { FichaProfesional } from "@/components/FichaProfesional";
 
 export const metadata: Metadata = {
@@ -42,8 +43,8 @@ export default function QuienesSomos() {
     <>
       <Cabecera actual="/quienes-somos/" />
       <main id="contenido">
-        <section className="portada">
-          <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
+        <section className="portada portada-quienes">
+          <div className="contenedor">
             <div>
               <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho</h1>
               <p className="entradilla">
@@ -52,6 +53,7 @@ export default function QuienesSomos() {
                 de oficio.
               </p>
             </div>
+            <Foto nombre="arco-castillo" clase="foto-vertical" pie="Alicante, desde el castillo de Santa Bárbara." prioridad tamanos="(max-width: 860px) 100vw, 480px" />
           </div>
         </section>
 

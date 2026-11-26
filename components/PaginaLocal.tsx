@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Foto, type NombreFoto } from "@/components/Foto";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { FormularioContacto } from "@/components/FormularioContacto";
@@ -21,6 +22,8 @@ export function PaginaLocal({
   extra,
   preguntas,
   areaServida,
+  foto,
+  fotoPie,
   servicios = true,
 }: {
   zona: string;
@@ -36,6 +39,8 @@ export function PaginaLocal({
   preguntas: Pregunta[];
   areaServida: string[];
   servicios?: boolean;
+  foto?: NombreFoto;
+  fotoPie?: string;
 }) {
   const schema = [
     {
@@ -82,6 +87,11 @@ export function PaginaLocal({
           </div>
         </section>
 
+        {foto ? (
+          <div className="contenedor foto-tras-portada">
+            <Foto nombre={foto} pie={fotoPie} prioridad />
+          </div>
+        ) : null}
         <section className="seccion seccion-banda">
           <div className="contenedor texto-estrecho local-texto">{intro}</div>
         </section>
