@@ -185,7 +185,7 @@ export default function Criptomonedas() {
                 </div>
               ))}
             </dl>
-            <GuiasRelacionadas slugs={["permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda"]} />
+            <GuiasRelacionadas slugs={["permutas-criptomonedas-fifo", "compensar-perdidas-criptomonedas", "modelo-721", "staking-defi-impuestos", "retirar-dinero-binance-hacienda", "coinbase-hacienda", "bit2me-hacienda"]} />
           </div>
         </section>
 

@@ -108,7 +108,7 @@ export default function CalculadoraCripto() {
     <>
       <Cabecera actual="/criptomonedas/" />
       <main id="contenido">
-        <section className="portada portada-corta">
+        <section className="portada portada-corta portada-clara">
           <div className="contenedor" style={{ display: "block" }}>
             <h1 style={{ maxWidth: "20ch" }}>Calcula tus impuestos de criptomonedas con FIFO</h1>
             <p className="entradilla">

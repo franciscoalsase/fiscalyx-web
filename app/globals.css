@@ -3710,3 +3710,38 @@ td.comparar-nos {
   .portada-local { grid-template-columns: minmax(0, 1fr); }
   .portada .ficha-local { transform: none; margin-top: 2rem; }
 }
+
+/* ---------- Dos tipos de cabecera: tinta en las páginas de servicio, papel en las de leer y calcular ---------- */
+
+/* La luz detrás del papel solo tiene sentido en la portada, donde hay un aviso encima de la mesa */
+.portada:not(.portada-inicio)::before { content: none; }
+
+.portada.portada-clara { background: var(--banda); color: var(--tinta); border-bottom: 1px solid var(--linea); }
+.portada-clara h1 { color: var(--tinta); }
+.portada-clara .entradilla { color: var(--grafito); }
+.portada-clara .portada-condiciones { color: var(--grafito); }
+.portada-clara .migas, .portada-clara .migas a, .portada-clara .miga, .portada-clara .miga a { color: var(--grafito); }
+.portada-clara :is(.entradilla, .portada-condiciones, .miga, p) a:not(.boton) { color: var(--tinta); text-decoration-color: var(--tinta); }
+.portada-clara .boton-principal { background: var(--tinta); color: #fff; }
+.portada-clara .boton-principal:hover { background: #0f1b2d; color: #fff; }
+.portada-clara .boton-secundario { color: var(--tinta); border-color: var(--linea); }
+.portada-clara .boton-secundario:hover { color: var(--tinta); border-color: var(--tinta); }
+.portada-clara .enlace-sencillo { color: var(--tinta); text-decoration-color: var(--tinta); }
+.portada-clara .enlace-sencillo:hover { color: var(--verde); }
+.portada-clara :focus-visible { outline-color: var(--tinta); }
+.portada-clara :is(.agenda, .informe, .documento) { box-shadow: 0 1px 0 var(--linea), 0 18px 40px -28px rgba(27, 42, 65, 0.35); border-color: var(--linea); }
+
+/* Guías: cabecera de papel, como la primera página de un informe */
+.articulo-cabeza { background: var(--banda); color: var(--tinta); box-shadow: 0 0 0 100vmax var(--banda); }
+.articulo-cabeza h1 { color: var(--tinta); }
+.articulo-cabeza .entradilla { color: var(--grafito); }
+.articulo-cabeza .miga, .articulo-cabeza .miga a { color: var(--grafito); }
+.articulo-cabeza .firma { color: var(--grafito); border-top-color: var(--linea); }
+.articulo-cabeza .firma a { color: var(--tinta); text-decoration-color: var(--tinta); }
+.articulo-cabeza :focus-visible { outline-color: var(--tinta); }
+
+/* Portada más corta en móvil: el resumen anual y el mapa se quedan para pantallas grandes */
+@media (max-width: 860px) {
+  .trimestre-anio > .documento, .trimestre-anio > figure { display: none; }
+  .donde > .mapa-irpf { display: none; }
+}

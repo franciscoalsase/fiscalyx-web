@@ -62,7 +62,7 @@ export default function CalculadoraCuota() {
     <>
       <Cabecera />
       <main id="contenido">
-        <section className="portada portada-corta">
+        <section className="portada portada-corta portada-clara">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
               <h1 style={{ maxWidth: "20ch" }}>¿Cuánto pagarás de cuota de autónomos?</h1>

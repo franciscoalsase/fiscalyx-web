@@ -93,43 +93,7 @@ export function Pie({ contacto = "/empezar/", cierre = false }: { contacto?: str
               <Link href="/gestoria-alicante/">Gestoría en Alicante</Link>
             </li>
             <li>
-              <Link href="/gestoria-vega-baja/">Gestoría en la Vega Baja</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-elche/">Gestoría en Elche</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-orihuela/">Gestoría en Orihuela</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-torrevieja/">Gestoría en Torrevieja</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-benidorm/">Gestoría en Benidorm</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-alcoy/">Gestoría en Alcoy</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-elda-petrer/">Gestoría en Elda y Petrer</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-denia/">Gestoría en Dénia</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-san-vicente-del-raspeig/">Gestoría en San Vicente</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-villena/">Gestoría en Villena</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-xabia/">Gestoría en Xàbia</Link>
-            </li>
-            <li>
-              <Link href="/gestoria-murcia/">Gestoría en Murcia</Link>
-            </li>
-            <li>
-              <Link href="/guias/irpf-por-comunidades-2026/">Gestoría en otras comunidades</Link>
+              <Link href="/zonas/">Gestoría en tu zona</Link>
             </li>
           </ul>
         </div>

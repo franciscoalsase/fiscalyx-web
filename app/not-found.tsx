@@ -21,7 +21,7 @@ export default function NoEncontrada() {
     <>
       <Cabecera />
       <main id="contenido">
-        <section className="portada portada-corta">
+        <section className="portada portada-corta portada-clara">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
               <h1>Esta página no existe</h1>

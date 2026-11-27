@@ -85,6 +85,20 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "coinbase-hacienda",
+    titulo: "Coinbase y Hacienda: qué informa y cómo declararlo",
+    resumen: "Qué llega a Hacienda con DAC8, por qué el informe de ganancias de Coinbase no sirve en España y cómo sacar tu historial.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "bit2me-hacienda",
+    titulo: "Bit2Me y Hacienda: qué informa y cómo declararlo",
+    resumen: "Bit2Me envía cada año tus saldos y operaciones a Hacienda. Qué datos tiene ya y por qué a muchos no les cuadra la Renta.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "declarar-criptomonedas-renta",
     titulo: "Cómo declarar criptomonedas en la Renta",
     resumen: "Qué operaciones tributan, cómo se calcula la ganancia con FIFO, cuánto se paga, cómo compensar pérdidas y qué documentación guardar.",

@@ -74,7 +74,7 @@ export default function CalculadoraForma() {
     <>
       <Cabecera />
       <main id="contenido">
-        <section className="portada portada-corta">
+        <section className="portada portada-corta portada-clara">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
               <h1 style={{ maxWidth: "22ch" }}>¿Autónomo o sociedad limitada?</h1>

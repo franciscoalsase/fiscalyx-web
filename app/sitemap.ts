@@ -17,6 +17,7 @@ const rutas = [
   "/calculadora-autonomos/",
   "/calculadora-autonomo-o-sociedad/",
   "/calculadora-cuota-autonomos/",
+  "/zonas/",
   "/gestoria-alicante/",
   "/gestoria-vega-baja/",
   "/gestoria-elche/",

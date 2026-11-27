@@ -42,7 +42,7 @@ export default function QuienesSomos() {
     <>
       <Cabecera actual="/quienes-somos/" />
       <main id="contenido">
-        <section className="portada">
+        <section className="portada portada-clara">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
               <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho</h1>

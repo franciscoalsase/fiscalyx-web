@@ -227,7 +227,8 @@ export default function Inicio() {
                   Comunitat Valenciana, y cada comunidad tiene sus propias deducciones.
                 </p>
                 <p>
-                  <Link href="/guias/irpf-por-comunidades-2026/">Compara tu comunidad</Link>
+                  <Link href="/guias/irpf-por-comunidades-2026/">Compara tu comunidad</Link> o mira{" "}
+                  <Link href="/zonas/">qué cambia en tu zona</Link>.
                 </p>
               </div>
             </div>

@@ -27,7 +27,7 @@ export default function Guias() {
     <>
       <Cabecera actual="/guias/" />
       <main id="contenido">
-        <section className="portada portada-corta">
+        <section className="portada portada-corta portada-clara">
           <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
             <div>
               <h1 style={{ maxWidth: "20ch" }}>Guías para entender tus impuestos</h1>
