@@ -78,6 +78,20 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "wallet-propia-hacienda",
+    titulo: "Wallet propia (MetaMask, Ledger) y Hacienda: qué ve y qué declarar",
+    resumen: "No cuenta para el Modelo 721, pero Hacienda ve lo que entra y sale de los exchanges. Qué declarar y cómo justificar los envíos.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "airdrops-nft-impuestos",
+    titulo: "Airdrops y NFT: cómo tributan en la Renta",
+    resumen: "El airdrop tributa al recibirlo, en la base general. Vender un NFT es ganancia patrimonial; crearlo puede llevar IVA.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "staking-defi-impuestos",
     titulo: "Staking y DeFi: cómo tributan las recompensas",
     resumen: "Por qué las recompensas tributan al recibirlas, cómo se valoran y qué ha dicho Hacienda de los préstamos y los pools de liquidez.",

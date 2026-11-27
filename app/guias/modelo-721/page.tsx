@@ -75,7 +75,8 @@ export default function Modelo721() {
       <p>
         Cuentan las criptomonedas que guarda por ti una plataforma con sede fuera de España: un exchange o un custodio
         extranjero. No entran las que guardas en tu propio monedero, sea físico o de software, cuando solo tú tienes
-        las claves.
+        las claves. Lo explicamos en{" "}
+        <Link href="/guias/wallet-propia-hacienda/">Wallet propia y Hacienda</Link>.
       </p>
       <p>
         Las que tienes en plataformas españolas tampoco van en el 721: esas plataformas ya informan a Hacienda por su

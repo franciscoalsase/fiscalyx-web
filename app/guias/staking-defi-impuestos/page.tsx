@@ -98,7 +98,9 @@ export default function StakingDefi() {
         No todo lo que te regala una plataforma es staking. Las criptomonedas que recibes por promociones, por invitar
         a otros usuarios o por participar en campañas del exchange no son una cesión de capital: Hacienda las ha
         tratado como ganancias patrimoniales que no vienen de una venta, y van a la base general, donde el tipo puede
-        ser más alto.
+        ser más alto. Igual que los airdrops: lo contamos en{" "}
+        <Link href="/guias/airdrops-nft-impuestos/">Airdrops y NFT: cómo tributan</Link>, y si usas DeFi desde tu propio
+        monedero, en <Link href="/guias/wallet-propia-hacienda/">Wallet propia y Hacienda</Link>.
       </p>
 
       <h2>Qué tener preparado</h2>
