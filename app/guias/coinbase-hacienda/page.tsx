@@ -119,7 +119,7 @@ export default function CoinbaseHacienda() {
         <Link href="/guias/compensar-perdidas-criptomonedas/">compensar ganancias</Link> de otros años.
       </p>
       <p>
-        ¿Usas más de una plataforma? Tienes las guías de <Link href="/guias/bit2me-hacienda/">Bit2Me</Link>, <Link href="/guias/kraken-hacienda/">Kraken</Link> y <Link href="/guias/bitpanda-hacienda/">Bitpanda</Link>, y cómo juntarlo todo en{" "}
+        ¿Usas más de una plataforma? Tienes las guías de <Link href="/guias/binance-hacienda/">Binance</Link>, <Link href="/guias/bit2me-hacienda/">Bit2Me</Link>, <Link href="/guias/kraken-hacienda/">Kraken</Link> y <Link href="/guias/bitpanda-hacienda/">Bitpanda</Link>, y cómo juntarlo todo en{" "}
         <Link href="/guias/declarar-criptomonedas-renta/">Cómo declarar criptomonedas en la Renta</Link>.
       </p>
     </Articulo>

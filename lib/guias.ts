@@ -22,6 +22,13 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "deducciones-comunitat-valenciana-renta",
+    titulo: "Deducciones de la Comunitat Valenciana en la Renta 2026",
+    resumen: "Hijos, alquiler, vivienda, dentista, gimnasio y música: importes, límites de renta y cómo no dejarte ninguna.",
+    tema: "Autónomos",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "permutas-criptomonedas-fifo",
     titulo: "Permutas de criptomonedas y método FIFO",
     resumen: "Por qué cambiar una cripto por otra tributa aunque no pases a euros, y cómo se calcula la ganancia, con un ejemplo.",
@@ -78,6 +85,13 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "binance-hacienda",
+    titulo: "Binance y Hacienda: qué declarar si cierras tu cuenta",
+    resumen: "Binance cierra cuentas en España el 31 de diciembre. Qué tributa al sacar tu dinero y por qué descargar ya tu historial.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "retirar-dinero-binance-hacienda",
     titulo: "Retirar dinero de Binance al banco: qué ve Hacienda",
     resumen: "La transferencia no tributa, la venta sí. Qué te puede pedir el banco y cómo regularizar años sin declarar.",
@@ -109,6 +123,13 @@ export const guias: Guia[] = [
     slug: "bitpanda-hacienda",
     titulo: "Bitpanda y Hacienda: qué informa y cómo declararlo",
     resumen: "Criptomonedas, planes de ahorro, acciones y metales: qué tributa de cada uno y cómo sacar tu historial de Bitpanda.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "regularizar-criptomonedas",
+    titulo: "Regularizar criptomonedas no declaradas: cómo y cuánto cuesta",
+    resumen: "Qué años siguen abiertos, el recargo si lo haces antes de una carta, cómo se presenta y qué pasa con las pérdidas.",
     tema: "Criptomonedas",
     fecha: "noviembre de 2026",
   },

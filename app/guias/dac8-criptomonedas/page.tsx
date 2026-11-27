@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
@@ -92,7 +93,8 @@ export default function Dac8() {
           <strong>Revisa los años anteriores.</strong> Si no declaraste bien, regularizar antes de que Hacienda
           pregunte sale mucho más barato. Con una complementaria voluntaria pagas un recargo del 1 % más un 1 % por
           cada mes completo de retraso, hasta un máximo del 15 % más intereses a partir del año. Si Hacienda te
-          descubre, la sanción parte del 50 % de lo que dejaste de ingresar.
+          descubre, la sanción parte del 50 % de lo que dejaste de ingresar. Lo explicamos en{" "}
+          <Link href="/guias/regularizar-criptomonedas/">Regularizar criptomonedas no declaradas</Link>.
         </li>
       </ol>
     </Articulo>

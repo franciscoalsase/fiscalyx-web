@@ -27,6 +27,12 @@ export default function RetirarBinance() {
         { nombre: "Ley 58/2003 General Tributaria, artículo 27: recargos por presentar fuera de plazo", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186" },
       ]}
     >
+      <p>
+        <strong>Si tienes cuenta de Binance en España:</strong> Binance ha anunciado el cierre de las cuentas afectadas
+        el 31 de diciembre de 2026. Lo que conviene hacer antes, y qué tributa al salir, está en{" "}
+        <Link href="/guias/binance-hacienda/">Binance y Hacienda: qué declarar si cierras tu cuenta</Link>.
+      </p>
+
       <h2>La transferencia no tributa; la venta, sí</h2>
       <p>
         Cuando vendes bitcoin por euros dentro de Binance, en ese momento tienes una ganancia o una pérdida

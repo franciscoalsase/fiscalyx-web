@@ -179,7 +179,8 @@ export default function DeclararCriptoRenta() {
 
       <h2>Si hay años sin declarar</h2>
       <p>
-        Lo recomendable es regularizar antes de que llegue una carta. Presentar por tu cuenta una declaración
+        Lo recomendable es regularizar antes de que llegue una carta (lo explicamos paso a paso en{" "}
+        <Link href="/guias/regularizar-criptomonedas/">Regularizar criptomonedas no declaradas</Link>). Presentar por tu cuenta una declaración
         complementaria de cada año afectado evita la sanción: pagas un recargo del 1 % más otro 1 % por cada mes completo
         de retraso, y del 15 % más intereses pasados doce meses. Si lo detecta Hacienda, a la cuota se suma una sanción que
         puede ir del 50 % al 150 %.

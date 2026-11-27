@@ -107,7 +107,7 @@ export default function KrakenHacienda() {
         <Link href="/guias/requerimiento-hacienda/">Te ha llegado una carta de Hacienda: qué hacer</Link>.
       </p>
       <p>
-        ¿Usas más de una plataforma? Tienes las guías de <Link href="/guias/coinbase-hacienda/">Coinbase</Link>, <Link href="/guias/bit2me-hacienda/">Bit2Me</Link> y <Link href="/guias/bitpanda-hacienda/">Bitpanda</Link>, y cómo juntarlo todo en{" "}
+        ¿Usas más de una plataforma? Tienes las guías de <Link href="/guias/binance-hacienda/">Binance</Link>, <Link href="/guias/coinbase-hacienda/">Coinbase</Link>, <Link href="/guias/bit2me-hacienda/">Bit2Me</Link> y <Link href="/guias/bitpanda-hacienda/">Bitpanda</Link>, y cómo juntarlo todo en{" "}
         <Link href="/guias/declarar-criptomonedas-renta/">Cómo declarar criptomonedas en la Renta</Link>.
       </p>
     </Articulo>

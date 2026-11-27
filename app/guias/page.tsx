@@ -16,7 +16,7 @@ const grupos = [
   {
     id: "guias-impuestos",
     t: "Tus impuestos del trimestre y del año",
-    slugs: ["calendario-fiscal-autonomos-2027", "modelo-303-iva-trimestral", "modelo-130-retenciones", "renta-autonomos", "irpf-por-comunidades-2026", "modelo-347", "requerimiento-hacienda", "facturar-clientes-extranjeros", "factura-electronica-verifactu"],
+    slugs: ["calendario-fiscal-autonomos-2027", "modelo-303-iva-trimestral", "modelo-130-retenciones", "renta-autonomos", "irpf-por-comunidades-2026", "deducciones-comunitat-valenciana-renta", "modelo-347", "requerimiento-hacienda", "facturar-clientes-extranjeros", "factura-electronica-verifactu"],
   },
   { id: "guias-cuota", t: "Cuota de autónomos y gastos", slugs: ["cuota-autonomos-2027", "gastos-deducibles-autonomos"] },
   { id: "guias-sociedad", t: "Si tienes una sociedad", slugs: ["cobrar-de-tu-sociedad", "cuentas-anuales-sociedad"] },

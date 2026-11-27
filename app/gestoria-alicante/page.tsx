@@ -56,8 +56,9 @@ export default function GestoriaAlicante() {
           <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana</h2>
           <p>
             La mitad de tu IRPF va con la escala autonómica, y la valenciana tiene sus propios tramos, su mínimo
-            personal y una de las listas de deducciones más largas de España. Un programa genérico no las aplica; un
-            asesor que no las conoce, tampoco. Además, la compra de una vivienda, una herencia o una donación no se
+            personal y una de las listas de deducciones más largas de España: las tienes todas en{" "}
+            <Link href="/guias/deducciones-comunitat-valenciana-renta/">las deducciones valencianas de la Renta 2026</Link>.
+            Un programa genérico no las aplica; un asesor que no las conoce, tampoco. Además, la compra de una vivienda, una herencia o una donación no se
             tramitan con la Agencia Tributaria estatal, sino con la Agència Tributària Valenciana.
           </p>
         </>
