@@ -43,7 +43,7 @@ export default function QuienesSomos() {
       <Cabecera actual="/quienes-somos/" />
       <main id="contenido">
         <section className="portada portada-clara">
-          <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
+          <div className="contenedor">
             <div>
               <h1 style={{ maxWidth: "16ch" }}>Una gestoría online con el oficio de un despacho</h1>
               <p className="entradilla">
@@ -52,13 +52,13 @@ export default function QuienesSomos() {
                 de oficio.
               </p>
             </div>
+            <FichaProfesional />
           </div>
         </section>
 
         <section className="seccion seccion-banda" aria-labelledby="direccion-titulo">
-          <div className="contenedor equipo equipo-ficha">
-            <FichaProfesional />
-            <div className="equipo-texto">
+          <div className="contenedor">
+            <div className="equipo-texto" style={{ maxWidth: "68ch" }}>
               <h2 id="direccion-titulo">{site.owner}</h2>
               <p style={{ marginTop: "0.35rem", color: "var(--grafito)", fontFamily: "var(--sans)" }}>
                 Director de Fiscalyx. Economista colegiado n.º {site.colegiado}.

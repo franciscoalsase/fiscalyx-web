@@ -75,13 +75,29 @@ export default function Precios() {
       <Cabecera />
       <main id="contenido">
         <section className="portada portada-corta">
-          <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
+          <div className="contenedor">
             <div>
               <h1 style={{ maxWidth: "20ch" }}>Precios de la gestoría, por escrito y sin permanencia</h1>
               <p className="entradilla">
                 Cuota fija mensual para autónomos y sociedades, y un precio por caso para criptomonedas, que te damos antes de empezar. Precios sin IVA.
               </p>
             </div>
+            <ol className="precio-pasos">
+              <li>
+                <strong>Calculas tu cuota</strong>
+                <span>
+                  En <Link href="/empezar/">el presupuesto al momento</Link> ves lo que pagarías al mes y al año.
+                </span>
+              </li>
+              <li>
+                <strong>Te lo confirmamos por escrito</strong>
+                <span>En 24 horas laborables, con lo que incluye y lo que no.</span>
+              </li>
+              <li>
+                <strong>Empiezas cuando quieras</strong>
+                <span>Pagas mes a mes y te puedes ir cuando quieras, con tu documentación.</span>
+              </li>
+            </ol>
           </div>
         </section>
 

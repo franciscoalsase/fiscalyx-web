@@ -3745,3 +3745,11 @@ td.comparar-nos {
   .trimestre-anio > .documento, .trimestre-anio > figure { display: none; }
   .donde > .mapa-irpf { display: none; }
 }
+
+/* Precios: los tres pasos hasta tener el precio, en la cabecera */
+.precio-pasos { list-style: none; margin: 0; padding: 0; counter-reset: paso; display: grid; gap: 1.1rem; }
+.precio-pasos li { counter-increment: paso; display: grid; grid-template-columns: 2rem 1fr; column-gap: 0.9rem; padding-top: 1.1rem; border-top: 1px solid rgba(255, 255, 255, 0.18); }
+.precio-pasos li::before { content: counter(paso); grid-row: span 2; font-family: var(--sans); font-weight: 700; font-size: 1.1rem; color: var(--subrayador); }
+.precio-pasos strong { font-family: var(--sans); font-size: 1rem; color: #fff; }
+.precio-pasos span { color: rgba(255, 255, 255, 0.78); font-size: 0.95rem; }
+.precio-pasos a { color: #fff; text-decoration-color: var(--subrayador); }

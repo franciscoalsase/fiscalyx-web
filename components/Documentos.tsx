@@ -9,7 +9,7 @@ export function AvisoTrimestre() {
   return (
     <figure className="documento documento-aviso">
       <div className="documento-cabeza">
-        <strong>Tu 3.er trimestre de 2027</strong>
+        <strong>Tu 3.er trimestre de 2026</strong>
         <span>Ejemplo</span>
       </div>
       <p className="documento-para">Diseño web, estimación directa</p>

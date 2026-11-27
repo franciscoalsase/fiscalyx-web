@@ -58,8 +58,8 @@ tr.res td {{ font-weight: 700; border-bottom: none; }}
 <p class="ejemplo">EJEMPLO · DATOS FICTICIOS</p>
 <div class="cab"><span class="marca">Fiscalyx</span>
 <p class="datos">Gestoría y asesoría online<br>info@fiscalyx.com · 637 46 08 35<br>fiscalyx.com</p></div>
-<div class="para"><p>Para: <b>Lucía Ferrer Molina</b> · Diseño web, estimación directa</p><p>Alicante, 12 de octubre de 2027</p></div>
-<h1>Tu tercer trimestre de 2027</h1>
+<div class="para"><p>Para: <b>Lucía Ferrer Molina</b> · Diseño web, estimación directa</p><p>Alicante, 12 de octubre de 2026</p></div>
+<h1>Tu tercer trimestre de 2026</h1>
 <p class="intro">Hola, Lucía. Estos son los importes del 303 y el 130 de julio a septiembre, calculados con las facturas y tickets que nos has mandado. Si estás de acuerdo, los presentamos y se cargan en tu cuenta el día 20.</p>
 <div class="total"><span>A pagar el 20 de octubre</span><strong>{e(iva + irpf)}</strong></div>
 <h2>Modelo 303, IVA del trimestre <em>{e(iva)}</em></h2>
