@@ -48,8 +48,10 @@ export default function GestoriaAlicante() {
             Y en el resto de la provincia, cada zona tiene sus preguntas: la hostelería de{" "}
             <Link href="/gestoria-benidorm/">Benidorm</Link>, las empresas industriales de{" "}
             <Link href="/gestoria-alcoy/">Alcoy</Link>, el calzado de{" "}
-            <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link> y los propietarios extranjeros de{" "}
-            <Link href="/gestoria-denia/">Dénia</Link>.
+            <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link>, las naves de{" "}
+            <Link href="/gestoria-villena/">Villena</Link>, las empresas emergentes de{" "}
+            <Link href="/gestoria-san-vicente-del-raspeig/">San Vicente del Raspeig</Link> y los propietarios extranjeros
+            de <Link href="/gestoria-denia/">Dénia</Link> y <Link href="/gestoria-xabia/">Xàbia</Link>.
           </p>
           <h2>Por qué importa que tu asesor conozca la Comunitat Valenciana</h2>
           <p>

@@ -52,7 +52,9 @@ export default function GestoriaDenia() {
           <Link href="/gestoria-torrevieja/">Torrevieja</Link>, y si la alquilas a turistas, lo que exige ahora la
           Generalitat en la de <Link href="/gestoria-orihuela/">Orihuela Costa</Link>.{" "}
           Si tienes un bar o un restaurante, lo propio de la hostelería lo explicamos en la página de{" "}
-          <Link href="/gestoria-benidorm/">Benidorm</Link>.
+          <Link href="/gestoria-benidorm/">Benidorm</Link>.{" "}
+          Y si heredas una casa en la Marina Alta, mira lo que contamos en la página de{" "}
+          <Link href="/gestoria-xabia/">Xàbia</Link>.
         </p>
       }
       fuentes={[

@@ -3696,3 +3696,17 @@ td.comparar-nos {
 /* Línea de revisión al final de cada página */
 .revisado { padding-top: 2.5rem; padding-bottom: 0.5rem; }
 .revisado p { font-family: var(--sans); font-size: 0.88rem; color: var(--grafito); border-top: 1px solid var(--linea); padding-top: 1rem; max-width: none; }
+
+/* Cabecera de las páginas locales: ficha con el tema fiscal de la zona */
+.portada-local { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr); align-items: center; column-gap: clamp(2rem, 5vw, 4.5rem); }
+.portada .ficha-local { color: var(--tinta); background: #fff; transform: rotate(1deg); padding: 1.5rem 1.6rem 1.35rem; }
+.ficha-local-titulo { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: var(--grafito); margin: 0; }
+.ficha-local-tema { font-family: var(--sans); font-weight: 800; font-size: 1.15rem; line-height: 1.3; letter-spacing: -0.01em; margin: 0.35rem 0 0.9rem; padding-bottom: 0.8rem; border-bottom: 2px solid var(--tinta); }
+.ficha-local ul { list-style: none; margin: 0; padding: 0; font-family: var(--sans); font-size: 0.95rem; }
+.ficha-local li { padding: 0.5rem 0 0.5rem 1.5rem; border-bottom: 1px dotted #c9c6bb; position: relative; }
+.ficha-local li::before { content: ""; position: absolute; left: 0.1rem; top: 0.95rem; width: 0.7rem; height: 0.35rem; border-left: 2px solid var(--verde); border-bottom: 2px solid var(--verde); transform: rotate(-45deg); }
+.portada .ficha-local .ficha-local-enlace { display: inline-block; margin-top: 0.9rem; color: var(--verde-oscuro); font-family: var(--sans); font-weight: 600; text-decoration-color: var(--subrayador); }
+@media (max-width: 860px) {
+  .portada-local { grid-template-columns: minmax(0, 1fr); }
+  .portada .ficha-local { transform: none; margin-top: 2rem; }
+}

@@ -65,7 +65,7 @@ export function PaginaLocal({
       <Cabecera />
       <main id="contenido">
         <section className="portada portada-corta">
-          <div className="contenedor" style={{ gridTemplateColumns: "1fr" }}>
+          <div className="contenedor portada-local">
             <div>
               <h1 style={{ maxWidth: "20ch" }}>{titulo}</h1>
               <p className="entradilla">{entradilla}</p>
@@ -84,6 +84,18 @@ export function PaginaLocal({
               </div>
               <p className="portada-condiciones">Autónomos desde {prices.autonomoMes} € al mes y sociedades desde {prices.sociedadMes} €. También hacemos la Renta con criptomonedas.</p>
             </div>
+            <aside className="documento ficha-local" aria-label={`Lo que revisamos en ${zona}`}>
+              <p className="ficha-local-titulo">Lo que revisamos en {zona}</p>
+              <p className="ficha-local-tema">{fiscalTitulo}</p>
+              <ul>
+                {fiscalFilas.slice(0, 5).map(([c]) => (
+                  <li key={c}>{c}</li>
+                ))}
+              </ul>
+              <a className="ficha-local-enlace" href="#local-fiscal">
+                Ver el detalle
+              </a>
+            </aside>
           </div>
         </section>
 

@@ -51,7 +51,9 @@ export default function GestoriaAlcoy() {
           <Link href="/guias/cuentas-anuales-sociedad/">cuentas anuales de una sociedad</Link>, y si eres socio y
           trabajas en tu empresa, mira <Link href="/guias/cobrar-de-tu-sociedad/">cómo cobrar de tu sociedad</Link>.{" "}
           Si tu sector pasa por un mal momento, explicamos el paro de los autónomos en la página de{" "}
-          <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link>.
+          <Link href="/gestoria-elda-petrer/">Elda y Petrer</Link>.{" "}
+          Si vas a crear una empresa de base tecnológica, mira las ventajas de la ley de startups en la de{" "}
+          <Link href="/gestoria-san-vicente-del-raspeig/">San Vicente del Raspeig</Link>.
         </p>
       }
       fuentes={[

@@ -51,7 +51,9 @@ export default function GestoriaEldaPetrer() {
           <Link href="/gestoria-elche/">autónomo TRADE</Link>, y si vas a empezar de nuevo con otro negocio, cómo{" "}
           <Link href="/capitalizar-paro/">capitalizar el paro</Link>.{" "}
           Si tu empresa sigue creciendo, mira qué cambia al pasar ciertas cifras en la página de{" "}
-          <Link href="/gestoria-alcoy/">Alcoy</Link>.
+          <Link href="/gestoria-alcoy/">Alcoy</Link>.{" "}
+          Y si vas a comprar o ampliar una nave, lee antes lo que explicamos en la de{" "}
+          <Link href="/gestoria-villena/">Villena</Link>.
         </p>
       }
       fuentes={[
