@@ -201,8 +201,7 @@ export default function Inicio() {
                 </li>
               </ul>
               <p className="honorarios-pie">
-                Para <Link href="/capitalizar-paro/">capitalizar el paro</Link> o la parte económica de las{" "}
-                <Link href="/licitaciones-publicas/">licitaciones públicas</Link> te damos presupuesto antes de empezar.{" "}
+                Para <Link href="/capitalizar-paro/">capitalizar el paro</Link> te damos presupuesto antes de empezar.{" "}
                 <Link href="/precios/">Ver todos los precios</Link>
               </p>
             </div>

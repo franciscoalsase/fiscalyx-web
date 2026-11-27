@@ -14,7 +14,7 @@ export default function GestoriaAlicante() {
     <PaginaLocal
       zona="Alicante"
       foto="puerto"
-      fotoPie="El puerto de Alicante. Nuestra sede está en el centro, en el Centro ULab de la plaza de San Cristóbal."
+      fotoPie="El puerto de Alicante, la ciudad donde tenemos la sede."
       titulo="Tu gestoría en Alicante, con economistas colegiados"
       entradilla="Llevamos los impuestos y la contabilidad de autónomos y sociedades de Alicante y su área, y la Renta de quienes invierten en criptomonedas. Online, con cuota fija y siempre el mismo asesor."
       municipios={["Elche", "San Vicente del Raspeig", "Sant Joan d'Alacant", "El Campello", "Mutxamel", "Santa Pola", "Crevillent"]}

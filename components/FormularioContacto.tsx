@@ -51,7 +51,7 @@ export function FormularioContacto({ temaInicial = "autonomo" }: { temaInicial?:
             <option value="sociedad">Gestoría de sociedad</option>
             <option value="cripto">Declarar criptomonedas</option>
             <option value="paro">Capitalizar el paro</option>
-            <option value="licitacion">Presentarme a una licitación</option>
+            {temaInicial === "licitacion" && <option value="licitacion">Presentarme a una licitación</option>}
             <option value="otro">Otra consulta</option>
           </select>
         </div>

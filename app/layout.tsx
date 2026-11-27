@@ -64,9 +64,8 @@ const datosEstructurados = {
   ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Plaza San Cristóbal 14",
-    postalCode: "03002",
     addressLocality: "Alicante",
+    addressRegion: "Comunitat Valenciana",
     addressCountry: "ES",
   },
   founder: {

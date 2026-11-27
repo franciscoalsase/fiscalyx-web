@@ -58,7 +58,6 @@ const puntuales: [string, string, string][] = [
   ["Modelo 721", "/guias/modelo-721/", prices.cripto[1].tiers[0].price.replace(/^d/, "D")],
   ["Regularizar años anteriores de cripto", "/criptomonedas/", `Diagnóstico de ${prices.cripto[2].tiers[0].price}, descontable`],
   ["Capitalizar el paro", "/capitalizar-paro/", "Presupuesto cerrado"],
-  ["Documentación económica para una licitación", "/licitaciones-publicas/", "Presupuesto cerrado"],
   ["Constituir una sociedad limitada", "/constituir-sociedad/", "Presupuesto cerrado; notaría y Registro aparte"],
   ["Responder a un requerimiento de Hacienda", "/guias/requerimiento-hacienda/", "Presupuesto cerrado"],
 ];

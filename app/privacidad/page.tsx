@@ -13,7 +13,7 @@ export default function Privacidad() {
     <PaginaTexto titulo="Política de privacidad">
       <h2>Responsable del tratamiento</h2>
       <p>
-        {site.owner} (Fiscalyx), NIF {site.nif}, {site.address}. Puedes escribir a {site.email} para cualquier
+        {site.owner} (Fiscalyx), NIF {site.nif}, con sede en {site.city}. Puedes escribir a {site.email} para cualquier
         cuestión sobre tus datos.
       </p>
 

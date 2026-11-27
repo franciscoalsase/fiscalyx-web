@@ -57,8 +57,6 @@ export function Pie({ contacto = "/empezar/", cierre = false }: { contacto?: str
             </a>
             <br />
             {site.horario}
-            <br />
-            {site.address}
           </p>
         </div>
 
@@ -85,9 +83,6 @@ export function Pie({ contacto = "/empezar/", cierre = false }: { contacto?: str
             </li>
             <li>
               <Link href="/capitalizar-paro/">Capitalizar el paro</Link>
-            </li>
-            <li>
-              <Link href="/licitaciones-publicas/">Licitaciones públicas</Link>
             </li>
             <li>
               <Link href="/gestoria-alicante/">Gestoría en Alicante</Link>
