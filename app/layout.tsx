@@ -21,6 +21,7 @@ const serif = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  authors: [{ name: site.owner, url: `${site.url}/quienes-somos/` }],
   title: {
     default: "Gestoría y asesoría online de economistas colegiados | Fiscalyx",
     template: "%s | Fiscalyx",
@@ -72,6 +73,13 @@ const datosEstructurados = {
     "@type": "Person",
     name: site.owner,
     jobTitle: "Economista colegiado",
+    url: `${site.url}/quienes-somos/`,
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Colegiación profesional",
+      name: `Economista colegiado n.º ${site.colegiado}`,
+      recognizedBy: { "@type": "Organization", name: site.colegio },
+    },
   },
   knowsAbout: [
     "Gestoría para autónomos",

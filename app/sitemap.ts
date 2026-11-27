@@ -51,12 +51,12 @@ const rutas = [
   "/cookies/",
 ];
 
-const fechas = fechasJson as Record<string, string>;
+const fechas = fechasJson as Record<string, { m: string; p: string }>;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return rutas.map((ruta) => ({
     url: `${site.url}${ruta}`,
-    ...(fechas[ruta] ? { lastModified: new Date(fechas[ruta]) } : {}),
+    ...(fechas[ruta] ? { lastModified: new Date(fechas[ruta].m) } : {}),
     changeFrequency: ruta === "/" || ruta === "/criptomonedas/" ? "monthly" : "yearly",
     priority: ruta === "/" ? 1 : ruta === "/criptomonedas/" ? 0.9 : ruta.startsWith("/guias/") ? 0.7 : 0.3,
   }));

@@ -3692,3 +3692,7 @@ td.comparar-nos {
   .honorarios-linea .honorarios-puntos { display: none; }
   .honorarios-linea h3 { flex-basis: 100%; }
 }
+
+/* Línea de revisión al final de cada página */
+.revisado { padding-top: 2.5rem; padding-bottom: 0.5rem; }
+.revisado p { font-family: var(--sans); font-size: 0.88rem; color: var(--grafito); border-top: 1px solid var(--linea); padding-top: 1rem; max-width: none; }

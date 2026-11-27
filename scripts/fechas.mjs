@@ -11,8 +11,9 @@ function recorrer(dir, ruta) {
     if (statSync(p).isDirectory()) recorrer(p, `${ruta}${n}/`);
     else if (n === "page.tsx") {
       try {
-        const f = execSync(`git log -1 --format=%cI -- "${p}"`, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
-        if (f) fechas[ruta] = f;
+        const m = execSync(`git log -1 --format=%cI -- "${p}"`, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
+        const todas = execSync(`git log --format=%cI -- "${p}"`, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim().split("\n");
+        if (m) fechas[ruta] = { m, p: todas[todas.length - 1] || m };
       } catch {}
     }
   }
