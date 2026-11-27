@@ -99,6 +99,20 @@ export const guias: Guia[] = [
     fecha: "noviembre de 2026",
   },
   {
+    slug: "kraken-hacienda",
+    titulo: "Kraken y Hacienda: qué informa y cómo declararlo",
+    resumen: "Qué llega a Hacienda desde Irlanda con DAC8, los dos archivos que hay que descargar y cómo declarar staking y futuros.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
+    slug: "bitpanda-hacienda",
+    titulo: "Bitpanda y Hacienda: qué informa y cómo declararlo",
+    resumen: "Criptomonedas, planes de ahorro, acciones y metales: qué tributa de cada uno y cómo sacar tu historial de Bitpanda.",
+    tema: "Criptomonedas",
+    fecha: "noviembre de 2026",
+  },
+  {
     slug: "declarar-criptomonedas-renta",
     titulo: "Cómo declarar criptomonedas en la Renta",
     resumen: "Qué operaciones tributan, cómo se calcula la ganancia con FIFO, cuánto se paga, cómo compensar pérdidas y qué documentación guardar.",

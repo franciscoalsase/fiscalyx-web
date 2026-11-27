@@ -190,9 +190,10 @@ export default function DeclararCriptoRenta() {
         <Link href="/guias/retirar-dinero-binance-hacienda/">Retirar dinero de Binance al banco: qué ve Hacienda</Link>.
       </p>
       <p>
-        Lo que ya sabe Hacienda depende de dónde operes: tienes los casos de una plataforma española en{" "}
-        <Link href="/guias/bit2me-hacienda/">Bit2Me y Hacienda</Link> y de una extranjera en{" "}
-        <Link href="/guias/coinbase-hacienda/">Coinbase y Hacienda</Link>.
+        Lo que ya sabe Hacienda depende de dónde operes. Lo explicamos plataforma por plataforma: la española{" "}
+        <Link href="/guias/bit2me-hacienda/">Bit2Me</Link> y las extranjeras{" "}
+        <Link href="/guias/coinbase-hacienda/">Coinbase</Link>, <Link href="/guias/kraken-hacienda/">Kraken</Link> y{" "}
+        <Link href="/guias/bitpanda-hacienda/">Bitpanda</Link>.
       </p>
 
       <h2>Cuándo se presenta</h2>
