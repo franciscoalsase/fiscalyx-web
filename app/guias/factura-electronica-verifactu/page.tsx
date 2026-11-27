@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Articulo } from "@/components/Articulo";
 
 export const metadata: Metadata = {
-  title: "VeriFactu, aplazado a octubre de 2028",
+  title: "VeriFactu: 2027 o 2028, qué fecha te toca",
   description:
-    "VeriFactu se aplaza a octubre de 2028 para sociedades y autónomos, igual que la factura electrónica entre empresas. Las fechas y qué conviene hacer ya.",
+    "Un real decreto-ley retrasa VeriFactu al 6 de octubre de 2028, pendiente de convalidación. Las dos fechas posibles para sociedades y autónomos y qué hacer ya.",
   alternates: { canonical: "/guias/factura-electronica-verifactu/" },
 };
 
@@ -12,7 +12,7 @@ export default function FacturaElectronica() {
   return (
     <Articulo
       titulo="VeriFactu y factura electrónica: qué cambia y cuándo te toca"
-      entradilla="El Gobierno ha aprobado retrasar VeriFactu a octubre de 2028, para que coincida con la factura electrónica entre empresas. Son dos obligaciones distintas: una exige que tu programa de facturación cumpla unos requisitos y la otra, enviar las facturas a otras empresas en un formato estructurado."
+      entradilla="Un real decreto-ley publicado el 25 de noviembre de 2026 retrasa VeriFactu al 6 de octubre de 2028. Ya está en vigor, pero tiene que convalidarse en los próximos 30 días: si no se convalida, vuelven las fechas de 2027. Te contamos las dos posibilidades y qué conviene hacer mientras tanto."
       tema="Autónomos"
       fecha="noviembre de 2026"
       cta={{
@@ -22,7 +22,8 @@ export default function FacturaElectronica() {
         boton: "Empezar",
       }}
       fuentes={[
-        { nombre: "El Gobierno aplaza VeriFactu hasta octubre de 2028 (25/11/2026)", url: "https://www.grupoaseguranza.com/noticias-de-seguros/gobierno-aplaza-entrada-vigor-verifactu-hasta-octubre-2028" },
+        { nombre: "Real Decreto-ley 43/2026, de 24 de noviembre (BOE 25/11/2026)", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24701" },
+        { nombre: "Agencia Tributaria: medidas del Real Decreto-ley 43/2026", url: "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/noviembre/25/medidas-tributarias-introducidas-real-decreto-432026.html" },
         { nombre: "Nota de Hacienda del 5 de octubre de 2026 y calendario anterior", url: "https://www.infoautonomos.com/blog/retraso-verifactu/" },
         { nombre: "Facturación electrónica obligatoria B2B: Orden HAC/1028/2026 y plazos", url: "https://www.cuatrecasas.com/es/spain/fiscalidad/art/facturacion-electronica-obligatoria-b2b" },
         { nombre: "Reglamento de facturación electrónica B2B (Real Decreto 238/2026)", url: "https://www.cuatrecasas.com/es/global/fiscalidad/art/reglamento-facturacion-electronica-obligatorio-operaciones" },
@@ -42,12 +43,12 @@ export default function FacturaElectronica() {
             <tr>
               <th scope="row">VeriFactu</th>
               <td>Sociedades (Impuesto sobre Sociedades)</td>
-              <td>Octubre de 2028 (antes, 1 de enero de 2027)</td>
+              <td>6 de octubre de 2028 si se convalida el decreto; si no, 1 de enero de 2027</td>
             </tr>
             <tr>
               <th scope="row">VeriFactu</th>
               <td>Autónomos y demás obligados</td>
-              <td>Octubre de 2028 (antes, 1 de julio de 2027)</td>
+              <td>6 de octubre de 2028 si se convalida el decreto; si no, 1 de julio de 2027</td>
             </tr>
             <tr>
               <th scope="row">Factura electrónica</th>
@@ -87,17 +88,22 @@ export default function FacturaElectronica() {
         no generan los registros que exige el reglamento.
       </p>
 
-      <h3>Las fechas se han vuelto a retrasar: ahora, octubre de 2028</h3>
+      <h3>El retraso a 2028 está en vigor, pero pendiente de convalidación</h3>
       <p>
         El calendario inicial preveía 2026. El Real Decreto-ley 15/2025 lo llevó al 1 de enero de 2027 para las
-        sociedades y al 1 de julio de 2027 para los autónomos. El 5 de octubre de 2026, Hacienda anunció que lo
-        retrasaría otra vez para hacerlo coincidir con la factura electrónica, y el 25 de noviembre de 2026 el
-        Consejo de Ministros aprobó el Real Decreto-ley que lleva todas las obligaciones pendientes a octubre de
-        2028, con una sola fecha para sociedades y autónomos.
+        sociedades y al 1 de julio de 2027 para los autónomos. El Real Decreto-ley 43/2026, de 24 de noviembre,
+        publicado en el BOE el 25 de noviembre y en vigor desde el día siguiente, fija una sola fecha para todos: los
+        programas de facturación tienen que cumplir el reglamento antes del 6 de octubre de 2028.
       </p>
       <p>
-        El cambio entra en vigor cuando se publique en el BOE, normalmente al día siguiente de su aprobación. En
-        cuanto aparezca el día exacto de octubre de 2028, actualizaremos esta guía.
+        Un real decreto-ley es provisional: el Congreso tiene 30 días para convalidarlo o derogarlo. Con las Cortes
+        disueltas por las elecciones generales, esa votación corresponde a la Diputación Permanente, que vota el
+        decreto entero, sin separar medidas. Si se convalida, la fecha de 2028 queda firme. Si se deroga, vuelven las
+        fechas anteriores: el 1 de enero de 2027 para las sociedades y el 1 de julio de 2027 para los autónomos.
+      </p>
+      <p>
+        Hasta que se vote, lo prudente, sobre todo si tienes una sociedad, es no parar la adaptación: elegir ya el
+        programa de facturación y tenerlo listo para enero. Actualizaremos esta guía en cuanto haya votación.
       </p>
 
       <h2>Factura electrónica entre empresas: la Ley Crea y Crece</h2>
@@ -125,8 +131,8 @@ export default function FacturaElectronica() {
       </ul>
       <p>
         Las facturas a particulares no entran en esta obligación. Si solo trabajas con consumidores finales, te
-        afecta VeriFactu, pero no la factura electrónica entre empresas. Con el aplazamiento, para la mayoría de
-        autónomos y pymes las dos obligaciones llegan a la vez, en octubre de 2028.
+        afecta VeriFactu, pero no la factura electrónica entre empresas. Si el aplazamiento se convalida, para la
+        mayoría de autónomos y pymes las dos obligaciones llegarán a la vez, en octubre de 2028.
       </p>
 
       <h2>Qué hacer ahora</h2>
@@ -136,8 +142,8 @@ export default function FacturaElectronica() {
           incluye la modalidad VeriFactu. Muchos programas de facturación ya lo ofrecen.
         </li>
         <li>
-          <strong>No esperes al último mes.</strong> Tienes margen hasta octubre de 2028, pero cambiar de programa
-          a mitad de un trimestre complica la numeración y los libros. Lo más limpio es empezar un 1 de enero o al
+          <strong>No cuentes todavía con 2028.</strong> Hasta que se convalide el decreto, la fecha segura es la
+          de 2027. Además, cambiar de programa a mitad de un trimestre complica la numeración y los libros. Lo más limpio es empezar un 1 de enero o al
           comienzo de un trimestre.
         </li>
         <li>
