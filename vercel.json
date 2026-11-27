@@ -240,6 +240,16 @@
       "source": "/blog/:path(.*)",
       "destination": "/guias/",
       "permanent": true
+    },
+    {
+      "source": "/licitaciones-publicas",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/licitaciones-publicas/",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
