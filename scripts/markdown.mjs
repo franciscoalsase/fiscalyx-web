@@ -14,7 +14,8 @@ function enLinea(h, base) {
       })
       .replace(/<(strong|b)\b[^>]*>([\s\S]*?)<\/\1>/g, (_, __, t) => `**${limpio(t)}**`)
       .replace(/<(em|i)\b[^>]*>([\s\S]*?)<\/\1>/g, (_, __, t) => `*${limpio(t)}*`)
-      .replace(/<br\s*\/?>/g, " "),
+      .replace(/<br\s*\/?>/g, " ")
+      .replace(/<(small|span)\b/g, " <$1"),
   );
 }
 
@@ -40,7 +41,8 @@ export function aMarkdown(html, base) {
     }
     if (enTabla) { out.push(""); enTabla = false; }
     // no repetir el texto de un <li> o <p> que contiene a su vez otros bloques
-    if (/<(p|li|h[1-4])\b/.test(cont)) continue;
+    // (se salta solo la etiqueta de apertura para que sí se lean los bloques de dentro)
+    if (/<(p|li|h[1-4])\b/.test(cont)) { re.lastIndex = x.index + x[0].indexOf(">") + 1; continue; }
     const t = enLinea(cont, base);
     if (!t) continue;
     if (tag[0] === "h") out.push("", `${"#".repeat(+tag[1])} ${t}`, "");

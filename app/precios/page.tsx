@@ -292,7 +292,7 @@ export default function Precios() {
             </p>
             <div className="acciones" style={{ marginTop: "2.5rem" }}>
               <Link className="boton boton-principal" href="/empezar/">
-                Empezar
+                Calcular mi presupuesto
               </Link>
               <a className="enlace-sencillo" href={whatsappLink()} target="_blank" rel="nofollow noopener noreferrer">
                 Escríbenos por WhatsApp
